@@ -1,0 +1,749 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?557xpm');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?557xpm#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?557xpm') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?557xpm') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?557xpm##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i, .icomoon-liga {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.account-group {
+  &:before {
+    content: $account-group; 
+  }
+}
+.add-circle {
+  &:before {
+    content: $add-circle; 
+  }
+}
+.arrow-box-up {
+  &:before {
+    content: $arrow-box-up; 
+  }
+}
+.arrow-down {
+  &:before {
+    content: $arrow-down; 
+  }
+}
+.arrow-down-solid {
+  &:before {
+    content: $arrow-down-solid; 
+  }
+}
+.arrow-left {
+  &:before {
+    content: $arrow-left; 
+  }
+}
+.arrow-left-solid {
+  &:before {
+    content: $arrow-left-solid; 
+  }
+}
+.arrow-right {
+  &:before {
+    content: $arrow-right; 
+  }
+}
+.arrow-solid-right {
+  &:before {
+    content: $arrow-solid-right; 
+  }
+}
+.arrow-up {
+  &:before {
+    content: $arrow-up; 
+  }
+}
+.arrow-up-solid {
+  &:before {
+    content: $arrow-up-solid; 
+  }
+}
+.bank-notes {
+  &:before {
+    content: $bank-notes; 
+  }
+}
+.barcode-scan {
+  &:before {
+    content: $barcode-scan; 
+  }
+}
+.bin {
+  &:before {
+    content: $bin; 
+  }
+}
+.bluetooth {
+  &:before {
+    content: $bluetooth; 
+  }
+}
+.book-open {
+  &:before {
+    content: $book-open; 
+  }
+}
+.bookmark {
+  &:before {
+    content: $bookmark; 
+  }
+}
+.box {
+  &:before {
+    content: $box; 
+  }
+}
+.bubble-chat-typing {
+  &:before {
+    content: $bubble-chat-typing; 
+  }
+}
+.calendar {
+  &:before {
+    content: $calendar; 
+  }
+}
+.camera {
+  &:before {
+    content: $camera; 
+  }
+}
+.check-box {
+  &:before {
+    content: $check-box; 
+  }
+}
+.check-circle {
+  &:before {
+    content: $check-circle; 
+  }
+}
+.check-circle-2 {
+  &:before {
+    content: $check-circle-2; 
+  }
+}
+.clock {
+  &:before {
+    content: $clock; 
+  }
+}
+.clock-2 {
+  &:before {
+    content: $clock-2; 
+  }
+}
+.close {
+  &:before {
+    content: $close; 
+  }
+}
+.cloud {
+  &:before {
+    content: $cloud; 
+  }
+}
+.cog {
+  &:before {
+    content: $cog; 
+  }
+}
+.computer-bug {
+  &:before {
+    content: $computer-bug; 
+  }
+}
+.computer-screen {
+  &:before {
+    content: $computer-screen; 
+  }
+}
+.credit-card {
+  &:before {
+    content: $credit-card; 
+  }
+}
+.download {
+  &:before {
+    content: $download; 
+  }
+}
+.email {
+  &:before {
+    content: $email; 
+  }
+}
+.expand {
+  &:before {
+    content: $expand; 
+  }
+}
+.file-acrobat {
+  &:before {
+    content: $file-acrobat; 
+  }
+}
+.file-favorite-star {
+  &:before {
+    content: $file-favorite-star; 
+  }
+}
+.file-new {
+  &:before {
+    content: $file-new; 
+  }
+}
+.file-view {
+  &:before {
+    content: $file-view; 
+  }
+}
+.file-word {
+  &:before {
+    content: $file-word; 
+  }
+}
+.filter {
+  &:before {
+    content: $filter; 
+  }
+}
+.folder {
+  &:before {
+    content: $folder; 
+  }
+}
+.folder-add {
+  &:before {
+    content: $folder-add; 
+  }
+}
+.folder-view {
+  &:before {
+    content: $folder-view; 
+  }
+}
+.gauge {
+  &:before {
+    content: $gauge; 
+  }
+}
+.globe {
+  &:before {
+    content: $globe; 
+  }
+}
+.graph-bar {
+  &:before {
+    content: $graph-bar; 
+  }
+}
+.graph-pie {
+  &:before {
+    content: $graph-pie; 
+  }
+}
+.group-add {
+  &:before {
+    content: $group-add; 
+  }
+}
+.headphone {
+  &:before {
+    content: $headphone; 
+  }
+}
+.help-circle {
+  &:before {
+    content: $help-circle; 
+  }
+}
+.hierarchy {
+  &:before {
+    content: $hierarchy; 
+  }
+}
+.home {
+  &:before {
+    content: $home; 
+  }
+}
+.launch {
+  &:before {
+    content: $launch; 
+  }
+}
+.layers {
+  &:before {
+    content: $layers; 
+  }
+}
+.leaf {
+  &:before {
+    content: $leaf; 
+  }
+}
+.lightbulb {
+  &:before {
+    content: $lightbulb; 
+  }
+}
+.link {
+  &:before {
+    content: $link; 
+  }
+}
+.location-pin {
+  &:before {
+    content: $location-pin; 
+  }
+}
+.location-pin-solid {
+  &:before {
+    content: $location-pin-solid; 
+  }
+}
+.lock-close {
+  &:before {
+    content: $lock-close; 
+  }
+}
+.lock-open {
+  &:before {
+    content: $lock-open; 
+  }
+}
+.logo-facebook {
+  &:before {
+    content: $logo-facebook; 
+  }
+}
+.logo-linkedin {
+  &:before {
+    content: $logo-linkedin; 
+  }
+}
+.logo-twitter-bird {
+  &:before {
+    content: $logo-twitter-bird; 
+  }
+}
+.logout {
+  &:before {
+    content: $logout; 
+  }
+}
+.map-pin {
+  &:before {
+    content: $map-pin; 
+  }
+}
+.medical-box {
+  &:before {
+    content: $medical-box; 
+  }
+}
+.mobile-phone-portrait {
+  &:before {
+    content: $mobile-phone-portrait; 
+  }
+}
+.navigation-drawer {
+  &:before {
+    content: $navigation-drawer; 
+  }
+}
+.network-signal {
+  &:before {
+    content: $network-signal; 
+  }
+}
+.network-user {
+  &:before {
+    content: $network-user; 
+  }
+}
+.pencil {
+  &:before {
+    content: $pencil; 
+  }
+}
+.person {
+  &:before {
+    content: $person; 
+  }
+}
+.picture {
+  &:before {
+    content: $picture; 
+  }
+}
+.play-button {
+  &:before {
+    content: $play-button; 
+  }
+}
+.projector-screen {
+  &:before {
+    content: $projector-screen; 
+  }
+}
+.qr-code {
+  &:before {
+    content: $qr-code; 
+  }
+}
+.remove-circle {
+  &:before {
+    content: $remove-circle; 
+  }
+}
+.remove-circle-solid {
+  &:before {
+    content: $remove-circle-solid; 
+  }
+}
+.report-problem-circle {
+  &:before {
+    content: $report-problem-circle; 
+  }
+}
+.report-problem-triangle {
+  &:before {
+    content: $report-problem-triangle; 
+  }
+}
+.rss-feed {
+  &:before {
+    content: $rss-feed; 
+  }
+}
+.search {
+  &:before {
+    content: $search; 
+  }
+}
+.server {
+  &:before {
+    content: $server; 
+  }
+}
+.share {
+  &:before {
+    content: $share; 
+  }
+}
+.share-solid {
+  &:before {
+    content: $share-solid; 
+  }
+}
+.shopping-cart {
+  &:before {
+    content: $shopping-cart; 
+  }
+}
+.smartwatch {
+  &:before {
+    content: $smartwatch; 
+  }
+}
+.star {
+  &:before {
+    content: $star; 
+  }
+}
+.subtract-circle {
+  &:before {
+    content: $subtract-circle; 
+  }
+}
+.synchronize {
+  &:before {
+    content: $synchronize; 
+  }
+}
+.synchronize-2 {
+  &:before {
+    content: $synchronize-2; 
+  }
+}
+.tablet-ipad {
+  &:before {
+    content: $tablet-ipad; 
+  }
+}
+.toolbox {
+  &:before {
+    content: $toolbox; 
+  }
+}
+.truck {
+  &:before {
+    content: $truck; 
+  }
+}
+.upload {
+  &:before {
+    content: $upload; 
+  }
+}
+.video-camera {
+  &:before {
+    content: $video-camera; 
+  }
+}
+.view {
+  &:before {
+    content: $view; 
+  }
+}
+.window-code {
+  &:before {
+    content: $window-code; 
+  }
+}
+.window-search-engine {
+  &:before {
+    content: $window-search-engine; 
+  }
+}
+.zoom-in {
+  &:before {
+    content: $zoom-in; 
+  }
+}
+.zoom-out {
+  &:before {
+    content: $zoom-out; 
+  }
+}
+.expand-diagonal {
+  &:before {
+    content: $expand-diagonal; 
+  }
+}
+.control-previous {
+  &:before {
+    content: $control-previous; 
+  }
+}
+.control-previous-solid {
+  &:before {
+    content: $control-previous-solid; 
+  }
+}
+.control-rewind {
+  &:before {
+    content: $control-rewind; 
+  }
+}
+.control-rewind-solid {
+  &:before {
+    content: $control-rewind-solid; 
+  }
+}
+.control-play {
+  &:before {
+    content: $control-play; 
+  }
+}
+.control-play-solid {
+  &:before {
+    content: $control-play-solid; 
+  }
+}
+.control-pause {
+  &:before {
+    content: $control-pause; 
+  }
+}
+.control-pause-solid {
+  &:before {
+    content: $control-pause-solid; 
+  }
+}
+.control-stop {
+  &:before {
+    content: $control-stop; 
+  }
+}
+.control-stop-solid {
+  &:before {
+    content: $control-stop-solid; 
+  }
+}
+.control-fast-forward {
+  &:before {
+    content: $control-fast-forward; 
+  }
+}
+.control-fast-forward-solid {
+  &:before {
+    content: $control-fast-forward-solid; 
+  }
+}
+.control-next {
+  &:before {
+    content: $control-next; 
+  }
+}
+.control-next-solid {
+  &:before {
+    content: $control-next-solid; 
+  }
+}
+.control-eject {
+  &:before {
+    content: $control-eject; 
+  }
+}
+.control-eject-solid {
+  &:before {
+    content: $control-eject-solid; 
+  }
+}
+.volume-off {
+  &:before {
+    content: $volume-off; 
+  }
+}
+.volume-off-solid {
+  &:before {
+    content: $volume-off-solid; 
+  }
+}
+.volume-low {
+  &:before {
+    content: $volume-low; 
+  }
+}
+.volume-low-solid {
+  &:before {
+    content: $volume-low-solid; 
+  }
+}
+.volume-medium {
+  &:before {
+    content: $volume-medium; 
+  }
+}
+.volume-medium-solid {
+  &:before {
+    content: $volume-medium-solid; 
+  }
+}
+.volume-max {
+  &:before {
+    content: $volume-max; 
+  }
+}
+.volume-max-solid {
+  &:before {
+    content: $volume-max-solid; 
+  }
+}
+.newspaper {
+  &:before {
+    content: $newspaper; 
+  }
+}
+.rss-feed-solid {
+  &:before {
+    content: $rss-feed-solid; 
+  }
+}
+.file-text-picture {
+  &:before {
+    content: $file-text-picture; 
+  }
+}
+.file-checklist-edit {
+  &:before {
+    content: $file-checklist-edit; 
+  }
+}
+.logo-youtube-clip {
+  &:before {
+    content: $logo-youtube-clip; 
+  }
+}
+.logo-slide-share {
+  &:before {
+    content: $logo-slide-share; 
+  }
+}
+.presentation-code {
+  &:before {
+    content: $presentation-code; 
+  }
+}
+.programming-website {
+  &:before {
+    content: $programming-website; 
+  }
+}
+.video-meeting-square {
+  &:before {
+    content: $video-meeting-square; 
+  }
+}
+.podcast {
+  &:before {
+    content: $podcast; 
+  }
+}
+.logo-instagram {
+  &:before {
+    content: $logo-instagram; 
+  }
+}
+.arrow-right-tail {
+  &:before {
+    content: $arrow-right-tail; 
+  }
+}
+.print {
+  &:before {
+    content: $print; 
+  }
+}
+.play-button-solid {
+  &:before {
+    content: $play-button-solid; 
+  }
+}
+

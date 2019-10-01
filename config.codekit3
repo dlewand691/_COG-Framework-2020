@@ -1,0 +1,5051 @@
+{
+"AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https://codekitapp.com/",
+"buildSteps": [
+	{
+		"name": "Process All Remaining Files and Folders",
+		"stepType": 1,
+		"uuidString": "DDE79D7E-414A-4824-885C-AB36CCD998C6"
+		}
+	],
+"creatorBuild": "31491",
+"files": {
+	"/fonts/Cognizant-Icons-FONT/demo-files/demo.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/Cognizant-Icons-FONT/demo-files/demo-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/fonts/Cognizant-Icons-FONT/demo-files/demo.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/Cognizant-Icons-FONT/demo-files/min/demo-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/fonts/Cognizant-Icons-FONT/liga.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/Cognizant-Icons-FONT/min/liga-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/fonts/Cognizant-Icons-FONT/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/Cognizant-Icons-FONT/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/fonts/Cognizant-Icons-FONT/style.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/css/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/fonts/Cognizant-Icons-FONT/variables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/css/variables.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/fonts/Cognizant-Sans/stylesheet.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/css/stylesheet.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/fonts/ProximaNovaFonts/ProximaNova.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/css/ProximaNova.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/js/cognizant-framework.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/js/min/cognizant-framework-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/_BUILD/node_modules",
+		"oF": 0
+		},
+	"/node_modules/aos/dist/aos.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/aos/dist/min/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/aos/src/sass/_animations.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/aos/src/css/_animations.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/aos/src/sass/_core.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/aos/src/css/_core.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/aos/src/sass/_easing.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/aos/src/css/_easing.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/aos/src/sass/aos.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/aos/src/css/aos.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/_contain.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/css/_contain.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/_purge.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/css/_purge.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/_remove.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/css/_remove.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/_replace.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/css/_replace.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/functions/_to-list.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/css/_to-list.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/_missing-dependencies.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/css/_missing-dependencies.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/helpers/_true.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/_vendor/sassy-lists/stylesheets/css/_true.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.abide.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.abide.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.accordion.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.accordion.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.accordionMenu.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.accordionMenu.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.core.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.core.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.drilldown.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.drilldown.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.dropdown.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.dropdown.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.dropdownMenu.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.dropdownMenu.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.equalizer.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.equalizer.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.interchange.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.interchange.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.magellan.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.offcanvas.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.responsiveAccordionTabs.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.responsiveMenu.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.responsiveMenu.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.responsiveToggle.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.responsiveToggle.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.reveal.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.smoothScroll.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.sticky.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.sticky.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.tabs.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.toggler.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.toggler.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.tooltip.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.tooltip.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.box.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.imageLoader.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.imageLoader.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.keyboard.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.mediaQuery.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.motion.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.nest.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.nest.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.timer.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.timer.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.touch.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/plugins/min/foundation.util.triggers.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/scss/_global.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/css/_global.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_accordion-menu.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_accordion-menu.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_accordion.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_accordion.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_badge.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_badge.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_breadcrumbs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_breadcrumbs.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_button-group.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_button-group.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_button.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_button.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_callout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_callout.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_card.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_card.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_close-button.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_close-button.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_drilldown.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_drilldown.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_dropdown-menu.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_dropdown-menu.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_dropdown.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_dropdown.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_flex.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_flex.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_float.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_float.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_label.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_label.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_media-object.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_media-object.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_menu-icon.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_menu-icon.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_menu.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_menu.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_off-canvas.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_off-canvas.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_orbit.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_orbit.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_pagination.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_pagination.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_progress-bar.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_progress-bar.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_responsive-embed.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_responsive-embed.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_reveal.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_reveal.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_slider.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_slider.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_sticky.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_sticky.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_switch.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_switch.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_table.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_table.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_tabs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_tabs.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_thumbnail.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_thumbnail.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_title-bar.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_title-bar.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_tooltip.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_tooltip.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_top-bar.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_top-bar.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/components/_visibility.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_visibility.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_checkbox.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_checkbox.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_error.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_error.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_fieldset.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_fieldset.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_forms.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_forms.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_help-text.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_help-text.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_input-group.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_input-group.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_label.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_label.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_meter.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_meter.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_progress.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_progress.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_range.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_range.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_select.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_select.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/forms/_text.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_text.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/foundation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/css/foundation.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_classes.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_classes.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_column.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_column.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_flex-grid.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_flex-grid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_grid.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_grid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_gutter.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_gutter.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_layout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_layout.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_position.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_position.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_row.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_row.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/grid/_size.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_size.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_arrow.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_arrow.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_border-box.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_border-box.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_border-none.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_border-none.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_bordered.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_bordered.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_box.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_box.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_display.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_display.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_font-styling.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_font-styling.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_list-style-type.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_list-style-type.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_overflow.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_overflow.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_position.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_position.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_prototype.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_prototype.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_relation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_relation.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_rotate.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_rotate.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_rounded.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_rounded.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_separator.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_separator.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_shadow.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_shadow.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_sizing.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_sizing.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_spacing.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_spacing.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_text-decoration.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_text-decoration.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_text-transformation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_text-transformation.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/prototype/_text-utilities.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_text-utilities.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/typography/_alignment.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_alignment.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/typography/_base.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_base.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/typography/_helpers.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_helpers.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/typography/_print.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_print.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/typography/_typography.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_typography.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_breakpoint.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_breakpoint.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_color.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_color.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_direction.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_direction.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_flex.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_flex.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_math.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_math.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_mixins.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_mixins.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_selector.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_selector.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_typography.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_typography.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_unit.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_unit.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_util.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_util.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/util/_value.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_value.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/vendor/normalize.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/normalize.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_cell.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_cell.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_classes.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_classes.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_collapse.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_collapse.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_frame.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_frame.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_grid.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_grid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_gutters.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_gutters.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_layout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_layout.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_position.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_position.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/foundation-sites/scss/xy-grid/_xy-grid.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/scss/css/_xy-grid.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/_base.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/css/_base.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/hamburgers.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/css/hamburgers.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_3dx-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_3dx-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_3dx.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_3dx.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_3dxy-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_3dxy-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_3dxy.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_3dxy.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_3dy-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_3dy-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_3dy.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_3dy.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_arrow-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_arrow-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_arrow.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_arrow.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_arrowalt-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_arrowalt-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_arrowalt.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_arrowalt.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_arrowturn-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_arrowturn-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_arrowturn.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_arrowturn.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_boring.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_boring.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_collapse-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_collapse-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_collapse.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_collapse.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_elastic-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_elastic-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_elastic.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_elastic.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_emphatic-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_emphatic-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_emphatic.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_emphatic.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_minus.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_minus.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_slider-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_slider-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_slider.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_slider.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_spin-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_spin-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_spin.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_spin.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_spring-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_spring-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_spring.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_spring.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_squeeze.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_squeeze.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_stand-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_stand-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_stand.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_stand.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_vortex-r.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_vortex-r.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/hamburgers/_sass/hamburgers/types/_vortex.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/hamburgers/_sass/hamburgers/css/_vortex.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/jquery/dist/jquery.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/jquery/dist/min/jquery.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/lazysizes/lazysizes.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/lazysizes/min/lazysizes-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/lazysizes/plugins/unveilhooks/min/ls.unveilhooks-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/motion-ui/dist/motion-ui.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/dist/min/motion-ui.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/motion-ui/src/_classes.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/css/_classes.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/_settings.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/css/_settings.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/effects/_fade.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_fade.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/effects/_hinge.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_hinge.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/effects/_shake.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_shake.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/effects/_slide.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_slide.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/effects/_spin.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_spin.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/effects/_wiggle.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_wiggle.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/effects/_zoom.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_zoom.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/motion-ui.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/css/motion-ui.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/transitions/_fade.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_fade.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/transitions/_hinge.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_hinge.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/transitions/_slide.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_slide.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/transitions/_spin.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_spin.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/transitions/_zoom.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_zoom.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_animation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_animation.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_args.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_args.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_function.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_function.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_keyframe.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_keyframe.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_selector.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_selector.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_series.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_series.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_string.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_string.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_transition.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_transition.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/motion-ui/src/util/_unit.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/motion-ui/src/css/_unit.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/rfs/scss.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/css/scss.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/slick-carousel/slick/slick-theme.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/slick-carousel/css/slick-theme.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/slick-carousel/slick/slick.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/slick-carousel/slick/min/slick.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/slick-carousel/slick/slick.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/slick-carousel/css/slick.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/scss/_settings.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/css/_settings.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/scss/cognizant-framework.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/css/cognizant-framework.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		}
+	},
+"hooks": [
+	],
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"creationDate": 573106688.49449599,
+	"displayValue": "_COG-Framework-2019",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "meme-cryingJordan",
+	"iconImageWasSetByUser": 0
+	},
+"projectSettings": {
+	"abortBuildOnError": 1,
+	"allowInjectionReloads": 1,
+	"alwaysUseExternalServer": 0,
+	"animateCSSInjections": 1,
+	"autoBuildNewItems": 1,
+	"autoprefixerEnableIEGrid": 0,
+	"babel7PresetType": 1,
+	"babelAllowRCFiles": 0,
+	"babelAuxiliaryCommentAfter": "",
+	"babelAuxiliaryCommentBefore": "",
+	"babelConfigType": 0,
+	"babelCustomPluginsList": "",
+	"babelCustomPresetsList": "",
+	"babelExcludeString": "'node_modules/**', 'bower_components/**', /\\/core-js\\//",
+	"babelInsertModuleIDs": 0,
+	"babelModuleID": "",
+	"babelNoComments": 0,
+	"babelPlugins": {
+		"async-generator-functions": {
+			"active": 0
+			},
+		"async-to-generator": {
+			"active": 0
+			},
+		"async-to-module-method": {
+			"active": false
+			},
+		"class-properties": {
+			"active": 0
+			},
+		"decorators": {
+			"active": 0
+			},
+		"decorators-legacy": {
+			"active": false
+			},
+		"do-expressions": {
+			"active": 0
+			},
+		"es2015-arrow-functions": {
+			"active": false
+			},
+		"es2015-block-scoped-functions": {
+			"active": false
+			},
+		"es2015-block-scoping": {
+			"active": false
+			},
+		"es2015-classes": {
+			"active": false
+			},
+		"es2015-computed-properties": {
+			"active": false
+			},
+		"es2015-constants": {
+			"active": false
+			},
+		"es2015-destructuring": {
+			"active": false
+			},
+		"es2015-duplicate-keys": {
+			"active": false
+			},
+		"es2015-for-of": {
+			"active": false
+			},
+		"es2015-function-name": {
+			"active": false
+			},
+		"es2015-literals": {
+			"active": false
+			},
+		"es2015-modules-amd": {
+			"active": false
+			},
+		"es2015-modules-commonjs": {
+			"active": false
+			},
+		"es2015-modules-systemjs": {
+			"active": false
+			},
+		"es2015-modules-umd": {
+			"active": false
+			},
+		"es2015-object-super": {
+			"active": false
+			},
+		"es2015-parameters": {
+			"active": false
+			},
+		"es2015-shorthand-properties": {
+			"active": false
+			},
+		"es2015-spread": {
+			"active": false
+			},
+		"es2015-sticky-regex": {
+			"active": false
+			},
+		"es2015-template-literals": {
+			"active": false
+			},
+		"es2015-typeof-symbol": {
+			"active": false
+			},
+		"es2015-unicode-regex": {
+			"active": false
+			},
+		"es3-member-expression-literals": {
+			"active": false
+			},
+		"es3-property-literals": {
+			"active": false
+			},
+		"es5-property-mutators": {
+			"active": false
+			},
+		"eval": {
+			"active": false
+			},
+		"exponentiation-operator": {
+			"active": 0
+			},
+		"export-extensions": {
+			"active": false
+			},
+		"external-helpers": {
+			"active": 0
+			},
+		"flow-comments": {
+			"active": false
+			},
+		"flow-strip-types": {
+			"active": 0
+			},
+		"function-bind": {
+			"active": 0
+			},
+		"inline-environment-variables": {
+			"active": 0
+			},
+		"jscript": {
+			"active": 0
+			},
+		"member-expression-literals": {
+			"active": 0
+			},
+		"merge-sibling-variables": {
+			"active": 0
+			},
+		"minify-booleans": {
+			"active": 0
+			},
+		"node-env-inline": {
+			"active": 0
+			},
+		"object-assign": {
+			"active": 0
+			},
+		"object-rest-spread": {
+			"active": 0
+			},
+		"object-set-prototype-of-to-assign": {
+			"active": 0
+			},
+		"property-literals": {
+			"active": 0
+			},
+		"proto-to-assign": {
+			"active": 0
+			},
+		"react-constant-elements": {
+			"active": 0
+			},
+		"react-display-name": {
+			"active": 0
+			},
+		"react-inline-elements": {
+			"active": 0
+			},
+		"react-jsx": {
+			"active": 0
+			},
+		"react-jsx-compat": {
+			"active": 0
+			},
+		"react-jsx-self": {
+			"active": 0
+			},
+		"react-jsx-source": {
+			"active": 0
+			},
+		"regenerator": {
+			"active": 0
+			},
+		"remove-console": {
+			"active": 0
+			},
+		"remove-debugger": {
+			"active": 0
+			},
+		"runtime": {
+			"active": 0
+			},
+		"simplify-comparison-operators": {
+			"active": 0
+			},
+		"strict-mode": {
+			"active": 0
+			},
+		"syntax-async-generators": {
+			"active": false
+			},
+		"syntax-class-properties": {
+			"active": false
+			},
+		"syntax-decorators": {
+			"active": false
+			},
+		"syntax-do-expressions": {
+			"active": false
+			},
+		"syntax-export-extensions": {
+			"active": false
+			},
+		"syntax-flow": {
+			"active": false
+			},
+		"syntax-function-bind": {
+			"active": false
+			},
+		"syntax-function-sent": {
+			"active": false
+			},
+		"syntax-jsx": {
+			"active": false
+			},
+		"syntax-object-rest-spread": {
+			"active": false
+			},
+		"undeclared-variables-check": {
+			"active": false
+			},
+		"undefined-to-void": {
+			"active": 0
+			}
+		},
+	"babelRetainLines": 0,
+	"babelUseBuiltInsType": 0,
+	"bowerAbbreviatedPath": "bower_components",
+	"bowerForceLatestOnConflict": 1,
+	"bowerTargetDependencyListType": 1,
+	"bowerUseExactVersion": 0,
+	"browserRefreshDelay": 0,
+	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
+	"buildFolderActive": 1,
+	"buildFolderName": "_BUILD",
+	"cleanBuild": 1,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"ensure_comprehensions": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_functions": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_interpolation_in_single_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_nested_string_interpolation": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_private_function_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_unnecessary_double_quotes": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prefer_english_operator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"spacing_after_comma": {
+			"active": 1,
+			"flagValue": -1
+			}
+		},
+	"esLintConfigFileHandlingType": 0,
+	"esLintECMAVersion": 7,
+	"esLintEnvironmentsMask": 8223,
+	"esLintRules": {
+		"accessor-pairs": {
+			"active": 0,
+			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
+			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
+		"array-bracket-spacing": {
+			"active": 0,
+			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
+			},
+		"array-callback-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-body-style": {
+			"active": 0,
+			"optionString": "'as-needed', {'requireReturnForObjectLiteral': false}"
+			},
+		"arrow-parens": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"arrow-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true}"
+			},
+		"block-scoped-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"block-spacing": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"brace-style": {
+			"active": 0,
+			"optionString": "'1tbs', {'allowSingleLine': true}"
+			},
+		"callback-return": {
+			"active": 0,
+			"optionString": "['callback', 'cb', 'next']"
+			},
+		"camelcase": {
+			"active": 0,
+			"optionString": "{'properties': 'always', 'ignoreDestructuring': false}"
+			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
+		"class-methods-use-this": {
+			"active": 0,
+			"optionString": "{'exceptMethods': []}"
+			},
+		"comma-dangle": {
+			"active": 1,
+			"optionString": "'never'"
+			},
+		"comma-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"comma-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"complexity": {
+			"active": 0,
+			"optionString": "20"
+			},
+		"computed-property-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"consistent-return": {
+			"active": 0,
+			"optionString": "{'treatUndefinedAsUnspecified': false}"
+			},
+		"consistent-this": {
+			"active": 0,
+			"optionString": "'that'"
+			},
+		"constructor-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"curly": {
+			"active": 0,
+			"optionString": "'all'"
+			},
+		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"dot-location": {
+			"active": 0,
+			"optionString": "'object'"
+			},
+		"dot-notation": {
+			"active": 0,
+			"optionString": "{'allowKeywords': false}"
+			},
+		"eol-last": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"eqeqeq": {
+			"active": 0,
+			"optionString": "'always', {'null': 'always'}"
+			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
+		"func-call-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"func-name-matching": {
+			"active": 0,
+			"optionString": "'always', {'considerPropertyDescriptor': false, 'includeCommonJSModuleExports': false}"
+			},
+		"func-names": {
+			"active": 0,
+			"optionString": "'always', {'generators': 'always'}"
+			},
+		"func-style": {
+			"active": 0,
+			"optionString": "'expression'"
+			},
+		"function-paren-newline": {
+			"active": 0,
+			"optionString": "'multiline'"
+			},
+		"generator-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
+			},
+		"global-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"guard-for-in": {
+			"active": 0,
+			"optionString": ""
+			},
+		"handle-callback-err": {
+			"active": 0,
+			"optionString": "'err'"
+			},
+		"id-blacklist": {
+			"active": 0,
+			"optionString": "'data', 'err', 'e', 'cb', 'callback'"
+			},
+		"id-length": {
+			"active": 0,
+			"optionString": "{'min': 2, 'max': 1000, 'properties': 'always', 'exceptions': ['x', 'i', 'y']}"
+			},
+		"id-match": {
+			"active": 0,
+			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true, 'ignoreDestructuring': false}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
+		"indent": {
+			"active": 0,
+			"optionString": "4, {'SwitchCase': 0, 'VariableDeclarator': 1, 'outerIIFEBody': 1 }"
+			},
+		"init-declarations": {
+			"active": 0,
+			"optionString": "'always',  {'ignoreForLoopInit': true}"
+			},
+		"jsx-quotes": {
+			"active": 0,
+			"optionString": "'prefer-double'"
+			},
+		"key-spacing": {
+			"active": 0,
+			"optionString": "{'singleLine': {'beforeColon': false, 'afterColon': true, 'mode':'strict'}, 'multiLine': {'beforeColon': false, 'afterColon': true, 'align': 'value', 'mode':'minimum'}}"
+			},
+		"keyword-spacing": {
+			"active": 0,
+			"optionString": "{'before': true, 'after': true, 'overrides': {}}"
+			},
+		"line-comment-position": {
+			"active": 0,
+			"optionString": "{'position': 'above'}"
+			},
+		"linebreak-style": {
+			"active": 0,
+			"optionString": "'unix'"
+			},
+		"lines-around-comment": {
+			"active": 0,
+			"optionString": "{'beforeBlockComment': true}"
+			},
+		"lines-between-class-members": {
+			"active": 0,
+			"optionString": "'always', {exceptAfterSingleLine: false}"
+			},
+		"max-classes-per-file": {
+			"active": 0,
+			"optionString": "1"
+			},
+		"max-depth": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-len": {
+			"active": 0,
+			"optionString": "{'code': 80, 'comments': 80, 'tabWidth': 4, 'ignoreUrls': true, 'ignoreStrings': true, 'ignoreTemplateLiterals': true, 'ignoreRegExpLiterals': true}"
+			},
+		"max-lines": {
+			"active": 0,
+			"optionString": "{'max': 300, 'skipBlankLines': true, 'skipComments': true}"
+			},
+		"max-lines-per-function": {
+			"active": 0,
+			"optionString": "{'max': 50, 'skipBlankLines': true, 'skipComments': true, 'IIFEs': false}"
+			},
+		"max-nested-callbacks": {
+			"active": 0,
+			"optionString": "{'max': 10}"
+			},
+		"max-params": {
+			"active": 0,
+			"optionString": "{'max': 4}"
+			},
+		"max-statements": {
+			"active": 0,
+			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
+		"multiline-comment-style": {
+			"active": 0,
+			"optionString": "'starred-block'"
+			},
+		"multiline-ternary": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"new-cap": {
+			"active": 0,
+			"optionString": "{'newIsCap': true, 'capIsNew': true, 'newIsCapExceptions': [], 'capIsNewExceptions': ['Array', 'Boolean', 'Date', 'Error', 'Function', 'Number', 'Object', 'RegExp', 'String', 'Symbol'], 'properties': true}"
+			},
+		"new-parens": {
+			"active": 0,
+			"optionString": ""
+			},
+		"newline-per-chained-call": {
+			"active": 0,
+			"optionString": "{'ignoreChainWithDepth': 2}"
+			},
+		"no-alert": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-array-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-async-promise-executor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-bitwise": {
+			"active": 0,
+			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-caller": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-case-declarations": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-class-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-cond-assign": {
+			"active": 1,
+			"optionString": "'except-parens'"
+			},
+		"no-confusing-arrow": {
+			"active": 0,
+			"optionString": "{'allowParens': false}"
+			},
+		"no-console": {
+			"active": 1,
+			"optionString": "{'allow': ['warn', 'error']}"
+			},
+		"no-const-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-constant-condition": {
+			"active": 1,
+			"optionString": "{'checkLoops': true}"
+			},
+		"no-continue": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-control-regex": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-debugger": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-delete-var": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-div-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-dupe-args": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-keys": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-duplicate-imports": {
+			"active": 0,
+			"optionString": "{'includeExports': false}"
+			},
+		"no-else-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-empty": {
+			"active": 1,
+			"optionString": "{'allowEmptyCatch': false}"
+			},
+		"no-empty-character-class": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-empty-function": {
+			"active": 0,
+			"optionString": "{'allow': []}"
+			},
+		"no-empty-pattern": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-eq-null": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-eval": {
+			"active": 0,
+			"optionString": "{'allowIndirect': false}"
+			},
+		"no-ex-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extend-native": {
+			"active": 0,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-extra-bind": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-boolean-cast": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-extra-labels": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-extra-parens": {
+			"active": 0,
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none', 'enforceForArrowConditionals': false}"
+			},
+		"no-extra-semi": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-fallthrough": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-floating-decimal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-func-assign": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-global-assign": {
+			"active": 1,
+			"optionString": "{'exceptions': []}"
+			},
+		"no-implicit-coercion": {
+			"active": 0,
+			"optionString": "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
+			},
+		"no-implicit-globals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-implied-eval": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inline-comments": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-inner-declarations": {
+			"active": 1,
+			"optionString": "'functions'"
+			},
+		"no-invalid-regexp": {
+			"active": 1,
+			"optionString": "{'allowConstructorFlags': ['u', 'y']}"
+			},
+		"no-invalid-this": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-irregular-whitespace": {
+			"active": 1,
+			"optionString": "{'skipStrings': true, 'skipComments': false, 'skipRegExps': true, 'skipTemplates': true}"
+			},
+		"no-iterator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-label-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-labels": {
+			"active": 0,
+			"optionString": "{'allowLoop': false, 'allowSwitch': false}"
+			},
+		"no-lone-blocks": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-lonely-if": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-loop-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-magic-numbers": {
+			"active": 0,
+			"optionString": "{'ignore': [], 'ignoreArrayIndexes': true, 'enforceConst': false, 'detectObjects': false}"
+			},
+		"no-misleading-character-class": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-mixed-operators": {
+			"active": 0,
+			"optionString": "{'groups': [['+', '-', '*', '/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
+			},
+		"no-mixed-requires": {
+			"active": 0,
+			"optionString": "{'grouping': false, 'allowCall': false }"
+			},
+		"no-mixed-spaces-and-tabs": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multi-spaces": {
+			"active": 0,
+			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
+			},
+		"no-multi-str": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-multiple-empty-lines": {
+			"active": 0,
+			"optionString": "{'max': 2, 'maxBOF': 2, 'maxEOF': 2}"
+			},
+		"no-negated-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-nested-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-object": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-require": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-new-symbol": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-new-wrappers": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-obj-calls": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-octal-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-param-reassign": {
+			"active": 0,
+			"optionString": "{'props': false}"
+			},
+		"no-path-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-plusplus": {
+			"active": 0,
+			"optionString": "{'allowForLoopAfterthoughts': false}"
+			},
+		"no-process-env": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-process-exit": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-proto": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-redeclare": {
+			"active": 1,
+			"optionString": "{'builtinGlobals': false}"
+			},
+		"no-regex-spaces": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-restricted-globals": {
+			"active": 0,
+			"optionString": "'event', 'fdescribe'"
+			},
+		"no-restricted-imports": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-modules": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-restricted-properties": {
+			"active": 0,
+			"optionString": "[{'object': 'disallowedObjectName', 'property': 'disallowedPropertyName'}, {'object': 'disallowedObjectName', 'property': 'anotherDisallowedPropertyName', 'message': 'Please use allowedObjectName.allowedPropertyName.'}]"
+			},
+		"no-restricted-syntax": {
+			"active": 0,
+			"optionString": "'FunctionExpression', 'WithStatement'"
+			},
+		"no-return-assign": {
+			"active": 0,
+			"optionString": "'except-parens'"
+			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-script-url": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-self-assign": {
+			"active": 1,
+			"optionString": "{'props': true}"
+			},
+		"no-self-compare": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sequences": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-shadow": {
+			"active": 0,
+			"optionString": "{'builtinGlobals': false, 'hoist': 'functions', 'allow': []}"
+			},
+		"no-shadow-restricted-names": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-sparse-arrays": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-sync": {
+			"active": 0,
+			"optionString": "{'allowAtRootLevel': false}"
+			},
+		"no-tabs": {
+			"active": 0,
+			"optionString": "{allowIndentationTabs: false}"
+			},
+		"no-template-curly-in-string": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-ternary": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-this-before-super": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-throw-literal": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-trailing-spaces": {
+			"active": 0,
+			"optionString": "{'skipBlankLines': false, 'ignoreComments': false}"
+			},
+		"no-undef": {
+			"active": 1,
+			"optionString": "{'typeof': false}"
+			},
+		"no-undef-init": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-undefined": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-underscore-dangle": {
+			"active": 0,
+			"optionString": "{'allow': [], 'allowAfterThis': false, 'allowAfterSuper': false, 'enforceInMethodNames': false}"
+			},
+		"no-unexpected-multiline": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unmodified-loop-condition": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-unneeded-ternary": {
+			"active": 0,
+			"optionString": "{'defaultAssignment': true}"
+			},
+		"no-unreachable": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-finally": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unsafe-negation": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-expressions": {
+			"active": 0,
+			"optionString": "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
+			},
+		"no-unused-labels": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-unused-vars": {
+			"active": 1,
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
+			},
+		"no-use-before-define": {
+			"active": 0,
+			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-call": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-catch": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-computed-key": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-concat": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-constructor": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-escape": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-useless-rename": {
+			"active": 0,
+			"optionString": "{'ignoreDestructuring': false, 'ignoreImport': false, 'ignoreExport': false}"
+			},
+		"no-useless-return": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-var": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-void": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-warning-comments": {
+			"active": 0,
+			"optionString": "{'terms': ['todo', 'fixme', 'xxx'], 'location': 'start'}"
+			},
+		"no-whitespace-before-property": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-with": {
+			"active": 0,
+			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
+		"object-curly-newline": {
+			"active": 0,
+			"optionString": "{'ObjectExpression': {'multiline': true, 'consistent': true}, 'ObjectPattern': {'multiline': true, 'consistent': true}}"
+			},
+		"object-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"object-property-newline": {
+			"active": 0,
+			"optionString": "{'allowAllPropertiesOnSameLine': true}"
+			},
+		"object-shorthand": {
+			"active": 0,
+			"optionString": "'always', {'avoidQuotes': false, 'ignoreConstructors': false}"
+			},
+		"one-var": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"one-var-declaration-per-line": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-assignment": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"operator-linebreak": {
+			"active": 0,
+			"optionString": "'after', {'overrides': {'?': 'after', '+=': 'none'}}"
+			},
+		"padded-blocks": {
+			"active": 0,
+			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
+			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
+		"prefer-arrow-callback": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-const": {
+			"active": 0,
+			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
+		"prefer-named-capture-group": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-numeric-literals": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-object-spread": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-rest-params": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-spread": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-template": {
+			"active": 0,
+			"optionString": ""
+			},
+		"quote-props": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"quotes": {
+			"active": 0,
+			"optionString": "'double', {'avoidEscape': true, 'allowTemplateLiterals': true}"
+			},
+		"radix": {
+			"active": 0,
+			"optionString": "'always'"
+			},
+		"require-atomic-updates": {
+			"active": 0,
+			"optionString": ""
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
+			},
+		"require-jsdoc": {
+			"active": 0,
+			"optionString": "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
+			},
+		"require-unicode-regexp": {
+			"active": 0,
+			"optionString": ""
+			},
+		"require-yield": {
+			"active": 1,
+			"optionString": ""
+			},
+		"rest-spread-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"semi": {
+			"active": 0,
+			"optionString": "'always', {'omitLastInOneLineBlock': false}"
+			},
+		"semi-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
+		"sort-imports": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+			},
+		"sort-keys": {
+			"active": 0,
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			},
+		"sort-vars": {
+			"active": 0,
+			"optionString": "{'ignoreCase': false}"
+			},
+		"space-before-blocks": {
+			"active": 0,
+			"optionString": "{'functions': 'always', 'keywords': 'always', 'classes': 'always'}"
+			},
+		"space-before-function-paren": {
+			"active": 0,
+			"optionString": "{'anonymous': 'always', 'named': 'never'}"
+			},
+		"space-in-parens": {
+			"active": 0,
+			"optionString": "'never', {'exceptions': []}"
+			},
+		"space-infix-ops": {
+			"active": 0,
+			"optionString": "{'int32Hint': false}"
+			},
+		"space-unary-ops": {
+			"active": 0,
+			"optionString": "{'words': true, 'nonwords': false, 'overrides': {}}"
+			},
+		"spaced-comment": {
+			"active": 0,
+			"optionString": "'always', {'line': {'markers': ['/'], 'exceptions': ['-', '+']}, 'block': {'markers': ['!'], 'exceptions': ['*'], 'balanced': false}}"
+			},
+		"strict": {
+			"active": 0,
+			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
+			},
+		"symbol-description": {
+			"active": 0,
+			"optionString": ""
+			},
+		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"unicode-bom": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"use-isnan": {
+			"active": 1,
+			"optionString": ""
+			},
+		"valid-jsdoc": {
+			"active": 0,
+			"optionString": "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
+			},
+		"valid-typeof": {
+			"active": 1,
+			"optionString": "{'requireStringLiterals': true}"
+			},
+		"vars-on-top": {
+			"active": 0,
+			"optionString": ""
+			},
+		"wrap-iife": {
+			"active": 0,
+			"optionString": "'outside'"
+			},
+		"wrap-regex": {
+			"active": 0,
+			"optionString": ""
+			},
+		"yield-star-spacing": {
+			"active": 0,
+			"optionString": "{'before': false, 'after': true}"
+			},
+		"yoda": {
+			"active": 0,
+			"optionString": "'never', {'exceptRange': false, 'onlyEquality': false}"
+			}
+		},
+	"esLintSourceType": 0,
+	"externalServerAddress": "http://localhost:8888",
+	"gitIgnoreBuildFolder": 1,
+	"hideConfigFile": 0,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"browserify": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"elision": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"futurehostile": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jasmine": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mocha": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nocomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"qunit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"singleGroups": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"varstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es6": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"for": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"this": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"languageDefaultsCOFFEE": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
+		"minifyOutput": 1,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1,
+		"transpilerStyle": 1
+		},
+	"languageDefaultsCSS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsGIF": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.gif",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0
+		},
+	"languageDefaultsHAML": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"escapeHTMLCharacters": 0,
+		"noEscapeInAttributes": 0,
+		"outputFormat": 2,
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0,
+		"useCDATA": 0,
+		"useDoubleQuotes": 0,
+		"useUnixNewlines": 0
+		},
+	"languageDefaultsJPG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.jpg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
+		"quality": 100
+		},
+	"languageDefaultsJS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*-min.js",
+		"autoOutputPathRelativePath": "/min",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 2,
+		"bundleFormat": 0,
+		"createSourceMap": 1,
+		"minifyOutput": 1,
+		"syntaxCheckerStyle": 3,
+		"transpilerStyle": 1
+		},
+	"languageDefaultsJSON": {
+		"autoOutputAction": 1,
+		"autoOutputPathFilenamePattern": "*-min.json",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"orderOutput": 0,
+		"outputStyle": 1
+		},
+	"languageDefaultsKIT": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "kit",
+		"autoOutputPathReplace2": "html",
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
+		},
+	"languageDefaultsLESS": {
+		"allowInsecureImports": 0,
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathReplace1": "less",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 1,
+		"enableJavascript": 0,
+		"ieCompatibility": 0,
+		"mathStyle": 0,
+		"outputStyle": 0,
+		"rewriteURLStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictUnits": 0
+		},
+	"languageDefaultsMARKDOWN": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"maskEmailAddresses": 1,
+		"outputFormat": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0,
+		"useCompatibilityMode": 0
+		},
+	"languageDefaultsOTHER": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.*",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
+		},
+	"languageDefaultsPNG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.png",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 90
+		},
+	"languageDefaultsPUG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileDebug": 1,
+		"outputStyle": 0,
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
+		},
+	"languageDefaultsSASS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathReplace1": "sass",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 2,
+		"createSourceMap": 1,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"outputStyle": 3,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
+	"languageDefaultsSLIM": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.html",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"compileOnly": 0,
+		"logicless": 0,
+		"outputFormat": 0,
+		"outputStyle": 1,
+		"railsCompatible": 0,
+		"shouldRunCacheBuster": 0,
+		"shouldRunHTMLMinifier": 0
+		},
+	"languageDefaultsSTYLUS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.css",
+		"autoOutputPathRelativePath": "../css",
+		"autoOutputPathReplace1": "stylus",
+		"autoOutputPathReplace2": "css",
+		"autoOutputPathStyle": 0,
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"importCSS": 0,
+		"outputStyle": 0,
+		"resolveRelativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0
+		},
+	"languageDefaultsSVG": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.svg",
+		"autoOutputPathRelativePath": "",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 0,
+		"pluginMask": 3758088159
+		},
+	"languageDefaultsTS": {
+		"autoOutputAction": 0,
+		"autoOutputPathFilenamePattern": "*.js",
+		"autoOutputPathRelativePath": "/js",
+		"autoOutputPathReplace1": "",
+		"autoOutputPathReplace2": "",
+		"autoOutputPathStyle": 2,
+		"createDeclarationFile": 0,
+		"createSourceMap": 0,
+		"minifyOutput": 0,
+		"moduleResolutionType": 0,
+		"moduleType": 2,
+		"removeComments": 0,
+		"targetECMAVersion": 0
+		},
+	"languageDefaultsUserDefined": [
+		],
+	"npmAbbreviatedPath": "",
+	"npmCreatePackageLock": 1,
+	"npmInstallOptionalDependencies": 0,
+	"npmSaveExactVersion": 0,
+	"npmTargetDependencyListType": 1,
+	"overrideExternalServerCSS": 0,
+	"previewPathAddition": "",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
+	"sourceFolderName": "source",
+	"susyVersion": 3,
+	"tsAllowSyntheticDefaultImports": 0,
+	"tsAllowUnreachableCode": 0,
+	"tsAllowUnusedLabels": 0,
+	"tsAlwaysStrict": 0,
+	"tsDownlevelIteration": 0,
+	"tsEmitBOM": 0,
+	"tsEmitDecoratorMetadata": 0,
+	"tsESModuleInterop": 0,
+	"tsForceConsistentCasingInFileNames": 0,
+	"tsImportHelpers": 0,
+	"tsIsolatedModules": 0,
+	"tsJSXFactory": "React.createElement",
+	"tsKeyofStringsOnly": 0,
+	"tsNoEmitHelpers": 0,
+	"tsNoFallthroughCasesInSwitch": 0,
+	"tsNoImplicitAny": 0,
+	"tsNoImplicitReturns": 0,
+	"tsNoImplicitThis": 0,
+	"tsNoImplicitUseStrict": 0,
+	"tsNoLib": 0,
+	"tsNoResolve": 0,
+	"tsNoStrictGenericChecks": 0,
+	"tsNoUnusedLocals": 0,
+	"tsNoUnusedParameters": 0,
+	"tsPreserveConstEnums": 0,
+	"tsPreserveSymlinks": 0,
+	"tsResolveJsonModule": 0,
+	"tsSkipLibCheck": 0,
+	"tsStrictFunctionTypes": 0,
+	"tsStrictNullChecks": 0,
+	"tsStrictPropertyInitialization": 0,
+	"tsStripInternal": 0,
+	"tsSuppressExcessPropertyErrors": 0,
+	"tsSuppressImplicitAnyIndexErrors": 0,
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": false,
+			"flagValue": -1
+			},
+		"bare-returns": {
+			"active": false,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": false,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": true,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": true,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"drop_console": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": false,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": false,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": false,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"keep_fargs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_fnames": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": true,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": true,
+			"flagValue": 32000
+			},
+		"negate_iife": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"pure_getters": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": false,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": true,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": false,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": true,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": false,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"width": {
+			"active": true,
+			"flagValue": 80
+			}
+		},
+	"uglifyMangleNames": 1,
+	"uglifyReservedNamesString": "$,exports,require",
+	"websiteRelativeRoot": "/_BUILD"
+	},
+"settingsFileVersion": "3"
+}

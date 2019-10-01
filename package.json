@@ -1,0 +1,32 @@
+{
+  "name": "cognizant-framework",
+  "devDependencies": {
+    "purgecss": "^1.4.0"
+  },
+  "author": "Daniel Lewandowski",
+  "version": "2019.2.6",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "license": "ISC",
+  "description": "Framework used for building UI components on Cognizant.com",
+  "optionalDependencies": {},
+  "dependencies": {
+    "animsition": "^4.0.2",
+    "aos": "^2.3.4",
+    "fancybox": "^3.0.1",
+    "fastclick": "^1.0.6",
+    "foundation-sites": "^6.5.3",
+    "hamburgers": "^1.1.3",
+    "iframe-resizer": "^4.2.1",
+    "jquery": "^3.4.1",
+    "lazysizes": "^5.1.1",
+    "motion-ui": "^2.0.3",
+    "plyr": "^3.5.6",
+    "rfs": "^9.0.0",
+    "slick-carousel": "^1.8.1",
+    "succinct": "0.0.1",
+    "what-input": "^5.2.3"
+  }
+}
