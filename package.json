@@ -27,6 +27,6 @@
     "rfs": "^9.0.0",
     "slick-carousel": "^1.8.1",
     "succinct": "0.0.1",
-    "what-input": "^5.2.3"
+    "what-input": "^5.2.6"
   }
 }
