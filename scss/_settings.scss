@@ -71,7 +71,8 @@ $global-lineheight: 1.3;
 $foundation-palette: (
     primary  : #0033a0,
     secondary: #666666,
-    success  : #01a685,
+    success  : #00b140,
+    // success  : #01a685,
     warning  : #ff8f1c,
     alert    : #f4633a,
 );
@@ -82,13 +83,13 @@ $medium-gray: #b1b1b1;
 $dark-gray: #666666;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Cognizant Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Proxima Nova','Cognizant Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
-$global-weight-bold: bolder;
+$global-weight-bold: bold;
 $global-radius: 0;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
@@ -132,7 +133,7 @@ $block-grid-max: 12;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: 900;
+$header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: $primary-color;

@@ -68,6 +68,7 @@
 // ====================================================================================
 // FONTS
 // ====================================================================================
+@import "../fonts/ProximaNovaFonts/ProximaNova.scss";
 @import "../fonts/Cognizant-Sans/stylesheet.scss";
 $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 @import "../fonts/Cognizant-Icons-FONT/style.scss";
@@ -407,6 +408,14 @@ $zindexes: 11;
 
 .flex-child-auto {
     flex: 1 1 auto;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: end;
 }
 
 @each $size in $breakpoint-classes {
@@ -1128,8 +1137,38 @@ $bg-size: (
         @include gradient-overlay-image-full;
     }
 }
-
 // -----  End of IMAGE GRADIENT OVERLAY  ---------------------------------------------
+
+// ===================================================================================
+// ██ ███    ███  █████   ██████  ███████
+// ██ ████  ████ ██   ██ ██       ██
+// ██ ██ ████ ██ ███████ ██   ███ █████
+// ██ ██  ██  ██ ██   ██ ██    ██ ██
+// ██ ██      ██ ██   ██  ██████  ███████
+//  ██████  ██████  ██       ██████  ██████
+// ██      ██    ██ ██      ██    ██ ██   ██
+// ██      ██    ██ ██      ██    ██ ██████
+// ██      ██    ██ ██      ██    ██ ██   ██
+//  ██████  ██████  ███████  ██████  ██   ██
+//  ██████  ██    ██ ███████ ██████  ██       █████  ██    ██
+// ██    ██ ██    ██ ██      ██   ██ ██      ██   ██  ██  ██
+// ██    ██ ██    ██ █████   ██████  ██      ███████   ████
+// ██    ██  ██  ██  ██      ██   ██ ██      ██   ██    ██
+//  ██████    ████   ███████ ██   ██ ███████ ██   ██    ██
+// ===================================================================================
+
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @each $color-name, $color in $colors-primary {
+            .#{$size}-bgOverlay-#{$color-name} {
+                background-image: linear-gradient(rgba($color, 0.55), rgba($color, 0.55));
+            }
+        }
+    }
+}
+
+// -----  End of IMAGE COLOR OVERLAY  -----------------------------------
+
 /* ====================================================================================
 ███████ ██ ██      ██
 ██      ██ ██      ██
@@ -1521,7 +1560,7 @@ $bg-size: (
 
 ==================================================================================== */
 .text-shadow {
-    text-shadow: 0 0 20px rgba(0,0,0,1);
+    text-shadow: 0 0 3rem rgba(0,0,0,.65);
 }
 // -----  End of TEXT SHADOW  ---------------------------------------------
 /* ===========================================================================================
@@ -1619,14 +1658,15 @@ _:future {
     // word-wrap             : break-word;
     // word-break            : break-word;
     font-variant-ligatures: common-ligatures;
-    font-feature-settings : "liga", "clig";
+    font-feature-settings : "liga" 1;
+    font-feature-settings : "clig" 1;
     // font-variant-ligatures    : contextual;
     // font-feature-settings     : "calt";
     font-variant-ligatures: discretionary-ligatures;
-    font-feature-settings : "dlig";
+    font-feature-settings : "dlig" 1;
     // font-feature-settings     : "salt";
     font-kerning          : normal;
-    font-feature-settings : "kern";
+    font-feature-settings : "kern" 1;
     // font-variant-numeric      : lining-nums;
     // font-feature-settings     : "lnum";
     // font-variant-numeric : oldstyle-nums;
@@ -1636,9 +1676,9 @@ _:future {
     // font-variant-numeric      : ordinal;
     // font-feature-settings     : "ordn";
     // font-feature-settings     : "ss01";
-    font-feature-settings : “ital”;
-    font-feature-settings : "case";
-    font-feature-settings : "zero";
+    font-feature-settings : "ital" 1;
+    font-feature-settings : "case" 1;
+    // font-feature-settings : "zero" 1;
 }
 
 @mixin lhCrop($line-height, $capital-letter: 1) {
@@ -1754,8 +1794,15 @@ body {
     @include font-size(12px);
 }
 
+$font-size-percents: 20;
+@for $i from 1 through $font-size-percents {
+    .fs-#{$i*10}pct {
+        font-size: percentage($i/10);
+    }
+}
+
 sup {
-    top: -0.4em;
+    top: -0.15em;
 }
 /* ==============================  TYPOGRAPHY HELPERS  ============================== */
 @for $i from 1 through 10 {
@@ -1827,6 +1874,15 @@ strong {
 @each $color-name, $color in $colors-primary {
     .text-#{$color-name} {
         color: $color !important;
+    }
+}
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @each $color-name, $color in $colors-primary {
+            .#{$size}-text-#{$color-name} {
+                color: $color !important;
+            }
+        }
     }
 }
 
@@ -4505,10 +4561,25 @@ div iframe.video {
 
 ==================================================================================== */
 .partner-logo {
-    max-width : 200px;
-    min-height: 75px;
-    max-height: 75px;
+    padding   : 1rem;
+    min-height: 115px;
+
+    img {
+        max-width : 300px;
+        max-height: 75px;
+    }
 }
+
+.partner-logo {
+    padding   : 1rem;
+    min-height: 115px;
+
+    img {
+        max-width : 300px;
+        max-height: 75px;
+    }
+}
+
 // -----  End of PARTNER LOGOS  ---------------------------------------------
 
 // ====================================================================================

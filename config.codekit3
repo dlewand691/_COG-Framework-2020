@@ -4,10 +4,10 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "DDE79D7E-414A-4824-885C-AB36CCD998C6"
+		"uuidString": "C40DEB2E-E1B6-42E1-B561-14A6146DB07C"
 		}
 	],
-"creatorBuild": "31491",
+"creatorBuild": "31927",
 "files": {
 	"/fonts/Cognizant-Icons-FONT/demo-files/demo.css": {
 		"aP": 1,
@@ -2837,130 +2837,88 @@
 	"babelModuleID": "",
 	"babelNoComments": 0,
 	"babelPlugins": {
+		"arrow-functions": {
+			"active": 0
+			},
 		"async-generator-functions": {
 			"active": 0
 			},
 		"async-to-generator": {
 			"active": 0
 			},
-		"async-to-module-method": {
-			"active": false
+		"block-scoped-functions": {
+			"active": 0
+			},
+		"block-scoping": {
+			"active": 0
 			},
 		"class-properties": {
+			"active": 0
+			},
+		"classes": {
+			"active": 0
+			},
+		"computed-properties": {
 			"active": 0
 			},
 		"decorators": {
 			"active": 0
 			},
-		"decorators-legacy": {
-			"active": false
+		"destructuring": {
+			"active": 0
 			},
 		"do-expressions": {
 			"active": 0
 			},
-		"es2015-arrow-functions": {
-			"active": false
+		"dotall-regex": {
+			"active": 0
 			},
-		"es2015-block-scoped-functions": {
-			"active": false
-			},
-		"es2015-block-scoping": {
-			"active": false
-			},
-		"es2015-classes": {
-			"active": false
-			},
-		"es2015-computed-properties": {
-			"active": false
-			},
-		"es2015-constants": {
-			"active": false
-			},
-		"es2015-destructuring": {
-			"active": false
-			},
-		"es2015-duplicate-keys": {
-			"active": false
-			},
-		"es2015-for-of": {
-			"active": false
-			},
-		"es2015-function-name": {
-			"active": false
-			},
-		"es2015-literals": {
-			"active": false
-			},
-		"es2015-modules-amd": {
-			"active": false
-			},
-		"es2015-modules-commonjs": {
-			"active": false
-			},
-		"es2015-modules-systemjs": {
-			"active": false
-			},
-		"es2015-modules-umd": {
-			"active": false
-			},
-		"es2015-object-super": {
-			"active": false
-			},
-		"es2015-parameters": {
-			"active": false
-			},
-		"es2015-shorthand-properties": {
-			"active": false
-			},
-		"es2015-spread": {
-			"active": false
-			},
-		"es2015-sticky-regex": {
-			"active": false
-			},
-		"es2015-template-literals": {
-			"active": false
-			},
-		"es2015-typeof-symbol": {
-			"active": false
-			},
-		"es2015-unicode-regex": {
-			"active": false
-			},
-		"es3-member-expression-literals": {
-			"active": false
-			},
-		"es3-property-literals": {
-			"active": false
-			},
-		"es5-property-mutators": {
-			"active": false
-			},
-		"eval": {
-			"active": false
+		"duplicate-keys": {
+			"active": 0
 			},
 		"exponentiation-operator": {
 			"active": 0
 			},
-		"export-extensions": {
-			"active": false
+		"export-default-from": {
+			"active": 0
+			},
+		"export-namespace-from": {
+			"active": 0
 			},
 		"external-helpers": {
 			"active": 0
 			},
-		"flow-comments": {
-			"active": false
-			},
 		"flow-strip-types": {
+			"active": 0
+			},
+		"for-of": {
 			"active": 0
 			},
 		"function-bind": {
 			"active": 0
 			},
+		"function-name": {
+			"active": 0
+			},
+		"function-sent": {
+			"active": 0
+			},
+		"inline-consecutive-adds": {
+			"active": 0
+			},
 		"inline-environment-variables": {
 			"active": 0
 			},
+		"instanceof": {
+			"active": 0
+			},
 		"jscript": {
+			"active": 0
+			},
+		"literals": {
+			"active": 0
+			},
+		"logical-assignment-operators": {
 			"active": 0
 			},
 		"member-expression-literals": {
@@ -2972,7 +2930,61 @@
 		"minify-booleans": {
 			"active": 0
 			},
+		"minify-builtins": {
+			"active": 0
+			},
+		"minify-constant-folding": {
+			"active": 0
+			},
+		"minify-dead-code-elimination": {
+			"active": 0
+			},
+		"minify-flip-comparisons": {
+			"active": 0
+			},
+		"minify-guarded-expressions": {
+			"active": 0
+			},
+		"minify-infinity": {
+			"active": 0
+			},
+		"minify-mangle-names": {
+			"active": 0
+			},
+		"minify-numeric-literals": {
+			"active": 0
+			},
+		"minify-simplify": {
+			"active": 0
+			},
+		"minify-type-constructors": {
+			"active": 0
+			},
+		"modules-amd": {
+			"active": 0
+			},
+		"modules-commonjs": {
+			"active": 0
+			},
+		"modules-systemjs": {
+			"active": 0
+			},
+		"modules-umd": {
+			"active": 0
+			},
+		"named-capturing-groups-regex": {
+			"active": 0
+			},
+		"new-target": {
+			"active": 0
+			},
 		"node-env-inline": {
+			"active": 0
+			},
+		"nullish-coalescing-operator": {
+			"active": 0
+			},
+		"numeric-separator": {
 			"active": 0
 			},
 		"object-assign": {
@@ -2984,7 +2996,31 @@
 		"object-set-prototype-of-to-assign": {
 			"active": 0
 			},
+		"object-super": {
+			"active": 0
+			},
+		"optional-catch-binding": {
+			"active": 0
+			},
+		"optional-chaining": {
+			"active": 0
+			},
+		"parameters": {
+			"active": 0
+			},
+		"partial-application": {
+			"active": 0
+			},
+		"pipeline-operator": {
+			"active": 0
+			},
+		"private-methods": {
+			"active": 0
+			},
 		"property-literals": {
+			"active": 0
+			},
+		"property-mutators": {
 			"active": 0
 			},
 		"proto-to-assign": {
@@ -3014,55 +3050,55 @@
 		"regenerator": {
 			"active": 0
 			},
+		"regexp-constructors": {
+			"active": 0
+			},
 		"remove-console": {
 			"active": 0
 			},
 		"remove-debugger": {
 			"active": 0
 			},
+		"remove-undefined": {
+			"active": 0
+			},
+		"reserved-words": {
+			"active": 0
+			},
 		"runtime": {
+			"active": 0
+			},
+		"shorthand-properties": {
 			"active": 0
 			},
 		"simplify-comparison-operators": {
 			"active": 0
 			},
+		"spread": {
+			"active": 0
+			},
+		"sticky-regex": {
+			"active": 0
+			},
 		"strict-mode": {
 			"active": 0
 			},
-		"syntax-async-generators": {
-			"active": false
+		"template-literals": {
+			"active": 0
 			},
-		"syntax-class-properties": {
-			"active": false
+		"throw-expressions": {
+			"active": 0
 			},
-		"syntax-decorators": {
-			"active": false
-			},
-		"syntax-do-expressions": {
-			"active": false
-			},
-		"syntax-export-extensions": {
-			"active": false
-			},
-		"syntax-flow": {
-			"active": false
-			},
-		"syntax-function-bind": {
-			"active": false
-			},
-		"syntax-function-sent": {
-			"active": false
-			},
-		"syntax-jsx": {
-			"active": false
-			},
-		"syntax-object-rest-spread": {
-			"active": false
-			},
-		"undeclared-variables-check": {
-			"active": false
+		"typeof-symbol": {
+			"active": 0
 			},
 		"undefined-to-void": {
+			"active": 0
+			},
+		"unicode-property-regex": {
+			"active": 0
+			},
+		"unicode-regex": {
 			"active": 0
 			}
 		},
@@ -3215,6 +3251,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 8223,
@@ -3316,6 +3353,10 @@
 			"optionString": "'all'"
 			},
 		"default-case": {
+			"active": 0,
+			"optionString": ""
+			},
+		"default-param-last": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -3665,6 +3706,10 @@
 			},
 		"no-implied-eval": {
 			"active": 0,
+			"optionString": ""
+			},
+		"no-import-assign": {
+			"active": 1,
 			"optionString": ""
 			},
 		"no-inline-comments": {
@@ -4090,6 +4135,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -4839,6 +4888,9 @@
 	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
@@ -4878,24 +4930,32 @@
 	"tsSuppressImplicitAnyIndexErrors": 0,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
-		"ascii-only": {
-			"active": false,
+		"arguments": {
+			"active": 1,
 			"flagValue": -1
 			},
-		"bare-returns": {
-			"active": false,
+		"arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"ascii_only": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"booleans": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"bracketize": {
-			"active": false,
+		"booleans_as_integers": {
+			"active": 0,
 			"flagValue": -1
 			},
-		"cascade": {
-			"active": true,
+		"braces": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"collapse_vars": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"comments": {
@@ -4906,8 +4966,8 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"compress": {
-			"active": true,
+		"computed_props": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"conditionals": {
@@ -4915,6 +4975,10 @@
 			"flagValue": -1
 			},
 		"dead_code": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"directives": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -4926,6 +4990,10 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"ecma": {
+			"active": 1,
+			"flagValue": 5
+			},
 		"eval": {
 			"active": 1,
 			"flagValue": -1
@@ -4934,7 +5002,15 @@
 			"active": 1,
 			"flagValue": -1
 			},
+		"expression": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_props": {
 			"active": 1,
 			"flagValue": -1
 			},
@@ -4942,24 +5018,36 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"if_return": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"indent-level": {
-			"active": false,
+		"indent_level": {
+			"active": 0,
 			"flagValue": 4
 			},
-		"indent-start": {
-			"active": false,
+		"indent_start": {
+			"active": 0,
 			"flagValue": 0
 			},
-		"inline-script": {
-			"active": false,
+		"inline": {
+			"active": 1,
+			"flagValue": 3
+			},
+		"inline_script": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"join_vars": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"keep_classnames": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"keep_fargs": {
@@ -4970,21 +5058,33 @@
 			"active": 0,
 			"flagValue": -1
 			},
+		"keep_infinity": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"keep_quoted_props": {
+			"active": 0,
+			"flagValue": -1
+			},
 		"loops": {
 			"active": 1,
 			"flagValue": -1
 			},
-		"mangle": {
-			"active": true,
-			"flagValue": -1
-			},
-		"max-line-len": {
-			"active": true,
+		"max_line_len": {
+			"active": 1,
 			"flagValue": 32000
+			},
+		"module": {
+			"active": 0,
+			"flagValue": -1
 			},
 		"negate_iife": {
 			"active": 1,
 			"flagValue": -1
+			},
+		"passes": {
+			"active": 1,
+			"flagValue": 1
 			},
 		"properties": {
 			"active": 1,
@@ -4994,12 +5094,24 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"quote-keys": {
-			"active": false,
+		"quote_keys": {
+			"active": 0,
 			"flagValue": -1
 			},
-		"screw-ie8": {
-			"active": true,
+		"quote_style": {
+			"active": 1,
+			"flagValue": 0
+			},
+		"reduce_funcs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"reduce_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"safari10": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"semicolons": {
@@ -5010,23 +5122,59 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"sort": {
-			"active": false,
+		"shebang": {
+			"active": 1,
 			"flagValue": -1
 			},
-		"space-colon": {
-			"active": true,
+		"side_effects": {
+			"active": 1,
 			"flagValue": -1
 			},
-		"support-ie8": {
-			"active": false,
+		"switches": {
+			"active": 1,
 			"flagValue": -1
 			},
 		"toplevel": {
 			"active": 1,
 			"flagValue": -1
 			},
+		"typeofs": {
+			"active": 1,
+			"flagValue": -1
+			},
 		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_comps": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_Function": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_math": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_methods": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_regexp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe_undefined": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -5038,9 +5186,13 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"width": {
-			"active": true,
-			"flagValue": 80
+		"webkit": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wrap_iife": {
+			"active": 0,
+			"flagValue": -1
 			}
 		},
 	"uglifyMangleNames": 1,
