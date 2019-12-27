@@ -83,7 +83,7 @@ $medium-gray: #b1b1b1;
 $dark-gray: #666666;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Proxima Nova','Cognizant Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Cognizant Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -144,7 +144,7 @@ $header-styles: (
     medium: ('h1': ('font-size': 84), 'h2': ('font-size': 63), 'h3': ('font-size': 47), 'h4': ('font-size': 36), 'h5': ('font-size': 27), 'h6': ('font-size': 20),),
 );
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 75%;
+$small-font-size: 80%;
 $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.3;
 $paragraph-margin-bottom: 1rem;
@@ -278,7 +278,7 @@ $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
     tiny   : 0.6rem,
-    small  : 0.75rem,
+    small  : 0.8rem,
     default: 1rem,
     large  : 1.25rem,
     xlarge : 1.5rem
@@ -762,7 +762,7 @@ $table-background: $white;
 $table-color-scale: 5%;
 // $table-border: 1px solid smart-scale($table-background, $table-color-scale);
 $table-border: 1px solid $light-gray;
-$table-padding: rem-calc(10);
+$table-padding: rem-calc(20);
 $table-hover-scale: 50%;
 $table-row-hover: lighten($primary-color, $table-hover-scale);
 $table-row-stripe-hover: lighten($primary-color, $table-color-scale + $table-hover-scale);
@@ -848,7 +848,7 @@ $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
     small : 20px,
-    medium: 30px
+    medium: 20px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

@@ -10,7 +10,7 @@
 @include foundation-typography;
 
 // GRIDS (choose one)
-// @include foundation-xy-grid-classes;
+@include foundation-xy-grid-classes;
 // @include foundation-grid;
 @include foundation-flex-grid;
 
@@ -68,7 +68,6 @@
 // ====================================================================================
 // FONTS
 // ====================================================================================
-@import "../fonts/ProximaNovaFonts/ProximaNova.scss";
 @import "../fonts/Cognizant-Sans/stylesheet.scss";
 $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 @import "../fonts/Cognizant-Icons-FONT/style.scss";
@@ -674,26 +673,48 @@ $padding-y: (py);
 $blue: $primary-color;
 $blue-light: #328dff;
 $blue-medium: #2d67ff;
-$blue-dark: #000064;
+$blue-dark: #000063;
 $green: $success-color;
 $green-light: lighten($green, 10%);
 $green-dark: darken($green, 10%);
+$orange: $warning-color;
+$orange-dark: #f4633a;
+$gray-dark1: lighten($black, 20%);
+$gray-dark2: lighten($black, 40%);
+$gray-light1: lighten($black, 60%);
+$gray-light2: lighten($black, 80%);
+$gray-light3: lighten($black, 90%);
+$purple: #5c068c;
+$purple-dark: #3c1053;
+$magenta: #c800a1;
+$magenta-dark: #840b55;
 $red: #e1523d;
 $colors-primary: (
-    "black"    : $black,
-    "white"    : $white,
-    "blue"     : $blue,
-    blue-light : $blue-light,
-    blue-medium: $blue-medium,
-    blue-dark  : $blue-dark,
-    "green"    : $green,
-    green-light: $green-light,
-    green-dark : $green-dark,
-    gray-light : $light-gray,
-    gray-medium: $medium-gray,
-    gray-dark  : $dark-gray,
-    "red"      : $red,
+    "black"     : $black,
+    "white"     : $white,
+    "blue"      : $blue,
+    blue-light  : $blue-light,
+    blue-medium : $blue-medium,
+    blue-dark   : $blue-dark,
+    "green"     : $green,
+    green-light : $green-light,
+    green-dark  : $green-dark,
+    gray-dark1  : $gray-dark1,
+    gray-dark2  : $gray-dark2,
+    gray-light1 : $gray-light1,
+    gray-light2 : $gray-light2,
+    gray-light3 : $gray-light3,
+    // gray-light : $light-gray,
+    // gray-medium: $medium-gray,
+    // gray-dark  : $dark-gray,
+    "orange"    : $orange,
+    orange-dark : $orange-dark,
+    "purple"    : $purple,
+    purple-dark : $purple-dark,
+    "magenta"   : $magenta,
+    magenta-dark: $magenta-dark
 );
+
 /* ----  End of COLORS  -------------------------------------------------------------------------- */
 
 /* ==================================================================================================
@@ -1657,16 +1678,16 @@ _:future {
     // overflow-wrap         : break-word;
     // word-wrap             : break-word;
     // word-break            : break-word;
-    font-variant-ligatures: common-ligatures;
-    font-feature-settings : "liga" 1;
-    font-feature-settings : "clig" 1;
+    // font-variant-ligatures: common-ligatures;
+    // font-feature-settings : "liga" 1;
+    // font-feature-settings : "clig" 1;
     // font-variant-ligatures    : contextual;
     // font-feature-settings     : "calt";
-    font-variant-ligatures: discretionary-ligatures;
-    font-feature-settings : "dlig" 1;
+    // font-variant-ligatures: discretionary-ligatures;
+    // font-feature-settings : "dlig" 1;
     // font-feature-settings     : "salt";
-    font-kerning          : normal;
-    font-feature-settings : "kern" 1;
+    // font-kerning          : normal;
+    // font-feature-settings : "kern" 1;
     // font-variant-numeric      : lining-nums;
     // font-feature-settings     : "lnum";
     // font-variant-numeric : oldstyle-nums;
@@ -1676,8 +1697,8 @@ _:future {
     // font-variant-numeric      : ordinal;
     // font-feature-settings     : "ordn";
     // font-feature-settings     : "ss01";
-    font-feature-settings : "ital" 1;
-    font-feature-settings : "case" 1;
+    // font-feature-settings : "ital" 1;
+    // font-feature-settings : "case" 1;
     // font-feature-settings : "zero" 1;
 }
 
@@ -1719,9 +1740,9 @@ html {
 .h1,
 h1 {
     // font-weight: 300;
-    line-height: 1.1;
-
+    line-height   : 1.1;
     @include font-size(84px);
+    letter-spacing: -1px;
 }
 
 %h2,
@@ -1785,7 +1806,7 @@ body {
 %small,
 .small {
     // font-size: $small-font-size;
-    @include font-size(15px);
+    @include font-size(16px);
 }
 
 %tiny,
@@ -1802,7 +1823,8 @@ $font-size-percents: 20;
 }
 
 sup {
-    top: -0.15em;
+    top      : -0.6em;
+    font-size: 55%;
 }
 /* ==============================  TYPOGRAPHY HELPERS  ============================== */
 @for $i from 1 through 10 {
@@ -2227,16 +2249,12 @@ dl dt {
     &::after {
         position   : unset !important;
         right      : unset !important;
-
         width      : unset !important;
         height     : unset !important;
         margin-top : unset !important;
         margin-left: 0.5rem;
-
         content    : "\e907" !important;
-
         background : unset !important;
-
         font-family: "Cognizant-Icons";
         font-weight: bold;
     }
@@ -2244,24 +2262,22 @@ dl dt {
     &.arrow-solid-green {
         &::after {
             content    : "\e908" !important;
-
             color      : $green;
-
             font-family: "Cognizant-Icons";
         }
     }
 }
 
 .arrow-end {
-    position: relative;
+    // position: relative;
 
     &::after {
-        position   : absolute;
-        right      : 0;
-
+        // position   : absolute;
+        // right      : 0;
         content    : "\e907";
-
         font-family: "Cognizant-Icons";
+        display    : inline;
+        margin-left: 0.2rem;
     }
 }
 
@@ -2279,7 +2295,7 @@ dl dt {
     text-decoration: none;
     text-transform : uppercase;
     @include font-size(20px);
-    font-weight    : 900;
+    font-weight    : 700;
 
     & i {
         // line-height: 0;
@@ -2300,7 +2316,7 @@ dl dt {
     }
 
     &.small {
-        @include font-size(15px);
+        @include font-size(16px);
     }
 
     &.large {
@@ -4359,14 +4375,11 @@ div iframe.video {
 // ====================================================================================
 
 %nav-primaryArrowEnd {
-    position   : absolute;
-    top        : calc(50% - .5rem);
-    right      : 0;
-
+    // position   : absolute;
+    // top        : calc(50% - .5rem);
+    // right      : 0;
     content    : "\e908";
-
     color      : $green;
-
     font-family: "Cognizant-Icons";
     font-size  : $small-font-size;
 }
@@ -4374,18 +4387,25 @@ div iframe.video {
 .header-menu {
     a {
         font-weight: normal;
+        line-height: initial;
+    }
+
+    i {
+        display     : inline;
+        padding-left: 0.25rem;
+
+        &:after {
+            position: relative;
+            top     : -0.05rem;
+        }
     }
 
     .nav-primaryLink {
         position  : relative;
-
         display   : inline-block;
         // margin-left: 0.5rem;
-
         padding   : 1rem;
-
         transition: all 0.5s ease;
-
         color     : $black;
 
         &:hover {
@@ -4398,13 +4418,10 @@ div iframe.video {
 
             &::after {
                 position   : absolute;
-                top        : calc(50% - .65rem);
+                top        : calc(50% - .5rem);
                 right      : 0.75rem;
-
                 content    : "\e903";
-
                 color      : $green;
-
                 font-family: "Cognizant-Icons";
                 font-weight: 600;
             }
@@ -4417,7 +4434,6 @@ div iframe.video {
 
     .dropdown-pane {
         left  : 0 !important;
-
         width : 100vw;
         height: 100vh;
 
@@ -4427,7 +4443,6 @@ div iframe.video {
 
         li {
             margin-bottom: 0;
-
             transition   : all 0.5s ease;
 
             &:hover {
@@ -4437,20 +4452,23 @@ div iframe.video {
 
         a {
             display    : inline-block;
-
-            padding    : 0.5rem 1rem 0.5rem 0.5rem;
-
+            padding    : 0.35rem 0.5rem 0.5rem;
             color      : white;
-
             font-weight: normal;
+            width      : 100%;
+
+            &:hover {
+                background: initial;
+            }
 
             &::after {
-                @extend %nav-primaryArrowEnd;
+                // @extend %nav-primaryArrowEnd;
+                // display: inline;
             }
 
-            &.no-arrow:after {
-                content: '';
-            }
+            // &.no-arrow:after {
+            //     content: '';
+            // }
         }
     }
 }

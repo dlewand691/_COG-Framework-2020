@@ -1,12 +1,13 @@
 @font-face {
   font-family: 'Cognizant-Icons';
-  src:  url('fonts/Cognizant-Icons.eot?557xpm');
-  src:  url('fonts/Cognizant-Icons.eot?557xpm#iefix') format('embedded-opentype'),
-    url('fonts/Cognizant-Icons.ttf?557xpm') format('truetype'),
-    url('fonts/Cognizant-Icons.woff?557xpm') format('woff'),
-    url('fonts/Cognizant-Icons.svg?557xpm#Cognizant-Icons') format('svg');
+  src:  url('fonts/Cognizant-Icons.eot?kmtzh5');
+  src:  url('fonts/Cognizant-Icons.eot?kmtzh5#iefix') format('embedded-opentype'),
+    url('fonts/Cognizant-Icons.ttf?kmtzh5') format('truetype'),
+    url('fonts/Cognizant-Icons.woff?kmtzh5') format('woff'),
+    url('fonts/Cognizant-Icons.svg?kmtzh5#Cognizant-Icons') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 i, .icomoon-liga {
@@ -459,4 +460,7 @@ i, .icomoon-liga {
 }
 .play-button-solid:before {
   content: "\e98d";
+}
+.logo-wechat:before {
+  content: "\e98e";
 }

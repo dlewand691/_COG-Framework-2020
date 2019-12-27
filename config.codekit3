@@ -4,10 +4,10 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "C40DEB2E-E1B6-42E1-B561-14A6146DB07C"
+		"uuidString": "ED24D08C-A87C-4CEC-9404-D822BE6F70A6"
 		}
 	],
-"creatorBuild": "31927",
+"creatorBuild": "31934",
 "files": {
 	"/fonts/Cognizant-Icons-FONT/demo-files/demo.css": {
 		"aP": 1,
@@ -86,19 +86,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/fonts/css/stylesheet.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/fonts/ProximaNovaFonts/ProximaNova.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/fonts/css/ProximaNova.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4748,7 +4735,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 0,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,

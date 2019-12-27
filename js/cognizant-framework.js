@@ -251,6 +251,31 @@ $(".accordion-title").click(function() {
         });
     }, 300);
 });
+$("ul.accordion li a.accordion-title").on("click", function() {
+        var n = "";
+        IsBlueVisible = $("#navBarInPage").css("display");
+        if (IsBlueVisible == "block") {
+            n = $.trim($("#navSubBar .sticky").height() + $("#navBarInPage").outerHeight())
+        } else {
+            if ($(".microsite-sticky-header").length > 0) {
+                n = $.trim($("#navSubBar").height() + $("#navBarInPage").height() + $(".sticky").outerHeight())
+            } else {
+                if ($(".micro-sub-page-header").length > 0) {
+                    n = $.trim($("#navSubBar").height())
+                } else {
+                    if ($(".bg-white .sticky").length > 0) {
+                        n = $.trim($(".bg-white .sticky").height())
+                    } else {
+                        n = $.trim($("#navSubBar .sticky").outerHeight())
+                    }
+                }
+            }
+        }
+        $(this).parent("li").siblings(".accordion-item").find(".accordion-content").hide();
+        $("html,body").animate({
+            scrollTop: $(this).parent("li").offset().top - n
+        }, 1000)
+    });
 
 // -----  End of ACCORDION SCROLL TO TOP  -----------------------------------------------------------------------
 
@@ -272,7 +297,7 @@ $('.accordion').on('mutateme.zf.trigger', function() {
 // =============================================================================================
 if ($('#scrollUp').length) {
     var scrollTrigger = 300, // px
-        backToTop = function () {
+        backToTop = function() {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
                 $('#scrollUp').addClass('scrollup--show');
@@ -281,10 +306,10 @@ if ($('#scrollUp').length) {
             }
         };
     backToTop();
-    $(window).on('scroll', function () {
+    $(window).on('scroll', function() {
         backToTop();
     });
-    $('#scrollUp').on('click', function (e) {
+    $('#scrollUp').on('click', function(e) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
@@ -375,47 +400,47 @@ $(document).ready(function() {
 // SUCCINCT - LINE CLAMP/TRUNCATE
 // =============================================================================================
 
-$(function() {
-    // $('.truncate-40').succinct({
-    //     size: 40
-    // });
-    // $('.truncate-45').succinct({
-    //     size: 45
-    // });
-    // $('.truncate-50').succinct({
-    //     size: 50
-    // });
-    // $('.truncate-60').succinct({
-    //     size: 60
-    // });
-    // $('.truncate-70').succinct({
-    //     size: 70
-    // });
-    // $('.truncate-75').succinct({
-    //     size: 75
-    // });
-    // $('.truncate-80').succinct({
-    //     size: 80
-    // });
-    // $('.truncate-100').succinct({
-    //     size: 100
-    // });
-    // $('.truncate-110').succinct({
-    //     size: 110
-    // });
-    // $('.truncate-120').succinct({
-    //     size: 120
-    // });
-    // $('.truncate-130').succinct({
-    //     size: 130
-    // });
-    // $('.truncate-140').succinct({
-    //     size: 140
-    // });
-    // $('.truncate-150').succinct({
-    //     size: 150
-    // });
-});
+// $(function() {
+// $('.truncate-40').succinct({
+//     size: 40
+// });
+// $('.truncate-45').succinct({
+//     size: 45
+// });
+// $('.truncate-50').succinct({
+//     size: 50
+// });
+// $('.truncate-60').succinct({
+//     size: 60
+// });
+// $('.truncate-70').succinct({
+//     size: 70
+// });
+// $('.truncate-75').succinct({
+//     size: 75
+// });
+// $('.truncate-80').succinct({
+//     size: 80
+// });
+// $('.truncate-100').succinct({
+//     size: 100
+// });
+// $('.truncate-110').succinct({
+//     size: 110
+// });
+// $('.truncate-120').succinct({
+//     size: 120
+// });
+// $('.truncate-130').succinct({
+//     size: 130
+// });
+// $('.truncate-140').succinct({
+//     size: 140
+// });
+// $('.truncate-150').succinct({
+//     size: 150
+// });
+// });
 
 
 // -----  End of SUCCINCT - LINE CLAMP/TRUNCATE  ---------------------------------------------
@@ -429,9 +454,9 @@ $(function() {
 // =============================================================================================
 
 $(document).ready(function() {
-  AOS.init({
-      // startEvent: 'load'
-  });
+    AOS.init({
+        // startEvent: 'load'
+    });
 });
 
 // -----  End of AOS- ANIMATE ON SCROLL  ---------------------------------------------
