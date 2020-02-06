@@ -1916,7 +1916,7 @@ strong {
 .text-white h6,
 .text-white li,
 .text-white p {
-    color: $white;
+    color: $white !important;
 }
 
 .text-wrap {
@@ -3001,6 +3001,10 @@ $tab-background: $light-gray;
 .accordion-content,
 :last-child > .accordion-content:last-child {
     border: 1px solid $medium-gray;
+
+    @include breakpoint(large) {
+        padding: 2rem;
+    }
 }
 
 a.accordion-title,
@@ -4686,3 +4690,49 @@ div iframe.video {
         background: darken($blue, 20%);
     }
 }
+
+// ===================================================================================
+// ██████  ██████      ██████  ███████ ██████   ██████  ██████  ████████
+//      ██ ██   ██     ██   ██ ██      ██   ██ ██    ██ ██   ██    ██
+//  █████  ██   ██     ██████  █████   ██████  ██    ██ ██████     ██
+//      ██ ██   ██     ██   ██ ██      ██      ██    ██ ██   ██    ██
+// ██████  ██████      ██   ██ ███████ ██       ██████  ██   ██    ██
+//  ██████  ██████  ██    ██ ███████ ██████
+// ██      ██    ██ ██    ██ ██      ██   ██
+// ██      ██    ██ ██    ██ █████   ██████
+// ██      ██    ██  ██  ██  ██      ██   ██
+//  ██████  ██████    ████   ███████ ██   ██
+// ===================================================================================
+
+.threeDcontainer {
+    position   : relative;
+    perspective: 1500px;
+}
+
+.threeDimage {
+    transform: scale(0.9) rotateX(5deg) rotateY(30deg) rotateZ(-4deg) translateZ(75px) translateX(-50px);
+}
+
+.threeDgradient {
+    position : absolute;
+    top      : 0;
+    left     : 0;
+    //- background: rgba(66, 152, 181, .5);
+    width    : 100%;
+    height   : 100%;
+    transform: scaleX(.75) scaleY(0.77) scaleZ(1.05) rotateX(5deg) rotateY(30deg) rotateZ(-4deg) translateY(-30px);
+}
+
+.threeDshadow {
+    position  : absolute;
+    bottom    : -10%;
+    left      : 0;
+    background: rgba(0,0,0, .5);
+    width     : 100%;
+    height    : 100%;
+    // transform : scaleX(0.6) scaleY(1) scaleZ(1) rotateX(95deg) rotateY(0deg) rotateZ(-33deg) translateX(-99px) translateY(-7px) translateZ(-212px);
+    transform : scaleX(0.6) scaleY(1) scaleZ(1) rotateX(95deg) rotateY(0deg) rotateZ(-33deg) translateX(0rem) translateY(0rem) translateZ(-4rem) translate3d(0,0,0) !important;
+    filter: blur(4rem);
+}
+
+// -----  End of 3D REPORT COVER  -----------------------------------
