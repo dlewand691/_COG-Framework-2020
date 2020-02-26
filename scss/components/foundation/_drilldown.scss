@@ -1,0 +1,36 @@
+/* ====================================================================================
+
+██████  ██████  ██ ██      ██      ██████   ██████  ██     ██ ███    ██
+██   ██ ██   ██ ██ ██      ██      ██   ██ ██    ██ ██     ██ ████   ██
+██   ██ ██████  ██ ██      ██      ██   ██ ██    ██ ██  █  ██ ██ ██  ██
+██   ██ ██   ██ ██ ██      ██      ██   ██ ██    ██ ██ ███ ██ ██  ██ ██
+██████  ██   ██ ██ ███████ ███████ ██████   ██████   ███ ███  ██   ████
+
+==================================================================================== */
+.is-drilldown-submenu-parent > a::after {
+    top        : 30%;
+
+    margin-top : 0;
+
+    content    : "\e907";
+
+    border     : none;
+
+    font-family: "Cognizant-Icons";
+    font-size  : $small-font-size;
+    font-weight: bold;
+}
+
+.js-drilldown-back > a::before {
+    margin-top  : 2px;
+    margin-right: 1rem;
+
+    content     : "\e905";
+
+    border      : none;
+
+    font-family : "Cognizant-Icons";
+    font-size   : $small-font-size;
+    font-weight : bold;
+}
+// -----  End of DRILLDOWN  ---------------------------------------------

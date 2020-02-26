@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+}
+
+td,
+th {
+    // border      : 1px solid;
+    // border-color: $table-border;
+}
+
+tbody tr:nth-child(even) {
+    // border: 1px solid $gray-medium;
+}
+
+tfoot td,
+tfoot th,
+thead td,
+thead th {
+    // font-weight: bold;
+}

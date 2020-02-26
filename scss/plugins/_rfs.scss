@@ -1,0 +1,21 @@
+// See https://github.com/MartijnCuppens/rfs.
+// See configuration for options
+
+// Base value
+$rfs-base-value     : 20px;
+$rfs-unit           : px;
+
+// Breakpoint at where font-size starts decreasing if screen width is smaller.
+$rfs-breakpoint     : 1200px;
+$rfs-breakpoint-unit: px;
+
+// Resize font-size based on screen height and width.
+$rfs-two-dimensional: false;
+
+// Factor of decrease
+$rfs-factor         : 10;
+
+// Generate enable or disable classes. Possibilities: false, "enable" or "disable"
+$rfs-class          : false;
+
+@import "rfs/scss";

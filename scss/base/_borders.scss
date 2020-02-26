@@ -1,0 +1,146 @@
+// ===================================================================================
+// ██████   ██████  ██████  ██████  ███████ ██████  ███████
+// ██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██ ██
+// ██████  ██    ██ ██████  ██   ██ █████   ██████  ███████
+// ██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██      ██
+// ██████   ██████  ██   ██ ██████  ███████ ██   ██ ███████
+// ===================================================================================
+$border-width: 5;
+$border-side: (
+    "t": top,
+    "r": right,
+    "b": bottom,
+    "l": left
+);
+// @include -zf-each-breakpoint($small: true, $auto-insert-breakpoints: true) {
+//     @for $i from 1 through $border-width {
+//         .#{$-zf-size}-bd#{$i} {
+//             border: $i + px solid $gray-medium !important;
+//         }
+//     }
+// }
+
+// ====================================================================================
+// NO BORDER
+// ====================================================================================
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        .#{$size}-bd0 {
+            border: 0 !important;
+        }
+    }
+}
+
+// ====================================================================================
+// BORDER ALL SIDES GRAY-LIGHT2
+// ====================================================================================
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 1 through $border-width {
+            .#{$size}-bd#{$i} {
+                border: #{$i}px solid $gray-medium !important;
+            }
+        }
+    }
+}
+
+// ====================================================================================
+// BORDER, INDIVIDUAL SIDES, GRAY LIGHT 2
+// ====================================================================================
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 1 through $border-width {
+            @each $side-name, $side in $border-side {
+                .#{$size}-bd-#{$side-name}#{$i} {
+                    border-#{$side}: #{$i}px $gray-medium solid !important;
+                }
+            }
+        }
+    }
+}
+
+// ====================================================================================
+// BORDER, ALL SIDES, ALL PRIMARY COLORS
+// ====================================================================================
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 1 through $border-width {
+            @each $color-name, $color in $cog-color-palette {
+                .#{$size}-bd-#{$color-name}#{$i} {
+                    border: #{$i}px solid $color !important;
+                }
+            }
+        }
+    }
+}
+
+// ====================================================================================
+// BORDER, INDIVIDUAL SIDES, ALL PRIMARY COLORS
+// ====================================================================================
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 1 through $border-width {
+            @each $side-name, $side in $border-side {
+                @each $color-name, $color in $cog-color-palette {
+                    .#{$size}-bd-#{$side-name}-#{$color-name}#{$i} {
+                        border-#{$side}: #{$i}px $color solid !important;
+                    }
+                }
+            }
+        }
+    }
+}
+// @each $size in $breakpoint-classes {
+//     @include breakpoint($size) {
+//         @each $color-name, $color in $cog-color-palette {
+//             .#{$size}-bd-#{$color-name} {
+//                 border: 2px solid $color !important;
+//             }
+//         }
+//     }
+// }
+// @for $i from 1 through $border-width {
+//     .bd-gradient#{$i} {
+//         border-width      : $i + px;
+//         border-style      : solid;
+//         border-image      : linear-gradient(to right, $blue-light 0%, $green 100%);
+//         border-image-slice: 1;
+//         border-color      : inherit;
+//     }
+// }
+// $rounded-gradient-border-width: 2px;
+
+// .rounded-gradient-border,
+// .tabs.rounded-gradient-border .tabs-title.is-active a {
+//     position     : relative;
+//     background   : linear-gradient(to right, $blue-light 0%, $green 100%);
+//     border-radius: 100%;
+//     z-index      : 1;
+// 
+//     &:after {
+//         position         : absolute;
+//         display          : block;
+//         top              : $rounded-gradient-border-width;
+//         left             : $rounded-gradient-border-width;
+//         width            : calc(100% - #{$rounded-gradient-border-width}*2);
+//         height           : calc(100% - #{$rounded-gradient-border-width}*2);
+//         content          : "";
+//         background-color : inherit;
+//         background-repeat: no-repeat;
+//         background-size  : cover;
+//         border-radius    : 1000px;
+//         overflow         : hidden;
+//         z-index          : -1;
+//         transition       : $button-transition;
+//     }
+// }
+// 
+// .button.rounded-gradient-border:hover {
+//     &:after {
+//         background: unset;
+//     }
+// }
+// 
+// .tabs.rounded-gradient-border.bg-black .tabs-title.is-active a:after {
+//     background: $black;
+// }

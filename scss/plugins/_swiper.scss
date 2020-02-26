@@ -1,0 +1,131 @@
+// ===================================================================================
+// ███████ ██     ██ ██ ██████  ███████ ██████
+// ██      ██     ██ ██ ██   ██ ██      ██   ██
+// ███████ ██  █  ██ ██ ██████  █████   ██████
+//      ██ ██ ███ ██ ██ ██      ██      ██   ██
+// ███████  ███ ███  ██ ██      ███████ ██   ██
+// ===================================================================================
+
+.swiper-container {
+
+    // ===================================================================================
+    //  █████  ██████  ██████   ██████  ██     ██ ███████
+    // ██   ██ ██   ██ ██   ██ ██    ██ ██     ██ ██
+    // ███████ ██████  ██████  ██    ██ ██  █  ██ ███████
+    // ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██      ██
+    // ██   ██ ██   ██ ██   ██  ██████   ███ ███  ███████
+    // ===================================================================================
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-family: "Cognizant-Icons";
+        @include fluidSize(font-size, 20rem, 70rem, 1.25rem, 2rem);
+        font-weight: 600;
+    }
+
+    .swiper-button-prev {
+        &:after {
+            content: "\e905";
+        }
+        @include fluidSize(left, 20rem, 70rem, 0rem, 0.5rem);
+    }
+
+    .swiper-button-next {
+        &:after {
+            content: "\e907";
+        }
+        @include fluidSize(right, 20rem, 70rem, 0rem, 0.5rem);
+    }
+
+    // ====================  BLUE ARROWS  ====================
+    &.blue-arrows {
+        --swiper-navigation-color: #{$blue};
+        color                    : var(--swiper-navigation-color);
+    }
+
+    // ====================  BLUE MEDIUM ARROWS  ====================
+    &.blue-medium-arrows {
+        --swiper-navigation-color: #{$blue-medium};
+        color                    : var(--swiper-navigation-color);
+    }
+
+    // ====================  BLUE LIGHT ARROWS  ====================
+    &.blue-light-arrows {
+        --swiper-navigation-color: #{$blue-light};
+        color                    : var(--swiper-navigation-color);
+    }
+
+    // ====================  WHITE ARROWS  ====================
+    &.white-arrows {
+        --swiper-navigation-color: #{$white};
+        color                    : var(--swiper-navigation-color);
+    }
+
+    // ===================================================================================
+    // ██████   █████   ██████  ██ ███    ██  █████  ████████ ██  ██████  ███    ██
+    // ██   ██ ██   ██ ██       ██ ████   ██ ██   ██    ██    ██ ██    ██ ████   ██
+    // ██████  ███████ ██   ███ ██ ██ ██  ██ ███████    ██    ██ ██    ██ ██ ██  ██
+    // ██      ██   ██ ██    ██ ██ ██  ██ ██ ██   ██    ██    ██ ██    ██ ██  ██ ██
+    // ██      ██   ██  ██████  ██ ██   ████ ██   ██    ██    ██  ██████  ██   ████
+    // ===================================================================================
+    .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 5px;
+    }
+
+    .swiper-pagination-bullet {
+        background: $themeColor;
+        opacity   : 0.4;
+        width     : 10px;
+        height    : 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+    }
+
+    &.square-pagination [class*="swiper-pagination"] [class*="swiper-pagination"] {
+        overflow     : hidden;
+        width        : 2rem;
+        height       : 5px;
+        margin       : 0 5px;
+        border-radius: 0;
+    }
+
+    /* ==============================  WHITE CONTROLS  ============================== */
+    &.white-pagination [class*="swiper-pagination"] [class*="swiper-pagination"] {
+        --swiper-pagination-color: #{$white};
+        background               : var(--swiper-pagination-color);
+    }
+    /* ==============================  BLACK CONTROLS  ============================== */
+    &.black-pagination [class*="swiper-pagination"] [class*="swiper-pagination"] {
+        --swiper-pagination-color: #{$black};
+        background               : var(--swiper-pagination-color);
+    }
+
+    /* ==============================  BLUE CONTROLS  ============================== */
+    &.blue-pagination [class*="swiper-pagination"] [class*="swiper-pagination"] {
+        --swiper-pagination-color: #{$blue};
+        background               : var(--swiper-pagination-color);
+    }
+
+    /* ==============================  BLUE MEDIUM CONTROLS  ============================== */
+    &.blue-medium-pagination [class*="swiper-pagination"] [class*="swiper-pagination"] {
+        --swiper-pagination-color: #{$blue-medium};
+        background               : var(--swiper-pagination-color);
+    }
+
+    /* ==============================  BLUE LIGHT CONTROLS  ============================== */
+    &.blue-light-pagination [class*="swiper-pagination"] [class*="swiper-pagination"] {
+        --swiper-pagination-color: #{$blue-light};
+        background               : var(--swiper-pagination-color);
+    }
+
+    // ====================  PAGINATION OUTSIDE WRAPPER  ====================
+    &.pagination-outside {
+        overflow: visible;
+
+        [class*="swiper-pagination"] {
+            bottom: -1.5rem;
+        }
+    }
+
+}

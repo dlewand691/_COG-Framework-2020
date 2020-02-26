@@ -1,0 +1,60 @@
+// ===================================================================================
+// ██████  ██ ███████ ██████  ██       █████  ██    ██ ███████
+// ██   ██ ██ ██      ██   ██ ██      ██   ██  ██  ██  ██
+// ██   ██ ██ ███████ ██████  ██      ███████   ████   ███████
+// ██   ██ ██      ██ ██      ██      ██   ██    ██         ██
+// ██████  ██ ███████ ██      ███████ ██   ██    ██    ███████
+// ===================================================================================
+%overflow-scroll,
+.overflow-scroll {
+    overflow: scroll;
+}
+
+%overflow-scroll-x,
+.overflow-scroll-x {
+    overflow-x: scroll;
+}
+
+%overflow-hidden-x,
+.overflow-hidden-x {
+    overflow-x: hidden;
+}
+
+%overflow-scroll-y,
+.overflow-scroll-y {
+    overflow-y: scroll;
+}
+
+%overflow-hidden-y,
+.overflow-hidden-y {
+    overflow-y: hidden;
+}
+
+%overflow-visible,
+.overflow-visible {
+    overflow: visible;
+}
+
+%overflow-hidden,
+.overflow-hidden {
+    overflow: hidden;
+}
+
+%block,
+.block {
+    display: block !important;
+}
+
+%inline,
+.inline {
+    display: inline !important;
+}
+
+%inline-block,
+.inline-block {
+    display: inline-block !important;
+}
+
+.flex {
+    display: flex !important;
+}

@@ -1,4 +1,4 @@
-// @codekit-prepend '../node_modules/jquery/dist/jquery.min.js'
+// @codekit-prepend 'jquery/dist/jquery.min.js'
 
 
 // =============================================================================================
@@ -18,41 +18,41 @@
 // =============================================================================================
 // FOUNDATION UTILITY SCRIPTS
 // =============================================================================================
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.core.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.nest.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.imageLoader.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.timer.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.touch.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.smoothScroll.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.core.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.motion.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.box.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.nest.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.imageLoader.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.timer.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.touch.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.util.triggers.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.smoothScroll.min.js'
 
 
 // =============================================================================================
 // FOUNDATION PLUGINS
 // =============================================================================================
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.abide.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.accordion.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.accordionMenu.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.drilldown.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.dropdown.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.dropdownMenu.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.equalizer.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.interchange.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.responsiveMenu.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.responsiveToggle.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.sticky.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.toggler.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.tooltip.min.js'
-// @codekit-prepend '../node_modules/foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.min.js'
-// @codekit-prepend '../node_modules/motion-ui/dist/motion-ui.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.abide.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.accordion.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.accordionMenu.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.drilldown.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.dropdown.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.dropdownMenu.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.equalizer.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.interchange.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.magellan.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.offcanvas.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.responsiveMenu.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.responsiveToggle.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.reveal.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.sticky.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.tabs.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.toggler.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.tooltip.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/plugins/foundation.responsiveAccordionTabs.min.js'
+// @codekit-prepend 'motion-ui/dist/motion-ui.min.js'
 
 
 // =============================================================================================
@@ -62,10 +62,10 @@
 // ██      ██      ██    ██ ██    ██ ██ ██  ██ ██      ██
 // ██      ███████  ██████   ██████  ██ ██   ████ ███████
 // =============================================================================================
-// @codekit-prepend '../node_modules/lazysizes/lazysizes.js'
-// @codekit-prepend '../node_modules/lazysizes/plugins/unveilhooks/ls.unveilhooks.js'
-// @codekit-prepend '../node_modules/slick-carousel/slick/slick.min.js'
-// @codekit-prepend '../node_modules/aos/dist/aos.js'
+// @codekit-prepend 'lazysizes/lazysizes.js'
+// @codekit-prepend 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js'
+// @codekit-prepend 'swiper/js/swiper.min.js'
+// @codekit-prepend 'aos/dist/aos.js'
 
 Foundation.Abide.defaults.patterns['dashes_only'] = /^[0-9-+]*$/;
 
@@ -252,30 +252,30 @@ $(".accordion-title").click(function() {
     }, 300);
 });
 $("ul.accordion li a.accordion-title").on("click", function() {
-        var n = "";
-        IsBlueVisible = $("#navBarInPage").css("display");
-        if (IsBlueVisible == "block") {
-            n = $.trim($("#navSubBar .sticky").height() + $("#navBarInPage").outerHeight())
+    var n = "";
+    IsBlueVisible = $("#navBarInPage").css("display");
+    if (IsBlueVisible == "block") {
+        n = $.trim($("#navSubBar .sticky").height() + $("#navBarInPage").outerHeight())
+    } else {
+        if ($(".microsite-sticky-header").length > 0) {
+            n = $.trim($("#navSubBar").height() + $("#navBarInPage").height() + $(".sticky").outerHeight())
         } else {
-            if ($(".microsite-sticky-header").length > 0) {
-                n = $.trim($("#navSubBar").height() + $("#navBarInPage").height() + $(".sticky").outerHeight())
+            if ($(".micro-sub-page-header").length > 0) {
+                n = $.trim($("#navSubBar").height())
             } else {
-                if ($(".micro-sub-page-header").length > 0) {
-                    n = $.trim($("#navSubBar").height())
+                if ($(".bg-white .sticky").length > 0) {
+                    n = $.trim($(".bg-white .sticky").height())
                 } else {
-                    if ($(".bg-white .sticky").length > 0) {
-                        n = $.trim($(".bg-white .sticky").height())
-                    } else {
-                        n = $.trim($("#navSubBar .sticky").outerHeight())
-                    }
+                    n = $.trim($("#navSubBar .sticky").outerHeight())
                 }
             }
         }
-        $(this).parent("li").siblings(".accordion-item").find(".accordion-content").hide();
-        $("html,body").animate({
-            scrollTop: $(this).parent("li").offset().top - n
-        }, 1000)
-    });
+    }
+    $(this).parent("li").siblings(".accordion-item").find(".accordion-content").hide();
+    $("html,body").animate({
+        scrollTop: $(this).parent("li").offset().top - n
+    }, 1000)
+});
 
 // -----  End of ACCORDION SCROLL TO TOP  -----------------------------------------------------------------------
 
@@ -337,61 +337,61 @@ $(document).ready(function() {
 // ===========================================================================================
 // =            SLICK CAROUSEL            =
 // =============================================================================================
-$(document).ready(function() {
-    $('.slick-carousel').slick({
-        // dots: true,
-        // adaptiveHeight: true
-    });
-
-    $('.slick-home-banner').slick({
-        autoplay: true,
-        autoplaySpeed: 7500,
-        arrows: true,
-        dots: true,
-        adaptiveHeight: true,
-        slidesToShow: 1,
-        responsive: [
-            {
-                breakpoint: 769,
-                settings: {
-                    autoplay: false,
-                    adaptiveHeight: false,
-                },
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ],
-    });
-
-    $('.slick-latest-thinking').slick({
-        autoplay: true,
-        autoplaySpeed: 7500,
-        arrows: true,
-        dots: true,
-        adaptiveHeight: true,
-        slidesToShow: 1,
-        responsive: [
-            {
-                breakpoint: 1250,
-                settings: {
-                    arrows: false
-                },
-            }, {
-                breakpoint: 1024,
-                settings: {
-                    autoplay: false,
-                    arrows: false,
-                    dots: false,
-                    draggable: false,
-                    swipe: false,
-                    touchMove: false,
-                },
-            },
-        ],
-    });
-
-});
+// $(document).ready(function() {
+//     $('.slick-carousel').slick({
+//         // dots: true,
+//         // adaptiveHeight: true
+//     });
+// 
+//     $('.slick-home-banner').slick({
+//         autoplay: true,
+//         autoplaySpeed: 7500,
+//         arrows: true,
+//         dots: true,
+//         adaptiveHeight: true,
+//         slidesToShow: 1,
+//         responsive: [
+//             {
+//                 breakpoint: 769,
+//                 settings: {
+//                     autoplay: false,
+//                     adaptiveHeight: false,
+//                 },
+//             }
+//             // You can unslick at a given breakpoint now by adding:
+//             // settings: "unslick"
+//             // instead of a settings object
+//         ],
+//     });
+// 
+//     $('.slick-latest-thinking').slick({
+//         autoplay: true,
+//         autoplaySpeed: 7500,
+//         arrows: true,
+//         dots: true,
+//         adaptiveHeight: true,
+//         slidesToShow: 1,
+//         responsive: [
+//             {
+//                 breakpoint: 1250,
+//                 settings: {
+//                     arrows: false
+//                 },
+//             }, {
+//                 breakpoint: 1024,
+//                 settings: {
+//                     autoplay: false,
+//                     arrows: false,
+//                     dots: false,
+//                     draggable: false,
+//                     swipe: false,
+//                     touchMove: false,
+//                 },
+//             },
+//         ],
+//     });
+// 
+// });
 // -----  End of SLICK CAROUSEL  -----------------------------------------------------------------------
 
 
@@ -460,3 +460,39 @@ $(document).ready(function() {
 });
 
 // -----  End of AOS- ANIMATE ON SCROLL  ---------------------------------------------
+
+
+// ===================================================================================
+// ███████ ██     ██ ██ ██████  ███████ ██████
+// ██      ██     ██ ██ ██   ██ ██      ██   ██
+// ███████ ██  █  ██ ██ ██████  █████   ██████
+//      ██ ██ ███ ██ ██ ██      ██      ██   ██
+// ███████  ███ ███  ██ ██      ███████ ██   ██
+// ===================================================================================
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoHeight: true,
+        centeredSlides: true,
+        grabCursor: true,
+        preloadImages: false,
+        lazy: {
+            loadPrevNext: true,
+            loadPrevNextAmount: 5
+        },
+        loadOnTransitionStart: true,
+        keyboard: {
+            enabled: true
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        observer: true,
+        observeParents: true
+    });
+// -----  End of SWIPER  -----------------------------------

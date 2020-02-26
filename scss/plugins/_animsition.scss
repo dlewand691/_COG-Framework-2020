@@ -1,0 +1,38 @@
+/* ====================================================================================
+
+ █████  ███    ██ ██ ███    ███ ███████ ██ ████████ ██  ██████  ███    ██
+██   ██ ████   ██ ██ ████  ████ ██      ██    ██    ██ ██    ██ ████   ██
+███████ ██ ██  ██ ██ ██ ████ ██ ███████ ██    ██    ██ ██    ██ ██ ██  ██
+██   ██ ██  ██ ██ ██ ██  ██  ██      ██ ██    ██    ██ ██    ██ ██  ██ ██
+██   ██ ██   ████ ██ ██      ██ ███████ ██    ██    ██  ██████  ██   ████
+
+==================================================================================== */
+.animsition-loading,
+.animsition-loading:after {
+    position     : fixed;
+    z-index      : 100;
+    top          : 50%;
+    left         : 50%;
+
+    width        : 32px;
+    height       : 32px;
+    margin-top   : -16px;
+    margin-left  : -16px;
+
+    border-radius: 50%;
+}
+
+.animsition-loading {
+    transform                : translateZ(0);
+    animation-name           : animsition-loading;
+    animation-duration       : 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    border-top               : 5px solid rgba($blue, 1);
+    border-right             : 5px solid rgba($blue, 1);
+    border-bottom            : 5px solid rgba($blue, 1);
+    border-left              : 5px solid rgba($black, .1);
+    background-color         : transparent;
+}
+// -----  End of ANIMSITION  ---------------------------------------------

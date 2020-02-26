@@ -1,0 +1,71 @@
+// Font Family
+$cog-font-family--brand: 'Cognizant Sans', Helvetica;
+$cog-font-family--quote: 'Cognizant Sans Italic', Georgia;
+
+// Colors
+$blue: rgba(#0033a0, 0.999999999);
+$blue-light: rgba(#328dff, 0.999999999);
+$blue-medium: rgba(#2d67ff, 0.999999999);
+$blue-dark: rgba(#000063, 0.999999999);
+$green: rgba(#00b140, 0.999999999);
+$green-light: rgba(#00e452, 0.999999999);
+$green-dark: rgba(#007e2e, 0.999999999);
+$white: rgba(#ffffff, 0.999999999);
+$gray-light: rgba(#d9d9d9, 0.999999999);
+$gray-medium: rgba(#b1b1b1, 0.999999999);
+$gray-dark: rgba(#666666, 0.999999999);
+$black: rgba(#000000, 0.999999999);
+$red: rgba(#f4633a, 0.999999999);
+
+$cog-color-palette: (
+    blue-dark  : $blue-dark,
+    "blue"     : $blue,
+    blue-light : $blue-light,
+    blue-medium: $blue-medium,
+    "green"    : $green,
+    green-light: $green-light,
+    green-dark : $green-dark,
+    "white"    : $white,
+    gray-light : $gray-light,
+    gray-medium: $gray-medium,
+    gray-dark  : $gray-dark,
+    "black"    : $black,
+    "red"      : $red
+);
+
+$cog-button-palette: (
+    "blue"     : $blue,
+    blue-light : $blue-light,
+    "green"    : $green,
+    green-light: $green-light,
+    "white"    : $white,
+    gray-light : $gray-light,
+    gray-medium: $gray-medium,
+    gray-dark  : $gray-dark,
+);
+
+// Font Size
+
+// Line Height
+
+// Border
+
+// Border Radius
+
+// Box Shadows
+$cog-box-shadow--base: 0 20px 40px rgba($black, 0.1);
+
+// Spacing
+
+// Breakpoints
+$cog-bp--mobile: 0;
+$cog-bp--mobile-xl: 480px;
+$cog-bp--tablet: 600px;
+$cog-bp--tablet-xl: 992px;
+$cog-bp--desktop: 1200px;
+$cog-bp--desktop-xl: 1366px;
+$cog-bp--desktop-xxl: 2000px;
+
+// Grid
+$cog-grid--columns: 12;
+$cog-grid--gutter: 20px;

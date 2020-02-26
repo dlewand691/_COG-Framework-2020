@@ -1,0 +1,196 @@
+// ===================================================================================
+// ███████ ██████   █████   ██████ ██ ███    ██  ██████  ███████
+// ██      ██   ██ ██   ██ ██      ██ ████   ██ ██       ██
+// ███████ ██████  ███████ ██      ██ ██ ██  ██ ██   ███ ███████
+//      ██ ██      ██   ██ ██      ██ ██  ██ ██ ██    ██      ██
+// ███████ ██      ██   ██  ██████ ██ ██   ████  ██████  ███████
+// ===================================================================================
+
+$whitespace: 12;
+/* ==============================  MARGINS  ============================== */
+$margin-sides-all-positive: (m);
+$margin-sides-all-negative: (mn);
+$margin-sides-positive: (
+    mt: top,
+    mr: right,
+    mb: bottom,
+    ml: left
+);
+$margin-sides-negative: (
+    mtn: top,
+    mrn: right,
+    mbn: bottom,
+    mln: left
+);
+$margin-x-positive: (mx);
+$margin-y-positive: (my);
+$margin-x-negative: (mxn);
+$margin-y-negative: (myn);
+
+$padding-sides-all: (p);
+$padding-sides: (
+    pt: top,
+    pr: right,
+    pb: bottom,
+    pl: left
+);
+$padding-x: (px);
+$padding-y: (py);
+// ==============================  HALF SIZES  ==============================
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @each $side in $margin-sides-all-positive {
+            .#{$size}-#{$side}-half {
+                margin: 0.5rem !important;
+            }
+        }
+        @each $side, $sideHalf in $margin-sides-positive {
+            .#{$size}-#{$side}-half {
+                margin-#{$sideHalf}: 0.5rem !important;
+            }
+        }
+        @each $side, $sideHalf in $margin-x-positive {
+            .#{$size}-#{$side}-half {
+                margin-right: 0.5rem !important;
+                margin-left : 0.5rem !important;
+            }
+        }
+        @each $side, $sideHalf in $margin-y-positive {
+            .#{$size}-#{$side}-half {
+                margin-top   : 0.5rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+        }
+        @each $side in $padding-sides-all {
+            .#{$size}-#{$side}-half {
+                padding: 0.5rem !important;
+            }
+        }
+        @each $side, $sideHalf in $padding-sides {
+            .#{$size}-#{$side}-half {
+                padding-#{$sideHalf}: 0.5rem !important;
+            }
+        }
+        @each $side in $padding-x {
+            .#{$size}-#{$side}-half {
+                padding-right: 0.5rem !important;
+                padding-left : 0.5rem !important;
+            }
+        }
+        @each $side in $padding-y {
+            .#{$size}-#{$side}-half {
+                padding-top   : 0.5rem !important;
+                padding-bottom: 0.5rem !important;
+            }
+        }
+    }
+}
+
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 0 to $whitespace {
+            @each $side in $margin-sides-all-positive {
+                .#{$size}-#{$side}#{$i} {
+                    margin: #{$i}rem !important;
+                }
+            }
+            @each $side in $margin-sides-all-negative {
+                .#{$size}-#{$side}#{$i} {
+                    margin: -#{$i}rem !important;
+                }
+            }
+            @each $side, $sideFull in $margin-sides-positive {
+                .#{$size}-#{$side}#{$i} {
+                    margin-#{$sideFull}: #{$i}rem !important;
+                }
+            }
+            @each $side, $sideFull in $margin-sides-negative {
+                .#{$size}-#{$side}#{$i} {
+                    margin-#{$sideFull}: -#{$i}rem !important;
+                }
+            }
+            @each $side in $margin-x-positive {
+                .#{$size}-#{$side}#{$i} {
+                    margin-right: #{$i}rem !important;
+                    margin-left : #{$i}rem !important;
+                }
+            }
+            @each $side in $margin-x-negative {
+                .#{$size}-#{$side}#{$i} {
+                    margin-right: -#{$i}rem !important;
+                    margin-left : -#{$i}rem !important;
+                }
+            }
+            @each $side in $margin-y-positive {
+                .#{$size}-#{$side}#{$i} {
+                    margin-top   : #{$i}rem !important;
+                    margin-bottom: #{$i}rem !important;
+                }
+            }
+            @each $side in $margin-y-negative {
+                .#{$size}-#{$side}#{$i} {
+                    margin-top   : -#{$i}rem !important;
+                    margin-bottom: -#{$i}rem !important;
+                }
+            }
+        }
+    }
+}
+/* ============================  PADDINGS  ============================== */
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @for $i from 0 to $whitespace {
+            @each $side, $sideFull in $padding-sides {
+                .#{$size}-#{$side}#{$i} {
+                    padding-#{$sideFull}: #{$i}rem !important;
+                }
+            }
+            @each $side in $padding-sides-all {
+                .#{$size}-#{$side}#{$i} {
+                    padding: #{$i}rem !important;
+
+                }
+            }
+            @each $side in $padding-x {
+                .#{$size}-#{$side}#{$i} {
+                    padding-right: #{$i}rem !important;
+                    padding-left : #{$i}rem !important;
+                }
+            }
+            @each $side in $padding-y {
+                .#{$size}-#{$side}#{$i} {
+                    padding-top   : #{$i}rem !important;
+                    padding-bottom: #{$i}rem !important;
+                }
+            }
+        }
+    }
+}
+
+.mxn1-5 {
+    margin: 0 -1.5rem !important;
+}
+
+.pt25 {
+    padding-top: 25%;
+}
+
+.pt33 {
+    padding-top: 33.3333%;
+}
+
+.pt50 {
+    padding-top: 50%;
+}
+
+.pt66 {
+    padding-top: 66.6666%;
+}
+
+.pt75 {
+    padding-top: 75%;
+}
+
+.pt100 {
+    padding-top: 100%;
+}

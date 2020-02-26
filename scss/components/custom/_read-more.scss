@@ -1,0 +1,119 @@
+// ====================================================================================
+// ███████ ██      ███████ ██   ██ ██ ██████  ██      ███████
+// ██      ██      ██       ██ ██  ██ ██   ██ ██      ██
+// █████   ██      █████     ███   ██ ██████  ██      █████
+// ██      ██      ██       ██ ██  ██ ██   ██ ██      ██
+// ██      ███████ ███████ ██   ██ ██ ██████  ███████ ███████
+//  ██████  ██    ██ ███████ ██████  ███████ ██       ██████  ██     ██
+// ██    ██ ██    ██ ██      ██   ██ ██      ██      ██    ██ ██     ██
+// ██    ██ ██    ██ █████   ██████  █████   ██      ██    ██ ██  █  ██
+// ██    ██  ██  ██  ██      ██   ██ ██      ██      ██    ██ ██ ███ ██
+//  ██████    ████   ███████ ██   ██ ██      ███████  ██████   ███ ███
+// ====================================================================================
+
+// Based on the technique from this article:
+// http://kizu.ru/en/blog/flexible-overflow/
+
+// ************************
+// EXAMPLE MARKUP
+// <span class="overflower">
+//   <span
+//     class="overflower-short"
+//     aria-hidden="true"
+//     title="Some long text that could become shorter"
+//   >
+//     Short text here is.
+//   </span>
+//   <span class="overflower-long">
+//     Some long text that could become shorter.
+//   </span>
+// </span>
+// ************************
+
+.overflower {
+    display      : inline-block;
+    overflow     : hidden;
+    box-sizing   : border-box;
+    max-width    : 100%;
+    height       : 1.5em;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+    line-height  : 1.5em;
+}
+
+.overflower-long {
+    display: inline;
+}
+
+.overflower-short {
+    display: none;
+}
+
+@supports (flex-wrap: wrap) {
+    .overflower {
+        display  : inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .overflower-short {
+        display      : block;
+        overflow     : hidden;
+        flex-grow    : 1;
+        width        : 0;
+
+        text-overflow: ellipsis;
+    }
+
+    .overflower-long {
+        flex-basis: 100%;
+    }
+}
+
+// -----  End of FLEXIBLE OVERFLOW  ---------------------------------------------
+
+/* ====================================================================================
+
+██████  ███████  █████  ██████
+██   ██ ██      ██   ██ ██   ██
+██████  █████   ███████ ██   ██
+██   ██ ██      ██   ██ ██   ██
+██   ██ ███████ ██   ██ ██████
+███    ███  ██████  ██████  ███████
+████  ████ ██    ██ ██   ██ ██
+██ ████ ██ ██    ██ ██████  █████
+██  ██  ██ ██    ██ ██   ██ ██
+██      ██  ██████  ██   ██ ███████
+██      ██ ███    ██ ██   ██
+██      ██ ████   ██ ██  ██
+██      ██ ██ ██  ██ █████
+██      ██ ██  ██ ██ ██  ██
+███████ ██ ██   ████ ██   ██
+
+==================================================================================== */
+.read-more {
+    position     : relative;
+
+    padding-right: 1rem;
+}
+
+a.morelink {
+    position   : absolute;
+    top        : 0;
+    right      : 0;
+    // color      : $gray-light;
+
+    transition : all 0.25s ease-out;
+
+    font-family: "Cognizant-Icons";
+
+    &.less {
+        transform: rotate(135deg);
+
+        color    : $blue-light;
+    }
+}
+
+.morecontent span {
+    display: none;
+}
+// -----  End of READ MORE LINK  ---------------------------------------------

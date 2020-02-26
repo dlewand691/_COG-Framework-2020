@@ -1,0 +1,30 @@
+/* =============================================================================================
+ ██████  █████  ██      ██       ██████  ██    ██ ███████████ ███████
+██      ██   ██ ██      ██      ██    ██ ██    ██    ██    ██
+██      ███████ ██      ██      ██    ██ ██    ██    ██    ███████
+██      ██   ██ ██      ██      ██    ██ ██    ██    ██         ██
+ ██████ ██   ██ ███████ ███████  ██████   ██████     ██    ███████
+========================================================================================= */
+.callout {
+    &.small {
+        @include callout-size(1rem);
+    }
+}
+
+.callout > :last-child {
+    // margin-bottom: auto;
+}
+@each $color-name, $color in $cog-color-palette {
+    .callout-#{$color-name} {
+        background-color: rgba($color, .2) !important;
+    }
+}
+
+.callout-blue-dark,
+.callout-gray-dark1,
+.callout-gray-dark2,
+.callout-gray-medium,
+.callout-green-dark {
+    color: $white !important;
+}
+/* ----  End of CALLOUTS  --------------------------------------------------------------------- */

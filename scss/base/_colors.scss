@@ -1,0 +1,38 @@
+$blue: #0033a0;
+$blue-light: #328dff;
+$blue-medium: #2d67ff;
+$blue-dark: #000063;
+$green: $success-color;
+$green-light: lighten($green, 10%);
+$green-dark: darken($green, 10%);
+$orange: $warning-color;
+$orange-dark: #f4633a;
+$gray-dark1: lighten($black, 20%);
+$gray-dark2: lighten($black, 40%);
+$gray-light1: lighten($black, 60%);
+$gray-light2: lighten($black, 80%);
+$gray-light3: lighten($black, 90%);
+$purple: #5c068c;
+$purple-dark: #3c1053;
+$magenta: #c800a1;
+$magenta-dark: #840b55;
+$red: #e1523d;
+$cog-color-palette: (
+    "black"    : $black,
+    "white"    : $white,
+    "blue"     : blue,
+    blue-light : blue-light,
+    blue-medium: blue-medium,
+    blue-dark  : blue-dark,
+    "green"    : $green,
+    green-light: $green-light,
+    green-dark : $green-dark,
+    gray-dark1 : $gray-dark1,
+    gray-dark2 : $gray-dark2,
+    gray-light1: $gray-light1,
+    gray-light2: $gray-light2,
+    gray-light3: $gray-light3,
+    // gray-light : $light-gray, 
+    // gray-medium: $gray-medium, 
+    // gray-dark : $dark-gray
+);

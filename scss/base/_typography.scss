@@ -1,0 +1,484 @@
+// ===================================================================================
+// ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██
+//    ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██
+//    ██      ████   ██████  ██    ██ ██   ███ ██████  ███████ ██████  ███████   ████
+//    ██       ██    ██      ██    ██ ██    ██ ██   ██ ██   ██ ██      ██   ██    ██
+//    ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██
+// ===================================================================================
+
+// ===================================================================================
+// ██████  ███████ ███████
+// ██   ██ ██      ██
+// ██████  █████   ███████
+// ██   ██ ██           ██
+// ██   ██ ██      ███████
+// ===================================================================================
+// @import "../plugins/rfs";
+// -----  End of RFS  -----------------------------------
+
+.text-crop {
+    @include lhCrop(1.2, 0.75); //using Roboto font family
+}
+
+// ===================================================================================
+// ██████  ███████ ███████  █████  ██    ██ ██   ████████
+// ██   ██ ██      ██      ██   ██ ██    ██ ██      ██
+// ██   ██ █████   █████   ███████ ██    ██ ██      ██
+// ██   ██ ██      ██      ██   ██ ██    ██ ██      ██
+// ██████  ███████ ██      ██   ██  ██████  ███████ ██
+// ===================================================================================
+$tiny-font-size: 60%;
+
+%h1,
+.h1,
+h1 {
+    line-height   : 1.1;
+    // @include font-size(84px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 36px, 84px);
+    // @include fluidSize(line-height, 20rem, 70rem, 2rem, 5.5rem);
+    letter-spacing: -1px;
+    // @include breakpoint(small) {
+    //     @include fluidSize(font-size, 320px, $cog-bp--tablet, 36px, 54px);
+    // };
+    // @include breakpoint(medium) {
+    //     @include fluidSize(font-size, $cog-bp--tablet, $cog-bp--desktop, 54px, 72px);
+    // };
+    // @include breakpoint(large) {
+    //     @include fluidSize(font-size, $cog-bp--desktop, $cog-bp--desktop-xl, 72px, 84px);
+    // };
+}
+
+%h2,
+.h2,
+h2 {
+    line-height: 1.1;
+    // @include font-size(63px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 32px, 63px);
+}
+
+%h3,
+.h3,
+h3 {
+    // @include font-size(47px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 28px, 47px);
+}
+
+%h4,
+.h4,
+h4 {
+    // @include font-size(36px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 25px, 36px);
+}
+
+%h5,
+.h5,
+h5 {
+    // @include font-size(27px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 22px, 27px);
+}
+
+%h6,
+.h6,
+h6 {
+    // @include font-size(20px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 20px, 20px);
+}
+
+%p,
+p {
+    // @include font-size(20px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
+}
+
+%small,
+.small {
+    // font-size: $small-font-size;
+    // @include font-size(16px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 12px, 15px);
+}
+
+%tiny,
+.tiny {
+    // font-size: 60%;
+    // @include font-size(12px);
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 9px, 12px);
+}
+
+$font-sizes: (
+    tiny,
+    small,
+    normal
+);
+
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @each $font-size in $font-sizes {
+            .#{$size}-#{$font-size} {
+                extend: #{font-size}!important;
+            }
+        }
+    }
+}
+
+// $font-size-percents: 20;
+// @for $i from 1 through $font-size-percents {
+//     .fs-#{$i*10}pct {
+//         font-size: percentage($i/10);
+//     }
+// }
+
+sup {
+    top      : -0.4em;
+    font-size: $tiny-font-size;
+}
+
+// ===================================================================================
+// ██    ██ ████████ ██ ██      ██ ████████ ██ ███████ ███████
+// ██    ██    ██    ██ ██      ██    ██    ██ ██      ██
+// ██    ██    ██    ██ ██      ██    ██    ██ █████   ███████
+// ██    ██    ██    ██ ██      ██    ██    ██ ██           ██
+//  ██████     ██    ██ ███████ ██    ██    ██ ███████ ███████
+// ===================================================================================
+.lh0 {
+    line-height: 0;
+}
+
+.lh1 {
+    line-height: 1;
+}
+
+.lh2 {
+    line-height: 2;
+}
+
+@for $i from 1 through 10 {
+    .fw#{$i*100} {
+        font-weight: $i*100;
+    }
+}
+
+%text-normal,
+.text-normal {
+    font-weight: normal !important;
+}
+
+%text-light,
+.text-light {
+    font-weight: 100 !important;
+}
+
+%text-light-italic,
+.text-light-italic {
+    font-weight: 100 !important;
+    font-style : italic;
+}
+
+%text-bold,
+.strong,
+.text-bold,
+strong {
+    font-weight: bold !important;
+}
+
+%text-bold-italic,
+.text-bold-italic {
+    font-weight: bold !important;
+    font-style : italic;
+}
+
+%text-italic,
+.text-italic {
+    font-style: italic !important;
+}
+
+%text-caps,
+.text-caps {
+    text-transform: uppercase !important;
+}
+
+%text-title,
+.text-title {
+    text-transform: capitalize !important;
+}
+
+%text-sentence,
+.text-sentence {
+    text-transform: none !important;
+}
+
+%text-center {
+    text-align: center;
+}
+
+// =============================================================================================
+// ████████ ███████ ██   ██ ████████      ██████  ██████  ██       ██████  ██████  ███████
+//    ██    ██       ██ ██     ██        ██      ██    ██ ██      ██    ██ ██   ██ ██
+//    ██    █████     ███      ██        ██      ██    ██ ██      ██    ██ ██████  ███████
+//    ██    ██       ██ ██     ██        ██      ██    ██ ██      ██    ██ ██   ██      ██
+//    ██    ███████ ██   ██    ██         ██████  ██████  ███████  ██████  ██   ██ ███████
+// =============================================================================================
+@each $color-name, $color in palette {
+    .text-#{$color-name} {
+        color: $color !important;
+    }
+}
+@each $size in $breakpoint-classes {
+    @include breakpoint($size) {
+        @each $color-name, $color in palette {
+            .#{$size}-text-#{$color-name} {
+                color: $color !important;
+            }
+        }
+    }
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white li,
+.text-white p {
+    color: $white !important;
+}
+
+.text-wrap {
+    white-space: normal;
+}
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+blockquote cite.text-white {
+    -webkit-text-fill-color: $white;
+    fill                   : $white;
+}
+
+.hanging-punctuation {
+    text-indent: -0.5em;
+}
+
+.gradient-transparent-white-25 {
+    background: linear-gradient(to right, rgba($white,0), rgba($white,1) 25%);
+}
+
+.gradient-transparent-black-25 {
+    background: linear-gradient(to right, rgba($black,0), rgba($black,1) 25%);
+}
+
+.heading-lines {
+    overflow  : hidden;
+    text-align: center;
+}
+
+.heading-lines:after,
+.heading-lines:before {
+    position        : relative;
+    display         : inline-block;
+    width           : 50%;
+    height          : 1px;
+    content         : "";
+    vertical-align  : middle;
+    background-color: $gray-medium;
+}
+
+.heading-lines:before {
+    right      : 0.5em;
+    margin-left: -50%;
+}
+
+.heading-lines:after {
+    left        : 0.5em;
+    margin-right: -50%;
+}
+/* ----  End of TYPOGRAPHY;  -------------------------------------------------------------------------- */
+/* ===========================================================================================
+
+██      ██ ███    ██ ██   ██ ███████
+██      ██ ████   ██ ██  ██  ██
+██      ██ ██ ██  ██ █████   ███████
+██      ██ ██  ██ ██ ██  ██       ██
+███████ ██ ██   ████ ██   ██ ███████
+
+=========================================================================================== */
+a {
+    text-decoration: none;
+    word-wrap      : break-word;
+    color          : $green;
+    font-weight    : bold;
+    // hyphens        : auto;
+    overflow-wrap  : break-word;
+
+    &:hover {
+        transition: 0.3s ease-out;
+    }
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+    color: $green;
+}
+
+.bg-blue-dark,
+.bg-gray-dark {
+    a {
+        color: $green-light;
+    }
+}
+/* ----  End of LINKS  -------------------------------------------------------------------------- */
+
+/* ====================================================================================
+
+██████  ██       ██████   ██████ ██   ██  ██████  ██    ██  ██████  ████████ ███████ ███████
+██   ██ ██      ██    ██ ██      ██  ██  ██    ██ ██    ██ ██    ██    ██    ██      ██
+██████  ██      ██    ██ ██      █████   ██    ██ ██    ██ ██    ██    ██    █████   ███████
+██   ██ ██      ██    ██ ██      ██  ██  ██ ▄▄ ██ ██    ██ ██    ██    ██    ██           ██
+██████  ███████  ██████   ██████ ██   ██  ██████   ██████   ██████     ██    ███████ ███████
+                                             ▀▀
+==================================================================================== */
+blockquote {
+    padding     : 3.75rem 0;
+
+    text-align  : center;
+
+    color       : $light-gray;
+    border      : 1px solid $gray-medium;
+    border-right: 0;
+    border-left : 0;
+
+    font-weight : bold;
+    font-style  : italic;
+
+    @extend %h5;
+
+    %cite,
+    cite {
+        margin-top             : 1.875rem;
+
+        color                  : $black;
+
+        font-weight            : normal;
+
+        -webkit-text-fill-color: $black;
+        fill                   : $black;
+    }
+}
+
+/* -----  End of BLOCKQUOTES  --------------------------------------------- */
+
+/* ==================================================================================================
+██      ██ ███████ ████████ ███████
+██      ██ ██         ██    ██
+██      ██ ███████    ██    ███████
+██      ██      ██    ██         ██
+███████ ██ ███████    ██    ███████
+========================================================================================= */
+ul {
+    margin-bottom: 2rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+li:last-child {
+    // margin-bottom: 0;
+}
+
+li ol,
+li ul {
+    margin-top: 1rem;
+}
+@include breakpoint(medium up) {
+    ul.inline-list li {
+        display: inline-block;
+
+        margin : 0 1rem 0 0;
+    }
+}
+
+ul.circle {
+    list-style-type: circle;
+}
+
+ul.square {
+    list-style-type: square;
+}
+
+dl dt {
+    margin-top : 1rem;
+
+    font-weight: bold;
+}
+/* ----  End of LISTS  --------------------------------------------------------------------- */
+/* =================================================================================================
+██      ██ ███    ██ ██   ██
+██      ██ ████   ██ ██  ██
+██      ██ ██ ██  ██ █████
+██      ██ ██  ██ ██ ██  ██
+███████ ██ ██   ████ ██   ██
+██      ██ ███████ ████████ ███████
+██      ██ ██         ██    ██
+██      ██ ███████    ██    ███████
+██      ██      ██    ██         ██
+███████ ██ ███████    ██    ███████
+========================================================================================= */
+.arrow {
+    display    : inline-flex;
+    align-items: center;
+
+    &::after {
+        position   : unset !important;
+        right      : unset !important;
+        width      : unset !important;
+        height     : unset !important;
+        margin-top : unset !important;
+        margin-left: 0.5rem;
+        content    : "\e907" !important;
+        background : unset !important;
+        font-family: "Cognizant-Icons";
+        font-weight: bold;
+    }
+
+    &.arrow-solid-green {
+        &::after {
+            content    : "\e908" !important;
+            color      : $green;
+            font-family: "Cognizant-Icons";
+        }
+    }
+}
+
+.arrow-end {
+    // position: relative;
+
+    &::after {
+        // position   : absolute;
+        // right      : 0;
+        content    : "\e907";
+        font-family: "Cognizant-Icons";
+        display    : inline;
+        margin-left: 0.2rem;
+    }
+}
+
+/* ----  End of LINK LISTS  --------------------------------------------------------------------- */
+
+/* ====================================================================================
+
+████████ ███████ ██   ██ ████████     ███████ ██   ██  █████  ██████   ██████  ██     ██
+   ██    ██       ██ ██     ██        ██      ██   ██ ██   ██ ██   ██ ██    ██ ██     ██
+   ██    █████     ███      ██        ███████ ███████ ███████ ██   ██ ██    ██ ██  █  ██
+   ██    ██       ██ ██     ██             ██ ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██
+   ██    ███████ ██   ██    ██        ███████ ██   ██ ██   ██ ██████   ██████   ███ ███
+
+==================================================================================== */
+.text-shadow {
+    text-shadow: 0 0 3rem rgba($black,.65);
+}
+// -----  End of TEXT SHADOW  ---------------------------------------------

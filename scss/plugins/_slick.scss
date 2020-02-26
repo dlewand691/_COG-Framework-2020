@@ -1,0 +1,232 @@
+$slick-font-path: "../fonts/slick/";
+@font-face {
+    font-family: "slick";
+    font-weight: normal;
+    font-style : normal;
+
+    src        : slick-font-url("slick.eot");
+    src        : slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"),format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+}
+
+.slick-slide {
+    overflow: hidden;
+
+    img {
+        display: inline-block;
+    }
+}
+
+.slick-next,
+.slick-prev {
+    width           : 2rem;
+    height          : 2rem;
+
+    transition      : all, 500ms;
+    transform-origin: center 100%;
+
+    transform-style : preserve-3D;
+}
+
+.slick-prev {
+    left: -2rem;
+}
+
+.slick-next {
+    right: -2rem;
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+    // transform: scale(1.1);
+}
+
+.slick-next:before,
+.slick-prev:before {
+    opacity    : 1;
+    color      : $black;
+
+    font-family: "Cognizant-Icons";
+    font-size  : 2rem;
+    font-weight: 600;
+}
+@include breakpoint(small only) {
+    .slick-next:before,
+    .slick-prev:before {
+        font-size: 1.2rem;
+    }
+};
+
+.slick-prev:before {
+    content: "\e905";
+}
+
+.slick-next:before {
+    content: "\e907";
+}
+
+.slick-dots li button:before {
+    content      : "";
+
+    border-radius: 1000px;
+}
+
+.square-dots .slick-dots li {
+    overflow: hidden;
+
+    width   : 2rem;
+    height  : 5px;
+    margin  : 0 5px;
+}
+
+.square-dots .slick-dots li button {
+    width: 100%;
+
+    &:before {
+        border-radius: 0;
+    }
+}
+
+.square-dots .slick-dots li button:before {
+    width      : 2rem;
+
+    font-weight: bold;
+}
+
+.square-dots .slick-dots li button:before {
+    opacity: 0.5;
+}
+
+.square-dots .slick-dots li button:before:hover {
+    opacity: 1;
+}
+
+.square-dots .slick-dots li.slick-active button:before {
+    opacity: 1;
+}
+/* ==============================  WHITE CONTROLS  ============================== */
+.white-dots .slick-dots li button:before {
+    background: $white;
+}
+
+.white-dots .slick-dots li.slick-active button:before {
+    opacity   : 1;
+    background: $white;
+}
+
+.white-arrows .slick-next:before {
+    color: $white;
+}
+
+.white-arrows .slick-prev:before {
+    color: $white;
+}
+/* ==============================  BLACK CONTROLS  ============================== */
+.black-dots .slick-dots li button:before {
+    background: $black;
+}
+
+.black-dots .slick-dots li.slick-active button:before {
+    opacity   : 1;
+    background: $black;
+}
+
+.black-arrows .slick-next:before {
+    color: $black;
+}
+
+.black-arrows .slick-prev:before {
+    color: $black;
+}
+/* ==============================  BLUE CONTROLS  ============================== */
+.blue-dots .slick-dots li button:before {
+    background: $gray-light;
+}
+
+.blue-dots .slick-dots li.slick-active button:before {
+    opacity   : 1;
+    background: $blue;
+}
+
+.blue-arrows .slick-next:before {
+    color: $blue;
+}
+
+.blue-arrows .slick-prev:before {
+    color: $blue;
+}
+/* ==============================  GREEN CONTROLS  ============================== */
+.green-dots .slick-dots li button:before {
+    background: $gray-light;
+}
+
+.green-dots .slick-dots li.slick-active button:before {
+    opacity   : 1;
+    background: $green;
+}
+
+.green-arrows .slick-next:before {
+    color: $green;
+}
+
+.green-arrows .slick-prev:before {
+    color: $green;
+}
+// ==============================  FULL WIDTH CONTROLS  ==============================
+
+.fw-controls .slick-dots {
+    display: flex !important;
+}
+
+.fw-controls .slick-dots li {
+    flex-grow: 1;
+
+    width    : 100%;
+}
+
+.fw-controls .slick-dots li {
+    margin : 0;
+    padding: 0;
+}
+
+.fw-controls .slick-dots li button:before {
+    width     : 100%;
+
+    background: $black;
+}
+
+.fw-controls .slick-dots li.slick-active button:before {
+    opacity   : 1;
+    background: linear-gradient(to right, $blue, $blue-light);
+}
+// ==============================  INSIDE ARROWS  ==============================
+
+.inside-arrows {
+    & .slick-prev {
+        z-index: 1;
+        left   : 0;
+    }
+
+    & .slick-next {
+        right: 0;
+    }
+}
+@include breakpoint(small only) {
+    .inside-arrows {
+        & .slick-prev {
+            left: 0;
+        }
+
+        & .slick-next {
+            right: 0;
+        }
+    }
+}
+// ==============================  INSIDE DOTS  ==============================
+
+.inside-dots {
+    & .slick-dots {
+        bottom: 1rem;
+    }
+}
