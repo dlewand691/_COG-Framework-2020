@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "8F8B05FD-A46D-441E-A77D-805A08662CD2"
+		"uuidString": "5C085713-5D1A-4A10-8AE9-11FDA9891D9B"
 		}
 	],
 "creatorBuild": "31934",
@@ -77,19 +77,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/fonts/Cognizant-Sans/stylesheet.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/fonts/css/stylesheet.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"/js/cognizant-framework.js": {
 		"bF": 0,
 		"ft": 64,
@@ -114,17 +101,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/node_modules/aos/dist/min/aos-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/node_modules/foundation-sites/dist/js/foundation.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/min/foundation.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -591,17 +567,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/node_modules/jquery/dist/jquery.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/node_modules/jquery/dist/min/jquery-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
 	"/node_modules/jquery/dist/jquery.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -642,17 +607,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/node_modules/motion-ui/dist/min/motion-ui.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/node_modules/slick-carousel/slick/slick.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/node_modules/slick-carousel/slick/min/slick.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -1006,7 +960,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/scss/cognizant-framework.scss": {
+	"/scss/cognizant-framework-2020.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -1014,7 +968,7 @@
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
-		"oAP": "/_BUILD/css/cognizant-framework.css",
+		"oAP": "/_BUILD/css/cognizant-framework-2020.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1376,10 +1330,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 573106688.49449599,
-	"displayValue": "_COG-Framework-2019",
-	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-cryingJordan",
+	"creationDate": 604513148.67603695,
+	"displayValue": "_COG-Framework-2020",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "brackets_purple",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
@@ -1396,7 +1350,7 @@
 	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
-	"babelExcludeString": "'node_modules/**', 'bower_components/**', /\\/core-js\\//",
+	"babelExcludeString": "/\\/node_modules\\//, /\\/core-js\\//, /\\/bower_components\\//",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
@@ -1818,7 +1772,7 @@
 	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
-	"esLintEnvironmentsMask": 8223,
+	"esLintEnvironmentsMask": 1,
 	"esLintRules": {
 		"accessor-pairs": {
 			"active": 0,
@@ -2086,7 +2040,7 @@
 			},
 		"new-parens": {
 			"active": 0,
-			"optionString": ""
+			"optionString": "'always'"
 			},
 		"newline-per-chained-call": {
 			"active": 0,
@@ -2138,7 +2092,7 @@
 			},
 		"no-confusing-arrow": {
 			"active": 0,
-			"optionString": "{'allowParens': false}"
+			"optionString": "{'allowParens': true}"
 			},
 		"no-console": {
 			"active": 1,
@@ -2770,7 +2724,7 @@
 			},
 		"sort-keys": {
 			"active": 0,
-			"optionString": "'asc', {'caseSensitive': true, 'natural': false}"
+			"optionString": "'asc', {'caseSensitive': true, 'natural': false, 'minKeys': 2}"
 			},
 		"sort-vars": {
 			"active": 0,
@@ -3217,7 +3171,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"createSourceMap": 1,
+		"createSourceMap": 0,
 		"minifyOutput": 1,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1,
@@ -3266,8 +3220,8 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"outputFormat": 0,
-		"quality": 100
+		"outputFormat": 2,
+		"quality": 85
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -3359,7 +3313,7 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"optimizerType": 1,
-		"quality": 90
+		"quality": 99
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -3369,9 +3323,9 @@
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
 		"compileDebug": 1,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"shouldRunCacheBuster": 0,
-		"shouldRunHTMLMinifier": 0
+		"shouldRunHTMLMinifier": 1
 		},
 	"languageDefaultsSASS": {
 		"autoOutputAction": 0,
@@ -3425,7 +3379,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"pluginMask": 3758088159
+		"pluginMask": 52780316221407
 		},
 	"languageDefaultsTS": {
 		"autoOutputAction": 0,
@@ -3433,7 +3387,7 @@
 		"autoOutputPathRelativePath": "/js",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 2,
+		"autoOutputPathStyle": 0,
 		"createDeclarationFile": 0,
 		"createSourceMap": 0,
 		"minifyOutput": 0,
@@ -3522,7 +3476,7 @@
 			"flagValue": -1
 			},
 		"comments": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"comparisons": {
@@ -3558,7 +3512,7 @@
 			"flagValue": 5
 			},
 		"eval": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"evaluate": {
@@ -3570,7 +3524,7 @@
 			"flagValue": -1
 			},
 		"hoist_funs": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"hoist_props": {
@@ -3614,7 +3568,7 @@
 			"flagValue": -1
 			},
 		"keep_fargs": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"keep_fnames": {
@@ -3698,7 +3652,7 @@
 			"flagValue": -1
 			},
 		"toplevel": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"typeofs": {
@@ -3746,7 +3700,7 @@
 			"flagValue": -1
 			},
 		"warnings": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"webkit": {
@@ -3760,7 +3714,7 @@
 		},
 	"uglifyMangleNames": 1,
 	"uglifyReservedNamesString": "$,exports,require",
-	"websiteRelativeRoot": "/_BUILD"
+	"websiteRelativeRoot": "_BUILD"
 	},
 "settingsFileVersion": "3"
 }

@@ -16,11 +16,40 @@
     }
 }
 
+.bg-black,
+.bg-blue,
 .bg-blue-dark,
+.bg-blue-light,
+.bg-blue-medium,
+.bg-gray-black,
+.bg-gray-dark,
 .bg-green-dark,
 .bg-red {
-    color: $white !important;
+    color: $white;
+
+    a {
+        color: $green-light;
+    }
 }
+
+.bg-green {
+    a {
+        color: $white;
+    }
+}
+
+.bg-green-light {
+    a {
+        color: $green-dark;
+    }
+}
+
+// .bg-gray-light,
+// .bg-gray-medium {
+//     a {
+//         color: $green-light;
+//     }
+// }
 
 .bg-transparent {
     background: transparent !important;

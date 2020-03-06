@@ -88,6 +88,14 @@ h6 {
 p {
     // @include font-size(20px);
     @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
+
+    + p {
+        // margin-bottom: 0;
+    }
+
+    a {
+        // margin-bottom: $paragraph-margin-bottom;
+    }
 }
 
 %small,
@@ -128,8 +136,8 @@ $font-sizes: (
 // }
 
 sup {
-    top      : -0.4em;
-    font-size: $tiny-font-size;
+    // top      : -0.4em;
+    // font-size: $tiny-font-size;
 }
 
 // ===================================================================================
@@ -210,6 +218,40 @@ strong {
     text-align: center;
 }
 
+/* ===========================================================================================
+
+██      ██ ███    ██ ██   ██ ███████
+██      ██ ████   ██ ██  ██  ██
+██      ██ ██ ██  ██ █████   ███████
+██      ██ ██  ██ ██ ██  ██       ██
+███████ ██ ██   ████ ██   ██ ███████
+
+=========================================================================================== */
+a,
+a:link {
+    font-weight: $global-weight-bold;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    & ~ a,
+    & ~ a:link {
+        margin: $button-margin;
+    }
+}
+
+a.link-coverAll:after {
+    content : '';
+    position: absolute;
+    left    : 0;
+    top     : 0;
+    right   : 0;
+    bottom  : 0;
+}
+
+/* ----  End of LINKS  -------------------------------------------------------------------------- */
+
 // =============================================================================================
 // ████████ ███████ ██   ██ ████████      ██████  ██████  ██       ██████  ██████  ███████
 //    ██    ██       ██ ██     ██        ██      ██    ██ ██      ██    ██ ██   ██ ██
@@ -217,14 +259,14 @@ strong {
 //    ██    ██       ██ ██     ██        ██      ██    ██ ██      ██    ██ ██   ██      ██
 //    ██    ███████ ██   ██    ██         ██████  ██████  ███████  ██████  ██   ██ ███████
 // =============================================================================================
-@each $color-name, $color in palette {
+@each $color-name, $color in $cog-color-palette {
     .text-#{$color-name} {
         color: $color !important;
     }
 }
 @each $size in $breakpoint-classes {
     @include breakpoint($size) {
-        @each $color-name, $color in palette {
+        @each $color-name, $color in $cog-color-palette {
             .#{$size}-text-#{$color-name} {
                 color: $color !important;
             }
@@ -232,15 +274,17 @@ strong {
     }
 }
 
-.text-white h1,
-.text-white h2,
-.text-white h3,
-.text-white h4,
-.text-white h5,
-.text-white h6,
-.text-white li,
-.text-white p {
-    color: $white !important;
+.text-white {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    p {
+        color: $white !important;
+    }
 }
 
 .text-wrap {
@@ -294,43 +338,6 @@ blockquote cite.text-white {
     margin-right: -50%;
 }
 /* ----  End of TYPOGRAPHY;  -------------------------------------------------------------------------- */
-/* ===========================================================================================
-
-██      ██ ███    ██ ██   ██ ███████
-██      ██ ████   ██ ██  ██  ██
-██      ██ ██ ██  ██ █████   ███████
-██      ██ ██  ██ ██ ██  ██       ██
-███████ ██ ██   ████ ██   ██ ███████
-
-=========================================================================================== */
-a {
-    text-decoration: none;
-    word-wrap      : break-word;
-    color          : $green;
-    font-weight    : bold;
-    // hyphens        : auto;
-    overflow-wrap  : break-word;
-
-    &:hover {
-        transition: 0.3s ease-out;
-    }
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a {
-    color: $green;
-}
-
-.bg-blue-dark,
-.bg-gray-dark {
-    a {
-        color: $green-light;
-    }
-}
-/* ----  End of LINKS  -------------------------------------------------------------------------- */
 
 /* ====================================================================================
 
@@ -397,7 +404,6 @@ li ul {
 @include breakpoint(medium up) {
     ul.inline-list li {
         display: inline-block;
-
         margin : 0 1rem 0 0;
     }
 }
@@ -412,7 +418,6 @@ ul.square {
 
 dl dt {
     margin-top : 1rem;
-
     font-weight: bold;
 }
 /* ----  End of LISTS  --------------------------------------------------------------------- */

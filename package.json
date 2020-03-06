@@ -12,7 +12,7 @@
     "motion-ui": "^2.0.3",
     "rfs": "^9.0.2",
     "slick-carousel": "^1.8.1",
-    "swiper": "^5.3.1",
+    "swiper": "^5.3.6",
     "video.js": "^7.6.6",
     "what-input": "^5.2.6"
   },

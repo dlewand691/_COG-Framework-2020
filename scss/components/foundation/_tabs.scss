@@ -12,7 +12,7 @@ $tab-background: $gray-light;
     position     : relative;
     margin-bottom: 0;
 
-    & a {
+    a {
         transition: $button-transition;
         color     : $black;
         background: $tab-background;
