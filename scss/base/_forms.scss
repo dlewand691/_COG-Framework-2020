@@ -21,179 +21,179 @@
 [type='url'],
 [type='week'],
 textarea {
-    height: initial;
+  height: initial;
 }
 
 button {
-    font-family: $body-font-family;
-    font-weight: bold;
+  font-family: $body-font-family;
+  font-weight: bold;
 }
 
 label {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .fieldset,
 fieldset {
-    border: none;
+  border: none;
 
-    @include callout;
+  @include callout;
 }
 @include breakpoint(medium up) {
-    .fieldset,
-    fieldset {
-        padding   : 2rem;
-        box-shadow: 0 0.2rem 0.3rem $gray-light;
-    }
+  .fieldset,
+  fieldset {
+    padding   : 2rem;
+    box-shadow: 0 0.2rem 0.3rem $black-15;
+  }
 }
 
 legend {
-    background: transparent !important;
-    @extend %h5 !optional;
+  background: transparent !important;
+  @extend %h5 !optional;
 }
 
 textarea {
-    min-height: 200px;
+  min-height: 200px;
 }
 
 input[type=checkbox],
 input[type=radio] {
-    margin-right : 0.5rem;
-    margin-bottom: 0;
+  margin-right : 0.5rem;
+  margin-bottom: 0;
 }
 
 input[type=radio] + .form-error {
-    margin-top: 0 !important;
+  margin-top: 0 !important;
 }
 
 .form-error,
 .help-text {
-    font-style: italic;
+  font-style: italic;
 }
 
 .reveal-if-active {
-    display   : block;
-    overflow  : hidden;
-    max-height: 0;
-    transition: all 0.5s;
-    transform : scale(0.95);
-    opacity   : 0;
+  display   : block;
+  overflow  : hidden;
+  max-height: 0;
+  transition: all 0.5s;
+  transform : scale(0.95);
+  opacity   : 0;
 
-    input[type=text] {
-        width: 100%;
-    }
+  input[type=text] {
+    width: 100%;
+  }
 
-    input[type="checkbox"]:checked ~ &,
-    input[type="radio"]:checked ~ & {
-        overflow     : visible;
-        max-height   : 100000px;
-        margin-bottom: 2rem;
-        transform    : scale(1);
-        opacity      : 1;
-    }
+  input[type="checkbox"]:checked ~ &,
+  input[type="radio"]:checked ~ & {
+    overflow     : visible;
+    max-height   : 100000px;
+    margin-bottom: 2rem;
+    transform    : scale(1);
+    opacity      : 1;
+  }
 }
 
 .checkbox {
-    position: relative;
-    margin  : 0 1rem 0 0;
-    cursor  : pointer;
+  position: relative;
+  margin  : 0 1rem 0 0;
+  cursor  : pointer;
 
+  &:before {
+    position          : absolute;
+    z-index           : 1;
+    top               : 2px;
+    left              : 2px;
+    width             : 12px;
+    height            : 6px;
+    content           : "";
+    transition        : transform 0.4s cubic-bezier(.45,1.8,.5,.75);
+    transform         : rotate(-45deg) scale(0, 0);
+    border            : 2px solid $white;
+    border-top-style  : none;
+    border-right-style: none;
+  }
+
+  &:checked {
     &:before {
-        position          : absolute;
-        z-index           : 1;
-        top               : 2px;
-        left              : 2px;
-        width             : 12px;
-        height            : 6px;
-        content           : "";
-        transition        : transform 0.4s cubic-bezier(.45,1.8,.5,.75);
-        transform         : rotate(-45deg) scale(0, 0);
-        border            : 2px solid $white;
-        border-top-style  : none;
-        border-right-style: none;
-    }
-
-    &:checked {
-        &:before {
-            transform: rotate(-45deg) scale(1, 1);
-        }
-
-        &:after {
-            border-color: $green-dark;
-            background  : $green;
-        }
+      transform: rotate(-45deg) scale(1, 1);
     }
 
     &:after {
-        position  : absolute;
-        top       : -4px;
-        left      : -2px;
-        width     : 20px;
-        height    : 20px;
-        content   : "";
-        cursor    : pointer;
-        border    : 0.12rem solid $gray-light;
-        background: $white;
-        box-shadow: inset 0 1px 2px rgba($gray-dark,0.1);
+      border-color: $green-dark;
+      background  : $green;
     }
+  }
+
+  &:after {
+    position  : absolute;
+    top       : -4px;
+    left      : -2px;
+    width     : 20px;
+    height    : 20px;
+    content   : "";
+    cursor    : pointer;
+    border    : 0.12rem solid $black-15;
+    background: $white;
+    box-shadow: inset 0 1px 2px rgba($black-60,0.1);
+  }
 }
 
 .radio {
-    position: relative;
-    margin  : 0 1rem 0 0;
-    cursor  : pointer;
+  position: relative;
+  margin  : 0 1rem 0 0;
+  cursor  : pointer;
 
+  &:before {
+    position     : absolute;
+    z-index      : 1;
+    z-index      : 1;
+    top          : 3px;
+    left         : 3px;
+    width        : 10px;
+    height       : 10px;
+    content      : "";
+    transition   : transform 0.4s cubic-bezier(.45,1.8,.5,.75);
+    transform    : scale(0,0);
+    border-radius: 50%;
+    background   : $green;
+  }
+
+  &:checked {
     &:before {
-        position     : absolute;
-        z-index      : 1;
-        z-index      : 1;
-        top          : 3px;
-        left         : 3px;
-        width        : 10px;
-        height       : 10px;
-        content      : "";
-        transition   : transform 0.4s cubic-bezier(.45,1.8,.5,.75);
-        transform    : scale(0,0);
-        border-radius: 50%;
-        background   : $green;
+      transform: scale(1,1);
     }
+  }
 
-    &:checked {
-        &:before {
-            transform: scale(1,1);
-        }
-    }
-
-    &:after {
-        position     : absolute;
-        top          : -2px;
-        left         : -2px;
-        width        : 20px;
-        height       : 20px;
-        content      : "";
-        border       : 0.12rem solid $gray-light;
-        border-radius: 50%;
-        background   : $white;
-        box-shadow   : inset 0 1px 2px rgba($gray-dark,0.1);
-        // margin-bottom: .5rem;
-    }
+  &:after {
+    position     : absolute;
+    top          : -2px;
+    left         : -2px;
+    width        : 20px;
+    height       : 20px;
+    content      : "";
+    border       : 0.12rem solid $black-15;
+    border-radius: 50%;
+    background   : $white;
+    box-shadow   : inset 0 1px 2px rgba($black-60,0.1);
+    // margin-bottom: .5rem;
+  }
 }
 
 .checkbox.is-invalid-input:after,
 .radio.is-invalid-input:after {
-    border-color: $input-background-invalid;
-    @include form-input-error;
+  border-color: $input-background-invalid;
+  @include form-input-error;
 }
 
 input.placeholder-white::placeholder {
-    color: $white;
+  color: $white;
 }
 
 select {
-    height       : 2.25rem;
-    padding-right: 1em;
-    background   : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Earrow-down%3C/title%3E%3Cpath d='M0 5.5v-.2c.1-.2.3-.3.5-.3h23c.2 0 .4.1.5.3 0 .2 0 .4-.1.5l-11.5 13c-.1.1-.2.2-.4.2s-.3-.1-.4-.2L.1 5.8C0 5.7 0 5.6 0 5.5zm22.4.5H1.6L12 17.7 22.4 6z' fill='%23999999' stroke='%23999999' stroke-width='1'/%3E%3C/svg%3E") no-repeat right 0.5rem bottom 45%;
-    // background-size: 15px;
+  height       : 2.25rem;
+  padding-right: 1em;
+  background   : url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Earrow-down%3C/title%3E%3Cpath d='M0 5.5v-.2c.1-.2.3-.3.5-.3h23c.2 0 .4.1.5.3 0 .2 0 .4-.1.5l-11.5 13c-.1.1-.2.2-.4.2s-.3-.1-.4-.2L.1 5.8C0 5.7 0 5.6 0 5.5zm22.4.5H1.6L12 17.7 22.4 6z' fill='%23999999' stroke='%23999999' stroke-width='1'/%3E%3C/svg%3E") no-repeat right 0.5rem bottom 45%;
+  // background-size: 15px;
 
 }
 
@@ -220,146 +220,146 @@ select {
 // Anton Staroverov (https://tonystar.me)
 // ====================================================================================
 @mixin float-label-container {
-    position: relative;
+  position: relative;
 
-    display : block;
+  display : block;
 }
 @mixin float-label {
-    > span,
-    label {
-        position  : absolute;
-        top       : 0;
-        left      : 0.5rem;
-        cursor    : text;
-        transition: all 0.2s;
-        opacity   : 1;
-        font-size : 75%;
-        @content;
-    }
+  > span,
+  label {
+    position  : absolute;
+    top       : 0;
+    left      : 0.5rem;
+    cursor    : text;
+    transition: all 0.2s;
+    opacity   : 1;
+    font-size : 75%;
+    @content;
+  }
 }
 @mixin float-label-input {
-    &::placeholder {
-        transition: all 0.2s;
-        opacity   : 1;
-        color     : $gray-medium;
-    }
+  &::placeholder {
+    transition: all 0.2s;
+    opacity   : 1;
+    color     : $black-30;
+  }
 
-    &:placeholder-shown:not(:focus)::placeholder {
-        opacity: 0;
-    }
+  &:placeholder-shown:not(:focus)::placeholder {
+    opacity: 0;
+  }
 }
 @mixin float-label-scaled {
-    &:placeholder-shown:not(:focus) + * {
-        top      : 0.7rem;
-        opacity  : 1;
-        font-size: inherit;
-        @content;
-    }
+  &:placeholder-shown:not(:focus) + * {
+    top      : 0.7rem;
+    opacity  : 1;
+    font-size: inherit;
+    @content;
+  }
 }
 
 .has-float-label {
-    @include float-label-container;
-    @include float-label;
+  @include float-label-container;
+  @include float-label;
 
-    select {
-        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Earrow-down%3C/title%3E%3Cpath d='M0 5.5v-.2c.1-.2.3-.3.5-.3h23c.2 0 .4.1.5.3 0 .2 0 .4-.1.5l-11.5 13c-.1.1-.2.2-.4.2s-.3-.1-.4-.2L.1 5.8C0 5.7 0 5.6 0 5.5zm22.4.5H1.6L12 17.7 22.4 6z' fill='%2353565a' stroke='%2353565a' stroke-width='1'/%3E%3C/svg%3E") no-repeat right 0.5rem bottom 25% !important;
+  select {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Earrow-down%3C/title%3E%3Cpath d='M0 5.5v-.2c.1-.2.3-.3.5-.3h23c.2 0 .4.1.5.3 0 .2 0 .4-.1.5l-11.5 13c-.1.1-.2.2-.4.2s-.3-.1-.4-.2L.1 5.8C0 5.7 0 5.6 0 5.5zm22.4.5H1.6L12 17.7 22.4 6z' fill='%2353565a' stroke='%2353565a' stroke-width='1'/%3E%3C/svg%3E") no-repeat right 0.5rem bottom 25% !important;
 
-        appearance: none;
+    appearance: none;
+  }
+
+  input,
+  select,
+  textarea {
+    padding-top  : 1.2rem;
+    border       : 0;
+    border-bottom: 1px solid rgba($black, .2);
+    border-radius: 0;
+    background   : none;
+    box-shadow   : none;
+
+    font-size    : inherit;
+
+    @include float-label-input;
+    @include float-label-scaled {
+      top: 0.5rem;
     }
 
-    input,
-    select,
-    textarea {
-        padding-top  : 1.2rem;
-        border       : 0;
-        border-bottom: 1px solid rgba($black, .2);
-        border-radius: 0;
-        background   : none;
-        box-shadow   : none;
-
-        font-size    : inherit;
-
-        @include float-label-input;
-        @include float-label-scaled {
-            top: 0.5rem;
-        }
-
-        &:focus {
-            border-width: 0 0 1px 0;
-            border-color: $blue-light;
-            outline     : none;
-            background  : none;
-            box-shadow  : none;
-            box-shadow  : 0 1px 0 $blue-light;
-        }
+    &:focus {
+      border-width: 0 0 1px 0;
+      border-color: $blue-light;
+      outline     : none;
+      background  : none;
+      box-shadow  : none;
+      box-shadow  : 0 1px 0 $blue-light;
     }
+  }
 
-    & span {
-        // color: $white;
-    }
+  & span {
+    // color: $white;
+  }
 
-    & input:focus + span {
-        color: $blue-light;
-    }
+  & input:focus + span {
+    color: $blue-light;
+  }
 
-    & .form-error {
-        position : relative;
-        top      : 0;
-        left     : 0;
+  & .form-error {
+    position : relative;
+    top      : 0;
+    left     : 0;
 
-        color    : inherit !important;
+    color    : inherit !important;
 
-        font-size: initial;
-    }
+    font-size: initial;
+  }
 
 }
 
 form.white {
-    select {
-        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Earrow-down%3C/title%3E%3Cpath d='M0 5.5v-.2c.1-.2.3-.3.5-.3h23c.2 0 .4.1.5.3 0 .2 0 .4-.1.5l-11.5 13c-.1.1-.2.2-.4.2s-.3-.1-.4-.2L.1 5.8C0 5.7 0 5.6 0 5.5zm22.4.5H1.6L12 17.7 22.4 6z' fill='%23ffffff' stroke='%23ffffff' stroke-width='1'/%3E%3C/svg%3E") no-repeat right 0.5rem bottom 25% !important;
+  select {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'%3E%3Ctitle%3Earrow-down%3C/title%3E%3Cpath d='M0 5.5v-.2c.1-.2.3-.3.5-.3h23c.2 0 .4.1.5.3 0 .2 0 .4-.1.5l-11.5 13c-.1.1-.2.2-.4.2s-.3-.1-.4-.2L.1 5.8C0 5.7 0 5.6 0 5.5zm22.4.5H1.6L12 17.7 22.4 6z' fill='%23ffffff' stroke='%23ffffff' stroke-width='1'/%3E%3C/svg%3E") no-repeat right 0.5rem bottom 25% !important;
 
-        appearance: none;
+    appearance: none;
+  }
+
+  & input,
+  & select,
+  & textarea {
+    color        : $white;
+    border-bottom: 1px solid rgba($white,.7);
+    background   : none;
+
+    &:focus {
+      border-width: 0 0 1px 0;
+      border-color: $white;
+      background  : none;
+      box-shadow  : none;
+      box-shadow  : 0 1px 0 $white;
     }
 
-    & input,
-    & select,
-    & textarea {
-        color        : $white;
-        border-bottom: 1px solid rgba($white,.7);
-        background   : none;
-
-        &:focus {
-            border-width: 0 0 1px 0;
-            border-color: $white;
-            background  : none;
-            box-shadow  : none;
-            box-shadow  : 0 1px 0 $white;
-        }
-
-        &::placeholder {
-            color: rgba($white, .5);
-        }
+    &::placeholder {
+      color: rgba($white, .5);
     }
+  }
 
-    & span {
-        color: $white;
-    }
+  & span {
+    color: $white;
+  }
 
-    & input:focus + span {
-        color: $white;
-    }
+  & input:focus + span {
+    color: $white;
+  }
 
-    & .form-error {
-        position : relative;
-        top      : 0;
-        left     : 0;
-        color    : inherit !important;
-        font-size: initial;
-    }
+  & .form-error {
+    position : relative;
+    top      : 0;
+    left     : 0;
+    color    : inherit !important;
+    font-size: initial;
+  }
 
-    & .is-invalid-label span {
-        color: $alert-color;
-    }
+  & .is-invalid-label span {
+    color: $alert-color;
+  }
 
 }
 // -----  End of FLOAT LABELS  ---------------------------------------------

@@ -1,38 +1,128 @@
-$blue: #0033a0;
-$blue-light: #328dff;
-$blue-medium: #2d67ff;
-$blue-dark: #000063;
-$green: $success-color;
-$green-light: lighten($green, 10%);
-$green-dark: darken($green, 10%);
-$orange: $warning-color;
-$orange-dark: #f4633a;
-$gray-dark1: lighten($black, 20%);
-$gray-dark2: lighten($black, 40%);
-$gray-light1: lighten($black, 60%);
-$gray-light2: lighten($black, 80%);
-$gray-light3: lighten($black, 90%);
-$purple: #5c068c;
-$purple-dark: #3c1053;
-$magenta: #c800a1;
-$magenta-dark: #840b55;
-$red: #e1523d;
+$blue: rgba(0,51,159,1);
+$blue-light: rgba(50,141,255,1);
+$blue-medium: rgba(45,103,255,1);
+$blue-dark: rgba(0,0,99,1);
+$green: rgba(0,177,64,1);
+$green-light: rgba(0,228,82,1);
+$green-dark: rgba(0,126,46,1);
+$white: rgba(255,255,255,1);
+$white-05: rgba(255,255,255,0.05);
+$white-10: rgba(255,255,255,0.1);
+$white-15: rgba(255,255,255,0.15);
+$white-30: rgba(255,255,255,0.3);
+$white-50: rgba(255,255,255,0.5);
+$white-60: rgba(255,255,255,0.6);
+$black-05: rgba(0,0,0,0.05);
+$black-10: rgba(0,0,0,0.10);
+$black-15: rgba(0,0,0,0.15);
+$black-30: rgba(0,0,0,0.3);
+$black-50: rgba(0,0,0,0.5);
+$black-60: rgba(0,0,0,0.6);
+$black: rgba(0,0,0,1);
+$gray-lightest: $black-05;
+$gray-lighter: $black-10;
+$gray-light: $black-15;
+$gray-medium: $black-30;
+$gray-dark: $black-60;
+$darkMode-black: rgba(25,25,25,1);
+$red: rgba(244,99,58,1);
+
 $cog-color-palette: (
-    "black"    : $black,
-    "white"    : $white,
-    "blue"     : blue,
-    blue-light : blue-light,
-    blue-medium: blue-medium,
-    blue-dark  : blue-dark,
-    "green"    : $green,
-    green-light: $green-light,
-    green-dark : $green-dark,
-    gray-dark1 : $gray-dark1,
-    gray-dark2 : $gray-dark2,
-    gray-light1: $gray-light1,
-    gray-light2: $gray-light2,
-    gray-light3: $gray-light3,
-    gray-light : $light-gray,
-    gray-medium: $gray-medium,
-    gray-dark  : $dark-gray
+  "blue"        : $blue,
+  blue-light    : $blue-light,
+  blue-medium   : $blue-medium,
+  blue-dark     : $blue-dark,
+  "green"       : $green,
+  green-light   : $green-light,
+  green-dark    : $green-dark,
+  "white"       : $white,
+  "black"       : $black,
+  gray-lightest : $black-05,
+  gray-lighter  : $black-10,
+  gray-light    : $black-15,
+  gray-medium   : $black-30,
+  gray-dark     : $black-60,
+  darkMode-black: $darkMode-black,
+  "red"         : $red,
+  primary       : $blue,
+  secondary     : $black-30,
+  success       : $green,
+  warning       : $red,
+  alert         : $red
 );
+
+$button-palette: (
+  green      : $green,
+  green-light: $green-light,
+);
+
+:root {
+  @each $name, $color in $cog-color-palette {
+    --#{$name}: #{$color};
+  }
+}
+
+// ===================================================================================
+// ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████
+// ██   ██ ██   ██ ██   ██ ██  ██      ████  ████ ██    ██ ██   ██ ██
+// ██   ██ ███████ ██████  █████       ██ ████ ██ ██    ██ ██   ██ █████
+// ██   ██ ██   ██ ██   ██ ██  ██      ██  ██  ██ ██    ██ ██   ██ ██
+// ██████  ██   ██ ██   ██ ██   ██     ██      ██  ██████  ██████  ███████
+// =================================================================================== 
+
+@media (prefers-color-scheme: dark) {
+
+  $cog-color-palette: (
+    "blue"     : $blue-medium,
+    "white"    : $black,
+    gray-light : $white-05,
+    gray-medium: $white-10,
+    gray-dark  : $white-15,
+    "black"    : $white,
+  );
+
+  :root {
+    @each $name, $color in $cog-color-palette {
+      --#{$name}: #{$color};
+    }
+  }
+}
+
+// @function hexToRGB($hex) {
+//   @return red($hex), green($hex), blue($hex);
+// }
+
+// :root {
+//   --blue            : #{$blue};
+//   --blue-rgb        : #{hexToRGB($blue)};
+//   --blue-light      : #{$blue-light};
+//   --blue-light-rgb  : #{hexToRGB($blue-light)};
+//   --blue-medium     : #{$blue-medium};
+//   --blue-medium-rgb : #{hexToRGB($blue-medium)};
+//   --blue-dark       : #{$blue-dark};
+//   --blue-dark-rgb   : #{hexToRGB($blue-dark)};
+//   --green           : #{$green};
+//   --green-rgb       : #{hexToRGB($green)};
+//   --green-light     : #{$green-light};
+//   --green-light-rgb : #{hexToRGB($green-light)};
+//   --green-dark      : #{$green-dark};
+//   --green-dark-rgb  : #{hexToRGB($green-dark)};
+//   --white           : #{$white};
+//   --white-rgb       : #{hexToRGB($white)};
+//   --white-light     : #{$white-15};
+//   --white-light-rgb : #{hexToRGB($white-15)};
+//   --white-medium    : #{$white-30};
+//   --white-medium-rgb: #{hexToRGB($white-30)};
+//   --white-dark      : #{$white-60};
+//   --white-dark-rgb  : #{hexToRGB($white-60)};
+//   --gray-light      : #{$black-15};
+//   --gray-light-rgb  : #{hexToRGB($black-15)};
+//   --gray-medium     : #{$black-30};
+//   --gray-medium-rgb : #{hexToRGB($black-30)};
+//   --gray-dark       : #{$black-60};
+//   --gray-dark-rgb   : #{hexToRGB($black-60)};
+//   --black           : #{$black};
+//   --black-rgb       : #{hexToRGB($black)};
+//   --red             : #{$red};
+//   --red-rgb         : #{hexToRGB($red)};
+// }

@@ -1,108 +1,107 @@
 .accordion {
-    color: $white;
+  color: $white;
 }
 
 .accordion-item {
-    margin-bottom: 2px;
-
-    border-radius: 0;
-    background   : $blue;
+  margin-bottom: 2px;
+  border-radius: 0;
+  background   : $blue;
 }
 
 .accordion-title {
-    margin         : 0;
-    padding-right  : 2.5rem;
-    text-decoration: none;
-    border         : none !important;
+  margin         : 0;
+  padding-right  : 2.5rem;
+  text-decoration: none;
+  border         : none !important;
+  @extend %h6 !optional;
 
-    @extend %h6 !optional;
-
-    &:before {
-        margin-top: -0.75rem;
-        font-size : 1.5rem;
-    }
+  &:before {
+    margin-top: -0.75rem;
+    font-size : 1.5rem;
+  }
 }
 
 .accordion-content,
 :last-child > .accordion-content:last-child {
-    border: 1px solid $gray-medium;
+  border: 1px solid $black-30;
 
-    @include breakpoint(large) {
-        padding: 2rem;
-    }
+  @include breakpoint(large) {
+    padding: 2rem;
+  }
 }
 
 a.accordion-title,
 a.accordion-title:focus,
 a.accordion-title:hover {
-    color: $white;
+  color     : $white;
+  background: initial;
 }
 
 .accordion-arrow .accordion-title::before {
-    margin     : 0;
-    padding    : 0;
-    content    : "\e907";
-    transform  : rotate(90deg);
-    color      : $white !important;
-    font-family: "Cognizant-Icons";
-    font-size  : inherit;
-    font-weight: 600;
-    line-height: 0;
+  margin     : 0;
+  padding    : 0;
+  content    : "\e907";
+  transform  : rotate(90deg);
+  color      : $white !important;
+  font-family: "Cognizant-Icons";
+  font-size  : inherit;
+  font-weight: 600;
+  line-height: 0;
 }
 
 .accordion-arrow .is-active .accordion-title::before {
-    margin     : 0;
-    padding    : 0;
-    content    : "\e907";
-    transform  : rotate(-90deg);
-    color      : $white !important;
-    font-family: "Cognizant-Icons";
-    font-size  : inherit;
-    font-weight: 600;
-    line-height: 0;
+  margin     : 0;
+  padding    : 0;
+  content    : "\e907";
+  transform  : rotate(-90deg);
+  color      : $white !important;
+  font-family: "Cognizant-Icons";
+  font-size  : inherit;
+  font-weight: 600;
+  line-height: 0;
 }
 /* ==============================  ACCORDION MINIMAL DIVIDER  ============================== */
 .accordion-line {
-    padding: 0;
+  padding: 0;
 
-    & .accordion-item {
-        color     : $blue;
-        background: transparent;
-    }
+  & .accordion-item {
+    color     : $blue;
+    background: transparent;
+  }
 
-    & .accordion-title {
-        // line-height: 0;
-        // display: inline-block;
-        color: $blue;
-        // border     : 2px solid $blue !important;
-        // padding    : 0.75rem;
-    }
+  & .accordion-title {
+    // line-height: 0;
+    // display: inline-block;
+    color: $blue;
+    // border     : 2px solid $blue !important;
+    // padding    : 0.75rem;
+  }
 
-    & .accordion-title:before,
-    .accordion-title:after {
-        position  : absolute;
-        top       : 50%;
-        width     : 100%;
+  & .accordion-title:before,
+  .accordion-title:after {
+    position  : absolute;
+    top       : 50%;
+    width     : 100%;
 
-        content   : "";
-        transform : none;
-        border-top: 1px solid $gray-medium;
-    }
+    content   : "";
+    transform : none;
+    border-top: 1px solid $black-30;
+  }
 
-    & .accordion-title:before {
-        right       : 100%;
-        margin-right: 1rem;
-    }
+  & .accordion-title:before {
+    right       : 100%;
+    margin-right: 1rem;
+  }
 
-    & .accordion-title:after {
-        left       : 100%;
-        margin-left: 1rem;
-    }
+  & .accordion-title:after {
+    left       : 100%;
+    margin-left: 1rem;
+  }
 
-    & .accordion-title:focus {
-        color     : $blue;
-        background: transparent;
-    }
+  & .accordion-title:focus {
+    color     : $blue;
+    background: transparent;
+  }
 }
 
 /* ====================================================================================
@@ -126,20 +125,20 @@ a.accordion-title:hover {
 ==================================================================================== */
 /* ==============================  ACCORDION BARS BACKGROUND COLORS  ============================== */
 @for $i from 0 through 100 {
-    .accordion-gradient-#{$i} {
-        background: mix($blue-dark, $blue, $i);
-    }
+  .accordion-gradient-#{$i} {
+    background: mix($blue-dark, $blue, $i);
+  }
 }
 /* ==============================  BLUE BACKGROUND COLOR STEPS  ============================== */
 @for $i from 0 through 100 {
-    .bg-steps-blue-#{$i} {
-        background: mix($blue-dark, $blue, $i);
+  .bg-steps-blue-#{$i} {
+    background: mix($blue-dark, $blue, $i);
 
-        > a {
-            background: none !important;
-            box-shadow: none !important;
-        }
+    > a {
+      background: none !important;
+      box-shadow: none !important;
     }
+  }
 }
 /* ==============================  GREEN BACKGROUND COLOR STEPS  ============================== */
 // @for $i from 0 through 100 {
@@ -153,3 +152,20 @@ a.accordion-title:hover {
 //     }
 // }
 // -----  End of BACKGROUND GRADIENT STEPS  ---------------------------------------------
+
+// ===================================================================================
+// ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████
+// ██   ██ ██   ██ ██   ██ ██  ██      ████  ████ ██    ██ ██   ██ ██
+// ██   ██ ███████ ██████  █████       ██ ████ ██ ██    ██ ██   ██ █████
+// ██   ██ ██   ██ ██   ██ ██  ██      ██  ██  ██ ██    ██ ██   ██ ██
+// ██████  ██   ██ ██   ██ ██   ██     ██      ██  ██████  ██████  ███████
+// ===================================================================================
+
+@media (prefers-color-scheme: dark) {
+  .accordion-content {
+    // background: var(--white);
+    // color     : var(--black);
+  }
+}
+
+// -----  End of DARK MODE  -----------------------------------

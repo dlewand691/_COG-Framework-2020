@@ -4,11 +4,17 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "5C085713-5D1A-4A10-8AE9-11FDA9891D9B"
+		"uuidString": "1FCBD237-AE41-486D-B5A4-2C6FC9CCD25A"
 		}
 	],
 "creatorBuild": "31934",
 "files": {
+	"/_BUILD": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/_BUILD/_BUILD",
+		"oF": 0
+		},
 	"/fonts/Cognizant-Icons-FONT/demo-files/demo.css": {
 		"aP": 1,
 		"bl": 0,
@@ -77,13 +83,92 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/js/cognizant-framework.js": {
+	"/fonts/Cognizant-Sans/stylesheet.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/css/stylesheet.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/js/abide-checkbox-group-validation.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/_BUILD/js/min/cognizant-framework-min.js",
+		"oAP": "/_BUILD/js/min/abide-checkbox-group-validation-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/js/accordions.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/js/min/accordions-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/js/cognizant-framework-2020.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/js/min/cognizant-framework-2020-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/js/contact-widget.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/js/min/contact-widget-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/js/gradient-background-steps.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/js/min/gradient-background-steps-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/js/gradient-steps-tabs.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/js/min/gradient-steps-tabs-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/js/succinct-line-clamp.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/js/min/succinct-line-clamp-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1

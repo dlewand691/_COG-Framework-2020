@@ -31,42 +31,42 @@
 // ************************
 
 .overflower {
-    display      : inline-block;
-    overflow     : hidden;
-    box-sizing   : border-box;
-    max-width    : 100%;
-    height       : 1.5em;
-    white-space  : nowrap;
-    text-overflow: ellipsis;
-    line-height  : 1.5em;
+  display      : inline-block;
+  overflow     : hidden;
+  box-sizing   : border-box;
+  max-width    : 100%;
+  height       : 1.5em;
+  white-space  : nowrap;
+  text-overflow: ellipsis;
+  line-height  : 1.5em;
 }
 
 .overflower-long {
-    display: inline;
+  display: inline;
 }
 
 .overflower-short {
-    display: none;
+  display: none;
 }
 
 @supports (flex-wrap: wrap) {
-    .overflower {
-        display  : inline-flex;
-        flex-wrap: wrap;
-    }
+  .overflower {
+    display  : inline-flex;
+    flex-wrap: wrap;
+  }
 
-    .overflower-short {
-        display      : block;
-        overflow     : hidden;
-        flex-grow    : 1;
-        width        : 0;
+  .overflower-short {
+    display      : block;
+    overflow     : hidden;
+    flex-grow    : 1;
+    width        : 0;
 
-        text-overflow: ellipsis;
-    }
+    text-overflow: ellipsis;
+  }
 
-    .overflower-long {
-        flex-basis: 100%;
-    }
+  .overflower-long {
+    flex-basis: 100%;
+  }
 }
 
 // -----  End of FLEXIBLE OVERFLOW  ---------------------------------------------
@@ -91,29 +91,29 @@
 
 ==================================================================================== */
 .read-more {
-    position     : relative;
+  position     : relative;
 
-    padding-right: 1rem;
+  padding-right: 1rem;
 }
 
 a.morelink {
-    position   : absolute;
-    top        : 0;
-    right      : 0;
-    // color      : $gray-light;
+  position   : absolute;
+  top        : 0;
+  right      : 0;
+  // color      : $black-15;
 
-    transition : all 0.25s ease-out;
+  transition : all 0.25s ease-out;
 
-    font-family: "Cognizant-Icons";
+  font-family: "Cognizant-Icons";
 
-    &.less {
-        transform: rotate(135deg);
+  &.less {
+    transform: rotate(135deg);
 
-        color    : $blue-light;
-    }
+    color    : $blue-light;
+  }
 }
 
 .morecontent span {
-    display: none;
+  display: none;
 }
 // -----  End of READ MORE LINK  ---------------------------------------------

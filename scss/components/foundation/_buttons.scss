@@ -1,88 +1,88 @@
 .button {
-    // margin-left    : 0.5rem;
-    margin-right   : 0.5rem;
-    text-decoration: none;
-    text-transform : uppercase;
-    // @include font-size(20px);
-    font-weight    : 700;
+  // margin-left    : 0.5rem;
+  margin-right   : 0.5rem;
+  text-decoration: none;
+  text-transform : uppercase;
+  // @include font-size(20px);
+  font-weight    : 700;
 
-    & i {
-        // line-height: 0;
-    }
-    // + .button {
-    //     margin-left: 0.5rem;
-    // }
-    // & + .button:nth-child(n+2) {
-    //     margin-left : 0.5rem;
-    //     margin-right: 0.5rem;
-    // }
-    // & + .button:nth-last-of-type(1) {
-    //     // margin-left : 0.5rem;
-    //     margin-right: 0;
-    // }
-    &.tiny {
-        // @include font-size(12px);
-    }
+  & i {
+    // line-height: 0;
+  }
+  // + .button {
+  //     margin-left: 0.5rem;
+  // }
+  // & + .button:nth-child(n+2) {
+  //     margin-left : 0.5rem;
+  //     margin-right: 0.5rem;
+  // }
+  // & + .button:nth-last-of-type(1) {
+  //     // margin-left : 0.5rem;
+  //     margin-right: 0;
+  // }
+  &.tiny {
+    // @include font-size(12px);
+  }
 
-    &.small {
-        // @include font-size(16px);
-    }
+  &.small {
+    // @include font-size(16px);
+  }
 
-    &.large {
-        // @include font-size(27px);
-    }
+  &.large {
+    // @include font-size(27px);
+  }
 
-    &.xlarge {
-        // @include font-size(36px);
-    }
+  &.xlarge {
+    // @include font-size(36px);
+  }
 
-    &.back:after {
-        margin : 0;
-        content: "";
-    }
+  &.back:after {
+    margin : 0;
+    content: "";
+  }
 
-    &.back:before {
-        margin-right: 0.5rem;
-        content     : "\e905";
-        color       : $white;
-        font-family : "Cognizant-Icons";
-        font-weight : 600;
-    }
+  &.back:before {
+    margin-right: 0.5rem;
+    content     : "\e905";
+    color       : $white;
+    font-family : "Cognizant-Icons";
+    font-weight : 600;
+  }
 
-    &.download:after {
-        position   : unset !important;
-        right      : unset !important;
-        width      : unset !important;
-        height     : unset !important;
-        margin-top : unset !important;
-        margin-left: 0.5rem;
-        content    : "\e920" !important;
-        background : unset !important;
-        font-family: "Cognizant-Icons";
-        font-weight: bold;
-    }
+  &.download:after {
+    position   : unset !important;
+    right      : unset !important;
+    width      : unset !important;
+    height     : unset !important;
+    margin-top : unset !important;
+    margin-left: 0.5rem;
+    content    : "\e920" !important;
+    background : unset !important;
+    font-family: "Cognizant-Icons";
+    font-weight: bold;
+  }
 
-    &.white {
-        color     : $green-dark;
-        background: $white;
-    }
+  &.white {
+    color     : $green-dark;
+    background: $white;
+  }
 
-    &.white:after {
-        color: $green-dark;
-    }
+  &.white:after {
+    color: $green-dark;
+  }
 
-    &.white:hover {
-        background: darken($white, 5%);
-    }
+  &.white:hover {
+    background: darken($white, 5%);
+  }
 
-    &.disabled {
-        background: $light-gray;
-    }
+  &.disabled {
+    background: $black-15;
+  }
 
-    .bg-blue {
-        &:hover {
-            background: scale-color($blue, $lightness: -20%) !important;
-        }
+  .bg-blue {
+    &:hover {
+      background: scale-color($blue, $lightness: -20%) !important;
     }
+  }
 }
 /* ----  End of BUTTON  -------------------------------------------------------------------------- */

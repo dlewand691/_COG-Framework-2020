@@ -87,6 +87,7 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 @import "aos/src/sass/aos";
 @import "hamburgers/_sass/hamburgers/hamburgers";
 $themeColor: $green;
+
 @import "swiper/swiper";
 @import "swiper/components/pagination/pagination.scss";
 @import "swiper/components/navigation/navigation.scss";
@@ -101,13 +102,13 @@ $themeColor: $green;
 ██████  ███████ ██████   ██████   ██████   ██████  ██ ██   ████  ██████
 =========================================================================================== */
 .debug * {
-    background-color: rgba(0,255,0,0.1);
-    border          : 1px solid rgba(255, 0, 0, .2);
+  background-color: rgba(0,255,0,0.1);
+  border          : 1px solid rgba(255, 0, 0, .2);
 }
 /* ----  End of DEBUGGING  -------------------------------------------------------------------------- */
 
 * + * {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 // ===================================================================================
@@ -122,7 +123,7 @@ $themeColor: $green;
 .cells,
 .column,
 .columns {
-    min-width: initial !important;
+  min-width: initial !important;
 }
 
 // -----  End of COLUMN FIX  -----------------------------------
@@ -154,7 +155,6 @@ $themeColor: $green;
 @import "base/shadows";
 @import "base/video";
 @import "base/z-indexes";
-@import "base/dark-mode";
 
 // ===================================================================================
 // ███████  ██████  ██    ██ ███    ██ ██████   █████  ████████ ██  ██████  ███    ██
@@ -205,3 +205,12 @@ $themeColor: $green;
 @import "plugins/lazysizes";
 @import "plugins/scrollup";
 @import "plugins/swiper";
+
+// ===================================================================================
+// ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████
+// ██   ██ ██   ██ ██   ██ ██  ██      ████  ████ ██    ██ ██   ██ ██
+// ██   ██ ███████ ██████  █████       ██ ████ ██ ██    ██ ██   ██ █████
+// ██   ██ ██   ██ ██   ██ ██  ██      ██  ██  ██ ██    ██ ██   ██ ██
+// ██████  ██   ██ ██   ██ ██   ██     ██      ██  ██████  ██████  ███████
+// ===================================================================================
+@import "base/dark-mode";

@@ -14,12 +14,13 @@
 .logo-linkedin,
 .logo-twitter-bird,
 .navigation-drawer {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .icomoon-liga,
 i {
-    display: inline-block;
+  display    : inline-block;
+  font-weight: normal !important;
 }
 /* -----  End of ICON FONT  --------------------------------------------- */
 /* ====================================================================================
@@ -32,14 +33,14 @@ i {
 
 ==================================================================================== */
 .icon-left svg {
-    float       : left;
+  float       : left;
 
-    margin-right: 0.7em;
+  margin-right: 0.7em;
 }
 
 .icon-right svg {
-    float      : right;
+  float      : right;
 
-    margin-left: 0.85em;
+  margin-left: 0.85em;
 }
 /* -----  End of ICONS  --------------------------------------------- */

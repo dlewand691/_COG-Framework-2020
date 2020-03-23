@@ -1,116 +1,127 @@
-$tab-background: $gray-light;
+$tab-background: var(--gray-lighter);
 
 .tabs {
-    border-width: 1px 0 1px 1px;
-    border-style: solid;
-    border-color: $tab-content-border transparent $tab-content-border $tab-content-border;
-    background  : $tab-background;
+  border-width: 1px 0 1px 1px;
+  border-style: solid;
+  border-color: $tab-content-border transparent $tab-content-border $tab-content-border;
+  background  : $tab-background;
 }
 // ==============================  VERTICAL TAB STYLES  ==============================
 
+[class*="bg-"] {
+  .tabs-title a {
+    color: white;
+  }
+}
+
 .tabs-title {
-    position     : relative;
-    margin-bottom: 0;
+  position     : relative;
+  margin-bottom: 0;
 
-    a {
-        transition: $button-transition;
-        color     : $black;
-        background: $tab-background;
+  a {
+    transition: $button-transition;
+    color     : $black;
+    background: $tab-background;
 
-        &:focus {
-            color     : $gray-dark;
-            background: $gray-light;
-        }
-
-        &:hover {
-            color     : $black;
-            background: $gray-medium;
-        }
+    &:focus {
+      color     : $gray-dark;
+      background: $gray-light;
     }
 
-    &.is-active a {
-        color     : $green;
-        background: $white;
-        box-shadow: inset 4px 0 0 0 $green;
-
-        &:first-of-type {}
-
-        &:last-of-type {}
+    &:hover {
+      color     : $black;
+      background: $gray-medium;
     }
+  }
 
-    &[class*="bg-steps"] a {
-        border-width: 0;
-    }
+  &.is-active a {
+    color     : $green;
+    background: $white;
+    box-shadow: inset 4px 0 0 0 $green;
 
-    &-rounded {
-        border-radius: 1000px;
-    }
+    &:first-of-type {}
+
+    &:last-of-type {}
+  }
+
+  &[class*="bg-steps"] a {
+    border-width: 0;
+  }
+
+  &-rounded {
+    border-radius: 1000px;
+  }
 }
 
 .tabs-content {
-    &.vertical {
-        margin-left: -1px;
-        border     : 1px solid $tab-content-border;
+  background: $white;
 
-        & .tabs-panel {
-            min-height: 500px;
-        }
+  &.vertical {
+    margin-left: -1px;
+    border     : 1px solid $tab-content-border;
+
+    & .tabs-panel {
+      min-height: 500px;
     }
+  }
 }
 // ==============================  HORIZONTAL TAB STYLES  ==============================
 
 .tabs:not(.vertical) {
-    border: 1px solid $tab-content-border;
+  border: 1px solid $tab-content-border;
 
-    .tabs-title {
-        a {
-            transition  : $button-transition;
-            color       : $black;
-            border-width: 0;
-            background  : $tab-background;
+  .tabs-title {
+    a {
+      transition  : $button-transition;
+      color       : $black;
+      border-width: 0;
+      background  : $tab-background;
 
-            &:focus {
-                color     : $gray-light;
-                background: $gray-medium;
-            }
+      &:focus {
+        color     : $gray-light;
+        background: $gray-medium;
+      }
 
-            &:hover {
-                color     : $black;
-                background: $gray-medium;
-            }
-        }
-
-        &.is-active a {
-            color     : $green;
-            background: $white;
-            box-shadow: inset 0 4px 0 0 $green, 0 1px 0 0 $white;
-        }
-
-        &:first-of-type.is-active {
-            border-left: 0 solid;
-        }
-
-        &:last-of-type.is-active {}
+      &:hover {
+        color     : $black;
+        background: $gray-medium;
+      }
     }
+
+    &.is-active a {
+      color     : $green;
+      background: $white;
+      box-shadow: inset 0 4px 0 0 $green, 0 1px 0 0 $white;
+      @media (prefers-color-scheme: dark) {
+        box-shadow: inset 0 4px 0 0 $green, 0 1px 0 0 $gray-light;
+      }
+    }
+
+    &:first-of-type.is-active {
+      border-left: 0 solid;
+    }
+
+    &:last-of-type.is-active {}
+  }
 }
 @keyframes tab-panel-fade-in {
-    0% {
-        max-height: 500px;
-        opacity   : 0;
-    }
+  0% {
+    max-height: 500px;
+    opacity   : 0;
+  }
 
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        max-height: 999px;
-    }
+  100% {
+    max-height: 999px;
+  }
 }
 // ==============================  TABS PANEL  ==============================
 
 .tabs-panel {
-    &.is-active {
-        animation: tab-panel-fade-in 1s ease;
-    }
+  &.is-active {
+    animation: tab-panel-fade-in 1s ease;
+  }
 }

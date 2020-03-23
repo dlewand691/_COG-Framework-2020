@@ -1,5 +1,5 @@
 #navSubBar {
-    hyphens: auto;
+  hyphens: auto;
 }
 /* ====================================================================================
 
@@ -16,23 +16,23 @@
 
 ==================================================================================== */
 .navBarInPage {
-    & a {
-        color: $white;
+  & a {
+    color: $white;
 
-        &:hover {
-            color     : $green;
-            background: $white !important;
-        }
+    &:hover {
+      color     : $green;
+      background: $white !important;
     }
+  }
 
-    & a.is-active {
-        // background: transparentize($white, .80) !important;
-        background: $green !important;
+  & a.is-active {
+    // background: transparentize($white, .80) !important;
+    background: $green !important;
 
-        &:hover {
-            color     : $green;
-            background: $white !important;
-        }
+    &:hover {
+      color     : $green;
+      background: $white !important;
     }
+  }
 }
 // -----  End of NAV BLUE BAR  ---------------------------------------------

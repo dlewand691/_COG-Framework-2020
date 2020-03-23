@@ -7,15 +7,15 @@
 // ===================================================================================
 $border-width: 4;
 $border-side: (
-    "t": top,
-    "r": right,
-    "b": bottom,
-    "l": left
+  "t": top,
+  "r": right,
+  "b": bottom,
+  "l": left
 );
 // @include -zf-each-breakpoint($small: true, $auto-insert-breakpoints: true) {
 //     @for $i from 1 through $border-width {
 //         .#{$-zf-size}-bd#{$i} {
-//             border: $i + px solid $gray-medium !important;
+//             border: $i + px solid $black-30 !important;
 //         }
 //     }
 // }
@@ -24,71 +24,71 @@ $border-side: (
 // NO BORDER
 // ====================================================================================
 @each $size in $breakpoint-classes {
-    @include breakpoint($size) {
-        .#{$size}-bd0 {
-            border: 0 !important;
-        }
+  @include breakpoint($size) {
+    .#{$size}-bd0 {
+      border: 0 !important;
     }
+  }
 }
 
 // ====================================================================================
 // BORDER ALL SIDES GRAY-LIGHT2
 // ====================================================================================
 @each $size in $breakpoint-classes {
-    @include breakpoint($size) {
-        @for $i from 1 through $border-width {
-            .#{$size}-bd#{$i} {
-                border: #{$i}px solid $gray-medium !important;
-            }
-        }
+  @include breakpoint($size) {
+    @for $i from 1 through $border-width {
+      .#{$size}-bd#{$i} {
+        border: #{$i}px solid $black-30 !important;
+      }
     }
+  }
 }
 
 // ====================================================================================
 // BORDER, INDIVIDUAL SIDES, GRAY LIGHT 2
 // ====================================================================================
 @each $size in $breakpoint-classes {
-    @include breakpoint($size) {
-        @for $i from 1 through $border-width {
-            @each $side-name, $side in $border-side {
-                .#{$size}-bd-#{$side-name}#{$i} {
-                    border-#{$side}: #{$i}px $gray-medium solid !important;
-                }
-            }
+  @include breakpoint($size) {
+    @for $i from 1 through $border-width {
+      @each $side-name, $side in $border-side {
+        .#{$size}-bd-#{$side-name}#{$i} {
+          border-#{$side}: #{$i}px $black-30 solid !important;
         }
+      }
     }
+  }
 }
 
 // ====================================================================================
 // BORDER, ALL SIDES, ALL PRIMARY COLORS
 // ====================================================================================
 @each $size in $breakpoint-classes {
-    @include breakpoint($size) {
-        @for $i from 1 through $border-width {
-            @each $color-name, $color in $cog-color-palette {
-                .#{$size}-bd-#{$color-name}#{$i} {
-                    border: #{$i}px solid $color !important;
-                }
-            }
+  @include breakpoint($size) {
+    @for $i from 1 through $border-width {
+      @each $color-name, $color in $cog-color-palette {
+        .#{$size}-bd-#{$color-name}#{$i} {
+          border: #{$i}px solid $color !important;
         }
+      }
     }
+  }
 }
 
 // ====================================================================================
 // BORDER, INDIVIDUAL SIDES, ALL PRIMARY COLORS
 // ====================================================================================
 @each $size in $breakpoint-classes {
-    @include breakpoint($size) {
-        @for $i from 1 through $border-width {
-            @each $side-name, $side in $border-side {
-                @each $color-name, $color in $cog-color-palette {
-                    .#{$size}-bd-#{$side-name}-#{$color-name}#{$i} {
-                        border-#{$side}: #{$i}px $color solid !important;
-                    }
-                }
-            }
+  @include breakpoint($size) {
+    @for $i from 1 through $border-width {
+      @each $side-name, $side in $border-side {
+        @each $color-name, $color in $cog-color-palette {
+          .#{$size}-bd-#{$side-name}-#{$color-name}#{$i} {
+            border-#{$side}: #{$i}px $color solid !important;
+          }
         }
+      }
     }
+  }
 }
 // @each $size in $breakpoint-classes {
 //     @include breakpoint($size) {
