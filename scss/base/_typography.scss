@@ -8,9 +8,9 @@
 
 @mixin text-crop($line-height: 1.3, $top-adjustment: 0px, $bottom-adjustment: 0) {
   // Configured in Step 1
-  $top-crop           : 9;
-  $bottom-crop        : 5;
-  $crop-font-size     : 36;
+  $top-crop           : 21;
+  $bottom-crop        : 12;
+  $crop-font-size     : 84;
   $crop-line-height   : 1.1;
 
   // Apply values to calculate em-based margins that work with any font size
@@ -36,7 +36,7 @@
     margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
   }
 }
-// Mixin generated at: http://text-crop.eightshapes.com/?typeface-selection=custom-font&typeface=Lato&custom-typeface-name=Cognizant%20Sans&custom-typeface-url=&custom-typeface-weight=400&custom-typeface-style=normal&weight-and-style=100&size=36&line-height=1.1&top-crop=9&bottom-crop=5
+// Mixin generated at: http://text-crop.eightshapes.com/?typeface-selection=custom-font&typeface=Lato&custom-typeface-name=Cognizant%20Sans&custom-typeface-url=&custom-typeface-weight=400&custom-typeface-style=normal&weight-and-style=100&size=84&line-height=1.1&top-crop=21&bottom-crop=12
 
 /* Usage Examples
     .my-level-1-heading-class {
@@ -191,7 +191,8 @@
 // -----  End of RFS  -----------------------------------
 
 .text-crop {
-  @include lhCrop(1.2, 0.75); //using Roboto font family
+  // @include lhCrop(1.2, 0.75); //using Roboto font family
+  @include text-crop;
 }
 
 // ===================================================================================
@@ -214,6 +215,7 @@ h4,
 h5,
 h6 {
   color: var(--blue);
+  // @include text-crop;
 }
 
 %h1,
@@ -232,8 +234,9 @@ h1 {
 h2 {
   // @include font-size(63px);
   @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 32px, 63px);
+  @include fluidSize(line-height, 320px, $cog-bp--desktop-xl, 1, 1.1);
   // font-size  : var(--step-4);
-  line-height: 1.1;
+  // line-height: 1.1;
 }
 
 %h3,
@@ -282,6 +285,12 @@ p {
   a {
     // margin-bottom: $paragraph-margin-bottom;
   }
+}
+
+.super-size {
+  // @include font-size(140px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 48px, 140px);
+  @include fluidSize(line-height, 320px, $cog-bp--desktop-xl, 1, 1.1);
 }
 
 %small,
@@ -380,6 +389,19 @@ strong {
   font-style : italic;
 }
 
+%text-heavy,
+.strong,
+.text-heavy,
+strong {
+  font-weight: 900 !important;
+}
+
+%text-heavy-italic,
+.text-heavy-italic {
+  font-weight: 900 !important;
+  font-style : italic;
+}
+
 %text-italic,
 .text-italic {
   font-style: italic !important;
@@ -427,7 +449,7 @@ a:link {
   }
 }
 
-a.link-coverAll:after {
+a.link-coverAll:before {
   content : '';
   position: absolute;
   left    : 0;
@@ -532,8 +554,8 @@ a.link-coverAll:after {
 blockquote {
   padding     : 3.75rem 0;
   text-align  : center;
-  color       : $black-15;
-  border      : 1px solid $black-30;
+  color       : $blue-medium;
+  border      : 1px solid $blue-light;
   border-right: 0;
   border-left : 0;
   font-weight : bold;
@@ -545,6 +567,7 @@ blockquote {
   cite {
     margin-top : 1.875rem;
     font-weight: normal;
+    color      : $gray-dark;
   }
 }
 

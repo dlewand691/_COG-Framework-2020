@@ -1,31 +1,31 @@
-$blue: rgba(0,51,159,1);
-$blue-light: rgba(50,141,255,1);
-$blue-medium: rgba(45,103,255,1);
-$blue-dark: rgba(0,0,99,1);
-$green: rgba(0,177,64,1);
-$green-light: rgba(0,228,82,1);
-$green-dark: rgba(0,126,46,1);
-$white: rgba(255,255,255,1);
-$white-05: rgba(255,255,255,0.05);
-$white-10: rgba(255,255,255,0.1);
-$white-15: rgba(255,255,255,0.15);
-$white-30: rgba(255,255,255,0.3);
-$white-50: rgba(255,255,255,0.5);
-$white-60: rgba(255,255,255,0.6);
-$black-05: rgba(0,0,0,0.05);
-$black-10: rgba(0,0,0,0.10);
-$black-15: rgba(0,0,0,0.15);
-$black-30: rgba(0,0,0,0.3);
-$black-50: rgba(0,0,0,0.5);
-$black-60: rgba(0,0,0,0.6);
-$black: rgba(0,0,0,1);
-$gray-lightest: $black-05;
-$gray-lighter: $black-10;
-$gray-light: $black-15;
-$gray-medium: $black-30;
-$gray-dark: $black-60;
-$darkMode-black: rgba(25,25,25,1);
-$red: rgba(244,99,58,1);
+$blue: rgba(0,51,159,1) !default;
+$blue-light: rgba(50,141,255,1) !default;
+$blue-medium: rgba(45,103,255,1) !default;
+$blue-dark: rgba(0,0,99,1) !default;
+$green: rgba(0,177,64,1) !default;
+$green-light: rgba(0,228,82,1) !default;
+$green-dark: rgba(0,126,46,1) !default;
+$white: rgba(255,255,255,1) !default;
+$white-05: rgba(255,255,255,0.05) !default;
+$white-10: rgba(255,255,255,0.1) !default;
+$white-15: rgba(255,255,255,0.15) !default;
+$white-30: rgba(255,255,255,0.3) !default;
+$white-50: rgba(255,255,255,0.5) !default;
+$white-60: rgba(255,255,255,0.6) !default;
+$black-05: rgba(0,0,0,0.05) !default;
+$black-10: rgba(0,0,0,0.10) !default;
+$black-15: rgba(0,0,0,0.15) !default;
+$black-30: rgba(0,0,0,0.3) !default;
+$black-50: rgba(0,0,0,0.5) !default;
+$black-60: rgba(0,0,0,0.6) !default;
+$black: rgba(0,0,0,1) !default;
+$gray-lightest: $black-05 !default;
+$gray-lighter: $black-10 !default;
+$gray-light: $black-15 !default;
+$gray-medium: $black-30 !default;
+$gray-dark: $black-60 !default;
+$darkMode-black: rgba(25,25,25,1) !default;
+$red: rgba(244,99,58,1) !default;
 
 $cog-color-palette: (
   "blue"        : $blue,
@@ -35,20 +35,44 @@ $cog-color-palette: (
   "green"       : $green,
   green-light   : $green-light,
   green-dark    : $green-dark,
+  white-05      : $white-05,
+  white-10      : $white-10,
+  white-15      : $white-15,
+  white-30      : $white-30,
+  white-60      : $white-60,
   "white"       : $white,
   "black"       : $black,
-  gray-lightest : $black-05,
-  gray-lighter  : $black-10,
-  gray-light    : $black-15,
-  gray-medium   : $black-30,
-  gray-dark     : $black-60,
+  black-05      : $black-05,
+  black-10      : $black-10,
+  black-15      : $black-15,
+  black-30      : $black-30,
+  black-60      : $black-60,
   darkMode-black: $darkMode-black,
   "red"         : $red,
   primary       : $blue,
-  secondary     : $black-30,
+  secondary     : $black-15,
   success       : $green,
   warning       : $red,
   alert         : $red
+);
+
+$border-palette: (
+  "blue"     : $blue,
+  blue-light : $blue-light,
+  blue-medium: $blue-medium,
+  blue-dark  : $blue-dark,
+  green      : $green,
+  green-light: $green-light,
+  white-05   : $white-05,
+  white-10   : $white-10,
+  white-15   : $white-15,
+  white-30   : $white-30,
+  white-60   : $white-60,
+  black-05   : $black-05,
+  black-10   : $black-10,
+  black-15   : $black-15,
+  black-30   : $black-30,
+  black-60   : $black-60,
 );
 
 $button-palette: (
@@ -74,11 +98,11 @@ $button-palette: (
 
   $cog-color-palette: (
     "blue"     : $blue-medium,
-    "white"    : $black,
-    gray-light : $white-05,
-    gray-medium: $white-10,
-    gray-dark  : $white-15,
-    "black"    : $white,
+    "white"    : invert($white),
+    gray-light : invert($black-15),
+    gray-medium: invert($black-30),
+    gray-dark  : invert($black-60),
+    "black"    : invert($black)
   );
 
   :root {

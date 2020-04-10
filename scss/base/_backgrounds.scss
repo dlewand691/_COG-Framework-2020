@@ -10,9 +10,13 @@
 // ██      ██    ██ ██      ██    ██ ██   ██      ██
 //  ██████  ██████  ███████  ██████  ██   ██ ███████
 // ===================================================================================
-@each $color-name, $color in $cog-color-palette {
-  .bg-#{$color-name} {
-    background-color: var(--#{$color-name});
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @each $color-name, $color in $cog-color-palette {
+      .#{$size}-bg-#{$color-name} {
+        background-color: var(--#{$color-name});
+      }
+    }
   }
 }
 
@@ -25,7 +29,7 @@
 .bg-gray-dark,
 .bg-green-dark,
 .bg-red {
-  color: $white !important;
+  // color: $white;
 
   a:not[button] {
     color: $green-light !important;

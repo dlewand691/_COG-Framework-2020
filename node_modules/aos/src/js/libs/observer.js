@@ -20,10 +20,26 @@ function containsAOSNode(nodes) {
   return false;
 }
 
+function check(mutations) {
+  if (!mutations) return;
+
+  mutations.forEach(mutation => {
+    const addedNodes = Array.prototype.slice.call(mutation.addedNodes);
+    const removedNodes = Array.prototype.slice.call(mutation.removedNodes);
+    const allNodes = addedNodes.concat(removedNodes);
+
+    if (containsAOSNode(allNodes)) {
+      return callback();
+    }
+  });
+}
+
 function getMutationObserver() {
-  return window.MutationObserver ||
+  return (
+    window.MutationObserver ||
     window.WebKitMutationObserver ||
-    window.MozMutationObserver;
+    window.MozMutationObserver
+  );
 }
 
 function isSupported() {
@@ -41,20 +57,6 @@ function ready(selector, fn) {
     childList: true,
     subtree: true,
     removedNodes: true
-  });
-}
-
-function check(mutations) {
-  if (!mutations) return;
-
-  mutations.forEach(mutation => {
-    const addedNodes = Array.prototype.slice.call(mutation.addedNodes);
-    const removedNodes = Array.prototype.slice.call(mutation.removedNodes);
-    const allNodes = addedNodes.concat(removedNodes);
-
-    if (containsAOSNode(allNodes)) {
-      return callback();
-    }
   });
 }
 

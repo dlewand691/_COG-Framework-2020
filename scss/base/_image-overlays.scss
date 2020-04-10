@@ -19,6 +19,7 @@
 ==================================================================================== */
 @mixin gradient-overlay-image {
   position       : absolute;
+  left           : 0;
   bottom         : 0;
   display        : block;
   width          : 100%;
@@ -28,6 +29,7 @@
 }
 @mixin gradient-overlay-image-full {
   position       : absolute;
+  left           : 0;
   bottom         : 0;
   display        : block;
   width          : 100%;
@@ -37,6 +39,7 @@
 }
 @mixin gradient-overlay-image-angled {
   position       : absolute;
+  left           : 0;
   bottom         : 0;
   display        : block;
   width          : 100%;

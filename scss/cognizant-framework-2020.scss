@@ -60,7 +60,7 @@
 @include foundation-float-classes;
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
-// @include foundation-prototype-classes;
+@include foundation-prototype-classes;
 
 // MOTION UI
 @include motion-ui-transitions;
@@ -123,7 +123,7 @@ $themeColor: $green;
 .cells,
 .column,
 .columns {
-  min-width: initial !important;
+  min-width: initial;
 }
 
 // -----  End of COLUMN FIX  -----------------------------------
@@ -202,6 +202,7 @@ $themeColor: $green;
 // ██    ██  ██  ██  ██      ██   ██ ██   ██ ██ ██   ██ ██           ██
 //  ██████    ████   ███████ ██   ██ ██   ██ ██ ██████  ███████ ███████
 // ===================================================================================
+@import "plugins/aos";
 @import "plugins/lazysizes";
 @import "plugins/scrollup";
 @import "plugins/swiper";

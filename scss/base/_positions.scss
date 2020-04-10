@@ -7,27 +7,27 @@
 // ===================================================================================
 
 @each $size in $breakpoint-classes {
-    @include breakpoint($size) {
-        @each $position in (inherit, relative, absolute, fixed) {
-            @if $size != $-zf-zero-breakpoint {
-                .#{$size}-#{$position} {
-                    position: $position !important;
-                }
-            } @else {
-                .#{$position} {
-                    position: $position !important;
-                }
-            }
+  @include breakpoint($size) {
+    @each $position in (inherit, relative, absolute, fixed) {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$position} {
+          position: $position !important;
         }
+      } @else {
+        .#{$position} {
+          position: $position !important;
+        }
+      }
     }
+  }
 }
 
 %top,
 .top {
-    top: 0;
+  top: 0;
 }
 
 %bottom,
 .bottom {
-    bottom: 0;
+  bottom: 0;
 }

@@ -96,10 +96,10 @@ $('[data-off-canvas]').on('closed.zf.offcanvas', function() {
 // LAZY LOADING
 // =============================================================================================
 
-window.lazySizesConfig = window.lazySizesConfig || {};
-lazySizesConfig.loadMode = 3;
-lazySizesConfig.expFactor = 4;
-lazySizesConfig.expand = 500;
+// window.lazySizesConfig = window.lazySizesConfig || {};
+// lazySizesConfig.loadMode = 3;
+// lazySizesConfig.expFactor = 4;
+// lazySizesConfig.expand = 500;
 //add simple support for background images:
 document.addEventListener('lazybeforeunveil', function(e) {
   var bg = e.target.getAttribute('data-bg');
