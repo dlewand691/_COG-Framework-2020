@@ -132,9 +132,15 @@
 
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    @each $color-name, $color in $cog-color-palette {
-      .#{$size}-bgOverlay-#{$color-name} {
-        background-image: linear-gradient(rgba($color, 0.55), rgba($color, 0.55));
+    @each $color-name, $color in $image-color-overlay-palette {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-bgOverlay-#{$color-name} {
+          background-image: linear-gradient(rgba($color, 0.55), rgba($color, 0.55));
+        }
+      } @else {
+        .bgOverlay-#{$color-name} {
+          background-image: linear-gradient(rgba($color, 0.55), rgba($color, 0.55));
+        }
       }
     }
   }

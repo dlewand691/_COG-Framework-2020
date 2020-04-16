@@ -16,63 +16,125 @@ $radius-sizes: 10;
 
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    // ====================================================================================
-    // NO BORDER
-    // ====================================================================================
-    .#{$size}-bd0 {
-      border-width: 0 !important;
-    }
-    // ====================================================================================
-    // BORDER ALL SIDES GRAY-LIGHT2
-    // ====================================================================================
-    @for $i from 1 through $border-width {
-      .#{$size}-bd#{$i} {
-        border: #{$i}px solid $gray-lighter !important;
+    @if $size != $-zf-zero-breakpoint {
+      // ====================================================================================
+      // NO BORDER
+      // ====================================================================================
+      .#{$size}-bd0 {
+        border-width: 0 !important;
       }
-    }
-    // ====================================================================================
-    // BORDER, INDIVIDUAL SIDES, GRAY LIGHT 2
-    // ====================================================================================
-    @for $i from 1 through $border-width {
-      @each $side-name, $side in $border-side {
-        .#{$size}-bd-#{$side-name}-#{$i} {
-          border-#{$side}: #{$i}px $gray-lighter solid !important;
+      // ====================================================================================
+      // BORDER ALL SIDES GRAY-LIGHT2
+      // ====================================================================================
+      @for $i from 1 through $border-width {
+        .#{$size}-bd#{$i} {
+          border: #{$i}px solid $gray-lighter !important;
         }
       }
-    }
-    // ====================================================================================
-    // BORDER, ALL SIDES, ALL PRIMARY COLORS
-    // ====================================================================================
-    @for $i from 1 through $border-width {
-      @each $color-name, $color in $border-palette {
-        .#{$size}-bd-#{$color-name}-#{$i} {
-          border: #{$i}px solid $color !important;
-        }
-      }
-    }
-    // ====================================================================================
-    // BORDER, INDIVIDUAL SIDES, ALL PRIMARY COLORS
-    // ====================================================================================
-    @for $i from 1 through $border-width {
-      @each $side-name, $side in $border-side {
-        @each $color-name, $color in $border-palette {
-          .#{$size}-bd-#{$side-name}-#{$color-name}-#{$i} {
-            border-#{$side}: #{$i}px $color solid !important;
+      // ====================================================================================
+      // BORDER, INDIVIDUAL SIDES, GRAY LIGHT 2
+      // ====================================================================================
+      @for $i from 1 through $border-width {
+        @each $side-name, $side in $border-side {
+          .#{$size}-bd-#{$side-name}-#{$i} {
+            border-#{$side}: #{$i}px $gray-lighter solid !important;
           }
         }
       }
-    }
-    // ===================================================================================
-    // ██████   █████  ██████  ██ ██    ██ ███████
-    // ██   ██ ██   ██ ██   ██ ██ ██    ██ ██
-    // ██████  ███████ ██   ██ ██ ██    ██ ███████
-    // ██   ██ ██   ██ ██   ██ ██ ██    ██      ██
-    // ██   ██ ██   ██ ██████  ██  ██████  ███████
-    // ===================================================================================
-    @for $i from 0 through $radius-sizes {
-      .#{$size}-bd-radius-#{$i} {
-        border-radius: $i*0.25 + rem !important;
+      // ====================================================================================
+      // BORDER, ALL SIDES, ALL PRIMARY COLORS
+      // ====================================================================================
+      @for $i from 1 through $border-width {
+        @each $color-name, $color in $border-palette {
+          .#{$size}-bd-#{$color-name}-#{$i} {
+            border: #{$i}px solid $color !important;
+          }
+        }
       }
+      // ====================================================================================
+      // BORDER, INDIVIDUAL SIDES, ALL PRIMARY COLORS
+      // ====================================================================================
+      @for $i from 1 through $border-width {
+        @each $side-name, $side in $border-side {
+          @each $color-name, $color in $border-palette {
+            .#{$size}-bd-#{$side-name}-#{$color-name}-#{$i} {
+              border-#{$side}: #{$i}px $color solid !important;
+            }
+          }
+        }
+      }
+      // ===================================================================================
+      // ██████   █████  ██████  ██ ██    ██ ███████
+      // ██   ██ ██   ██ ██   ██ ██ ██    ██ ██
+      // ██████  ███████ ██   ██ ██ ██    ██ ███████
+      // ██   ██ ██   ██ ██   ██ ██ ██    ██      ██
+      // ██   ██ ██   ██ ██████  ██  ██████  ███████
+      // ===================================================================================
+      @for $i from 0 through $radius-sizes {
+        .#{$size}-bd-radius-#{$i} {
+          border-radius: $i*0.25 + rem !important;
+        }
+      }
+    } @else {
+      // ====================================================================================
+      // NO BORDER
+      // ====================================================================================
+      .bd0 {
+        border-width: 0 !important;
+      }
+      // ====================================================================================
+      // BORDER ALL SIDES GRAY-LIGHT2
+      // ====================================================================================
+      @for $i from 1 through $border-width {
+        .bd#{$i} {
+          border: #{$i}px solid $gray-lighter !important;
+        }
+      }
+      // ====================================================================================
+      // BORDER, INDIVIDUAL SIDES, GRAY LIGHT 2
+      // ====================================================================================
+      @for $i from 1 through $border-width {
+        @each $side-name, $side in $border-side {
+          .bd-#{$side-name}-#{$i} {
+            border-#{$side}: #{$i}px $gray-lighter solid !important;
+          }
+        }
+      }
+      // ====================================================================================
+      // BORDER, ALL SIDES, ALL PRIMARY COLORS
+      // ====================================================================================
+      @for $i from 1 through $border-width {
+        @each $color-name, $color in $border-palette {
+          .bd-#{$color-name}-#{$i} {
+            border: #{$i}px solid $color !important;
+          }
+        }
+      }
+      // ====================================================================================
+      // BORDER, INDIVIDUAL SIDES, ALL PRIMARY COLORS
+      // ====================================================================================
+      @for $i from 1 through $border-width {
+        @each $side-name, $side in $border-side {
+          @each $color-name, $color in $border-palette {
+            .bd-#{$side-name}-#{$color-name}-#{$i} {
+              border-#{$side}: #{$i}px $color solid !important;
+            }
+          }
+        }
+      }
+      // ===================================================================================
+      // ██████   █████  ██████  ██ ██    ██ ███████
+      // ██   ██ ██   ██ ██   ██ ██ ██    ██ ██
+      // ██████  ███████ ██   ██ ██ ██    ██ ███████
+      // ██   ██ ██   ██ ██   ██ ██ ██    ██      ██
+      // ██   ██ ██   ██ ██████  ██  ██████  ███████
+      // ===================================================================================
+      @for $i from 0 through $radius-sizes {
+        .bd-radius-#{$i} {
+          border-radius: $i*0.25 + rem !important;
+        }
+      }
+
     }
   }
 }

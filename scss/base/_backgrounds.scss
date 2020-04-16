@@ -13,8 +13,14 @@
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @each $color-name, $color in $cog-color-palette {
-      .#{$size}-bg-#{$color-name} {
-        background-color: var(--#{$color-name});
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-bg-#{$color-name} {
+          background-color: var(--#{$color-name});
+        }
+      } @else {
+        .bg-#{$color-name} {
+          background-color: var(--#{$color-name});
+        }
       }
     }
   }
@@ -57,6 +63,11 @@
 
 .bg-transparent {
   background: transparent !important;
+}
+
+.bg-none,
+.bg-none * {
+  background: none !important;
 }
 /* ----  End of BACKGROUND COLOR ------------------------------------------------------------------------------ */
 
@@ -128,17 +139,32 @@
 
 ==================================================================================== */
 $bg-pos: (
-  "left"  : "left",
-  "right" : "right",
-  "top"   : "top",
-  "bottom": "bottom",
-  "center": "center"
+  "left"         : "left",
+  "right"        : "right",
+  "top"          : "top",
+  "bottom"       : "bottom",
+  "center"       : "center",
+  "top-left"     : "top left",
+  "top-center"   : "top center",
+  "top-right"    : "top right",
+  "bottom-left"  : "bottom left",
+  "bottom-center": "bottom center",
+  "bottom-right" : "bottom right",
+  "center-left"  : "center left",
+  "center-center": "center center",
+  "center-right" : "center right"
 );
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @each $side, $side-name in $bg-pos {
-      .#{$size}-bg-pos-#{$side} {
-        background-position: #{$side-name} !important;
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-bg-pos-#{$side} {
+          background-position: #{$side-name} !important;
+        }
+      } @else {
+        .bg-pos-#{$side} {
+          background-position: #{$side-name} !important;
+        }
       }
     }
   }
@@ -167,8 +193,14 @@ $bg-size: (
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @each $size-option, $bg-size-option in $bg-size {
-      .#{$size}-bg-size-#{$size-option} {
-        background-size: #{$bg-size-option} !important;
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-bg-size-#{$size-option} {
+          background-size: #{$bg-size-option} !important;
+        }
+      } @else {
+        .bg-size-#{$size-option} {
+          background-size: #{$bg-size-option} !important;
+        }
       }
     }
   }

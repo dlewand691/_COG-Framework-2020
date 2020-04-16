@@ -354,12 +354,6 @@ sup {
   line-height: 2;
 }
 
-@for $i from 1 through 10 {
-  .fw#{$i*100} {
-    font-weight: $i*100;
-  }
-}
-
 %text-normal,
 .text-normal {
   font-weight: normal !important;
@@ -467,16 +461,17 @@ a.link-coverAll:before {
 //    ██    ██       ██ ██     ██        ██      ██    ██ ██      ██    ██ ██   ██      ██
 //    ██    ███████ ██   ██    ██         ██████  ██████  ███████  ██████  ██   ██ ███████
 // =============================================================================================
-@each $color-name, $color in $cog-color-palette {
-  .text-#{$color-name} {
-    color: $color !important;
-  }
-}
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @each $color-name, $color in $cog-color-palette {
-      .#{$size}-text-#{$color-name} {
-        color: $color !important;
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-text-#{$color-name} {
+          color: $color !important;
+        }
+      } @else {
+        .text-#{$color-name} {
+          color: $color !important;
+        }
       }
     }
   }

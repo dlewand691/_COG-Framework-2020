@@ -47,6 +47,11 @@ $cog-color-palette: (
   black-15      : $black-15,
   black-30      : $black-30,
   black-60      : $black-60,
+  gray-lightest : darken($white, 05),
+  gray-lighter  : darken($white, 10),
+  gray-light    : darken($white, 15),
+  gray-medium   : darken($white, 30),
+  gray-dark     : darken($white, 60),
   darkMode-black: $darkMode-black,
   "red"         : $red,
   primary       : $blue,
@@ -57,22 +62,26 @@ $cog-color-palette: (
 );
 
 $border-palette: (
+  "blue"       : $blue,
+  blue-light   : $blue-light,
+  blue-medium  : $blue-medium,
+  blue-dark    : $blue-dark,
+  green        : $green,
+  green-light  : $green-light,
+  gray-lightest: darken($white, 05),
+  gray-lighter : darken($white, 10),
+  gray-light   : darken($white, 15),
+  gray-medium  : darken($white, 30),
+  gray-dark    : darken($white, 60)
+);
+
+$image-color-overlay-palette: (
   "blue"     : $blue,
   blue-light : $blue-light,
   blue-medium: $blue-medium,
   blue-dark  : $blue-dark,
-  green      : $green,
-  green-light: $green-light,
-  white-05   : $white-05,
-  white-10   : $white-10,
-  white-15   : $white-15,
-  white-30   : $white-30,
-  white-60   : $white-60,
-  black-05   : $black-05,
-  black-10   : $black-10,
-  black-15   : $black-15,
-  black-30   : $black-30,
-  black-60   : $black-60,
+  "white"    : $white,
+  "black"    : $black,
 );
 
 $button-palette: (

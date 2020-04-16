@@ -14,7 +14,7 @@
 }
 
 .hover-show {
-  transition: all 0.2s ease-out;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
   opacity   : 0;
 }
 
@@ -83,7 +83,7 @@
     position  : relative;
     z-index   : 1;
     overflow  : visible;
-    transition: all 0.2s ease;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     box-shadow: 0;
     // border    : 0;
     &.is-active,
@@ -161,7 +161,7 @@
   .hover-reveal-middle {
     padding   : 1.5rem;
     // max-height: 0;
-    transition: all 0.5s ease;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     // position  : absolute;
     // bottom    : 0;
     transform : translateY(200%);
@@ -172,7 +172,7 @@
 
   .hover-reveal-bottom,
   .hover-reveal-top {
-    transition: all 0.5s ease;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     // position  : absolute;
     // bottom    : 0;
     // max-height: 0;
@@ -195,7 +195,7 @@
       // bottom    : 50%;
       // transform : translateY(0);
       // opacity   : 1;
-      // transition: all 0.5s ease;
+      // transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
       // transform : scaleY(1);
       // max-height: 200px;
     }
@@ -203,7 +203,7 @@
     .hover-reveal-bottom,
     .hover-reveal-middle,
     .hover-reveal-top {
-      transition: all 0.5s ease;
+      transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
       // position  : relative;
       // bottom    : 0;
       // max-height: 500px;
@@ -213,7 +213,7 @@
 
     .hover-reveal-bottom {
       // animation : reveal-content 1s;
-      // transition: all 0.5s ease;
+      // transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
       // opacity   : 1;
       // max-height: 150px;
     }
@@ -235,12 +235,12 @@
 // =============================================================================================
 .hover-border-grow {
   // outline   : 0 solid transparent;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
   box-shadow: 0 0 0 0 $green;
 
   &:hover {
     cursor    : pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     // outline   : 1rem solid $green;
     box-shadow: 0 0 0 1rem $green;
   }
@@ -264,24 +264,24 @@
   overflow: hidden;
 
   .hide-on-hover {
-    transition: all 0.35s ease-out;
+    transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transform : translateY(0%);
   }
 
   .show-on-hover {
-    transition: all 0.35s ease-out;
+    transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transform : translateY(100%);
     opacity   : 0;
   }
 
   &:hover {
     .hide-on-hover {
-      transition: all 0.35s ease-out;
+      transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
       transform : translateY(100%);
     }
 
     .show-on-hover {
-      transition: all 0.35s ease-out;
+      transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
       transform : translateY(0%);
       opacity   : 1;
     }
@@ -310,13 +310,13 @@
     bottom    : 0;
     height    : 50%;
     padding   : 2rem 1rem 1rem;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     background: $white;
   }
 
   .slide-up-section2 {
     max-height: 0;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     opacity   : 0;
   }
 
@@ -352,11 +352,11 @@
 // ====================================================================================
 
 .bw-color-hover {
-  transition: all 0.5s ease;
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
   filter: grayscale(1);
 
   &:hover {
-    transition: all 0.5s ease;
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     filter: grayscale(0);
   }
 }
@@ -433,7 +433,7 @@
   .slide-up-section1,
   .slide-up-section2 {
     height    : 70px;
-    transition: all 0.35s ease;
+    transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     transform : translateY(125%);
   }
 
@@ -455,11 +455,11 @@
 .anim-slide-in-up {
   transform : translateY(100%);
   opacity   : 0;
-  transition: all 1s ease;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .anim-slide-in-up-active {
   transform : translateY(0%);
   opacity   : 1;
-  transition: all 1s ease;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }

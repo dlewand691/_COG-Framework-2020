@@ -980,6 +980,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/scss/base/_sizes.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/css/_sizes.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/scss/base/_spacings.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1015,19 +1028,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/scss/css/_video.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/scss/base/_widths.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/scss/css/_widths.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1421,6 +1421,28 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/Users/m_554319/Desktop/_COGNIZANT DEVELOPMENT/_COG-Framework-2020/node_modules/jquery/dist/jquery.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/jquery/dist/min/jquery.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/Users/m_554319/Desktop/_COGNIZANT DEVELOPMENT/_COG-Framework-2020/node_modules/swiper/js/swiper.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/swiper/js/min/swiper.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
 		}
 	},
 "hooks": [
