@@ -463,3 +463,107 @@
   opacity   : 1;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
+
+// ===================================================================================
+// ██████   █████  ███    ██ ███████ ██          ███████ ██      ██ ██████  ███████
+// ██   ██ ██   ██ ████   ██ ██      ██          ██      ██      ██ ██   ██ ██
+// ██████  ███████ ██ ██  ██ █████   ██          ███████ ██      ██ ██   ██ █████
+// ██      ██   ██ ██  ██ ██ ██      ██               ██ ██      ██ ██   ██ ██
+// ██      ██   ██ ██   ████ ███████ ███████     ███████ ███████ ██ ██████  ███████
+// ===================================================================================
+
+.panel {
+  transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  position  : absolute;
+  top       : 0;
+  z-index   : 1;
+}
+
+.panel-slide-up {
+  overflow: hidden;
+  position: relative;
+
+  .panel {
+    transform: translateY(100%);
+    opacity  : 0;
+  }
+
+  &:hover {
+    .panel {
+      transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      transform : translateY(0);
+      opacity   : 1;
+    }
+  }
+}
+
+.panel-slide-down {
+  overflow: hidden;
+  position: relative;
+
+  .panel {
+    transform: translateY(-100%);
+    opacity  : 0;
+  }
+
+  &:hover {
+    .panel {
+      transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      transform : translateY(0);
+      opacity   : 1;
+    }
+  }
+}
+
+.panel-slide-left {
+  overflow: hidden;
+  position: relative;
+
+  .panel {
+    transform: translateX(100%);
+    opacity  : 0;
+  }
+
+  &:hover {
+    .panel {
+      transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      transform : translateX(0);
+      opacity   : 1;
+    }
+  }
+}
+
+.panel-slide-right {
+  overflow: hidden;
+  position: relative;
+
+  .panel {
+    transform: translateX(-100%);
+    opacity  : 0;
+  }
+
+  &:hover {
+    .panel {
+      transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      transform : translateX(0);
+      opacity   : 1;
+    }
+  }
+}
+
+.panel-fade-in {
+  overflow: hidden;
+  position: relative;
+
+  .panel {
+    opacity: 0;
+  }
+
+  &:hover {
+    .panel {
+      transition: all 0.35s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+      opacity   : 1;
+    }
+  }
+}
+// -----  End of PANEL SLIDE  -----------------------------------

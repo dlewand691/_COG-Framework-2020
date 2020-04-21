@@ -107,9 +107,9 @@ $themeColor: $green;
 }
 /* ----  End of DEBUGGING  -------------------------------------------------------------------------- */
 
-* + * {
-  margin-bottom: 1rem;
-}
+// * + * {
+//   margin-bottom: 1rem;
+// }
 
 // ===================================================================================
 //  ██████  ██████  ██      ██    ██ ███    ███ ███    ██     ███████ ██ ██   ██
@@ -145,6 +145,7 @@ $themeColor: $green;
 @import "base/opacities";
 @import "base/positions";
 @import "base/spacings";
+@import "base/easing";
 @import "base/animations";
 @import "base/borders";
 @import "base/forms";

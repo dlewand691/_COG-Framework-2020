@@ -19,7 +19,7 @@
         }
       } @else {
         .bg-#{$color-name} {
-          background-color: var(--#{$color-name});
+          background-color: var(--#{$color-name}) !important;
         }
       }
     }
