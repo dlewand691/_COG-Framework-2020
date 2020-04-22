@@ -93,6 +93,7 @@ $themeColor: $green;
 @import "swiper/components/navigation/navigation.scss";
 @import "swiper/components/lazy/lazy.scss";
 @import "swiper/components/thumbs/thumbs.scss";
+@import "../node_modules/video.js/src/css/vjs.scss";
 
 /* ===========================================================================================
 ██████  ███████ ██████  ██    ██  ██████   ██████  ██ ███    ██  ██████
@@ -206,6 +207,7 @@ $themeColor: $green;
 @import "plugins/lazysizes";
 @import "plugins/scrollup";
 @import "plugins/swiper";
+@import "plugins/videojs";
 
 // ===================================================================================
 // ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████
