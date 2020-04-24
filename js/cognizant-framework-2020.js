@@ -66,8 +66,8 @@
 // @codekit-prepend 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js'
 // @codekit-prepend 'swiper/js/swiper.min.js'
 // @codekit-prepend 'aos/dist/aos.js'
-// @codekit-prepend '../node_modules/video.js/dist/video.min.js'
-// @codekit-prepend '../node_modules/videojs-youtube/dist/Youtube.min.js'
+// @codekit-prepend 'video.js/dist/video.min.js'
+// @codekit-prepend 'videojs-youtube/dist/Youtube.min.js'
 
 $(document).foundation();
 

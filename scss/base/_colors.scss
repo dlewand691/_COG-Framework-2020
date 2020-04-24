@@ -66,13 +66,15 @@ $border-palette: (
   blue-light   : $blue-light,
   blue-medium  : $blue-medium,
   blue-dark    : $blue-dark,
-  green        : $green,
+  "green"      : $green,
   green-light  : $green-light,
   gray-lightest: darken($white, 05),
   gray-lighter : darken($white, 10),
   gray-light   : darken($white, 15),
   gray-medium  : darken($white, 30),
-  gray-dark    : darken($white, 60)
+  gray-dark    : darken($white, 60),
+  "white"      : $white,
+  "black"      : $black,
 );
 
 $image-color-overlay-palette: (
@@ -85,7 +87,7 @@ $image-color-overlay-palette: (
 );
 
 $button-palette: (
-  green      : $green,
+  "green"    : $green,
   green-light: $green-light,
 );
 
