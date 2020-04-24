@@ -6,24 +6,24 @@
 ██       ██████   ██████     ██    ███████ ██   ██
 ==================================================================================== */
 .footer-blue-bar {
-    li a:hover {
-        background: $button-background-hover;
-    }
+  li a:hover {
+    background: $button-background-hover;
+  }
 }
 
 .footer {
-    ul li {
-        margin     : 0;
+  ul li {
+    margin     : 0;
+    line-height: 1.3rem;
+  }
 
-        line-height: 1.3rem;
+  a {
+    font-weight: normal;
+    color      : $white;
+
+    &:hover {
+      // color: $anchor-color;
     }
-
-    a {
-        font-weight: normal;
-
-        &:hover {
-            color: $anchor-color !important;
-        }
-    }
+  }
 }
 /* -----  End of FOOTER  --------------------------------------------- */
