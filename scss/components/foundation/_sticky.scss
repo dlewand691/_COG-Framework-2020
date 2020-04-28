@@ -13,33 +13,32 @@
 
 ==================================================================================== */
 @keyframes slideInDown {
-    from {
-        visibility: visible;
+  from {
+    visibility: visible;
+    transform : translate3d(0, -100%, 0);
+  }
 
-        transform : translate3d(0, -100%, 0);
-    }
-
-    to {
-        transform: translate3d(0, 0, 0);
-    }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 @keyframes slideInUp {
-    from {
-        transform: translate3d(0, 100%, 0);
-    }
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
 
-    to {
-        visibility: hidden;
-
-        transform : translate3d(0, 0%, 0);
-    }
+  to {
+    visibility: hidden;
+    transform : translate3d(0, 0%, 0);
+  }
 }
 
 .sticky.is-anchored {
-    // animation: slideInUp 0.5s;
+  // animation: slideInUp 0.5s ease-in-out;
 }
 
 .sticky.is-stuck {
-    animation: slideInDown 0.5s;
+  will-change: transform;
+  animation  : slideInDown 0.5s ease-in-out;
 }
 // -----  End of STICKY ANIMATION  ---------------------------------------------

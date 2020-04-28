@@ -12,12 +12,14 @@ $white-15: rgba(255,255,255,0.15) !default;
 $white-30: rgba(255,255,255,0.3) !default;
 $white-50: rgba(255,255,255,0.5) !default;
 $white-60: rgba(255,255,255,0.6) !default;
+$white-85: rgba(255,255,255,0.85) !default;
 $black-05: rgba(0,0,0,0.05) !default;
 $black-10: rgba(0,0,0,0.10) !default;
 $black-15: rgba(0,0,0,0.15) !default;
 $black-30: rgba(0,0,0,0.3) !default;
 $black-50: rgba(0,0,0,0.5) !default;
 $black-60: rgba(0,0,0,0.6) !default;
+$black-85: rgba(0,0,0,0.85) !default;
 $black: rgba(0,0,0,1) !default;
 $gray-lightest: $black-05 !default;
 $gray-lighter: $black-10 !default;
@@ -40,6 +42,7 @@ $cog-color-palette: (
   white-15      : $white-15,
   white-30      : $white-30,
   white-60      : $white-60,
+  white-85      : $white-85,
   "white"       : $white,
   "black"       : $black,
   black-05      : $black-05,
@@ -47,11 +50,13 @@ $cog-color-palette: (
   black-15      : $black-15,
   black-30      : $black-30,
   black-60      : $black-60,
+  black-85      : $black-85,
   gray-lightest : darken($white, 05),
   gray-lighter  : darken($white, 10),
   gray-light    : darken($white, 15),
   gray-medium   : darken($white, 30),
   gray-dark     : darken($white, 60),
+  gray-darker   : darken($white, 80),
   darkMode-black: $darkMode-black,
   "red"         : $red,
   primary       : $blue,
@@ -62,19 +67,17 @@ $cog-color-palette: (
 );
 
 $border-palette: (
-  "blue"       : $blue,
-  blue-light   : $blue-light,
-  blue-medium  : $blue-medium,
-  blue-dark    : $blue-dark,
-  "green"      : $green,
-  green-light  : $green-light,
-  gray-lightest: darken($white, 05),
-  gray-lighter : darken($white, 10),
-  gray-light   : darken($white, 15),
-  gray-medium  : darken($white, 30),
-  gray-dark    : darken($white, 60),
-  "white"      : $white,
-  "black"      : $black,
+  "blue"     : $blue,
+  blue-light : $blue-light,
+  blue-medium: $blue-medium,
+  blue-dark  : $blue-dark,
+  "green"    : $green,
+  green-light: $green-light,
+  gray-light : darken($white, 15),
+  gray-medium: darken($white, 30),
+  gray-dark  : darken($white, 60),
+  "white"    : $white,
+  "black"    : $black,
 );
 
 $image-color-overlay-palette: (
