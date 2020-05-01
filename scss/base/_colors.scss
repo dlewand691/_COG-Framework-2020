@@ -6,21 +6,28 @@ $green: rgba(0,177,64,1) !default;
 $green-light: rgba(0,228,82,1) !default;
 $green-dark: rgba(0,126,46,1) !default;
 $white: rgba(255,255,255,1) !default;
-$white-05: rgba(255,255,255,0.05) !default;
-$white-10: rgba(255,255,255,0.1) !default;
-$white-15: rgba(255,255,255,0.15) !default;
-$white-30: rgba(255,255,255,0.3) !default;
-$white-50: rgba(255,255,255,0.5) !default;
-$white-60: rgba(255,255,255,0.6) !default;
-$white-85: rgba(255,255,255,0.85) !default;
-$black-05: rgba(0,0,0,0.05) !default;
-$black-10: rgba(0,0,0,0.10) !default;
-$black-15: rgba(0,0,0,0.15) !default;
-$black-30: rgba(0,0,0,0.3) !default;
-$black-50: rgba(0,0,0,0.5) !default;
-$black-60: rgba(0,0,0,0.6) !default;
-$black-85: rgba(0,0,0,0.85) !default;
 $black: rgba(0,0,0,1) !default;
+$blue-05: rgba($blue, 0.05) !default;
+$blue-10: rgba($blue, 0.1) !default;
+$blue-15: rgba($blue, 0.15) !default;
+$blue-30: rgba($blue, 0.3) !default;
+$blue-50: rgba($blue, 0.5) !default;
+$blue-60: rgba($blue, 0.6) !default;
+$blue-85: rgba($blue, 0.85) !default;
+$white-05: rgba($white, 0.05) !default;
+$white-10: rgba($white, 0.1) !default;
+$white-15: rgba($white, 0.15) !default;
+$white-30: rgba($white, 0.3) !default;
+$white-50: rgba($white, 0.5) !default;
+$white-60: rgba($white, 0.6) !default;
+$white-85: rgba($white, 0.85) !default;
+$black-05: rgba($black, 0.05) !default;
+$black-10: rgba($black, 0.10) !default;
+$black-15: rgba($black, 0.15) !default;
+$black-30: rgba($black, 0.3) !default;
+$black-50: rgba($black, 0.5) !default;
+$black-60: rgba($black, 0.6) !default;
+$black-85: rgba($black, 0.85) !default;
 $gray-lightest: $black-05 !default;
 $gray-lighter: $black-10 !default;
 $gray-light: $black-15 !default;
@@ -37,14 +44,20 @@ $cog-color-palette: (
   "green"       : $green,
   green-light   : $green-light,
   green-dark    : $green-dark,
+  "white"       : $white,
+  "black"       : $black,
+  blue-05       : $blue-05,
+  blue-10       : $blue-10,
+  blue-15       : $blue-15,
+  blue-30       : $blue-30,
+  blue-60       : $blue-60,
+  blue-85       : $blue-85,
   white-05      : $white-05,
   white-10      : $white-10,
   white-15      : $white-15,
   white-30      : $white-30,
   white-60      : $white-60,
   white-85      : $white-85,
-  "white"       : $white,
-  "black"       : $black,
   black-05      : $black-05,
   black-10      : $black-10,
   black-15      : $black-15,

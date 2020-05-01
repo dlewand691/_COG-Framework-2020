@@ -490,6 +490,13 @@ a.link-coverAll:before {
   }
 }
 
+.link-white {
+  a,
+  a:link {
+    color: $white;
+  }
+}
+
 .text-wrap {
   white-space: normal;
 }
@@ -596,6 +603,10 @@ li ul {
     display: inline-block;
     margin : 0 1rem 0 0;
   }
+}
+
+ul.inside {
+  list-style-position: inside;
 }
 
 ul.circle {
