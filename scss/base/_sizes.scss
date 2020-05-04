@@ -7,31 +7,42 @@
 // ===================================================================================
 
 $widths: 20;
-@for $i from 1 through $widths {
-  .w#{$i*5} {
-    width: $i*5%;
-    // max-width: $i*5%;
-  }
-}
-@for $i from 1 through $widths {
-  .max-w#{$i*5} {
-    max-width: $i*5%;
-  }
-}
-@for $i from 1 through $widths {
-  .min-w#{$i*5} {
-    min-width: $i*5%;
-  }
-}
-
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    .#{$size}-w66 {
-      width: 66%;
-    }
+    @for $i from 1 through $widths {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-w#{$i*5} {
+          width: $i*5%;
+        }
 
-    .#{$size}-w33 {
-      width: 33%;
+        .#{$size}-max-w#{$i*5} {
+          max-width: $i*5%;
+        }
+
+        .#{$size}-min-w#{$i*5} {
+          min-width: $i*5%;
+        }
+      } @else {
+        .w#{$i*5} {
+          width: $i*5%;
+        }
+
+        .max-w#{$i*5} {
+          max-width: $i*5%;
+        }
+
+        .min-w#{$i*5} {
+          min-width: $i*5%;
+        }
+      }
+
+      .#{$size}-w66 {
+        width: 66%;
+      }
+
+      .#{$size}-w33 {
+        width: 33%;
+      }
     }
   }
 }

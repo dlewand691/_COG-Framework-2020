@@ -430,8 +430,10 @@ strong {
 
 =========================================================================================== */
 a,
+a:hover,
 a:link {
   font-weight: $global-weight-bold;
+  transition : all 0.3s ease;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -450,6 +452,13 @@ a.link-coverAll:before {
   top     : 0;
   right   : 0;
   bottom  : 0;
+}
+
+.link-white {
+  a,
+  a:link {
+    color: $white !important;
+  }
 }
 
 /* ----  End of LINKS  -------------------------------------------------------------------------- */
@@ -487,13 +496,6 @@ a.link-coverAll:before {
   li,
   p {
     color: $white !important;
-  }
-}
-
-.link-white {
-  a,
-  a:link {
-    color: $white;
   }
 }
 
