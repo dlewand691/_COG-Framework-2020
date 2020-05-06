@@ -62,6 +62,19 @@
     font-weight: bold;
   }
 
+  &.video:after {
+    position   : unset !important;
+    right      : unset !important;
+    width      : unset !important;
+    height     : unset !important;
+    margin-top : unset !important;
+    margin-left: 0.5rem;
+    content    : "\e94b" !important;
+    background : unset !important;
+    font-family: "Cognizant-Icons";
+    font-weight: bold;
+  }
+
   &.white {
     color     : $green-dark;
     background: $white;

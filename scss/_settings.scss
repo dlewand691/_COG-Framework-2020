@@ -486,14 +486,15 @@ $meter-fill-bad: $alert-color;
 
 $offcanvas-sizes: (
   small: 250px,
-);
+)
+!default;
 $offcanvas-vertical-sizes: (
   small: 250px,
 );
-$offcanvas-background: $body-font-color;
-$offcanvas-shadow: 0 0 10px rgba($body-font-color, 0.7);
+$offcanvas-background: $body-font-color !default;
+$offcanvas-shadow: 0 0 10px rgba($body-font-color, 0.7) !default;
 $offcanvas-inner-shadow-size: 20px;
-$offcanvas-inner-shadow-color: rgba($black, 0.25);
+$offcanvas-inner-shadow-color: rgba($black, 0.25) !default;
 $offcanvas-overlay-zindex: 11;
 $offcanvas-push-zindex: 12;
 $offcanvas-overlap-zindex: 13;
