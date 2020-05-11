@@ -64,29 +64,36 @@ $widths: 20;
 // ===================================================================================
 
 $heights: 20;
-// @for $i from 7 through $heights {
-//     .ht#{$i} {
-//         height: $i + px !important;
-//     }
-// }
-@for $i from 1 through $heights {
-  .h#{$i*5}vh {
-    height: $i*5 + vh !important;
-  };
-}
 
-$vh-sizes: 10;
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    @for $i from 1 through $vh-sizes {
-      .#{$size}-h#{$i*10}vh {
-        // height    : $i*10 + vh !important;
-        min-height: $i*10 + vh !important;
-        display   : flex;
+    @for $i from 1 through $heights {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-h#{$i*5} {
+          height: $i*5% !important;
+        }
+      } @else {
+        .h#{$i*5} {
+          height: $i*5% !important;
+        }
+      }
+    }
+    @for $i from 1 through $heights {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-h#{$i*5}vh {
+          height : $i*5 + vh !important;
+          display: flex;
+        }
+      } @else {
+        .h#{$i*5}vh {
+          height : $i*5 + vh !important;
+          display: flex;
+        }
       }
     }
   }
 }
+
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     .#{$size}-h25 {
@@ -112,21 +119,12 @@ $vh-sizes: 10;
   }
 }
 
-.h100 {
-  height: 100%;
-  // min-height: 100%;
-}
-
 .h500px {
   height: 500px;
 }
 
 .h300px {
   height: 300px;
-}
-
-.h100vh {
-  height: 100vh;
 }
 
 .wh100 {

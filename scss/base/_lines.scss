@@ -58,7 +58,7 @@ hr.dark {
   border-left-width: 0;
   border-image     : $blue;
 }
-/* ----  End of DIVIDERS  -------------------------------------------------------------------------- */
+/* ----  End of DIVIDERS  ---------------------------- */
 
 // ====================================================================================
 // ███████ ██ ██████  ███████     ██      ██ ███    ██ ███████ ███████
@@ -136,4 +136,4 @@ $sidelines-double-line-spacing: 0.5em !default;
 .custom-2 {
   @include sidelines($line-color: $blue, $line-thickness: 4px);
 }
-// -----  End of SIDE LINES  ---------------------------------------------
+// -----  End of SIDE LINES  ----------

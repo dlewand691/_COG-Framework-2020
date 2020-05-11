@@ -73,7 +73,7 @@
     }
   }
 }
-/* -----  End of FLEX GRID ADDITIONS  --------------------------------------------- */
+/* -----  End of FLEX GRID ADDITIONS  ---------- */
 
 // ===================================================================================
 // ███████ ██      ███████ ██   ██     ██████   █████  ███████ ██ ███████
@@ -86,9 +86,14 @@ $flex-basises: 12;
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @for $i from 1 through $flex-basises {
-      .#{$size}-flex-basis-#{$i}col {
-        // flex-basis: xy-cell-size(unquote(1/ + #{$i})) !important;
-        flex-basis: xy-cell-size-css($i, null, null, $size) !important;
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-flex-basis-#{$i}col {
+          flex-basis: xy-cell-size-css($i, null, null, $size) !important;
+        }
+      } @else {
+        .flex-basis-#{$i}col {
+          flex-basis: xy-cell-size-css($i, null, null, $size) !important;
+        }
       }
     }
   }

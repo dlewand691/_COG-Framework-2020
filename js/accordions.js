@@ -1,13 +1,13 @@
-var $sticky = $('.sticky');
+var $sticky = $(".sticky");
 
 function fixScroll() {
     var topOffset = $(window).scrollTop();
-    $sticky.css('transform', 'translate3d(0, ' + topOffset + 'px, 0)');
+    $sticky.css("transform", "translate3d(0, " + topOffset + "px, 0)");
 }
 
-// ===========================================================================================
+// ===========================================================================
 // =            ACCORDION BACKGROUND COLORS            =
-// =============================================================================================
+// ===========================================================================
 $(document).ready(function() {
     $(".accordion-gradient").each(function() {
         var length = $(this).children().length;
@@ -18,16 +18,16 @@ $(document).ready(function() {
         });
     });
 });
-// -----  End of ACCORDION BACKGROUND COLORS  --------------------------------------------------------------------
+// -----  End of ACCORDION BACKGROUND COLORS  --------------------------------
 
-// ===========================================================================================
+// ===========================================================================
 // =            ACCORDION SCROLL TO TOP            =
-// =============================================================================================
+// ===========================================================================
 
 $(".accordion-title").click(function() {
     setTimeout(function() {
-        $('html,body').animate({
-            // scrollTop: $('.is-active').offset().top - 84
+        $("html,body").animate({
+            // scrollTop: $(".is-active").offset().top - 84
         });
     }, 300);
 });
@@ -57,14 +57,14 @@ $("ul.accordion li a.accordion-title").on("click", function() {
     }, 1000)
 });
 
-// -----  End of ACCORDION SCROLL TO TOP  -----------------------------------------------------------------------
+// -----  End of ACCORDION SCROLL TO TOP  -------------------------
 
-// =============================================================================================
+// ======================================================================
 // MAGELLAN AND ACCORDION RESET
-// =============================================================================================
+// ======================================================================
 
-$('.accordion').on('mutateme.zf.trigger', function() {
-    $('#magellan').foundation('calcPoints');
+$(".accordion").on("mutateme.zf.trigger", function() {
+    $("#magellan").foundation("calcPoints");
 });
 
-// -----  End of MAGELLAN AND ACCORDION RESET  ---------------------------------------------
+// -----  End of MAGELLAN AND ACCORDION RESET  ----------

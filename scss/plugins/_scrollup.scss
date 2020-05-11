@@ -9,19 +9,15 @@
   position           : fixed;
   right              : 0.5rem;
   bottom             : 0.5rem;
-
   display            : inline;
-
   padding            : 0 0 0 0.75rem;
-
   transition         : all 0.2s ease;
   transform          : translateY(200%);
-
   color              : $white;
   background         : rgba($blue,0.85);
   background-position: right center;
-
   font-size          : $small-font-size;
+  z-index            : 10;
 
   &:before {
     content: "BACK TO TOP";
@@ -29,15 +25,11 @@
 
   &:after {
     display    : inline-block;
-
     margin     : 0 0 0 0.5rem;
     padding    : 0.5rem;
-
     content    : "\e909";
-
     color      : $white;
     background : $blue;
-
     font-family: "Cognizant-Icons";
     font-weight: bold;
   }
@@ -55,7 +47,6 @@
   position  : fixed;
   top       : 1rem;
   right     : 1rem;
-
   background: transparentize($blue-dark, .15);
 }
-/* ----  End of SCROLLUP  --------------------------------------------------------------------- */
+/* ----  End of SCROLLUP  ---------------------------------- */
