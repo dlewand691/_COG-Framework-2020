@@ -36,6 +36,108 @@ $padding-sides: (
 );
 $padding-x: (px);
 $padding-y: (py);
+// ==============================  QUARTER SIZES  ==============================
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @each $side in $margin-sides-all-positive {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-qtr {
+          margin: 0.25rem !important;
+        }
+      } @else {
+        .#{$side}-qtr {
+          margin: 0.25rem !important;
+        }
+      }
+    }
+    @each $side, $sideHalf in $margin-sides-positive {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-qtr {
+          margin-#{$sideHalf}: 0.25rem !important;
+        }
+      } @else {
+        .#{$side}-qtr {
+          margin-#{$sideHalf}: 0.25rem !important;
+        }
+      }
+    }
+    @each $side, $sideHalf in $margin-x-positive {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-qtr {
+          margin-right: 0.25rem !important;
+          margin-left : 0.25rem !important;
+        }
+      } @else {
+        .#{$side}-qtr {
+          margin-right: 0.25rem !important;
+          margin-left : 0.25rem !important;
+        }
+      }
+    }
+    @each $side, $sideHalf in $margin-y-positive {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-qtr {
+          margin-top   : 0.25rem !important;
+          margin-bottom: 0.25rem !important;
+        }
+      } @else {
+        .#{$side}-qtr {
+          margin-top   : 0.25rem !important;
+          margin-bottom: 0.25rem !important;
+        }
+      }
+    }
+    @each $side in $padding-sides-all {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-qtr {
+          padding: 0.25rem !important;
+        }
+      } @else {
+        .#{$side}-qtr {
+          padding: 0.25rem !important;
+        }
+      }
+    }
+    @each $side, $sideHalf in $padding-sides {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-qtr {
+          padding-#{$sideHalf}: 0.25rem !important;
+        }
+      } @else {
+        .#{$side}-qtr {
+          padding-#{$sideHalf}: 0.25rem !important;
+        }
+      }
+    }
+    @each $side in $padding-x {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-qtr {
+          padding-right: 0.25rem !important;
+          padding-left : 0.25rem !important;
+        }
+      } @else {
+        .#{$side}-qtr {
+          padding-right: 0.25rem !important;
+          padding-left : 0.25rem !important;
+        }
+      }
+    }
+    @each $side in $padding-y {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-qtr {
+          padding-top   : 0.25rem !important;
+          padding-bottom: 0.25rem !important;
+        }
+      } @else {
+        .#{$side}-qtr {
+          padding-top   : 0.25rem !important;
+          padding-bottom: 0.25rem !important;
+        }
+      }
+    }
+  }
+}
+
 // ==============================  HALF SIZES  ==============================
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
