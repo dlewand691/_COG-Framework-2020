@@ -5,56 +5,55 @@
 // ██   ██ ██      ██ ██      ██      ██   ██    ██         ██
 // ██████  ██ ███████ ██      ███████ ██   ██    ██    ███████
 // ===================================================================================
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @each $display in (block, inline, inline-block, flex) {
+      @if $size != $-zf-zero-breakpoint {
+        %#{$size}-#{$display},
+        .#{$size}-#{$display} {
+          display: $display !important;
+        }
+      } @else {
+        %#{$display},
+        .#{$display} {
+          display: $display !important;
+        }
+      }
+    }
+  }
+}
+
 %overflow-scroll,
 .overflow-scroll {
-    overflow: scroll;
+  overflow: scroll;
 }
 
 %overflow-scroll-x,
 .overflow-scroll-x {
-    overflow-x: scroll;
+  overflow-x: scroll;
 }
 
 %overflow-hidden-x,
 .overflow-hidden-x {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 %overflow-scroll-y,
 .overflow-scroll-y {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 %overflow-hidden-y,
 .overflow-hidden-y {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 %overflow-visible,
 .overflow-visible {
-    overflow: visible;
+  overflow: visible;
 }
 
 %overflow-hidden,
 .overflow-hidden {
-    overflow: hidden;
-}
-
-%block,
-.block {
-    display: block !important;
-}
-
-%inline,
-.inline {
-    display: inline !important;
-}
-
-%inline-block,
-.inline-block {
-    display: inline-block !important;
-}
-
-.flex {
-    display: flex !important;
+  overflow: hidden;
 }
