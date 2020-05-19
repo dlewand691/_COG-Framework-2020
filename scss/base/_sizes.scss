@@ -81,13 +81,13 @@ $heights: 20;
     @for $i from 1 through $heights {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-h#{$i*5}vh {
-          height : $i*5 + vh !important;
-          display: flex;
+          min-height: $i*5 + vh !important;
+          display   : flex;
         }
       } @else {
         .h#{$i*5}vh {
-          height : $i*5 + vh !important;
-          display: flex;
+          min-height: $i*5 + vh !important;
+          display   : flex;
         }
       }
     }
