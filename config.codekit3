@@ -898,6 +898,19 @@
 		"oS": 3,
 		"sct": 1
 		},
+	"/scss/base/_gradients.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/css/_gradients.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
 	"/scss/base/_icons.scss": {
 		"aP": 1,
 		"bl": 0,

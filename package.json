@@ -11,10 +11,10 @@
     "jstransformer-markdown-it": "^2.1.0",
     "lazysizes": "^5.2.0",
     "motion-ui": "^2.0.3",
-    "swiper": "^5.3.8",
+    "swiper": "^5.4.1",
     "video.js": "^7.6.6",
     "videojs-youtube": "^2.6.1",
-    "what-input": "^5.2.7"
+    "what-input": "^5.2.9"
   },
   "author": "Daniel Lewandowski",
   "description": "Framework used for building UI components on Cognizant.com",
