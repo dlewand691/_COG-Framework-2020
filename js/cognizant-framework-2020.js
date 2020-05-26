@@ -181,15 +181,15 @@ $(document).ready(function() {
 // ███████  ███ ███  ██ ██      ███████ ██   ██
 // ======================================================================
 var mySwiper = new Swiper(".swiper-container", {
-  loop: true,
-  autoHeight: true,
-  centeredSlides: true,
-  grabCursor: true,
-  preloadImages: false,
-  lazy: {
-    loadPrevNext: true,
-    loadPrevNextAmount: 5
-  },
+  // loop: true,
+  // autoHeight: true,
+  // centeredSlides: true,
+  // grabCursor: true,
+  // preloadImages: false,
+  // lazy: {
+  //   loadPrevNext: true,
+  //   loadPrevNextAmount: 5
+  // },
   loadOnTransitionStart: true,
   keyboard: {
     enabled: true
@@ -203,7 +203,7 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
   },
-  observer: true,
-  observeParents: true
+  // observer: true,
+  // observeParents: true
 });
 // -----  End of SWIPER  -----------------------------------
