@@ -274,9 +274,11 @@ h6 {
 }
 
 %p,
+.p,
 p {
   // @include font-size(20px);
   @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
+  font-weight: $global-weight-normal;
   // font-size: var(--step-0);
 
   + p {
@@ -691,5 +693,13 @@ dl dt {
 ==================================================================================== */
 .text-shadow {
   text-shadow: 0 0 3rem rgba($black,.65);
+}
+
+.text-shadow1 {
+  text-shadow: 0 0 1rem rgba($black,.85);
+}
+
+.text-shadow4 {
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 1.00), 0 0 0.3rem rgba(0, 0, 0, 0.6), 0 0 0.2rem rgba(0, 0, 0, 0.3);
 }
 // -----  End of TEXT SHADOW  ----------

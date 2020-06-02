@@ -25,16 +25,16 @@
 
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    @each $overflow in (overflow-scroll, overflow-scroll-x, overflow-scroll-y, overflow-hidden-x, overflow-hidden-y, overflow-visible, overflow-hidden) {
+    @each $name, $type in (overflow-scroll: overflow-scroll, overflow-scroll-x: overflow-scroll-x, overflow-scroll-y: overflow-scroll-y, overflow-hidden-x: overflow-hidden-x, overflow-hidden-y: overflow-hidden-y, overflow-visible: visible, overflow-hidden: hidden) {
       @if $size != $-zf-zero-breakpoint {
-        %#{$size}-#{$overflow},
-        .#{$size}-#{$overflow} {
-          display: $overflow !important;
+        %#{$size}-#{$name},
+        .#{$size}-#{$name} {
+          overflow: $type !important;
         }
       } @else {
-        %#{$overflow},
-        .#{$overflow} {
-          display: $overflow !important;
+        %#{$name},
+        .#{$name} {
+          overflow: $type !important;
         }
       }
     }
