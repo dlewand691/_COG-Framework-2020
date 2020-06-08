@@ -485,12 +485,13 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-sizes: (
-  small: 250px,
+  small: 250px
 )
 !default;
 $offcanvas-vertical-sizes: (
-  small: 250px,
-);
+  small: 250px
+)
+!default;
 $offcanvas-background: $body-font-color !default;
 $offcanvas-shadow: 0 0 0.5rem rgba($body-font-color, 0.75) !default;
 $offcanvas-inner-shadow-size: 20px;
