@@ -22,20 +22,24 @@
   }
 }
 
-%top,
-.top {
+%pos-top,
+.pos-top {
   top: 0;
 }
 
-%bottom,
-.bottom {
+%pos-bottom,
+.pos-bottom {
   bottom: 0;
 }
 
-.left {
+.pos-left {
   left: 0;
 }
 
-.right {
+.pos-right {
   right: 0;
+}
+
+.pos-middle {
+  top: 50%;
 }
