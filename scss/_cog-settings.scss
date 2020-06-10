@@ -20,10 +20,11 @@ $cog-box-shadow--base  : 0 20px 40px rgba($black, 0.1);
 
 // Breakpoints
 $cog-bp--mobile        : 0;
-$cog-bp--mobile-xl     : 480px;
+$cog-bp--mobile-xl     : 410px;
 $cog-bp--tablet        : 600px;
-$cog-bp--tablet-xl     : 992px;
-$cog-bp--desktop       : 1200px;
+$cog-bp--tablet-xl     : 768px;
+$cog-bp--tablet-xxl    : 810px;
+$cog-bp--desktop       : 1024px;
 $cog-bp--desktop-xl    : 1366px;
 $cog-bp--desktop-xxl   : 2000px;
 

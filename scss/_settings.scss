@@ -106,16 +106,17 @@ $print-hrefs: true;
 // 2. Breakpoints
 // --------------
 $breakpoints: (
-  small    : $cog-bp--mobile,
-  small-xl : $cog-bp--mobile-xl,
-  medium   : $cog-bp--tablet,
-  medium-xl: $cog-bp--tablet-xl,
-  large    : $cog-bp--desktop,
-  xlarge   : $cog-bp--desktop-xl,
-  xxlarge  : $cog-bp--desktop-xxl,
+  small     : $cog-bp--mobile,
+  small-xl  : $cog-bp--mobile-xl,
+  medium    : $cog-bp--tablet,
+  medium-xl : $cog-bp--tablet-xl,
+  medium-xxl: $cog-bp--tablet-xxl,
+  large     : $cog-bp--desktop,
+  xlarge    : $cog-bp--desktop-xl,
+  xxlarge   : $cog-bp--desktop-xxl,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small small-xl medium medium-xl large xlarge xxlarge);
+$breakpoint-classes: (small small-xl medium medium-xl medium-xxl large xlarge xxlarge);
 
 // 3. The Grid
 // -----------
