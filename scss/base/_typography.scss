@@ -300,14 +300,14 @@ p {
 .small {
   // font-size: $small-font-size;
   // @include font-size(16px);
-  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 12px, 15px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 75%, 80%);
 }
 
 %tiny,
 .tiny {
   // font-size: 60%;
   // @include font-size(12px);
-  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 9px, 12px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 45%, 60%);
 }
 
 $font-sizes: (

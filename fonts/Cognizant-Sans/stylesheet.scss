@@ -1,88 +1,88 @@
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.eot");
-  src         : local('Cognizant Sans Thin Italic'), local('CognizantSans-ThinItalic'), url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.woff") format('woff');
+  src         : local("Cognizant Sans Thin Italic"), local("CognizantSans-ThinItalic"), url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.ttf") format("truetype");
   font-weight : 100;
   font-style  : italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-Regular.eot");
-  src         : local('Cognizant Sans Regular'), local('CognizantSans-Regular'), url("../fonts/Cognizant-Sans/CognizantSans-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-Regular.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-Regular.woff") format('woff');
+  src         : local("Cognizant Sans Regular"), local("CognizantSans-Regular"), url("../fonts/Cognizant-Sans/CognizantSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-Regular.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-Regular.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-Regular.ttf") format("truetype");
   font-weight : normal;
   font-style  : normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-Bold.eot");
-  src         : local('Cognizant Sans Bold'), local('CognizantSans-Bold'), url("../fonts/Cognizant-Sans/CognizantSans-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-Bold.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-Bold.woff") format('woff');
+  src         : local("Cognizant Sans Bold"), local("CognizantSans-Bold"), url("../fonts/Cognizant-Sans/CognizantSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-Bold.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-Bold.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-Bold.ttf") format("truetype");
   font-weight : bold;
   font-style  : normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-Heavy.eot");
-  src         : local('Cognizant Sans Heavy'), local('CognizantSans-Heavy'), url("../fonts/Cognizant-Sans/CognizantSans-Heavy.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-Heavy.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-Heavy.woff") format('woff');
+  src         : local("Cognizant Sans Heavy"), local("CognizantSans-Heavy"), url("../fonts/Cognizant-Sans/CognizantSans-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-Heavy.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-Heavy.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-Heavy.ttf") format("truetype");
   font-weight : 900;
   font-style  : normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.eot");
-  src         : local('Cognizant Sans Bold Italic'), local('CognizantSans-BoldItalic'), url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.woff") format('woff');
+  src         : local("Cognizant Sans Bold Italic"), local("CognizantSans-BoldItalic"), url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.ttf") format("truetype");
   font-weight : bold;
   font-style  : italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.eot");
-  src         : local('Cognizant Sans Light Italic'), local('CognizantSans-LightItalic'), url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.woff") format('woff');
+  src         : local("Cognizant Sans Light Italic"), local("CognizantSans-LightItalic"), url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.ttf") format("truetype");
   font-weight : 300;
   font-style  : italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-Thin.eot");
-  src         : local('Cognizant Sans Thin'), local('CognizantSans-Thin'), url("../fonts/Cognizant-Sans/CognizantSans-Thin.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-Thin.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-Thin.woff") format('woff');
+  src         : local("Cognizant Sans Thin"), local("CognizantSans-Thin"), url("../fonts/Cognizant-Sans/CognizantSans-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-Thin.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-Thin.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-Thin.ttf") format("truetype");
   font-weight : 100;
   font-style  : normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.eot");
-  src         : local('Cognizant Sans Heavy Italic'), local('CognizantSans-HeavyItalic'), url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.woff") format('woff');
+  src         : local("Cognizant Sans Heavy Italic"), local("CognizantSans-HeavyItalic"), url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.ttf") format("truetype");
   font-weight : 900;
   font-style  : italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-Light.eot");
-  src         : local('Cognizant Sans Light'), local('CognizantSans-Light'), url("../fonts/Cognizant-Sans/CognizantSans-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-Light.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-Light.woff") format('woff');
+  src         : local("Cognizant Sans Light"), local("CognizantSans-Light"), url("../fonts/Cognizant-Sans/CognizantSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-Light.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-Light.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-Light.ttf") format("truetype");
   font-weight : 300;
   font-style  : normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family : 'Cognizant Sans';
+  font-family : "Cognizant Sans";
   src         : url("../fonts/Cognizant-Sans/CognizantSans-Italic.eot");
-  src         : local('Cognizant Sans Italic'), local('CognizantSans-Italic'), url("../fonts/Cognizant-Sans/CognizantSans-Italic.eot?#iefix") format('embedded-opentype'), url("../fonts/Cognizant-Sans/CognizantSans-Italic.woff2") format('woff2'), url("../fonts/Cognizant-Sans/CognizantSans-Italic.woff") format('woff');
+  src         : local("Cognizant Sans Italic"), local("CognizantSans-Italic"), url("../fonts/Cognizant-Sans/CognizantSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Cognizant-Sans/CognizantSans-Italic.woff2") format("woff2"), url("../fonts/Cognizant-Sans/CognizantSans-Italic.woff") format("woff"), url("../fonts/Cognizant-Sans/CognizantSans-Italic.ttf") format("truetype");
   font-weight : normal;
   font-style  : italic;
   font-display: swap;
