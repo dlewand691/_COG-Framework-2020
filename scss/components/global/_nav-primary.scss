@@ -1,0 +1,150 @@
+.top-bar {
+  a,
+  a:link {
+    // color      : $white;
+    background : none;
+    font-weight: normal;
+  }
+
+  .is-active {
+    background: $topbar-submenu-background;
+
+    a,
+    a:link {
+      // color: $white !important;
+    }
+  }
+}
+
+.cog-logo {
+  transition: all 0.5s ease-out;
+  @include fluidSize(width, 320px, $cog-bp--desktop-xl, 100px, 200px);
+}
+
+#stickyNav .is-stuck {
+  @include breakpoint(medium-xxl down) {
+    top: 41px !important;
+  }
+}
+
+#stickyNav,
+#stickyTitleBar {
+  .sticky {
+    top       : 0;
+    background: $blue-dark-60;
+  }
+
+  #primary-nav {
+    @include fluidSize(padding, 320px, $cog-bp--desktop, 0.5rem, 1rem);
+
+    // ===================================================================================
+    // MENU
+    // ===================================================================================
+    .menu {
+      border: none;
+
+      > li.is-accordion-submenu-parent,
+      > li.is-dropdown-submenu-parent {
+        transition: all 0.3s ease;
+
+        > a {
+          background   : none;
+          // color        : $white;
+          padding-right: 2.4rem;
+          line-height  : unset;
+
+          &:after {
+            width      : unset;
+            height     : unset;
+            border     : none;
+            content    : '\e903';
+            font-family: 'Cognizant-Icons';
+            font-weight: bold;
+            // color      : $blue-bright;
+            top        : calc(50% - .4rem);
+            right      : 1rem;
+          }
+        }
+
+        &[aria-expanded="true"] {
+          > a {
+            background: $white-30;
+          }
+        }
+      }
+    }
+    // ===================================================================================
+    // SUBMENU
+    // ===================================================================================
+    .submenu {
+      min-width: 300px;
+
+      .is-submenu-item {
+        a,
+        a:link {
+          transition: all 0.3s ease;
+          background: rgba($blue, .3);
+          @include breakpoint(large) {
+            background: rgba($blue-dark, .97);
+          }
+
+          &:hover {
+            transition: all 0.3s ease;
+            background: rgba($blue-light, .97);
+          }
+
+          &:after {
+            content: '';
+          }
+        }
+      }
+    }
+  }
+
+  // ===================================================================================
+  // STUCK STYLES
+  // ===================================================================================
+  .is-stuck {
+    background: rgba($blue-dark, .97);
+    font-size : $small-font-size;
+
+    .cog-logo {
+      transition: all 0.5s ease-out;
+      max-width : 100px;
+    }
+
+    #primary-nav {
+      padding: 0 0 0 0.5rem;
+    }
+  }
+}
+
+// ===================================================================================
+// WORLDWIDE MENU
+// ===================================================================================
+#language-menu {
+  top       : 2.15rem !important;
+  background: rgba($blue-dark-darker-85, .97);
+
+  a {
+    color      : $white;
+    font-weight: normal;
+
+    &:hover {
+      color: $anchor-color;
+    }
+  }
+
+  &:before {
+    @include css-triangle($tooltip-pip-width, rgba($blue-dark-darker-85, .97), up);
+    right   : 4rem;
+    left    : auto;
+    position: absolute;
+    top     : calc(0px - #{$tooltip-pip-width});
+  }
+}
+
+.flag-icon {
+  box-shadow     : 0 0 0 1px rgba($white,.4);
+  background-size: cover !important;
+}

@@ -83,6 +83,19 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/fonts/Cognizant-Sans/stylesheet.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/fonts/css/stylesheet.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/js/abide-checkbox-group-validation.js": {
 		"bF": 0,
 		"ft": 64,
@@ -99,7 +112,7 @@
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/_BUILD/js/min/accordions-min.js",
 		"oF": 0,
 		"sC": 3,
@@ -173,6 +186,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/node_modules/aos/dist/min/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/foundation.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/min/foundation.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -1119,45 +1143,6 @@
 		"oS": 3,
 		"sct": 0
 		},
-	"/scss/components/custom/_footer.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/scss/components/css/_footer.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 0
-		},
-	"/scss/components/custom/_nav-anchorLink-bar.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/scss/components/css/_nav-anchorLink-bar.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 0
-		},
-	"/scss/components/custom/_nav-primary.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/scss/components/css/_nav-primary.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 0
-		},
 	"/scss/components/custom/_partners.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1353,6 +1338,58 @@
 		"oS": 3,
 		"sct": 0
 		},
+	"/scss/components/global/_footer.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/components/css/_footer.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/components/global/_nav-anchorLink-bar.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/components/css/_nav-anchorLink-bar.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/components/global/_nav-primary-OLD.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/components/css/_nav-primary-OLD.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/components/global/_nav-primary.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/components/css/_nav-primary.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
 	"/scss/plugins/_animsition.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1375,6 +1412,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/scss/css/_aos.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/plugins/_flag-icons.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/css/_flag-icons.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0

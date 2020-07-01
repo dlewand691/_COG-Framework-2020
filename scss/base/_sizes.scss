@@ -36,24 +36,24 @@ $widths: 20;
         }
       }
 
-      .#{$size}-w66 {
-        width: 66%;
-      }
+      // .#{$size}-w66 {
+      //   width: 66%;
+      // }
 
-      .#{$size}-w33 {
-        width: 33%;
-      }
+      // .#{$size}-w33 {
+      //   width: 33%;
+      // }
     }
   }
 }
 
-.w100px {
-  width: 100px;
-}
+// .w100px {
+//   width: 100px;
+// }
 
-.w100vw {
-  width: 100vw;
-}
+// .w100vw {
+//   width: 100vw;
+// }
 
 // ===================================================================================
 // ██   ██ ███████ ██  ██████  ██   ██ ████████ ███████
@@ -67,26 +67,26 @@ $heights: 20;
 
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    @for $i from 1 through $heights {
-      @if $size != $-zf-zero-breakpoint {
-        .#{$size}-h#{$i*5} {
-          height: $i*5% !important;
-        }
-      } @else {
-        .h#{$i*5} {
-          height: $i*5% !important;
-        }
-      }
-    }
+    // @for $i from 1 through $heights {
+    //   @if $size != $-zf-zero-breakpoint {
+    //     .#{$size}-h#{$i*5} {
+    //       height: $i*5%;
+    //     }
+    //   } @else {
+    //     .h#{$i*5} {
+    //       height: $i*5%;
+    //     }
+    //   }
+    // }
     @for $i from 1 through $heights {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-h#{$i*5}vh {
-          height : $i*5 + vh !important;
+          height : $i*5 + vh;
           display: flex;
         }
       } @else {
         .h#{$i*5}vh {
-          height : $i*5 + vh !important;
+          height : $i*5 + vh;
           display: flex;
         }
       }
@@ -94,12 +94,12 @@ $heights: 20;
     @for $i from 1 through $heights {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-min-h#{$i*5}vh {
-          min-height: $i*5 + vh !important;
+          min-height: $i*5 + vh;
           display   : flex;
         }
       } @else {
         .min-h#{$i*5}vh {
-          min-height: $i*5 + vh !important;
+          min-height: $i*5 + vh;
           display   : flex;
         }
       }
@@ -107,40 +107,41 @@ $heights: 20;
   }
 }
 
-@each $size in $breakpoint-classes {
-  @include breakpoint($size) {
-    .#{$size}-h25 {
-      height: 25%;
-    }
-
-    .#{$size}-h33 {
-      height: 33.3333%;
-    }
-
-    .#{$size}-h50 {
-      height: 50%;
-    }
-
-    .#{$size}-h66 {
-      height: 66.6666%;
-    }
-
-    .#{$size}-h75 {
-      height: 75%;
-    }
-
-  }
-}
-
-.h500px {
-  height: 500px;
-}
-
-.h300px {
-  height: 300px;
+.h100 {
+  height: 100%;
 }
 
 .wh100 {
   width : 100%;
   height: 100%;
 }
+
+// @each $size in $breakpoint-classes {
+//   @include breakpoint($size) {
+//     @if $size != $-zf-zero-breakpoint {
+//       .#{$size}-h33 {
+//         height: 33.3333%;
+//       }
+// 
+//       .#{$size}-h66 {
+//         height: 66.6666%;
+//       }
+//     } @else {
+//       .h33 {
+//         height: 33.3333%;
+//       }
+// 
+//       .h66 {
+//         height: 66.6666%;
+//       }
+//     }
+//   }
+// }
+
+// .h500px {
+//   height: 500px;
+// }
+// 
+// .h300px {
+//   height: 300px;
+// }

@@ -35,7 +35,7 @@ hr.dark {
   border-color: $black-15;
 }
 
-@each $color-name, $color in palette {
+@each $color-name, $color in $border-palette {
   hr.#{$color-name} {
     border-bottom-color: $color;
   }

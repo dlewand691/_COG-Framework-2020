@@ -1,10 +1,10 @@
 .button {
   // margin-left    : 0.5rem;
-  margin-right   : 0.5rem;
-  text-decoration: none;
-  text-transform : uppercase;
+  // margin-right   : 0.5rem;
+  // text-decoration: none;
+  // text-transform : uppercase;
   // @include font-size(20px);
-  font-weight    : 700;
+  // font-weight    : 700;
 
   & i {
     // line-height: 0;
@@ -47,6 +47,7 @@
     color       : $white;
     font-family : "Cognizant-Icons";
     font-weight : 600;
+    font-size   : initial;
   }
 
   &.download:after {
@@ -60,6 +61,7 @@
     background : unset !important;
     font-family: "Cognizant-Icons";
     font-weight: bold;
+    font-size  : initial;
   }
 
   &.video:after {
@@ -73,6 +75,7 @@
     background : unset !important;
     font-family: "Cognizant-Icons";
     font-weight: bold;
+    font-size  : initial;
   }
 
   &.white {
@@ -98,4 +101,45 @@
     }
   }
 }
-/* ----  End of BUTTON  ---------------------------- */
+
+.arrow {
+  display    : inline-flex;
+  align-items: center;
+
+  &::after {
+    position   : unset !important;
+    right      : unset !important;
+    width      : unset !important;
+    height     : unset !important;
+    margin-top : unset !important;
+    margin-left: 0.5rem;
+    content    : "\e907" !important;
+    background : unset !important;
+    font-family: "Cognizant-Icons";
+    font-weight: bold;
+    // font-size  : initial;
+  }
+
+  &.arrow-solid-green {
+    &::after {
+      content    : "\e908" !important;
+      color      : $green;
+      font-family: "Cognizant-Icons";
+      // font-size  : initial;
+    }
+  }
+}
+
+.arrow-end {
+  // position: relative;
+
+  &::after {
+    // position   : absolute;
+    // right      : 0;
+    content    : "\e907";
+    font-family: "Cognizant-Icons";
+    font-size  : initial;
+    display    : inline;
+    margin-left: 0.2rem;
+  }
+}

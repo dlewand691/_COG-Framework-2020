@@ -5,12 +5,11 @@
 //    ██    ██       ██ ██     ██        ██      ██   ██ ██    ██ ██
 //    ██    ███████ ██   ██    ██         ██████ ██   ██  ██████  ██
 // ===================================================================================
-
 @mixin text-crop($line-height: 1.3, $top-adjustment: 0px, $bottom-adjustment: 0) {
   // Configured in Step 1
-  $top-crop           : 15;
-  $bottom-crop        : 12;
-  $crop-font-size     : 60;
+  $top-crop           : 11;
+  $bottom-crop        : 7;
+  $crop-font-size     : 36;
   $crop-line-height   : 1.2;
 
   // Apply values to calculate em-based margins that work with any font size
@@ -22,7 +21,7 @@
 
   &::after,
   &::before {
-    content: '';
+    content: "";
     display: block;
     height : 0;
     width  : 0;
@@ -36,7 +35,7 @@
     margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
   }
 }
-// Mixin generated at: http://text-crop.eightshapes.com/?typeface-selection=custom-font&typeface=Lato&custom-typeface-name=Cognizant%20Sans&custom-typeface-url=https%3A%2F%2Fwww.dannylewandowski.com%2F_cog-DEV%2F_PROTOTYPING%2FChaos%2520to%2520Catalyst%2520DEV%2Ffonts%2FCognizant-Sans%2FCognizantSans-Regular.woff2&custom-typeface-weight=400&custom-typeface-style=normal&weight-and-style=100&size=60&line-height=1.2&top-crop=15&bottom-crop=12
+// Mixin generated at: http://text-crop.eightshapes.com/?typeface-selection=custom-font&typeface=Lato&custom-typeface-name=Cognizant%20Sans&custom-typeface-url=&custom-typeface-weight=400&custom-typeface-style=normal&weight-and-style=100&size=36&line-height=1.2&top-crop=11&bottom-crop=7
 
 /* Usage Examples
     .my-level-1-heading-class {
@@ -70,7 +69,6 @@
         line-height: 3; // DO NOT set line height outside of the mixin, the mixin needs the line height value to calculate the crop correctly
     }
 */
-
 // -----  End of TEXT CROP  -----------------------------------
 
 // ===================================================================================
@@ -84,25 +82,25 @@
 // // https://gist.github.com/fsimmons/e9e64dc2f6f375dbe446c9994022299b
 // $screen_min: 320px;
 // $screen_max: 1330px;
-// 
+//
 // @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
 //     @each $property in $properties {
 //         #{$property}: $min-value;
 //     }
-// 
+//
 //     @media (min-width: $min-vw) {
 //         @each $property in $properties {
 //             #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * (100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)});
 //         }
 //     }
-// 
+//
 //     @media (min-width: $max-vw) {
 //         @each $property in $properties {
 //             #{$property}: $max-value;
 //         }
 //     }
 // }
-// 
+//
 // // .text-large {
 // //   @include fluid-type(font-size, $screen_min, $screen_max, 15px, 18px);
 // //   @include fluid-type(line-height, $screen_min, $screen_max, 24px, 32px);
@@ -116,63 +114,63 @@
 //     --fluid-max-size : 20;
 //     --fluid-min-ratio: 1.2;
 //     --fluid-max-ratio: 1.333;
-// 
+//
 //     --fluid-screen   : 100vw;
 //     --fluid-bp       : calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16)));
 // }
-// 
+//
 // @media screen and (min-width: 1200px) {
 //     :root {
 //         --fluid-screen: calc(var(--fluid-max-width) * 1px);
 //     }
 // }
-// 
+//
 // :root {
 //     --fluid-max-negative: (1 / var(--fluid-max-ratio) / var(--fluid-max-ratio));
 //     --fluid-min-negative: (1 / var(--fluid-min-ratio) / var(--fluid-min-ratio));
-// 
+//
 //     --fluid-min-scale--2: var(--fluid-min-scale--1) * var(--fluid-min-ratio) * var(--fluid-min-negative);
 //     --fluid-max-scale--2: var(--fluid-max-scale--1) * var(--fluid-max-ratio) * var(--fluid-max-negative);
 //     --fluid-min-size--2 : (var(--fluid-min-size) * var(--fluid-min-scale--2)) / 16;
 //     --fluid-max-size--2 : (var(--fluid-max-size) * var(--fluid-max-scale--2)) / 16;
 //     --step--2           : calc(((var(--fluid-min-size--2) * 1rem) + (var(--fluid-max-size--2) - var(--fluid-min-size--2)) * var(--fluid-bp)));
-// 
+//
 //     --fluid-min-scale--1: var(--fluid-min-ratio) * var(--fluid-min-negative);
 //     --fluid-max-scale--1: var(--fluid-max-ratio) * var(--fluid-max-negative);
 //     --fluid-min-size--1 : (var(--fluid-min-size) * var(--fluid-min-scale--1)) / 16;
 //     --fluid-max-size--1 : (var(--fluid-max-size) * var(--fluid-max-scale--1)) / 16;
 //     --step--1           : calc(((var(--fluid-min-size--1) * 1rem) + (var(--fluid-max-size--1) - var(--fluid-min-size--1)) * var(--fluid-bp)));
-// 
+//
 //     --fluid-min-scale-0 : var(--fluid-min-ratio);
 //     --fluid-max-scale-0 : var(--fluid-max-ratio);
 //     --fluid-min-size-0  : (var(--fluid-min-size)) / 16;
 //     --fluid-max-size-0  : (var(--fluid-max-size)) / 16;
 //     --step-0            : calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
-// 
+//
 //     --fluid-min-scale-1 : var(--fluid-min-scale-0) * var(--fluid-min-ratio);
 //     --fluid-max-scale-1 : var(--fluid-max-scale-0) * var(--fluid-max-ratio);
 //     --fluid-min-size-1  : (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
 //     --fluid-max-size-1  : (var(--fluid-max-size) * var(--fluid-max-scale-0)) / 16;
 //     --step-1            : calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
-// 
+//
 //     --fluid-min-scale-2 : var(--fluid-min-scale-1) * var(--fluid-min-ratio);
 //     --fluid-max-scale-2 : var(--fluid-max-scale-1) * var(--fluid-max-ratio);
 //     --fluid-min-size-2  : (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
 //     --fluid-max-size-2  : (var(--fluid-max-size) * var(--fluid-max-scale-1)) / 16;
 //     --step-2            : calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
-// 
+//
 //     --fluid-min-scale-3 : var(--fluid-min-scale-2) * var(--fluid-min-ratio);
 //     --fluid-max-scale-3 : var(--fluid-max-scale-2) * var(--fluid-max-ratio);
 //     --fluid-min-size-3  : (var(--fluid-min-size) * var(--fluid-min-scale-2)) / 16;
 //     --fluid-max-size-3  : (var(--fluid-max-size) * var(--fluid-max-scale-2)) / 16;
 //     --step-3            : calc(((var(--fluid-min-size-3) * 1rem) + (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)));
-// 
+//
 //     --fluid-min-scale-4 : var(--fluid-min-scale-3) * var(--fluid-min-ratio);
 //     --fluid-max-scale-4 : var(--fluid-max-scale-3) * var(--fluid-max-ratio);
 //     --fluid-min-size-4  : (var(--fluid-min-size) * var(--fluid-min-scale-3)) / 16;
 //     --fluid-max-size-4  : (var(--fluid-max-size) * var(--fluid-max-scale-3)) / 16;
 //     --step-4            : calc(((var(--fluid-min-size-4) * 1rem) + (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)));
-// 
+//
 //     --fluid-min-scale-5 : var(--fluid-min-scale-4) * var(--fluid-min-ratio);
 //     --fluid-max-scale-5 : var(--fluid-max-scale-4) * var(--fluid-max-ratio);
 //     --fluid-min-size-5  : (var(--fluid-min-size) * var(--fluid-min-scale-4)) / 16;
@@ -205,18 +203,29 @@
 $tiny-font-size: 60%;
 
 body {
-  font-size: var(--step-0);
+  // font-size: var(--step-0);
+  // @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 20px, 20px);
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  // color: var(--blue);
-  color: $blue;
-  // @include text-crop;
+  font-weight: 900;
+  @include text-crop($line-height: 1.1);
+}
+
+h5,
+h6 {
+  @include text-crop($line-height: 1.3);
 }
 
 %h1,
@@ -254,7 +263,6 @@ h4 {
   // @include font-size(36px);
   @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 25px, 36px);
   // font-size: var(--step-2);
-
 }
 
 %h5,
@@ -279,6 +287,7 @@ p {
   // @include font-size(20px);
   @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
   font-weight: $global-weight-normal;
+  @include text-crop($top-adjustment: 0.4px, $bottom-adjustment: -0.25px);
   // font-size: var(--step-0);
 
   + p {
@@ -289,6 +298,10 @@ p {
     // margin-bottom: $paragraph-margin-bottom;
   }
 }
+
+// p:last-of-type {
+//   margin-bottom: 0;
+// }
 
 .super-size {
   // @include font-size(140px);
@@ -320,7 +333,7 @@ $font-sizes: (
   @include breakpoint($size) {
     @each $font-size in $font-sizes {
       .#{$size}-#{$font-size} {
-        extend: #{font-size}!important;
+        extend: #{font-size};
       }
     }
   }
@@ -336,6 +349,11 @@ $font-sizes: (
 sup {
   // top      : -0.4em;
   // font-size: $tiny-font-size;
+}
+
+b,
+strong {
+  font-weight: bold !important;
 }
 
 // ===================================================================================
@@ -357,70 +375,58 @@ sup {
   line-height: 2;
 }
 
-%text-normal,
-.text-normal {
-  font-weight: normal !important;
+$font-weights-only: (
+  "normal" "normal",
+  "light" 100,
+  "bold" "bold",
+  "heavy" 900
+);
+@each $font-style, $font-weight in $font-weights-only {
+  %text-#{$font-style},
+  .text-#{$font-style} {
+    font-weight: #{$font-weight} !important;
+  }
 }
 
-%text-light,
-.text-light {
-  font-weight: 100 !important;
+$font-two-styles: (
+  "light-italic" 100 "italic",
+  "bold-italic" "bold" "italic",
+  "heavy-italic" 900 "italic"
+);
+@each $font-style, $font-weight, $font-variation in $font-two-styles {
+  %text-#{$font-style},
+  .text-#{$font-style} {
+    font-weight: #{$font-weight};
+    font-style : #{$font-variation} !important;
+  }
 }
 
-%text-light-italic,
-.text-light-italic {
-  font-weight: 100 !important;
-  font-style : italic;
+$font-transforms: (
+  "caps" "uppercase",
+  "title" "capitalize",
+  "sentence" "sentence"
+);
+@each $font-style, $font-transform in $font-transforms {
+  %text-#{$font-style},
+  .text-#{$font-style} {
+    text-transform: #{$font-transform} !important;
+  }
 }
 
-%text-bold,
-.strong,
-.text-bold,
-strong {
-  font-weight: bold !important;
-}
-
-%text-bold-italic,
-.text-bold-italic {
-  font-weight: bold !important;
-  font-style : italic;
-}
-
-%text-heavy,
-.strong,
-.text-heavy,
-strong {
-  font-weight: 900 !important;
-}
-
-%text-heavy-italic,
-.text-heavy-italic {
-  font-weight: 900 !important;
-  font-style : italic;
-}
-
-%text-italic,
-.text-italic {
-  font-style: italic !important;
-}
-
-%text-caps,
-.text-caps {
-  text-transform: uppercase !important;
-}
-
-%text-title,
-.text-title {
-  text-transform: capitalize !important;
-}
-
-%text-sentence,
-.text-sentence {
-  text-transform: none !important;
-}
-
-%text-center {
-  text-align: center;
+$text-alignments: (
+  "left",
+  "right",
+  "center"
+);
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @each $alignment in $text-alignments {
+      %text-#{$alignment},
+      .text-#{$alignment} {
+        text-align: #{$alignment} !important;
+      }
+    }
+  }
 }
 
 /* ===========================================================================================
@@ -435,8 +441,11 @@ strong {
 a,
 a:hover,
 a:link {
+  // @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
+  // @include text-crop($top-adjustment: 0.4px, $bottom-adjustment: -0.25px);
   font-weight: $global-weight-bold;
   transition : all 0.3s ease;
+  // display    : inline-block;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -449,7 +458,7 @@ a:link {
 }
 
 a.link-coverAll:before {
-  content : '';
+  content : "";
   position: absolute;
   left    : 0;
   top     : 0;
@@ -517,11 +526,11 @@ a.link-coverAll:before {
 }
 
 .gradient-transparent-white-25 {
-  background: linear-gradient(to right, rgba($white,0), rgba($white,1) 25%);
+  background: linear-gradient(to right, rgba($white, 0), rgba($white, 1) 25%);
 }
 
 .gradient-transparent-black-25 {
-  background: linear-gradient(to right, rgba($black,0), rgba($black,1) 25%);
+  background: linear-gradient(to right, rgba($black, 0), rgba($black, 1) 25%);
 }
 
 .heading-lines {
@@ -629,58 +638,6 @@ dl dt {
   font-weight: bold;
 }
 /* ----  End of LISTS  ---------------------------------- */
-/* =================================================================================================
-██      ██ ███    ██ ██   ██
-██      ██ ████   ██ ██  ██
-██      ██ ██ ██  ██ █████
-██      ██ ██  ██ ██ ██  ██
-███████ ██ ██   ████ ██   ██
-██      ██ ███████ ████████ ███████
-██      ██ ██         ██    ██
-██      ██ ███████    ██    ███████
-██      ██      ██    ██         ██
-███████ ██ ███████    ██    ███████
-========================================================================================= */
-.arrow {
-  display    : inline-flex;
-  align-items: center;
-
-  &::after {
-    position   : unset !important;
-    right      : unset !important;
-    width      : unset !important;
-    height     : unset !important;
-    margin-top : unset !important;
-    margin-left: 0.5rem;
-    content    : "\e907" !important;
-    background : unset !important;
-    font-family: "Cognizant-Icons";
-    font-weight: bold;
-  }
-
-  &.arrow-solid-green {
-    &::after {
-      content    : "\e908" !important;
-      color      : $green;
-      font-family: "Cognizant-Icons";
-    }
-  }
-}
-
-.arrow-end {
-  // position: relative;
-
-  &::after {
-    // position   : absolute;
-    // right      : 0;
-    content    : "\e907";
-    font-family: "Cognizant-Icons";
-    display    : inline;
-    margin-left: 0.2rem;
-  }
-}
-
-/* ----  End of LINK LISTS  ---------------------------------- */
 
 /* ====================================================================================
 
@@ -692,14 +649,14 @@ dl dt {
 
 ==================================================================================== */
 .text-shadow {
-  text-shadow: 0 0 3rem rgba($black,.65);
+  text-shadow: 0 0 3rem rgba($black, 0.65);
 }
 
 .text-shadow1 {
-  text-shadow: 0 0 1rem rgba($black,.85);
+  text-shadow: 0 0 1rem rgba($black, 0.85);
 }
 
 .text-shadow4 {
-  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 1.00), 0 0 0.3rem rgba(0, 0, 0, 0.6), 0 0 0.2rem rgba(0, 0, 0, 0.3);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 1), 0 0 0.3rem rgba(0, 0, 0, 0.6), 0 0 0.2rem rgba(0, 0, 0, 0.3);
 }
 // -----  End of TEXT SHADOW  ----------

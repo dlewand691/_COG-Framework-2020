@@ -11,25 +11,25 @@
 ██████  ██   ██ ██   ██
 
 ==================================================================================== */
-.no-js {
-    @include breakpoint(small only) {
-        .top-bar {
-            display: none;
-        }
-    }
-    @include breakpoint(medium) {
-        .title-bar {
-            display: none;
-        }
-    }
-}
+// .no-js {
+//     @include breakpoint(small only) {
+//         .top-bar {
+//             display: none;
+//         }
+//     }
+//     @include breakpoint(medium) {
+//         .title-bar {
+//             display: none;
+//         }
+//     }
+// }
 
-.top-bar-left {
-    margin-right: auto;
-}
+// .top-bar-left {
+//     margin-right: auto;
+// }
 
-.menu > li > a:hover {
-    background: transparentize($green, .8);
-    // background: $button-background-hover;
-}
+// .menu > li > a:hover {
+//     background: transparentize($green, .8);
+//     // background: $button-background-hover;
+// }
 /* -----  End of TOP BAR  ---------- */

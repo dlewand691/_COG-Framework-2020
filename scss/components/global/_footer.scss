@@ -5,21 +5,22 @@
 ██      ██    ██ ██    ██    ██    ██      ██   ██
 ██       ██████   ██████     ██    ███████ ██   ██
 ==================================================================================== */
-.footer-blue-bar {
-  li a:hover {
-    background: $button-background-hover;
+.footer,
+footer {
+  .footer-blue-bar {
+    li a:hover {
+      background: $button-background-hover;
+    }
   }
-}
 
-.footer {
   ul li {
-    margin     : 0;
-    line-height: 1.3rem;
+    margin: 0.25rem;
+    // line-height: 1.3rem;
   }
 
   a {
-    font-weight: normal;
-    color      : $white;
+    font-weight: normal !important;
+    color      : $body-font-color;
 
     &:hover {
       color: $anchor-color;

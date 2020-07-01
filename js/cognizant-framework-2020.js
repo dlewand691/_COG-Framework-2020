@@ -1,4 +1,5 @@
 // @codekit-prepend 'jquery/dist/jquery.min.js'
+// #codekit-prepend 'foundation-sites/dist/js/foundation.min.js'
 
 
 // ======================================================================
@@ -78,7 +79,8 @@ $(document).foundation();
 // ██      ██    ██ ██  ██  ██ ██      ██    ██ ██  ██ ██ ██      ██  ██ ██    ██         ██
 //  ██████  ██████  ██      ██ ██       ██████  ██   ████ ███████ ██   ████    ██    ███████
 // ======================================================================
-// @codekit-append 'accordions.js'
+// @codekit-append 'gradient-background-steps.js'
+// @codekit-append 'gradient-steps-tabs.js'
 
 Foundation.Abide.defaults.patterns["dashes_only"] = /^[0-9-+]*$/;
 
@@ -166,7 +168,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   AOS.init({
-    // startEvent: "load"
+    duration: 750,
+    // mirror: false,
+    startEvent: "load",
+    offset: "150"
   });
 });
 
@@ -184,12 +189,12 @@ var mySwiper = new Swiper(".swiper-container", {
   // loop: true,
   // autoHeight: true,
   // centeredSlides: true,
-  // grabCursor: true,
-  // preloadImages: false,
-  // lazy: {
-  //   loadPrevNext: true,
-  //   loadPrevNextAmount: 5
-  // },
+  grabCursor: true,
+  preloadImages: false,
+  lazy: {
+    loadPrevNext: true,
+    loadPrevNextAmount: 5
+  },
   loadOnTransitionStart: true,
   keyboard: {
     enabled: true

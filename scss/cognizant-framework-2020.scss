@@ -19,7 +19,7 @@
 @include foundation-button;
 @include foundation-button-group;
 @include foundation-close-button;
-@include foundation-label;
+// @include foundation-label;
 // @include foundation-progress-bar;
 // @include foundation-slider;
 // @include foundation-switch;
@@ -159,6 +159,17 @@ $themeColor: $green;
 @import "base/z-indexes";
 @import "base/gradients";
 
+// ======================================================================
+//  ██████  ██       ██████  ██████   █████  ██
+// ██       ██      ██    ██ ██   ██ ██   ██ ██
+// ██   ███ ██      ██    ██ ██████  ███████ ██
+// ██    ██ ██      ██    ██ ██   ██ ██   ██ ██
+//  ██████  ███████  ██████  ██████  ██   ██ ███████
+// ======================================================================
+@import "components/global/footer";
+@import "components/global/nav-anchorLink-bar";
+@import "components/global/nav-primary";
+
 // ===================================================================================
 // ███████  ██████  ██    ██ ███    ██ ██████   █████  ████████ ██  ██████  ███    ██
 // ██      ██    ██ ██    ██ ████   ██ ██   ██ ██   ██    ██    ██ ██    ██ ████   ██
@@ -178,6 +189,7 @@ $themeColor: $green;
 @import "components/foundation/sticky";
 @import "components/foundation/tables";
 @import "components/foundation/tabs";
+@import "components/foundation/top-bar";
 
 // ===================================================================================
 //  ██████  ██████  ███    ███ ██████   ██████  ███    ██ ███████ ███    ██ ████████ ███████
@@ -186,12 +198,9 @@ $themeColor: $green;
 // ██      ██    ██ ██  ██  ██ ██      ██    ██ ██  ██ ██ ██      ██  ██ ██    ██         ██
 //  ██████  ██████  ██      ██ ██       ██████  ██   ████ ███████ ██   ████    ██    ███████
 // ===================================================================================
-@import "components/custom/banners";
-@import "components/custom/footer";
-@import "components/custom/nav-anchorLink-bar";
-@import "components/custom/nav-primary";
-@import "components/custom/partners";
-@import "components/custom/read-more";
+// @import "components/custom/banners";
+// @import "components/custom/partners";
+// @import "components/custom/read-more";
 
 // ===================================================================================
 // ██████  ██      ██    ██  ██████  ██ ███    ██
@@ -210,6 +219,7 @@ $themeColor: $green;
 @import "plugins/scrollup";
 @import "plugins/swiper";
 @import "plugins/videojs";
+@import "plugins/flag-icons";
 
 // ===================================================================================
 // ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████

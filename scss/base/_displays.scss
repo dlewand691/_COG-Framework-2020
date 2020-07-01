@@ -23,55 +23,21 @@
   }
 }
 
+$overflows: "overflow-hidden" null hidden, "overflow-hidden-x" "-x" hidden, "overflow-hidden-y" "-y" hidden, "overflow-scroll" null scroll, "overflow-scroll-x" "-x" scroll, "overflow-scroll-y" "-y" scroll, "overflow-visible" null visible;
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    @each $name, $type in (overflow-scroll: overflow-scroll, overflow-scroll-x: overflow-scroll-x, overflow-scroll-y: overflow-scroll-y, overflow-hidden-x: overflow-hidden-x, overflow-hidden-y: overflow-hidden-y, overflow-visible: visible, overflow-hidden: hidden) {
+    @each $name, $direction, $type in $overflows {
       @if $size != $-zf-zero-breakpoint {
         %#{$size}-#{$name},
         .#{$size}-#{$name} {
-          overflow: $type !important;
+          overflow#{$direction}: $type !important;
         }
       } @else {
         %#{$name},
         .#{$name} {
-          overflow: $type !important;
+          overflow#{$direction}: $type !important;
         }
       }
     }
   }
 }
-
-// %overflow-scroll,
-// .overflow-scroll {
-//   overflow: scroll;
-// }
-// 
-// %overflow-scroll-x,
-// .overflow-scroll-x {
-//   overflow-x: scroll;
-// }
-// 
-// %overflow-hidden-x,
-// .overflow-hidden-x {
-//   overflow-x: hidden;
-// }
-// 
-// %overflow-scroll-y,
-// .overflow-scroll-y {
-//   overflow-y: scroll;
-// }
-// 
-// %overflow-hidden-y,
-// .overflow-hidden-y {
-//   overflow-y: hidden;
-// }
-// 
-// %overflow-visible,
-// .overflow-visible {
-//   overflow: visible;
-// }
-// 
-// %overflow-hidden,
-// .overflow-hidden {
-//   overflow: hidden;
-// }

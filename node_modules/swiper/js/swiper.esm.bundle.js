@@ -1,5 +1,5 @@
 /**
- * Swiper 5.4.2
+ * Swiper 5.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * http://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: June 3, 2020
+ * Released on: June 16, 2020
  */
 
 import { $, addClass, removeClass, hasClass, toggleClass, attr, removeAttr, data, transform, transition as transition$1, on, off, trigger, transitionEnd as transitionEnd$1, outerWidth, outerHeight, offset, css, each, html, text, is, index, eq, append, prepend, next, nextAll, prev, prevAll, parent, parents, closest, find, children, filter, remove, add, styles } from 'dom7/dist/dom7.modular';
@@ -2498,7 +2498,7 @@ function onResize () {
   swiper.updateSlides();
 
   swiper.updateSlidesClasses();
-  if ((params.slidesPerView === 'auto' || params.slidesPerView > 1) && swiper.isEnd && !swiper.params.centeredSlides) {
+  if ((params.slidesPerView === 'auto' || params.slidesPerView > 1) && swiper.isEnd && !swiper.isBeginning && !swiper.params.centeredSlides) {
     swiper.slideTo(swiper.slides.length - 1, 0, false, true);
   } else {
     swiper.slideTo(swiper.activeIndex, 0, false, true);
@@ -2893,7 +2893,7 @@ function checkOverflow() {
 
   if (wasLocked && wasLocked !== swiper.isLocked) {
     swiper.isEnd = false;
-    swiper.navigation.update();
+    if (swiper.navigation) swiper.navigation.update();
   }
 }
 
@@ -3530,7 +3530,7 @@ const Browser = (function Browser() {
   return {
     isEdge: !!window.navigator.userAgent.match(/Edge/g),
     isSafari: isSafari(),
-    isUiWebView: /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(window.navigator.userAgent),
+    isWebView: /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(window.navigator.userAgent),
   };
 }());
 
@@ -3916,11 +3916,18 @@ const Keyboard = {
     let e = event;
     if (e.originalEvent) e = e.originalEvent; // jquery fix
     const kc = e.keyCode || e.charCode;
+    const pageUpDown = swiper.params.keyboard.pageUpDown;
+    const isPageUp = pageUpDown && kc === 33;
+    const isPageDown = pageUpDown && kc === 34;
+    const isArrowLeft = kc === 37;
+    const isArrowRight = kc === 39;
+    const isArrowUp = kc === 38;
+    const isArrowDown = kc === 40;
     // Directions locks
-    if (!swiper.allowSlideNext && ((swiper.isHorizontal() && kc === 39) || (swiper.isVertical() && kc === 40) || kc === 34)) {
+    if (!swiper.allowSlideNext && ((swiper.isHorizontal() && isArrowRight) || (swiper.isVertical() && isArrowDown) || isPageDown)) {
       return false;
     }
-    if (!swiper.allowSlidePrev && ((swiper.isHorizontal() && kc === 37) || (swiper.isVertical() && kc === 38) || kc === 33)) {
+    if (!swiper.allowSlidePrev && ((swiper.isHorizontal() && isArrowLeft) || (swiper.isVertical() && isArrowUp) || isPageUp)) {
       return false;
     }
     if (e.shiftKey || e.altKey || e.ctrlKey || e.metaKey) {
@@ -3929,7 +3936,7 @@ const Keyboard = {
     if (document$1.activeElement && document$1.activeElement.nodeName && (document$1.activeElement.nodeName.toLowerCase() === 'input' || document$1.activeElement.nodeName.toLowerCase() === 'textarea')) {
       return undefined;
     }
-    if (swiper.params.keyboard.onlyInViewport && (kc === 33 || kc === 34 || kc === 37 || kc === 39 || kc === 38 || kc === 40)) {
+    if (swiper.params.keyboard.onlyInViewport && (isPageUp || isPageDown || isArrowLeft || isArrowRight || isArrowUp || isArrowDown)) {
       let inView = false;
       // Check that swiper should be inside of visible area of window
       if (swiper.$el.parents(`.${swiper.params.slideClass}`).length > 0 && swiper.$el.parents(`.${swiper.params.slideActiveClass}`).length === 0) {
@@ -3957,19 +3964,19 @@ const Keyboard = {
       if (!inView) return undefined;
     }
     if (swiper.isHorizontal()) {
-      if (kc === 33 || kc === 34 || kc === 37 || kc === 39) {
+      if (isPageUp || isPageDown || isArrowLeft || isArrowRight) {
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
       }
-      if (((kc === 34 || kc === 39) && !rtl) || ((kc === 33 || kc === 37) && rtl)) swiper.slideNext();
-      if (((kc === 33 || kc === 37) && !rtl) || ((kc === 34 || kc === 39) && rtl)) swiper.slidePrev();
+      if (((isPageDown || isArrowRight) && !rtl) || ((isPageUp || isArrowLeft) && rtl)) swiper.slideNext();
+      if (((isPageUp || isArrowLeft) && !rtl) || ((isPageDown || isArrowRight) && rtl)) swiper.slidePrev();
     } else {
-      if (kc === 33 || kc === 34 || kc === 38 || kc === 40) {
+      if (isPageUp || isPageDown || isArrowUp || isArrowDown) {
         if (e.preventDefault) e.preventDefault();
         else e.returnValue = false;
       }
-      if (kc === 34 || kc === 40) swiper.slideNext();
-      if (kc === 33 || kc === 38) swiper.slidePrev();
+      if (isPageDown || isArrowDown) swiper.slideNext();
+      if (isPageUp || isArrowUp) swiper.slidePrev();
     }
     swiper.emit('keyPress', kc);
     return undefined;
@@ -3994,6 +4001,7 @@ var Keyboard$1 = {
     keyboard: {
       enabled: false,
       onlyInViewport: true,
+      pageUpDown: true,
     },
   },
   create() {
@@ -7196,7 +7204,7 @@ const Cube = {
         $cubeShadowEl.transform(`scale3d(${scale1}, 1, ${scale2}) translate3d(0px, ${(swiperHeight / 2) + offset}px, ${-swiperHeight / 2 / scale2}px) rotateX(-90deg)`);
       }
     }
-    const zFactor = (Browser.isSafari || Browser.isUiWebView) ? (-swiperSize / 2) : 0;
+    const zFactor = (Browser.isSafari || Browser.isWebView) ? (-swiperSize / 2) : 0;
     $wrapperEl
       .transform(`translate3d(0px,0,${zFactor}px) rotateX(${swiper.isHorizontal() ? 0 : wrapperRotate}deg) rotateY(${swiper.isHorizontal() ? -wrapperRotate : 0}deg)`);
   },
