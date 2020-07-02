@@ -67,37 +67,23 @@ $heights: 20;
 
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    // @for $i from 1 through $heights {
-    //   @if $size != $-zf-zero-breakpoint {
-    //     .#{$size}-h#{$i*5} {
-    //       height: $i*5%;
-    //     }
-    //   } @else {
-    //     .h#{$i*5} {
-    //       height: $i*5%;
-    //     }
-    //   }
-    // }
     @for $i from 1 through $heights {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-h#{$i*5}vh {
           height : $i*5 + vh;
           display: flex;
         }
-      } @else {
-        .h#{$i*5}vh {
-          height : $i*5 + vh;
-          display: flex;
-        }
-      }
-    }
-    @for $i from 1 through $heights {
-      @if $size != $-zf-zero-breakpoint {
+        
         .#{$size}-min-h#{$i*5}vh {
           min-height: $i*5 + vh;
           display   : flex;
         }
       } @else {
+        .h#{$i*5}vh {
+          height : $i*5 + vh;
+          display: flex;
+        }
+        
         .min-h#{$i*5}vh {
           min-height: $i*5 + vh;
           display   : flex;
@@ -107,14 +93,20 @@ $heights: 20;
   }
 }
 
+.h0 {
+  height: 0 !important;
+}
+
 .h100 {
-  height: 100%;
+  height: 100% !important;
 }
 
 .wh100 {
-  width : 100%;
-  height: 100%;
+  width : 100% !important;
+  height: 100% !important;
 }
+
+
 
 // @each $size in $breakpoint-classes {
 //   @include breakpoint($size) {

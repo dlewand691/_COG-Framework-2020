@@ -313,14 +313,14 @@ p {
 .small {
   // font-size: $small-font-size;
   // @include font-size(16px);
-  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 75%, 80%);
+  @include fluidSize(font-size, 0%, $cog-bp--desktop, 75%, 80%);
 }
 
 %tiny,
 .tiny {
   // font-size: 60%;
   // @include font-size(12px);
-  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 45%, 60%);
+  @include fluidSize(font-size, 0%, $cog-bp--desktop, 45%, 60%);
 }
 
 $font-sizes: (
