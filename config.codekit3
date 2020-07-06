@@ -718,6 +718,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/swiper/swiper-bundle.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/swiper/min/swiper-bundle.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/video.js/dist/video.min.js": {
 		"bF": 0,
 		"ft": 64,

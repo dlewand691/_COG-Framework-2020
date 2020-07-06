@@ -86,13 +86,13 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 // ====================================================================================
 @import "aos/src/sass/aos";
 @import "hamburgers/_sass/hamburgers/hamburgers";
-$themeColor: $green;
 
-@import "swiper/swiper";
-@import "swiper/components/pagination/pagination.scss";
-@import "swiper/components/navigation/navigation.scss";
-@import "swiper/components/lazy/lazy.scss";
-@import "swiper/components/thumbs/thumbs.scss";
+$themeColor: $green;
+@import 'swiper/swiper.scss';
+@import 'swiper/components/lazy/lazy.scss';
+@import 'swiper/components/navigation/navigation.scss';
+@import 'swiper/components/pagination/pagination.scss';
+
 @import "video.js/src/css/vjs.scss";
 
 /* ===========================================================================================

@@ -600,6 +600,7 @@ blockquote {
 ========================================================================================= */
 ul {
   margin-bottom: 2rem;
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
 }
 
 li {

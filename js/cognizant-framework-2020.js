@@ -65,7 +65,7 @@
 // ======================================================================
 // @codekit-prepend 'lazysizes/lazysizes.js'
 // @codekit-prepend 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js'
-// @codekit-prepend 'swiper/js/swiper.min.js'
+// @codekit-prepend 'swiper/swiper-bundle.min.js'
 // @codekit-prepend 'aos/dist/aos.js'
 // @codekit-prepend 'video.js/dist/video.min.js'
 // @codekit-prepend 'videojs-youtube/dist/Youtube.min.js'
