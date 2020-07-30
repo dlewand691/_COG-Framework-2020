@@ -1,0 +1,44 @@
+// ==========================================================================
+// Typography
+// ==========================================================================
+
+$plyr-font-family: $body-font-family;
+$plyr-font-size-base: $global-font-size;
+$plyr-font-size-small: $small-font-size;
+$plyr-font-size-large: $global-font-size * 1.25;
+$plyr-font-size-xlarge: $global-font-size * 1.5;
+
+// ==========================================================================
+// Colors
+// ==========================================================================
+
+$plyr-color-main: $blue-light;
+
+// Grayscale
+$plyr-color-gray-900: hsl(0, 0%, 16%);
+$plyr-color-gray-800: hsl(0, 0%, 25%);
+$plyr-color-gray-700: hsl(0, 0%, 34%);
+$plyr-color-gray-600: hsl(0, 0%, 43%);
+$plyr-color-gray-500: hsl(0, 0%, 52%);
+$plyr-color-gray-400: hsl(0, 0%, 61%);
+$plyr-color-gray-300: hsl(0, 0%, 70%);
+$plyr-color-gray-200: hsl(0, 0%, 79%);
+$plyr-color-gray-100: hsl(0, 0%, 88%);
+$plyr-color-gray-50: hsl(0, 0%, 97%);
+
+.plyr__video-wrapper {
+  padding-bottom: 0 !important;
+  height        : 100% !important;
+}
+
+.plyr--paused .plyr__poster {
+  display: none;
+  // z-index: 30;
+}
+
+.plyr--stopped .plyr__poster {
+  display: block;
+  // z-index: 30;
+}
+
+@import "plyr/src/sass/plyr.scss";

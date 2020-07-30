@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "32186",
 "files": {
-	"/_BUILD": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "/_BUILD/_BUILD",
-		"oF": 0
-		},
 	"/fonts/Cognizant-Icons-FONT/demo-files/demo.css": {
 		"aP": 1,
 		"bl": 0,
@@ -703,6 +697,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/node_modules/motion-ui/dist/min/motion-ui.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/plyr/dist/plyr.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/plyr/dist/min/plyr.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -1449,6 +1454,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/scss/css/_lazysizes.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/plugins/_plyr.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/css/_plyr.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0

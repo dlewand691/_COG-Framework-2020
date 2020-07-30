@@ -22,9 +22,8 @@
     "jstransformer-markdown-it": "^2.1.0",
     "lazysizes": "^5.2.2",
     "motion-ui": "^2.0.3",
-    "swiper": "^6.0.1",
-    "video.js": "^7.6.6",
-    "videojs-youtube": "^2.6.1",
+    "plyr": "^3.6.2",
+    "swiper": "^6.0.4",
     "what-input": "^5.2.10"
   }
 }
