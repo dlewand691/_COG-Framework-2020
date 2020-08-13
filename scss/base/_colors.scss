@@ -1,13 +1,13 @@
-$blue: rgba(#0033A0,1) !default;
+$blue: #0033A0 !default;
 $blue-bright: lighten(adjust-hue($blue, -20), 40) !default;
-$blue-light: rgba(#328DFF,1) !default;
-$blue-medium: rgba(#2D67FF,1) !default;
-$blue-dark: rgba(#000063,1) !default;
-$green: rgba(#00B140,1) !default;
-$green-light: rgba(#00E452,1) !default;
-$green-dark: rgba(#007E2E,1) !default;
-$white: rgba(#FFFFFF,1) !default;
-$black: rgba(#000000,1) !default;
+$blue-light: #328DFF !default;
+$blue-medium: #2D67FF !default;
+$blue-dark: #000063 !default;
+$green: #00B140 !default;
+$green-light: #00E452 !default;
+$green-dark: #007E2E !default;
+$white: #FFFFFF !default;
+$black: #000000 !default;
 $blue-05: rgba($blue, 0.05) !default;
 $blue-10: rgba($blue, 0.1) !default;
 $blue-15: rgba($blue, 0.15) !default;
@@ -52,65 +52,7 @@ $gray-medium: scale-color($white, $lightness: -30%) !default;
 $gray-dark: scale-color($white, $lightness: -60%) !default;
 $gray-darker: scale-color($white, $lightness: -80%) !default;
 $darkMode-black: rgba(25,25,25,1) !default;
-$red: rgba(#F4633A,1) !default;
-
-$cog-color-palette: (
-  blue-bright        : $blue-bright,
-  "blue"             : $blue,
-  blue-85            : $blue-85,
-  blue-60            : $blue-60,
-  blue-30            : $blue-30,
-  blue-15            : $blue-15,
-  blue-10            : $blue-10,
-  blue-05            : $blue-05,
-  blue-light         : $blue-light,
-  blue-light-85      : $blue-light-85,
-  blue-light-60      : $blue-light-60,
-  blue-light-30      : $blue-light-30,
-  blue-light-15      : $blue-light-15,
-  blue-light-10      : $blue-light-10,
-  blue-light-05      : $blue-light-05,
-  blue-medium        : $blue-medium,
-  blue-dark          : $blue-dark,
-  blue-dark-85       : $blue-dark-85,
-  blue-dark-60       : $blue-dark-60,
-  blue-dark-30       : $blue-dark-30,
-  blue-dark-15       : $blue-dark-15,
-  blue-dark-10       : $blue-dark-10,
-  blue-dark-05       : $blue-dark-05,
-  blue-dark-darker   : darken($blue-dark, 10%),
-  blue-dark-darker-85: darken($blue-dark-85, 10%),
-  "green"            : $green,
-  green-light        : $green-light,
-  green-dark         : $green-dark,
-  "white"            : $white,
-  white-85           : $white-85,
-  white-60           : $white-60,
-  white-30           : $white-30,
-  white-15           : $white-15,
-  white-10           : $white-10,
-  white-05           : $white-05,
-  "black"            : $black,
-  black-85           : $black-85,
-  black-60           : $black-60,
-  black-30           : $black-30,
-  black-15           : $black-15,
-  black-10           : $black-10,
-  black-05           : $black-05,
-  gray-darker        : $gray-darker,
-  gray-dark          : $gray-dark,
-  gray-medium        : $gray-medium,
-  gray-light         : $gray-light,
-  gray-lighter       : $gray-lighter,
-  gray-lightest      : $gray-lightest,
-  // darkMode-black     : $darkMode-black,
-  "red"              : $red,
-  primary            : $blue,
-  secondary          : $black-15,
-  success            : $green,
-  warning            : $red,
-  alert              : $red,
-);
+$red: #F4633A !default;
 
 $text-color-palette: (
   "blue"     : $blue,
