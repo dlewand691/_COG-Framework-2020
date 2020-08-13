@@ -8,14 +8,11 @@ function fixScroll() {
 // ===========================================================================
 // =            ACCORDION BACKGROUND COLORS            =
 // ===========================================================================
-$(document).ready(function() {
-    $(".accordion-gradient").each(function() {
-        var length = $(this).children().length;
-        $(this).find(".accordion-item").each(function(index) {
-            var colorClass = "accordion-gradient-" + Math.round((index / (length - 1)) * 100);
-            // $(this).html(colorClass);
-            $(this).addClass(colorClass);
-        });
+$(".accordion-gradient").each(function() {
+    var length = $(this).children().length;
+    $(this).find(".accordion-item").each(function(index) {
+        var colorClass = "accordion-gradient-" + Math.round((index / (length - 1)) * 100);
+        $(this).addClass(colorClass);
     });
 });
 // -----  End of ACCORDION BACKGROUND COLORS  --------------------------------

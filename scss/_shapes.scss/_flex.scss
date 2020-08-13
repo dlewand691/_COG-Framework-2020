@@ -1,0 +1,127 @@
+/* ====================================================================================
+███████ ██      ███████ ██   ██
+██      ██      ██       ██ ██
+█████   ██      █████     ███
+██      ██      ██       ██ ██
+██      ███████ ███████ ██   ██
+==================================================================================== */
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.flex-grow {
+  flex-grow: 1 !important;
+}
+
+.flex-dir-row {
+  flex-direction: row;
+}
+
+.flex-child-auto {
+  flex: 1 1 auto;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: end;
+}
+
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    .#{$size}-flex-container {
+      display: flex !important;
+    }
+
+    .#{$size}-shrink {
+      flex     : 0 0 auto;
+      max-width: 100%;
+    }
+
+    .#{$size}-flex-dir-row {
+      flex-direction: row;
+    }
+
+    .#{$size}-flex-child-auto {
+      flex: 1 1 auto;
+    }
+
+    .#{$size}-align-top {
+      align-items: flex-start;
+    }
+
+    .#{$size}-align-bottom {
+      align-items: flex-end;
+    }
+
+    .#{$size}-align-middle {
+      align-items: center;
+    }
+
+    .#{$size}-align-center {
+      justify-content: center;
+    }
+
+    .#{$size}-align-left {
+      justify-content: flex-start;
+    }
+
+    .#{$size}-align-right {
+      justify-content: flex-end;
+    }
+  }
+}
+/* -----  End of FLEX GRID ADDITIONS  ---------- */
+
+// ===================================================================================
+// ███████ ██      ███████ ██   ██     ██████   █████  ███████ ██ ███████
+// ██      ██      ██       ██ ██      ██   ██ ██   ██ ██      ██ ██
+// █████   ██      █████     ███       ██████  ███████ ███████ ██ ███████
+// ██      ██      ██       ██ ██      ██   ██ ██   ██      ██ ██      ██
+// ██      ███████ ███████ ██   ██     ██████  ██   ██ ███████ ██ ███████
+// ===================================================================================
+$flex-basises: 12;
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @for $i from 1 through $flex-basises {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-flex-basis-#{$i}col {
+          flex-basis: xy-cell-size-css($i, null, null, $size) !important;
+        }
+      } @else {
+        .flex-basis-#{$i}col {
+          flex-basis: xy-cell-size-css($i, null, null, $size) !important;
+        }
+      }
+    }
+  }
+}
+
+// -----  End of FLEX BASIS  -----------------------------------
+
+// ===================================================================================
+// ██    ██ ███████ ██████  ████████ ██  ██████  █████  ██           █████  ██      ██  ██████  ███    ██
+// ██    ██ ██      ██   ██    ██    ██ ██      ██   ██ ██          ██   ██ ██      ██ ██       ████   ██
+// ██    ██ █████   ██████     ██    ██ ██      ███████ ██          ███████ ██      ██ ██   ███ ██ ██  ██
+//  ██  ██  ██      ██   ██    ██    ██ ██      ██   ██ ██          ██   ██ ██      ██ ██    ██ ██  ██ ██
+//   ████   ███████ ██   ██    ██    ██  ██████ ██   ██ ███████     ██   ██ ███████ ██  ██████  ██   ████
+// ===================================================================================
+
+// Vertical alignment using align-items and align-self
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @each $vdir, $prop in $-zf-flex-align {
+      .#{$size}-align-#{$vdir} {
+        @include flex-align($y: $vdir);
+      }
+
+      .#{$size}-align-self-#{$vdir} {
+        @include flex-align-self($y: $vdir);
+      }
+    }
+  }
+}
+
+// -----  End of VERTICAL ALIGN  -----------------------------------

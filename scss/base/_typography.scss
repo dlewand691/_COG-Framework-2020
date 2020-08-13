@@ -289,6 +289,9 @@ p {
   font-weight: $global-weight-normal;
   @include text-crop($top-adjustment: 0.4px, $bottom-adjustment: -0.25px);
   // font-size: var(--step-0);
+  // line-height: calc(1ex / 0.32) !important;
+  // width: 60ch;
+  // max-width: 100%;
 
   + p {
     // margin-bottom: 0;
@@ -322,29 +325,6 @@ p {
   // @include font-size(12px);
   @include fluidSize(font-size, 320px, $cog-bp--desktop, 9px, 12px);
 }
-
-$font-sizes: (
-  tiny,
-  small,
-  normal
-);
-
-@each $size in $breakpoint-classes {
-  @include breakpoint($size) {
-    @each $font-size in $font-sizes {
-      .#{$size}-#{$font-size} {
-        extend: #{font-size};
-      }
-    }
-  }
-}
-
-// $font-size-percents: 20;
-// @for $i from 1 through $font-size-percents {
-//     .fs-#{$i*10}pct {
-//         font-size: percentage($i/10);
-//     }
-// }
 
 sup {
   // top      : -0.4em;
@@ -409,7 +389,7 @@ $font-transforms: (
 @each $font-style, $font-transform in $font-transforms {
   %text-#{$font-style},
   .text-#{$font-style} {
-    text-transform: #{$font-transform} !important;
+    text-transform: #{$font-transform};
   }
 }
 
@@ -421,9 +401,16 @@ $text-alignments: (
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @each $alignment in $text-alignments {
-      %text-#{$alignment},
-      .text-#{$alignment} {
-        text-align: #{$alignment} !important;
+      @if $size != $-zf-zero-breakpoint {
+        %#{$size}-text-#{$alignment},
+        .#{$size}-text-#{$alignment} {
+          text-align: #{$alignment};
+        }
+      } @else {
+        %text-#{$alignment},
+        .text-#{$alignment} {
+          text-align: #{$alignment};
+        }
       }
     }
   }
@@ -471,7 +458,21 @@ a.link-coverAll:before {
 .link-white {
   a,
   a:link {
-    color: $white !important;
+    color: $white;
+  }
+}
+
+.link-black {
+  a,
+  a:link {
+    color: $black;
+  }
+}
+
+.link-normal {
+  a,
+  a:link {
+    font-weight: normal;
   }
 }
 
@@ -486,14 +487,14 @@ a.link-coverAll:before {
 // ======================================================================
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    @each $color-name, $color in $cog-color-palette {
+    @each $color-name, $color in $text-color-palette {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-text-#{$color-name} {
-          color: $color !important;
+          color: $color;
         }
       } @else {
         .text-#{$color-name} {
-          color: $color !important;
+          color: $color;
         }
       }
     }

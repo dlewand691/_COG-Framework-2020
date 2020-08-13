@@ -1,0 +1,61 @@
+/* ===========================================================================================
+██████  ██ ██    ██ ██ ██████  ███████ ██████  ███████
+██   ██ ██ ██    ██ ██ ██   ██ ██      ██   ██ ██
+██   ██ ██ ██    ██ ██ ██   ██ █████   ██████  ███████
+██   ██ ██  ██  ██  ██ ██   ██ ██      ██   ██      ██
+██████  ██   ████   ██ ██████  ███████ ██   ██ ███████
+=========================================================================================== */
+%hr,
+hr {
+  margin: 2rem auto;
+  // max-width: 100%;
+}
+
+hr.lightest {
+  border-color: $white-60;
+}
+
+hr.lighter {
+  border-color: $white-30;
+}
+
+hr.light {
+  border-color: $white-15;
+}
+
+hr.darkest {
+  border-color: $black-60;
+}
+
+hr.darker {
+  border-color: $black-30;
+}
+
+hr.dark {
+  border-color: $black-15;
+}
+
+@each $color-name, $color in $border-palette {
+  hr.#{$color-name} {
+    border-bottom-color: $color;
+  }
+}
+
+.vertical-divider {
+  border: 2px solid $blue;
+}
+
+.vertical-divider-left {
+  border-width      : 2px;
+  border-style      : solid;
+  border-right-width: 0;
+  border-image      : $blue;
+}
+
+.vertical-divider-right {
+  border-width     : 2px;
+  border-style     : solid;
+  border-left-width: 0;
+  border-image     : $blue;
+}
+/* ----  End of DIVIDERS  ---------------------------- */

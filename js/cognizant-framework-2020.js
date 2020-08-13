@@ -1,5 +1,5 @@
 // @codekit-prepend 'jquery/dist/jquery.min.js'
-// #codekit-prepend 'foundation-sites/dist/js/foundation.min.js'
+// @codekit-prepend 'foundation-sites/dist/js/foundation.min.js'
 
 
 // ======================================================================
@@ -79,6 +79,7 @@ $(document).foundation();
 // ██      ██    ██ ██  ██  ██ ██      ██    ██ ██  ██ ██ ██      ██  ██ ██    ██         ██
 //  ██████  ██████  ██      ██ ██       ██████  ██   ████ ███████ ██   ████    ██    ███████
 // ======================================================================
+// @codekit-append 'accordions.js'
 // @codekit-append 'gradient-background-steps.js'
 // @codekit-append 'gradient-steps-tabs.js'
 

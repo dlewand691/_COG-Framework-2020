@@ -12,7 +12,7 @@
 // ===================================================================================
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
-    @each $color-name, $color in $cog-color-palette {
+    @each $color-name, $color in $background-palette {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-bg-#{$color-name} {
           // background-color: var(--#{$color-name});
@@ -28,40 +28,79 @@
   }
 }
 
+// ======================================================================
+// WHITE TEXT ON SPECIFIC BACKGROUNDS
+// ======================================================================
 .bg-black,
+.bg-black-60,
+.bg-black-85,
 .bg-blue,
+.bg-blue-85,
 .bg-blue-dark,
-.bg-blue-light,
+.bg-blue-dark-85,
+.bg-blue-dark-darker,
+.bg-blue-dark-darker-85,
 .bg-blue-medium,
-.bg-gray-black,
 .bg-gray-dark,
+.bg-gray-darker,
 .bg-green-dark,
 .bg-red {
-  // color: $white;
+  color: $white;
+}
 
-  a:not[button] {
-    color: $green-light !important;
+// ======================================================================
+// LIGHT GREEN LINKS ON SPECIFIC BACKGROUNDS
+// ======================================================================
+.bg-black,
+.bg-black-60,
+.bg-black-85,
+.bg-blue,
+.bg-blue-60,
+.bg-blue-85,
+.bg-blue-dark,
+.bg-blue-dark-darker,
+.bg-blue-dark-60,
+.bg-blue-dark-85,
+.bg-blue-dark-darker-85,
+.bg-blue-light,
+.bg-blue-light-85,
+.bg-blue-medium,
+.bg-gray-dark,
+.bg-gray-darker,
+.bg-green-dark,
+.bg-red {
+  a:not(.button) {
+    color: $green-light;
   }
 }
 
-.bg-green {
-  a {
-    color: $white;
-  }
-}
-
+// ======================================================================
+// DARK GREEN LINKS ON SPECIFIC BACKGROUNDS
+// ======================================================================
+.bg-blue-bright,
+.bg-blue-light-60,
+.bg-gray-medium,
 .bg-green-light {
-  a {
+  a:not(.button) {
     color: $green-dark;
   }
 }
 
-// .bg-gray-light,
-// .bg-gray-medium {
-//     a {
-//         color: $green-light;
-//     }
-// }
+// ======================================================================
+// GREEN LINKS ON WHITE BACKGROUNDS
+// ======================================================================
+.bg-white,
+.bg-white-85 {
+  a:not(.button) {
+    color: $green;
+  }
+}
+
+.bg-green {
+  a:not(.button) {
+    color: $white;
+  }
+}
 
 .bg-transparent {
   background: transparent !important;
@@ -92,7 +131,7 @@
 // );
 // 
 // @for $i from 1 through $bg-opacitites {
-//     @each $color-name, $color in $cog-color-palette {
+//     @each $color-name, $color in $background-palette {
 //         .bg-#{$color-name}-opacity-#{$i*10} {
 //             // opacity: unquote(".") + $i*10;
 //             background-color: transparentize($color, $i/10);
@@ -118,7 +157,7 @@
 ====================================================================================*/
 // $background-tints: 5;
 // @for $i from 1 through $background-tints {
-//     @each $color-name, $color in $cog-color-palette {
+//     @each $color-name, $color in $background-palette {
 //         .bg-#{$color-name}-tint#{$i} {
 //             background-color: lighten($color, percentage($i / 12)) !important;
 //         }

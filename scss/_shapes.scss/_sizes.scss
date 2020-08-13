@@ -1,0 +1,147 @@
+// ===================================================================================
+// ██     ██ ██ ██████  ████████ ██   ██ ███████
+// ██     ██ ██ ██   ██    ██    ██   ██ ██
+// ██  █  ██ ██ ██   ██    ██    ███████ ███████
+// ██ ███ ██ ██ ██   ██    ██    ██   ██      ██
+//  ███ ███  ██ ██████     ██    ██   ██ ███████
+// ===================================================================================
+
+$widths: 20;
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @for $i from 1 through $widths {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-w#{$i*5} {
+          width: $i*5%;
+        }
+        
+        .#{$size}-w-auto {
+          width: auto;
+        }
+
+        .#{$size}-max-w#{$i*5} {
+          max-width: $i*5%;
+        }
+
+        .#{$size}-min-w#{$i*5} {
+          min-width: $i*5%;
+        }
+      } @else {
+        .w#{$i*5} {
+          width: $i*5%;
+        }
+        
+        .w-auto {
+          width: auto;
+        }
+
+        .max-w#{$i*5} {
+          max-width: $i*5%;
+        }
+
+        .min-w#{$i*5} {
+          min-width: $i*5%;
+        }
+      }
+
+      // .#{$size}-w66 {
+      //   width: 66%;
+      // }
+
+      // .#{$size}-w33 {
+      //   width: 33%;
+      // }
+    }
+  }
+}
+
+// .w100px {
+//   width: 100px;
+// }
+
+// .w100vw {
+//   width: 100vw;
+// }
+
+// ===================================================================================
+// ██   ██ ███████ ██  ██████  ██   ██ ████████ ███████
+// ██   ██ ██      ██ ██       ██   ██    ██    ██
+// ███████ █████   ██ ██   ███ ███████    ██    ███████
+// ██   ██ ██      ██ ██    ██ ██   ██    ██         ██
+// ██   ██ ███████ ██  ██████  ██   ██    ██    ███████
+// ===================================================================================
+
+$heights: 20;
+
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @for $i from 1 through $heights {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-h#{$i*5}vh {
+          height : $i*5 + vh;
+          display: flex;
+        }
+        
+        .#{$size}-min-h#{$i*5}vh {
+          min-height: $i*5 + vh;
+          display   : flex;
+        }
+      } @else {
+        .h#{$i*5}vh {
+          height : $i*5 + vh;
+          display: flex;
+        }
+        
+        .min-h#{$i*5}vh {
+          min-height: $i*5 + vh;
+          display   : flex;
+        }
+      }
+    }
+  }
+}
+
+.h0 {
+  height: 0 !important;
+}
+
+.h100 {
+  height: 100% !important;
+}
+
+.wh100 {
+  width : 100% !important;
+  height: 100% !important;
+}
+
+
+
+// @each $size in $breakpoint-classes {
+//   @include breakpoint($size) {
+//     @if $size != $-zf-zero-breakpoint {
+//       .#{$size}-h33 {
+//         height: 33.3333%;
+//       }
+// 
+//       .#{$size}-h66 {
+//         height: 66.6666%;
+//       }
+//     } @else {
+//       .h33 {
+//         height: 33.3333%;
+//       }
+// 
+//       .h66 {
+//         height: 66.6666%;
+//       }
+//     }
+//   }
+// }
+
+// .h500px {
+//   height: 500px;
+// }
+// 
+// .h300px {
+//   height: 300px;
+// }
