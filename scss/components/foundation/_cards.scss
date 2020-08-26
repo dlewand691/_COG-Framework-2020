@@ -9,9 +9,19 @@
 ==================================================================================== */
 .card {
     flex-grow: 1;
+    
+    &.bg-none {
+      .card-section, .card-divider {
+        background: none;
+      }
+    }
 }
 
 .card-section + .card-section {
     padding-top: 0;
+}
+
+.card-divider > :last-child {
+    margin-bottom: auto;
 }
 // -----  End of CARDS  ----------

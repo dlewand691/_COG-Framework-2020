@@ -89,13 +89,6 @@
 // ======================================================================
 // GREEN LINKS ON WHITE BACKGROUNDS
 // ======================================================================
-.bg-white,
-.bg-white-85 {
-  a:not(.button) {
-    color: $green;
-  }
-}
-
 .bg-green {
   a:not(.button) {
     color: $white;
@@ -106,8 +99,7 @@
   background: transparent !important;
 }
 
-.bg-none,
-.bg-none * {
+.bg-none {
   background: none !important;
 }
 /* ----  End of BACKGROUND COLOR -------------------------------- */

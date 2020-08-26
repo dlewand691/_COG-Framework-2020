@@ -105,6 +105,11 @@
 .arrow {
   display    : inline-flex;
   align-items: center;
+  margin-right: 1rem;
+  
+  &:last-of-type {
+    margin-right: 0;
+  }
 
   &::after {
     position   : unset !important;
