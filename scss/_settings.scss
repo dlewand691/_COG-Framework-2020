@@ -68,14 +68,14 @@
 $global-font-size: 120%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.3;
-$foundation-palette: (
-  primary  : $blue,
-  secondary: $gray-medium,
-  success  : $green,
-  warning  : $red,
-  alert    : $red,
-);
-// $foundation-palette: $cog-color-palette;
+// $foundation-palette: (
+//   primary  : $blue,
+//   secondary: $gray-medium,
+//   success  : $green,
+//   warning  : $red,
+//   alert    : $red,
+// );
+$foundation-palette: $cog-color-palette;
 $black: $black;
 $white: $white;
 $light-gray: $gray-light;
@@ -157,8 +157,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $green;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -15%);
+$anchor-color: $green !default;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -15%) !default;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;

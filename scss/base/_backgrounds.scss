@@ -31,20 +31,18 @@
 // ======================================================================
 // WHITE TEXT ON SPECIFIC BACKGROUNDS
 // ======================================================================
-.bg-black,
-.bg-black-60,
-.bg-black-85,
+[class*="bg-black"],
 .bg-blue,
 .bg-blue-85,
-.bg-blue-dark,
-.bg-blue-dark-85,
-.bg-blue-dark-darker,
-.bg-blue-dark-darker-85,
+[class*="bg"][class*="dark"],
 .bg-blue-medium,
-.bg-gray-dark,
-.bg-gray-darker,
-.bg-green-dark,
-.bg-red {
+.bg-blue-light,
+.bg-gray,
+.bg-red,
+[class*="bgOverlay"][class*="dark"],
+.bgOverlay-blue,
+.bgOverlay-black,
+ {
   color: $white;
 }
 
@@ -58,19 +56,20 @@
 .bg-blue-60,
 .bg-blue-85,
 .bg-blue-dark,
-.bg-blue-dark-darker,
 .bg-blue-dark-60,
 .bg-blue-dark-85,
+.bg-blue-dark-darker,
 .bg-blue-dark-darker-85,
 .bg-blue-light,
 .bg-blue-light-85,
 .bg-blue-medium,
+.bg-gray,
 .bg-gray-dark,
-.bg-gray-darker,
 .bg-green-dark,
 .bg-red {
-  a:not(.button) {
-    color: $green-light;
+  a:not(.button), a:link:not(.button) {
+    // color: $green-light;
+    color: $anchor-color-light;
   }
 }
 
@@ -81,8 +80,9 @@
 .bg-blue-light-60,
 .bg-gray-medium,
 .bg-green-light {
-  a:not(.button) {
-    color: $green-dark;
+  a:not(.button), a:link:not(.button) {
+    // color: $green-dark;
+    color: $anchor-color-dark;
   }
 }
 
@@ -101,7 +101,7 @@
 
 .bg-none {
   background: none !important;
-}
+} 
 /* ----  End of BACKGROUND COLOR -------------------------------- */
 
 // ======================================================================

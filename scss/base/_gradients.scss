@@ -40,6 +40,10 @@
   background: linear-gradient(90deg, $blue-dark 0%, $blue-medium 100%);
 }
 
+.bg-grd-rl-dark-blue-medium {
+  background: linear-gradient(-90deg, $blue-dark 0%, $blue-medium 100%);
+}
+
 .bg-grd-tb-dark-blue {
   background: linear-gradient(0deg, $blue-dark 0%, $blue 100%);
 }

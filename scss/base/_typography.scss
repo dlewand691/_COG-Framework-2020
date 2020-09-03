@@ -479,11 +479,11 @@ a.link-coverAll:before {
     @each $color-name, $color in $text-color-palette {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-text-#{$color-name} {
-          color: $color;
+          color: $color !important;
         }
       } @else {
         .text-#{$color-name} {
-          color: $color;
+          color: $color !important;
         }
       }
     }

@@ -28,7 +28,7 @@ $radius-sizes: 10;
       // ====================================================================================
       @for $i from 1 through $border-width {
         .#{$size}-bd#{$i} {
-          border: #{$i}px solid $gray-lighter !important;
+          border: #{$i}px solid $gray-medium !important;
         }
       }
       // ====================================================================================
@@ -37,7 +37,7 @@ $radius-sizes: 10;
       @for $i from 1 through $border-width {
         @each $side-name, $side in $border-side {
           .#{$size}-bd-#{$side-name}-#{$i} {
-            border-#{$side}: #{$i}px $gray-lighter solid !important;
+            border-#{$side}: #{$i}px $gray-medium solid !important;
           }
         }
       }
@@ -87,7 +87,7 @@ $radius-sizes: 10;
       // ====================================================================================
       @for $i from 1 through $border-width {
         .bd#{$i} {
-          border: #{$i}px solid $gray-lighter !important;
+          border: #{$i}px solid $gray-medium !important;
         }
       }
       // ====================================================================================
@@ -96,7 +96,7 @@ $radius-sizes: 10;
       @for $i from 1 through $border-width {
         @each $side-name, $side in $border-side {
           .bd-#{$side-name}-#{$i} {
-            border-#{$side}: #{$i}px $gray-lighter solid !important;
+            border-#{$side}: #{$i}px $gray-medium solid !important;
           }
         }
       }

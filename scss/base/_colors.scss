@@ -4,8 +4,8 @@ $blue-light: #328DFF !default;
 $blue-medium: #2D67FF !default;
 $blue-dark: #000063 !default;
 $green: #00B140 !default;
-$green-light: #00E452 !default;
-$green-dark: #007E2E !default;
+$green-light: lighten($green, 10.00) !default;
+$green-dark: darken($green, 10.00) !default;
 $white: #FFFFFF !default;
 $black: #000000 !default;
 $blue-05: rgba($blue, 0.05) !default;
@@ -49,41 +49,62 @@ $gray-lightest: scale-color($white, $lightness: -5%) !default;
 $gray-lighter: scale-color($white, $lightness: -10%) !default;
 $gray-light: scale-color($white, $lightness: -15%) !default;
 $gray-medium: scale-color($white, $lightness: -30%) !default;
-$gray-dark: scale-color($white, $lightness: -60%) !default;
-$gray-darker: scale-color($white, $lightness: -80%) !default;
+$gray: scale-color($white, $lightness: -60%) !default;
+$gray-dark: scale-color($white, $lightness: -80%) !default;
 $darkMode-black: rgba(25,25,25,1) !default;
 $red: #F4633A !default;
 
+// ======================================================================
+// FOUNDATION PALETTE OVERRIDES
+// ======================================================================
+$cog-color-palette: (
+  primary  : $blue,
+  secondary: $gray-medium,
+  success  : $green,
+  warning  : $red,
+  alert    : $red,
+);
+
+// ======================================================================
+// TEXT COLORS
+// ======================================================================
 $text-color-palette: (
-  "blue"     : $blue,
   blue-bright: $blue-bright,
   blue-light : $blue-light,
   blue-medium: $blue-medium,
+  "blue"     : $blue,
   blue-dark  : $blue-dark,
   "white"    : $white,
   "black"    : $black,
-  gray-darker: $gray-darker,
   gray-dark  : $gray-dark,
+  "gray"     : $gray,
   gray-medium: $gray-medium,
 );
 
+// ======================================================================
+// BACKGROUND COLORS
+// ======================================================================
 $background-palette: (
   "blue"       : $blue,
   blue-85      : $blue-85,
   blue-dark    : $blue-dark,
   blue-dark-85 : $blue-dark-85,
+  blue-light   : $blue-light,
   "white"      : $white,
   white-60     : $white-60,
   "black"      : $black,
+  black-30     : $black-30,
   black-60     : $black-60,
-  gray-darker  : $gray-darker,
-  gray-dark    : $gray-dark,
+  "gray"       : $gray,
   gray-medium  : $gray-medium,
   gray-light   : $gray-light,
   gray-lighter : $gray-lighter,
   gray-lightest: $gray-lightest,
 );
 
+// ======================================================================
+// BORDER COLORS
+// ======================================================================
 $border-palette: (
   "blue"     : $blue,
   blue-light : $blue-light,
@@ -91,22 +112,42 @@ $border-palette: (
   blue-dark  : $blue-dark,
   gray-light : $gray-light,
   gray-medium: $gray-medium,
-  gray-dark  : $gray-dark,
+  "gray"     : $gray,
   "white"    : $white,
 );
 
+// ======================================================================
+// OVERLAY COLORS
+// ======================================================================
 $image-color-overlay-palette: (
   "blue"    : $blue,
   blue-light: $blue-light,
   blue-dark : $blue-dark,
   "white"   : $white,
-  white-60  : $white-60,
   "black"   : $black,
-  black-85  : $black-85,
-  black-60  : $black-60,
-  black-30  : $black-30,
 );
 
+// ======================================================================
+// GRADIENT OVERLAY COLORS
+// ======================================================================
+$gradient-overlay-palette: (
+  "blue"   : $blue,
+  blue-dark: $blue-dark,
+  "white"  : $white,
+  "black"  : $black,
+);
+
+// ======================================================================
+// ANCHOR COLORS
+// ======================================================================
+$anchor-color: $green !default;
+$anchor-color-light: $green-light !default;
+$anchor-color-medium: $green !default;
+$anchor-color-dark: $green-dark !default;
+
+// ======================================================================
+// CSS VARIABLE COLORS
+// ======================================================================
 // :root {
 //   @each $name, $color in $cog-color-palette {
 //     --#{$name}: #{$color};
