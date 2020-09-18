@@ -1,58 +1,86 @@
-.top-bar {
-  a,
-  a:link {
-    // color      : $white;
-    background : none;
-    font-weight: normal;
-  }
-
-  .is-active {
-    background: $topbar-submenu-background;
-
-    a,
-    a:link {
-      // color: $white !important;
-    }
-  }
-}
-
+// ======================================================================
+// ██       ██████   ██████   ██████
+// ██      ██    ██ ██       ██    ██
+// ██      ██    ██ ██   ███ ██    ██
+// ██      ██    ██ ██    ██ ██    ██
+// ███████  ██████   ██████   ██████
+// ======================================================================
 .cog-logo {
-  transition: all 0.5s ease-out;
+  transition: $transition-default;
   @include fluidSize(width, 320px, $cog-bp--desktop-xl, 100px, 200px);
 }
 
-#stickyNav .is-stuck {
-  @include breakpoint(medium-xxl down) {
-    top: 41px !important;
-  }
+.secondary-nav .cog-logo {
+  transition: $transition-default;
+  width     : auto;
+  height    : 20px;
 }
 
-#stickyNav,
-#stickyTitleBar {
+// ======================================================================
+// ███████ ████████ ██  ██████ ██   ██ ██    ██
+// ██         ██    ██ ██      ██  ██   ██  ██
+// ███████    ██    ██ ██      █████     ████
+//      ██    ██    ██ ██      ██  ██     ██
+// ███████    ██    ██  ██████ ██   ██    ██
+// ======================================================================
+.stickyNav,
+.stickyTitleBar {
   .sticky {
-    top       : 0;
-    background: $blue-dark-60;
+    background: $white;
+
+    &.is-stuck {
+      background: $white;
+    }
   }
 
-  #primary-nav {
-    @include fluidSize(padding, 320px, $cog-bp--desktop, 0.5rem, 1rem);
+  // ===================================================================================
+  // STUCK STYLES
+  // ===================================================================================
+  .is-stuck .top-bar {
+    // font-size: $small-font-size;
+    @include breakpoint(medium-xxl down) {
+      // top: 50px !important;
+      @include fluidSize(top, 320px, $cog-bp--desktop, 40px, 55px);
+      position: fixed;
+      width: 100%;
+    }
+  }
 
+  // ======================================================================
+  // ██████  ██████  ██ ███    ███  █████  ██████  ██    ██
+  // ██   ██ ██   ██ ██ ████  ████ ██   ██ ██   ██  ██  ██
+  // ██████  ██████  ██ ██ ████ ██ ███████ ██████    ████
+  // ██      ██   ██ ██ ██  ██  ██ ██   ██ ██   ██    ██
+  // ██      ██   ██ ██ ██      ██ ██   ██ ██   ██    ██
+  // ███    ██  █████  ██    ██
+  // ████   ██ ██   ██ ██    ██
+  // ██ ██  ██ ███████ ██    ██
+  // ██  ██ ██ ██   ██  ██  ██
+  // ██   ████ ██   ██   ████
+  // ======================================================================
+  .primary-nav {
+    // background: transparent;
+    // @include fluidSize(padding, 320px, $cog-bp--desktop, 0.5rem, 1rem);
     // ===================================================================================
     // MENU
     // ===================================================================================
     .menu {
-      border: none;
+      border    : none;
+      background: inherit;
 
-      > li.is-accordion-submenu-parent,
-      > li.is-dropdown-submenu-parent {
-        transition: all 0.3s ease;
+      a {
+        font-weight: normal;
+        color      : $body-font-color;
+      }
 
+      [class*=submenu-parent][class*=submenu],
+      [class*=submenu],
+      li {
         > a {
-          background   : none;
-          // color        : $white;
+          background   : rgba($blue, 0);
           padding-right: 2.4rem;
           line-height  : unset;
-
+          // transition   : none;
           &:after {
             width      : unset;
             height     : unset;
@@ -60,15 +88,25 @@
             content    : '\e903';
             font-family: 'Cognizant-Icons';
             font-weight: bold;
-            // color      : $blue-bright;
+            color      : $anchor-color;
             top        : calc(50% - .4rem);
             right      : 1rem;
           }
         }
 
+        &.is-active {
+          background: rgba($blue, 1);
+          transition: $transition-faster;
+
+          a {
+            color: $white;
+          }
+        }
+
         &[aria-expanded="true"] {
           > a {
-            background: $white-30;
+            background: $blue;
+            color     : $white;
           }
         }
       }
@@ -82,69 +120,284 @@
       .is-submenu-item {
         a,
         a:link {
-          transition: all 0.3s ease;
-          background: rgba($blue, .3);
-          @include breakpoint(large) {
-            background: rgba($blue-dark, .97);
-          }
+          transition : $transition-default;
+          font-weight: normal;
+          color      : $white;
 
           &:hover {
-            transition: all 0.3s ease;
-            background: rgba($blue-light, .97);
+            transition: $transition-default;
+            background: rgba($white, 0.15);
           }
 
           &:after {
-            content: '';
+            color: $anchor-color;
           }
         }
       }
     }
   }
-
-  // ===================================================================================
-  // STUCK STYLES
-  // ===================================================================================
-  .is-stuck {
-    background: rgba($blue-dark, .97);
-    font-size : $small-font-size;
-
-    .cog-logo {
-      transition: all 0.5s ease-out;
-      max-width : 100px;
-    }
-
-    #primary-nav {
-      padding: 0 0 0 0.5rem;
-    }
-  }
 }
 
-// ===================================================================================
-// WORLDWIDE MENU
-// ===================================================================================
-#language-menu {
-  top       : 2.15rem !important;
-  background: rgba($blue-dark-darker-85, .97);
+// ======================================================================
+// ███████ ███████  ██████  ██████  ███    ██ ██████   █████  ██████  ██    ██
+// ██      ██      ██      ██    ██ ████   ██ ██   ██ ██   ██ ██   ██  ██  ██
+// ███████ █████   ██      ██    ██ ██ ██  ██ ██   ██ ███████ ██████    ████
+//      ██ ██      ██      ██    ██ ██  ██ ██ ██   ██ ██   ██ ██   ██    ██
+// ███████ ███████  ██████  ██████  ██   ████ ██████  ██   ██ ██   ██    ██
+// ███    ██  █████  ██    ██
+// ████   ██ ██   ██ ██    ██
+// ██ ██  ██ ███████ ██    ██
+// ██  ██ ██ ██   ██  ██  ██
+// ██   ████ ██   ██   ████
+// ======================================================================
+.secondary-nav {
+  background: $gray-light;
 
-  a {
-    color      : $white;
+  a,
+  a:link {
+    color      : $body-font-color;
     font-weight: normal;
+    transition : $button-transition;
 
     &:hover {
-      color: $anchor-color;
+      color: $anchor-color-hover;
     }
   }
 
-  &:before {
-    @include css-triangle($tooltip-pip-width, rgba($blue-dark-darker-85, .97), up);
-    right   : 4rem;
-    left    : auto;
-    position: absolute;
-    top     : calc(0px - #{$tooltip-pip-width});
+  // ======================================================================
+  // ██       ██████   ██████   ██████
+  // ██      ██    ██ ██       ██    ██
+  // ██      ██    ██ ██   ███ ██    ██
+  // ██      ██    ██ ██    ██ ██    ██
+  // ███████  ██████   ██████   ██████
+  // ======================================================================
+  .cog-logo {
+    transition: $transition-default;
+    max-height: 20px;
+  }
+
+  // ===================================================================================
+  // ██     ██  ██████  ██████  ██      ██████  ██     ██ ██ ██████  ███████
+  // ██     ██ ██    ██ ██   ██ ██      ██   ██ ██     ██ ██ ██   ██ ██
+  // ██  █  ██ ██    ██ ██████  ██      ██   ██ ██  █  ██ ██ ██   ██ █████
+  // ██ ███ ██ ██    ██ ██   ██ ██      ██   ██ ██ ███ ██ ██ ██   ██ ██
+  //  ███ ███   ██████  ██   ██ ███████ ██████   ███ ███  ██ ██████  ███████
+  // ===================================================================================
+  .language-menu {
+    background: $white;
+
+    &:before {
+      // $language-menu-triangle: $gray-light;
+      // @include css-triangle($tooltip-pip-width, rgba($blue-dark-darker-85, .97), up);
+      @include css-triangle($tooltip-pip-width, rgba($white, 1), up);
+      right   : 4rem;
+      left    : auto;
+      position: absolute;
+      top     : calc(0px - #{$tooltip-pip-width});
+    }
+
+    .flag-icon {
+      box-shadow     : 0 0 0 1px rgba($white,.4);
+      background-size: cover !important;
+    }
+  }
+
+  // ======================================================================
+  // BLUE STYLES FOR SUBMENU AND LANGUAGE MENU
+  // ======================================================================
+  &[class*=theme-blue] {
+    background: $blue;
+    color     : $white;
+
+    a,
+    a:link {
+      color: $white;
+
+      &:hover {
+        color: $anchor-color-hover-light;
+      }
+    }
+
+    .cog-logo {
+      filter: grayscale(1) brightness(100);
+    }
+
+    .js-dropdown-active {
+      background: $blue-dark !important;
+    }
+
+    .language-menu {
+      background: $blue-dark;
+
+      &::before {
+        @include css-triangle($tooltip-pip-width, rgba($blue-dark, .97), up);
+      }
+    }
+  }
+
+  &[class*=dark] {
+    background: $blue-dark;
+
+    .js-dropdown-active {
+      background: $blue-dark-darker !important;
+    }
+
+    .language-menu {
+      background: $blue-dark-darker;
+
+      &::before {
+        @include css-triangle($tooltip-pip-width, rgba($blue-dark-darker, .97), up);
+      }
+    }
   }
 }
 
-.flag-icon {
-  box-shadow     : 0 0 0 1px rgba($white,.4);
-  background-size: cover !important;
+// ======================================================================
+// ███    ███ ███████  ██████   █████  ███    ███ ███████ ███    ██ ██    ██
+// ████  ████ ██      ██       ██   ██ ████  ████ ██      ████   ██ ██    ██
+// ██ ████ ██ █████   ██   ███ ███████ ██ ████ ██ █████   ██ ██  ██ ██    ██
+// ██  ██  ██ ██      ██    ██ ██   ██ ██  ██  ██ ██      ██  ██ ██ ██    ██
+// ██      ██ ███████  ██████  ██   ██ ██      ██ ███████ ██   ████  ██████
+// ======================================================================
+.megamenu {
+  top: calc(100% - 1rem) !important;
+}
+
+// ======================================================================
+// ████████ ██   ██ ███████ ███    ███ ███████ ███████
+//    ██    ██   ██ ██      ████  ████ ██      ██
+//    ██    ███████ █████   ██ ████ ██ █████   ███████
+//    ██    ██   ██ ██      ██  ██  ██ ██           ██
+//    ██    ██   ██ ███████ ██      ██ ███████ ███████
+// ======================================================================
+.theme-blue,
+.theme-blue-dark {
+  
+  color: $white;
+  
+  .stickyNav,
+  .stickyTitleBar {
+    .sticky {
+      background: none;
+
+      &.is-stuck {
+        background: none;
+      }
+    }
+  }
+
+  .cog-logo {
+    filter: grayscale(1) brightness(100);
+  }
+
+  .primary-nav .menu a, a,
+  a:link {
+    color: $white;
+
+    &[aria-expanded="true"] {
+      > a {
+        background: $white-30;
+      }
+    }
+  }
+}
+
+// ======================================================================
+// ██████  ██      ██    ██ ███████
+// ██   ██ ██      ██    ██ ██
+// ██████  ██      ██    ██ █████
+// ██   ██ ██      ██    ██ ██
+// ██████  ███████  ██████  ███████
+// ======================================================================
+.theme-blue {
+  // ======================================================================
+  // BLUE STYLES FOR SUBMENU AND LANGUAGE MENU
+  // ======================================================================
+  .secondary-nav {
+    background: $blue;
+
+    a,
+    a:link {
+
+      &:hover {
+        color: $anchor-color-hover-light;
+      }
+    }
+
+    .js-dropdown-active {
+      background: $blue-dark !important;
+    }
+
+    .language-menu {
+      background: $blue-dark;
+
+      &::before {
+        @include css-triangle($tooltip-pip-width, rgba($blue-dark, .97), up);
+      }
+    }
+  }
+
+  // ======================================================================
+  // BLUE STYLES FOR PRIMARY NAV
+  // ======================================================================
+  .sticky, .sticky.is-stuck, .sticky.is-stuck .primary-nav {
+    background: $blue-85 !important;
+
+    .is-stuck {
+      background: $blue-85;
+    }
+
+    .js-dropdown-active,
+    .menu > li.is-active {
+      background: $blue-dark !important;
+    }
+
+    .top-bar {
+      background: none;
+    }
+  }
+}
+
+// ======================================================================
+// ██████   █████  ██████  ██   ██     ██████  ██      ██    ██ ███████
+// ██   ██ ██   ██ ██   ██ ██  ██      ██   ██ ██      ██    ██ ██
+// ██   ██ ███████ ██████  █████       ██████  ██      ██    ██ █████
+// ██   ██ ██   ██ ██   ██ ██  ██      ██   ██ ██      ██    ██ ██
+// ██████  ██   ██ ██   ██ ██   ██     ██████  ███████  ██████  ███████
+// ======================================================================
+.theme-blue-dark {
+  .secondary-nav {
+    background: $blue-dark;
+
+    .js-dropdown-active {
+      background: $blue-dark-darker !important;
+    }
+
+    .language-menu {
+      background: $blue-dark-darker;
+
+      &::before {
+        @include css-triangle($tooltip-pip-width, rgba($blue-dark-darker, .97), up);
+      }
+    }
+  }
+  // ======================================================================
+  // DARK BLUE STYLES FOR PRIMARY NAV
+  // ======================================================================
+  .sticky, .sticky.is-stuck, .sticky.is-stuck .primary-nav {
+    background: $blue-dark-85 !important;
+
+    .is-stuck {
+      background: $blue-dark-85;
+    }
+
+    .js-dropdown-active,
+    .menu > li.is-active {
+      background: $blue-dark-darker !important;
+    }
+
+    .top-bar {
+      background: none;
+    }
+  }
 }

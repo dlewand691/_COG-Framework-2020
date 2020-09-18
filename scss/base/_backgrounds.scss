@@ -16,12 +16,12 @@
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-bg-#{$color-name} {
           // background-color: var(--#{$color-name});
-          background-color: #{$color};
+          background-color: #{$color} !important;
         }
       } @else {
         .bg-#{$color-name} {
           // background-color: var(--#{$color-name});
-          background-color: #{$color};
+          background-color: #{$color} !important;
         }
       }
     }
@@ -44,6 +44,10 @@
 .bgOverlay-black,
  {
   color: $white;
+  
+  span {
+    color: $white;
+  }
 }
 
 // ======================================================================
@@ -70,6 +74,10 @@
   a:not(.button), a:link:not(.button) {
     // color: $green-light;
     color: $anchor-color-light;
+    
+    &:hover {
+      color: scale-color($anchor-color, $lightness: 15%);
+    }
   }
 }
 

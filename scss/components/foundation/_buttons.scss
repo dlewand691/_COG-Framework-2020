@@ -1,41 +1,4 @@
 .button {
-  // margin-left    : 0.5rem;
-  // margin-right   : 0.5rem;
-  // text-decoration: none;
-  // text-transform : uppercase;
-  // @include font-size(20px);
-  // font-weight    : 700;
-
-  & i {
-    // line-height: 0;
-  }
-  // + .button {
-  //     margin-left: 0.5rem;
-  // }
-  // & + .button:nth-child(n+2) {
-  //     margin-left : 0.5rem;
-  //     margin-right: 0.5rem;
-  // }
-  // & + .button:nth-last-of-type(1) {
-  //     // margin-left : 0.5rem;
-  //     margin-right: 0;
-  // }
-  &.tiny {
-    // @include font-size(12px);
-  }
-
-  &.small {
-    // @include font-size(16px);
-  }
-
-  &.large {
-    // @include font-size(27px);
-  }
-
-  &.xlarge {
-    // @include font-size(36px);
-  }
-
   &.back:after {
     margin : 0;
     content: "";
@@ -105,10 +68,10 @@
 .arrow {
   display    : inline-flex;
   align-items: center;
-  margin-right: 1rem;
-  
+  // margin-right: 1rem;
+
   &:last-of-type {
-    margin-right: 0;
+    // margin-right: 0;
   }
 
   &::after {
@@ -122,7 +85,6 @@
     background : unset !important;
     font-family: "Cognizant-Icons";
     font-weight: bold;
-    // font-size  : initial;
   }
 
   &.arrow-solid-green {
@@ -130,21 +92,25 @@
       content    : "\e908" !important;
       color      : $green;
       font-family: "Cognizant-Icons";
-      // font-size  : initial;
+    }
+  }
+
+  &.down {
+    &::after {
+      content: "\e903" !important;
     }
   }
 }
 
 .arrow-end {
-  // position: relative;
+  position: relative;
 
-  &::after {
-    // position   : absolute;
-    // right      : 0;
+  &::before {
+    position   : absolute;
+    right      : 0.5rem;
     content    : "\e907";
     font-family: "Cognizant-Icons";
-    font-size  : initial;
-    display    : inline;
+    font-weight: bold;
     margin-left: 0.2rem;
   }
 }

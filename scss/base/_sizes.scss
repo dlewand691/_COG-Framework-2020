@@ -18,6 +18,18 @@ $widths: 20;
         .#{$size}-w-auto {
           width: auto;
         }
+        
+        .#{$size}-w-inherit {
+          width: inherit;
+        }
+        
+        .#{$size}-w-initial {
+          width: initial;
+        }
+        
+        .#{$size}-w-unset {
+          width: unset;
+        }
 
         .#{$size}-max-w#{$i*5} {
           max-width: $i*5%;
@@ -55,13 +67,19 @@ $widths: 20;
   }
 }
 
+@include breakpoint(small only) {
+  .small-w100 {
+    width: 100%;
+  }
+}
+
 // .w100px {
 //   width: 100px;
 // }
 
-// .w100vw {
-//   width: 100vw;
-// }
+.w100vw {
+  width: 100vw;
+}
 
 // ===================================================================================
 // ██   ██ ███████ ██  ██████  ██   ██ ████████ ███████

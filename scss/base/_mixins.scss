@@ -1,50 +1,5 @@
-// I'm now recommending this technique:
-
-@mixin interpolate($properties, $min-screen, $max-screen, $min-value, $max-value) {
-  & {
-    @each $property in $properties {
-      #{$property}: $min-value;
-    }
-
-    @media screen and (min-width: $min-screen) {
-      @each $property in $properties {
-        #{$property}: calc-interpolation($min-screen, $min-value, $max-screen, $max-value);
-      }
-    }
-
-    @media screen and (min-width: $max-screen) {
-      @each $property in $properties {
-        #{$property}: $max-value;
-      }
-    }
-  }
-}
-
-// Requires the calc-interpolation function which can also be used independently
-
-@function calc-interpolation($min-screen, $min-value, $max-screen, $max-value) {
-  $a   : ($max-value - $min-value) / ($max-screen - $min-screen);
-  $b   : $min-value - $a * $min-screen;
-
-  $sign: "+";
-  @if ($b < 0) {
-    $sign: "-";
-    $b   : abs($b);
-  }
-  @return calc(#{$a*100}vw #{$sign} #{$b});
-}
-
+// https://codepen.io/MadeByMike/pen/vNrvdZ
 // Indrek Pass also has a fantastic mixin here: http://sassmeister.com/gist/7f22e44ace49b5124eec
-
-/* Single property */
-// html {
-// 	@include interpolate(font-size, 320px, 1366px, 14px, 20px);
-// }
-
-/* Multiple properties with same values */
-// h1,h2,h3,h4,h5 {
-// 	@include interpolate((padding-top, padding-bottom), 20rem, 70rem, 0rem, .5rem);
-// }
 // ----
 // Sass (vundefined)
 // Compass (vundefined)
@@ -54,7 +9,7 @@
 // =============================================================================
 //
 //  PRECISE CONTROL OVER RESPONSIVE TYPOGRAPHY FOR SASS
-//  ----------------
+//  ---------------------------------------------------
 //  Indrek Paas @indrekpaas
 //
 //  Inspired by Mike Riethmuller's Precise control over responsive typography
@@ -70,6 +25,7 @@
 //  24.04.2015 Initial release
 //
 // =============================================================================
+
 @mixin fluidSize($properties, $min-vw, $max-vw, $min-value, $max-value) {
   @each $property in $properties {
     #{$property}: $min-value;
@@ -96,19 +52,14 @@
   @return $number;
 }
 
-// $baseline: $global-lineheight;
-
-/* Single property */
+// /* Single property */
 // html {
-//     // @include fluid-type(font-size, 320px, $cog-bp--desktop-xl, 14px, 20px);
-//     @include fluid-type(line-height, 20rem, 70rem, 1.2rem, 1.5rem);
+//   @include fluid-type(font-size, 320px, 1366px, 14px, 18px);
 // }
 // 
 // /* Multiple properties with same values */
 // h1 {
-//     // @include fluid-type((padding-top, padding-bottom), 20rem, 70rem, 0rem, .5rem);
-//     // // @include fluid-type(font-size, 320px, $cog-bp--desktop-xl, 48px, 84px);
-//     // @include fluid-type(line-height, 20rem, 70rem, 2rem, 2.5rem);
+//   @include fluid-type(padding-bottom padding-top, 20em, 70em, 2em, 4em);
 // }
 
 // ===================================================================================

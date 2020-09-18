@@ -50,96 +50,120 @@ $padding-y: (py);
       @each $side in $margin-sides-all-positive {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            margin: #{$i}rem !important;
+            // margin: #{$i}rem !important;
+            @include fluidSize(margin, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         } @else {
           .#{$side}#{$i} {
-            margin: #{$i}rem !important;
+            // margin: #{$i}rem !important;
+            @include fluidSize(margin, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         }
       }
       @each $side in $margin-sides-all-negative {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            margin: -#{$i}rem !important;
+            // margin: -#{$i}rem !important;
+            @include fluidSize(margin, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
           }
         } @else {
           .#{$side}#{$i} {
-            margin: -#{$i}rem !important;
+            // margin: -#{$i}rem !important;
+            @include fluidSize(margin, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
           }
         }
       }
       @each $side, $sideFull in $margin-sides-positive {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            margin-#{$sideFull}: #{$i}rem !important;
+            // margin-#{$sideFull}: #{$i}rem !important;
+            @include fluidSize(margin-#{$sideFull}, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         } @else {
           .#{$side}#{$i} {
-            margin-#{$sideFull}: #{$i}rem !important;
+            // margin-#{$sideFull}: #{$i}rem !important;
+            @include fluidSize(margin-#{$sideFull}, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         }
       }
       @each $side, $sideFull in $margin-sides-negative {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            margin-#{$sideFull}: -#{$i}rem !important;
+            // margin-#{$sideFull}: -#{$i}rem !important;
+            @include fluidSize(margin-#{$sideFull}, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
           }
         } @else {
           .#{$side}#{$i} {
-            margin-#{$sideFull}: -#{$i}rem !important;
+            // margin-#{$sideFull}: -#{$i}rem !important;
+            @include fluidSize(margin-#{$sideFull}, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
           }
         }
       }
       @each $side in $margin-x-positive {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            margin-right: #{$i}rem !important;
-            margin-left : #{$i}rem !important;
+            // margin-right: #{$i}rem !important;
+            // margin-left : #{$i}rem !important;
+            @include fluidSize(margin-right, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
+            @include fluidSize(margin-left, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         } @else {
           .#{$side}#{$i} {
-            margin-right: #{$i}rem !important;
-            margin-left : #{$i}rem !important;
+            // margin-right: #{$i}rem !important;
+            // margin-left : #{$i}rem !important;
+            @include fluidSize(margin-right, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
+            @include fluidSize(margin-left, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         }
       }
       @each $side in $margin-x-negative {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            margin-right: -#{$i}rem !important;
-            margin-left : -#{$i}rem !important;
+            // margin-right: -#{$i}rem !important;
+            // margin-left : -#{$i}rem !important;
+            @include fluidSize(margin-right, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
+            @include fluidSize(margin-left, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
           }
         } @else {
           .#{$side}#{$i} {
-            margin-right: -#{$i}rem !important;
-            margin-left : -#{$i}rem !important;
+            // margin-right: -#{$i}rem !important;
+            // margin-left : -#{$i}rem !important;
+            @include fluidSize(margin-right, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
+            @include fluidSize(margin-left, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
           }
         }
       }
       @each $side in $margin-y-positive {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            margin-top   : #{$i}rem !important;
-            margin-bottom: #{$i}rem !important;
+            // margin-top   : #{$i}rem !important;
+            // margin-bottom: #{$i}rem !important;
+            @include fluidSize(margin-top, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
+            @include fluidSize(margin-bottom, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         } @else {
           .#{$side}#{$i} {
-            margin-top   : #{$i}rem !important;
-            margin-bottom: #{$i}rem !important;
+            // margin-top   : #{$i}rem !important;
+            // margin-bottom: #{$i}rem !important;
+            @include fluidSize(margin-top, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
+            @include fluidSize(margin-bottom, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         }
       }
       @each $side in $margin-y-negative {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            margin-top   : -#{$i}rem !important;
-            margin-bottom: -#{$i}rem !important;
+            // margin-top   : -#{$i}rem !important;
+            // margin-bottom: -#{$i}rem !important;
+            @include fluidSize(margin-top, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
+            @include fluidSize(margin-bottom, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
           }
         } @else {
           .#{$side}#{$i} {
-            margin-top   : -#{$i}rem !important;
-            margin-bottom: -#{$i}rem !important;
+            // margin-top   : -#{$i}rem !important;
+            // margin-bottom: -#{$i}rem !important;
+            @include fluidSize(margin-top, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
+            @include fluidSize(margin-bottom, 320px, $cog-bp--desktop-xl, $i * 5px, $i * -20px);
           }
         }
       }
@@ -160,48 +184,60 @@ $padding-y: (py);
       @each $side, $sideFull in $padding-sides {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            padding-#{$sideFull}: #{$i}rem !important;
+            // padding-#{$sideFull}: #{$i}rem !important;
+            @include fluidSize(padding-#{$sideFull}, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         } @else {
           .#{$side}#{$i} {
-            padding-#{$sideFull}: #{$i}rem !important;
+            // padding-#{$sideFull}: #{$i}rem !important;
+            @include fluidSize(padding-#{$sideFull}, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         }
       }
       @each $side in $padding-sides-all {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            padding: #{$i}rem !important;
+            // padding: #{$i}rem !important;
+            @include fluidSize(padding, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         } @else {
           .#{$side}#{$i} {
-            padding: #{$i}rem !important;
+            // padding: #{$i}rem !important;
+            @include fluidSize(padding, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         }
       }
       @each $side in $padding-x {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            padding-right: #{$i}rem !important;
-            padding-left : #{$i}rem !important;
+            // padding-right: #{$i}rem !important;
+            // padding-left : #{$i}rem !important;
+            @include fluidSize(padding-right, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
+            @include fluidSize(padding-left, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         } @else {
           .#{$side}#{$i} {
-            padding-right: #{$i}rem !important;
-            padding-left : #{$i}rem !important;
+            // padding-right: #{$i}rem !important;
+            // padding-left : #{$i}rem !important;
+            @include fluidSize(padding-right, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
+            @include fluidSize(padding-left, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         }
       }
       @each $side in $padding-y {
         @if $size != $-zf-zero-breakpoint {
           .#{$size}-#{$side}#{$i} {
-            padding-top   : #{$i}rem !important;
-            padding-bottom: #{$i}rem !important;
+            // padding-top   : #{$i}rem !important;
+            // padding-bottom: #{$i}rem !important;
+            @include fluidSize(padding-top, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
+            @include fluidSize(padding-bottom, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         } @else {
           .#{$side}#{$i} {
-            padding-top   : #{$i}rem !important;
-            padding-bottom: #{$i}rem !important;
+            // padding-top   : #{$i}rem !important;
+            // padding-bottom: #{$i}rem !important;
+            @include fluidSize(padding-top, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
+            @include fluidSize(padding-bottom, 320px, $cog-bp--desktop-xl, $i * 5px, $i * 20px);
           }
         }
       }
@@ -221,96 +257,120 @@ $padding-y: (py);
     @each $side in $margin-sides-all-positive {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {
-          margin: 0.5rem !important;
+          // margin: 0.5rem !important;
+          @include fluidSize(margin, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       } @else {
         .#{$side}-half {
-          margin: 0.5rem !important;
+          // margin: 0.5rem !important;
+          @include fluidSize(margin, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       }
     }
     @each $side, $sideHalf in $margin-sides-positive {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {
-          margin-#{$sideHalf}: 0.5rem !important;
+          // margin-#{$sideHalf}: 0.5rem !important;
+          @include fluidSize(margin-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       } @else {
         .#{$side}-half {
-          margin-#{$sideHalf}: 0.5rem !important;
+          // margin-#{$sideHalf}: 0.5rem !important;
+          @include fluidSize(margin-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       }
     }
     @each $side, $sideHalf in $margin-x-positive {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {
-          margin-right: 0.5rem !important;
-          margin-left : 0.5rem !important;
+          // margin-right: 0.5rem !important;
+          // margin-left : 0.5rem !important;
+          @include fluidSize(margin-right, 320px, $cog-bp--desktop-xl, 5px, 10px);
+          @include fluidSize(margin-left, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       } @else {
         .#{$side}-half {
-          margin-right: 0.5rem !important;
-          margin-left : 0.5rem !important;
+          // margin-right: 0.5rem !important;
+          // margin-left : 0.5rem !important;
+          @include fluidSize(margin-right, 320px, $cog-bp--desktop-xl, 5px, 10px);
+          @include fluidSize(margin-left, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       }
     }
     @each $side, $sideHalf in $margin-y-positive {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {
-          margin-top   : 0.5rem !important;
-          margin-bottom: 0.5rem !important;
+          // margin-top   : 0.5rem !important;
+          // margin-bottom: 0.5rem !important;
+          @include fluidSize(margin-top, 320px, $cog-bp--desktop-xl, 5px, 10px);
+          @include fluidSize(margin-bottom, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       } @else {
         .#{$side}-half {
-          margin-top   : 0.5rem !important;
-          margin-bottom: 0.5rem !important;
+          // margin-top   : 0.5rem !important;
+          // margin-bottom: 0.5rem !important;
+          @include fluidSize(margin-top, 320px, $cog-bp--desktop-xl, 5px, 10px);
+          @include fluidSize(margin-bottom, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       }
     }
     @each $side in $padding-sides-all {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {
-          padding: 0.5rem !important;
+          // padding: 0.5rem !important;
+          @include fluidSize(padding, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       } @else {
         .#{$side}-half {
-          padding: 0.5rem !important;
+          // padding: 0.5rem !important;
+          @include fluidSize(padding, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       }
     }
     @each $side, $sideHalf in $padding-sides {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {
-          padding-#{$sideHalf}: 0.5rem !important;
+          // padding-#{$sideHalf}: 0.5rem !important;
+          @include fluidSize(padding-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       } @else {
         .#{$side}-half {
-          padding-#{$sideHalf}: 0.5rem !important;
+          // padding-#{$sideHalf}: 0.5rem !important;
+          @include fluidSize(padding-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       }
     }
     @each $side in $padding-x {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {
-          padding-right: 0.5rem !important;
-          padding-left : 0.5rem !important;
+          // padding-right: 0.5rem !important;
+          // padding-left : 0.5rem !important;
+          @include fluidSize(padding-left, 320px, $cog-bp--desktop-xl, 5px, 10px);
+          @include fluidSize(padding-right, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       } @else {
         .#{$side}-half {
-          padding-right: 0.5rem !important;
-          padding-left : 0.5rem !important;
+          // padding-right: 0.5rem !important;
+          // padding-left : 0.5rem !important;
+          @include fluidSize(padding-left, 320px, $cog-bp--desktop-xl, 5px, 10px);
+          @include fluidSize(padding-right, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       }
     }
     @each $side in $padding-y {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {
-          padding-top   : 0.5rem !important;
-          padding-bottom: 0.5rem !important;
+          // padding-top   : 0.5rem !important;
+          // padding-bottom: 0.5rem !important;
+          @include fluidSize(padding-top, 320px, $cog-bp--desktop-xl, 5px, 10px);
+          @include fluidSize(padding-bottom, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       } @else {
         .#{$side}-half {
-          padding-top   : 0.5rem !important;
-          padding-bottom: 0.5rem !important;
+          // padding-top   : 0.5rem !important;
+          // padding-bottom: 0.5rem !important;
+          @include fluidSize(padding-top, 320px, $cog-bp--desktop-xl, 5px, 10px);
+          @include fluidSize(padding-bottom, 320px, $cog-bp--desktop-xl, 5px, 10px);
         }
       }
     }
@@ -331,47 +391,59 @@ $padding-y: (py);
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-qtr {
           margin: 0.25rem !important;
+          @include fluidSize(margin, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       } @else {
         .#{$side}-qtr {
           margin: 0.25rem !important;
+          @include fluidSize(margin, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       }
     }
     @each $side, $sideHalf in $margin-sides-positive {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-qtr {
-          margin-#{$sideHalf}: 0.25rem !important;
+          // margin-#{$sideHalf}: 0.25rem !important;
+          @include fluidSize(margin-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       } @else {
         .#{$side}-qtr {
-          margin-#{$sideHalf}: 0.25rem !important;
+          // margin-#{$sideHalf}: 0.25rem !important;
+          @include fluidSize(margin-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       }
     }
     @each $side, $sideHalf in $margin-x-positive {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-qtr {
-          margin-right: 0.25rem !important;
-          margin-left : 0.25rem !important;
+          // margin-right: 0.25rem !important;
+          // margin-left : 0.25rem !important;
+          @include fluidSize(margin-left, 320px, $cog-bp--desktop-xl, 2px, 5px);
+          @include fluidSize(margin-right, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       } @else {
         .#{$side}-qtr {
-          margin-right: 0.25rem !important;
-          margin-left : 0.25rem !important;
+          // margin-right: 0.25rem !important;
+          // margin-left : 0.25rem !important;
+          @include fluidSize(margin-left, 320px, $cog-bp--desktop-xl, 2px, 5px);
+          @include fluidSize(margin-right, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       }
     }
     @each $side, $sideHalf in $margin-y-positive {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-qtr {
-          margin-top   : 0.25rem !important;
-          margin-bottom: 0.25rem !important;
+          // margin-top   : 0.25rem !important;
+          // margin-bottom: 0.25rem !important;
+          @include fluidSize(margin-top, 320px, $cog-bp--desktop-xl, 2px, 5px);
+          @include fluidSize(margin-bottom, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       } @else {
         .#{$side}-qtr {
-          margin-top   : 0.25rem !important;
-          margin-bottom: 0.25rem !important;
+          // margin-top   : 0.25rem !important;
+          // margin-bottom: 0.25rem !important;
+          @include fluidSize(margin-top, 320px, $cog-bp--desktop-xl, 2px, 5px);
+          @include fluidSize(margin-bottom, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       }
     }
@@ -379,47 +451,59 @@ $padding-y: (py);
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-qtr {
           padding: 0.25rem !important;
+          @include fluidSize(padding, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       } @else {
         .#{$side}-qtr {
           padding: 0.25rem !important;
+          @include fluidSize(padding, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       }
     }
     @each $side, $sideHalf in $padding-sides {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-qtr {
-          padding-#{$sideHalf}: 0.25rem !important;
+          // padding-#{$sideHalf}: 0.25rem !important;
+          @include fluidSize(padding-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       } @else {
         .#{$side}-qtr {
-          padding-#{$sideHalf}: 0.25rem !important;
+          // padding-#{$sideHalf}: 0.25rem !important;
+          @include fluidSize(padding-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       }
     }
     @each $side in $padding-x {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-qtr {
-          padding-right: 0.25rem !important;
-          padding-left : 0.25rem !important;
+          // padding-right: 0.25rem !important;
+          // padding-left : 0.25rem !important;
+          @include fluidSize(padding-right, 320px, $cog-bp--desktop-xl, 2px, 5px);
+          @include fluidSize(padding-left, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       } @else {
         .#{$side}-qtr {
-          padding-right: 0.25rem !important;
-          padding-left : 0.25rem !important;
+          // padding-right: 0.25rem !important;
+          // padding-left : 0.25rem !important;
+          @include fluidSize(padding-right, 320px, $cog-bp--desktop-xl, 2px, 5px);
+          @include fluidSize(padding-left, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       }
     }
     @each $side in $padding-y {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-qtr {
-          padding-top   : 0.25rem !important;
-          padding-bottom: 0.25rem !important;
+          // padding-top   : 0.25rem !important;
+          // padding-bottom: 0.25rem !important;
+          @include fluidSize(padding-top, 320px, $cog-bp--desktop-xl, 2px, 5px);
+          @include fluidSize(padding-bottom, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       } @else {
         .#{$side}-qtr {
-          padding-top   : 0.25rem !important;
-          padding-bottom: 0.25rem !important;
+          // padding-top   : 0.25rem !important;
+          // padding-bottom: 0.25rem !important;
+          @include fluidSize(padding-top, 320px, $cog-bp--desktop-xl, 2px, 5px);
+          @include fluidSize(padding-bottom, 320px, $cog-bp--desktop-xl, 2px, 5px);
         }
       }
     }

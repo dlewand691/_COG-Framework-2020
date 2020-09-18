@@ -14,7 +14,7 @@
   "main": "index.js",
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "darkmode-js": "^1.5.6",
+    "darkmode-js": "^1.5.7",
     "fastclick": "^1.0.6",
     "flag-icon-css": "^3.5.0",
     "foundation-sites": "^6.6.3",
@@ -24,7 +24,7 @@
     "lazysizes": "^5.2.2",
     "motion-ui": "^2.0.3",
     "plyr": "^3.6.2",
-    "swiper": "^6.1.1",
+    "swiper": "^6.2.0",
     "what-input": "^5.2.10"
   }
 }

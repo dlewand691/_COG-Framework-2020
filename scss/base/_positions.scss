@@ -21,25 +21,26 @@
     }
   }
 }
-
-%pos-top,
-.pos-top {
-  top: 0;
-}
-
-%pos-bottom,
-.pos-bottom {
-  bottom: 0;
-}
-
-.pos-left {
-  left: 0;
-}
-
-.pos-right {
-  right: 0;
-}
-
-.pos-middle {
-  top: 50%;
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @each $position-side, $position-amount in (top: 0, right: 0, bottom: 0, left: 0) {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-pos-#{$position-side} {
+          #{$position-side}: $position-amount !important;
+        }
+        
+        .#{$size}-pos-#{$position-side}-auto {
+          #{$position-side}: auto !important;
+        }
+      } @else {
+        .pos-#{$position-side} {
+          #{$position-side}: $position-amount !important;
+        }
+        
+        .pos-#{$position-side}-auto {
+          #{$position-side}: auto !important;
+        }
+      }
+    }
+  }
 }

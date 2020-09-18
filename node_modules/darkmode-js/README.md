@@ -1,4 +1,5 @@
-# Darkmode.js ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+# Darkmode.js
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) [![Medium Badge](https://badgen.net/badge/icon/medium?icon=medium&label)](https://medium.com/@sandoche) [![Twitter: sandochee](https://img.shields.io/twitter/follow/sandochee.svg?style=social)](https://twitter.com/sandochee)
 
 🌓 Add a Dark Mode / Night Mode to your website in a few seconds
 
@@ -34,9 +35,12 @@ Darkmode.js is very easy to use, just copy-paste the following code or use the n
 ### 🚀 Easy way (using the JSDelivr CDN)
 Just add this code to your HTML page:
 ```html
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
-  new Darkmode().showWidget();
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
 </script>
 ```
 
@@ -55,7 +59,7 @@ new Darkmode().showWidget();
 ## ⚙️ Options
 Here are the option availables:
 ```javascript
-var options = {
+const options = {
   bottom: '64px', // default: '32px'
   right: 'unset', // default: '32px'
   left: '32px', // default: 'unset'

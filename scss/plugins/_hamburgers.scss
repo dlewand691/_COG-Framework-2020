@@ -1,0 +1,13 @@
+// ===================================================================================
+// HAMBURGER MENU OVERRIDES
+// ===================================================================================
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 1rem;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+$hamburger-layer-color: $anchor-color;
+$hamburger-active-layer-color: $anchor-color;
+$hamburger-layer-border-radius: 2px;
+
+@import "hamburgers/_sass/hamburgers/hamburgers";

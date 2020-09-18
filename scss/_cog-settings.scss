@@ -19,14 +19,15 @@ $cog-box-shadow--base  : 0 20px 40px rgba($black, 0.1);
 // Spacing
 
 // Breakpoints
-$cog-bp--mobile        : 0;
-$cog-bp--mobile-xl     : 410px;
-$cog-bp--tablet        : 600px;
-$cog-bp--tablet-xl     : 768px;
-$cog-bp--tablet-xxl    : 810px;
-$cog-bp--desktop       : 1024px;
-$cog-bp--desktop-xl    : 1200px;
-$cog-bp--desktop-xxl   : 1600px;
+// Base size @ 20px
+$cog-bp--mobile        : 0; 
+$cog-bp--mobile-xl     : 410px; //20.5 rem
+$cog-bp--tablet        : 600px; //30rem
+$cog-bp--tablet-xl     : 768px; //38.4rem
+$cog-bp--tablet-xxl    : 810px; //40.5rem
+$cog-bp--desktop       : 1024px; //51.2rem
+$cog-bp--desktop-xl    : 1200px; //60rem
+$cog-bp--desktop-xxl   : 1600px; //80rem
 
 // Grid
 $cog-grid--columns     : 12;

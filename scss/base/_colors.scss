@@ -85,21 +85,22 @@ $text-color-palette: (
 // BACKGROUND COLORS
 // ======================================================================
 $background-palette: (
-  "blue"       : $blue,
-  blue-85      : $blue-85,
-  blue-dark    : $blue-dark,
-  blue-dark-85 : $blue-dark-85,
-  blue-light   : $blue-light,
-  "white"      : $white,
-  white-60     : $white-60,
-  "black"      : $black,
-  black-30     : $black-30,
-  black-60     : $black-60,
-  "gray"       : $gray,
-  gray-medium  : $gray-medium,
-  gray-light   : $gray-light,
-  gray-lighter : $gray-lighter,
-  gray-lightest: $gray-lightest,
+  "blue"          : $blue,
+  blue-85         : $blue-85,
+  blue-dark       : $blue-dark,
+  blue-dark-darker: $blue-dark-darker,
+  blue-dark-85    : $blue-dark-85,
+  blue-light      : $blue-light,
+  "white"         : $white,
+  white-60        : $white-60,
+  "black"         : $black,
+  black-30        : $black-30,
+  black-60        : $black-60,
+  "gray"          : $gray,
+  gray-medium     : $gray-medium,
+  gray-light      : $gray-light,
+  gray-lighter    : $gray-lighter,
+  gray-lightest   : $gray-lightest,
 );
 
 // ======================================================================
@@ -144,6 +145,10 @@ $anchor-color: $green !default;
 $anchor-color-light: $green-light !default;
 $anchor-color-medium: $green !default;
 $anchor-color-dark: $green-dark !default;
+$anchor-color-hover: $green !default;
+$anchor-color-hover-light: $green-light !default;
+$anchor-color-hover-medium: $green !default;
+$anchor-color-hover-dark: $green-dark !default;
 
 // ======================================================================
 // CSS VARIABLE COLORS
