@@ -42,7 +42,7 @@
       // top: 50px !important;
       @include fluidSize(top, 320px, $cog-bp--desktop, 40px, 55px);
       position: fixed;
-      width: 100%;
+      width   : 100%;
     }
   }
 
@@ -272,9 +272,29 @@
 // ======================================================================
 .theme-blue,
 .theme-blue-dark {
-  
-  color: $white;
-  
+  $anchor-color             : $blue-bright;
+  color                     : $white;
+
+  .hamburger.is-active .hamburger-inner, .hamburger-inner {
+    background-color: $anchor-color;
+
+    &:after,
+    &:before {
+      background-color: $anchor-color;
+    }
+  }
+
+  a,
+  a:link {
+
+    color: $white !important;
+
+    &:after,
+    &:hover {
+      color: $anchor-color !important;
+    }
+  }
+
   .stickyNav,
   .stickyTitleBar {
     .sticky {
@@ -288,17 +308,6 @@
 
   .cog-logo {
     filter: grayscale(1) brightness(100);
-  }
-
-  .primary-nav .menu a, a,
-  a:link {
-    color: $white;
-
-    &[aria-expanded="true"] {
-      > a {
-        background: $white-30;
-      }
-    }
   }
 }
 
@@ -316,14 +325,6 @@
   .secondary-nav {
     background: $blue;
 
-    a,
-    a:link {
-
-      &:hover {
-        color: $anchor-color-hover-light;
-      }
-    }
-
     .js-dropdown-active {
       background: $blue-dark !important;
     }
@@ -340,7 +341,8 @@
   // ======================================================================
   // BLUE STYLES FOR PRIMARY NAV
   // ======================================================================
-  .sticky, .sticky.is-stuck, .sticky.is-stuck .primary-nav {
+  .sticky,
+  .sticky.is-stuck {
     background: $blue-85 !important;
 
     .is-stuck {
@@ -384,7 +386,8 @@
   // ======================================================================
   // DARK BLUE STYLES FOR PRIMARY NAV
   // ======================================================================
-  .sticky, .sticky.is-stuck, .sticky.is-stuck .primary-nav {
+  .sticky,
+  .sticky.is-stuck {
     background: $blue-dark-85 !important;
 
     .is-stuck {
