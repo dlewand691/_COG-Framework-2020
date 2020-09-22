@@ -16,6 +16,7 @@
   background: radial-gradient(circle, $blue 0%, $blue-dark 50%, darken($blue, 23) 85%);
 }
 
+%bg-grd-blue-radial-top,
 .bg-grd-blue-radial-top {
   background: radial-gradient(circle at top center, $blue 0%, $blue-dark 50%, darken($blue, 23) 85%);
 }

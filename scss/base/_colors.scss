@@ -51,7 +51,7 @@ $gray-light: scale-color($white, $lightness: -15%) !default;
 $gray-medium: scale-color($white, $lightness: -30%) !default;
 $gray: scale-color($white, $lightness: -60%) !default;
 $gray-dark: scale-color($white, $lightness: -80%) !default;
-$darkMode-black: rgba(25,25,25,1) !default;
+$dark-mode-black: rgba(25,25,25,1) !default;
 $red: #F4633A !default;
 
 // ======================================================================
@@ -97,6 +97,7 @@ $background-palette: (
   black-30        : $black-30,
   black-60        : $black-60,
   "gray"          : $gray,
+  gray-dark       : $gray-dark,
   gray-medium     : $gray-medium,
   gray-light      : $gray-light,
   gray-lighter    : $gray-lighter,

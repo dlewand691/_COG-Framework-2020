@@ -5,9 +5,12 @@
 ██      ██    ██ ██    ██    ██    ██      ██   ██
 ██       ██████   ██████     ██    ███████ ██   ██
 ==================================================================================== */
-.footer,
+
+[class*=footer],
 footer {
-  .footer-blue-bar {
+  .footer-primary {
+    background-color: $gray-light;
+
     li a:hover {
       background: $button-background-hover;
     }
@@ -21,9 +24,62 @@ footer {
   a {
     font-weight: normal;
     color      : $body-font-color;
+    transition: $transition-default;
 
     &:hover {
       color: $anchor-color;
+    }
+  }
+
+  // ======================================================================
+  // ████████ ██   ██ ███████ ███    ███ ███████ ███████
+  //    ██    ██   ██ ██      ████  ████ ██      ██
+  //    ██    ███████ █████   ██ ████ ██ █████   ███████
+  //    ██    ██   ██ ██      ██  ██  ██ ██           ██
+  //    ██    ██   ██ ███████ ██      ██ ███████ ███████
+  // ======================================================================
+  &[class*=theme-blue] {
+    color: $white;
+    background-color: $blue;
+
+    .button,
+    a,
+    h5,
+    h6 {
+      color: $white;
+    }
+
+    .footer-primary {
+      background-color: $black-30;
+    }
+
+    .footer-site-map {
+      background-color: $blue;
+    }
+  }
+  
+  &.theme-blue-dark {
+    background-color: $blue-dark-darker;
+    
+    .footer-primary {
+      // background-color: $blue-dark-darker;
+    }
+
+    .footer-site-map {
+      background-color: $blue-dark;
+    }
+  }
+  
+  &.theme-blue-dark-gradient {
+    // background-color: .bg-grd-blue-radial-top;
+    @extend .bg-grd-blue-radial-top;
+    
+    .footer-primary {
+      background-color: $black-30;
+    }
+
+    .footer-site-map {
+      background-color: transparent;
     }
   }
 }

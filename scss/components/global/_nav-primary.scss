@@ -23,26 +23,23 @@
 //      ██    ██    ██ ██      ██  ██     ██
 // ███████    ██    ██  ██████ ██   ██    ██
 // ======================================================================
-.stickyNav,
-.stickyTitleBar {
-  .sticky {
-    background: $white;
-
-    &.is-stuck {
-      background: $white;
-    }
-  }
+.stickyNav, .stickyTitleBar {
+  background: $white;
 
   // ===================================================================================
   // STUCK STYLES
   // ===================================================================================
-  .is-stuck .top-bar {
-    // font-size: $small-font-size;
-    @include breakpoint(medium-xxl down) {
-      // top: 50px !important;
-      @include fluidSize(top, 320px, $cog-bp--desktop, 40px, 55px);
-      position: fixed;
-      width   : 100%;
+  .is-stuck {
+    background: $white;
+
+    .top-bar {
+      // font-size: $small-font-size;
+      @include breakpoint(medium-xxl down) {
+        // top: 50px !important;
+        @include fluidSize(top, 320px, $cog-bp--desktop, 40px, 55px);
+        position: fixed;
+        width   : 100%;
+      }
     }
   }
 
@@ -73,8 +70,8 @@
         color      : $body-font-color;
       }
 
-      [class*=submenu-parent][class*=submenu],
-      [class*=submenu],
+      [class*="submenu-parent"][class*="submenu"],
+      [class*="submenu"],
       li {
         > a {
           background   : rgba($blue, 0);
@@ -188,7 +185,7 @@
 
     &:before {
       // $language-menu-triangle: $gray-light;
-      // @include css-triangle($tooltip-pip-width, rgba($blue-dark-darker-85, .97), up);
+      // @include css-triangle($tooltip-pip-width, $blue-dark-darker-85, up);
       @include css-triangle($tooltip-pip-width, rgba($white, 1), up);
       right   : 4rem;
       left    : auto;
@@ -203,9 +200,9 @@
   }
 
   // ======================================================================
-  // BLUE STYLES FOR SUBMENU AND LANGUAGE MENU
+  // STYLES FOR SUBMENU AND LANGUAGE MENU
   // ======================================================================
-  &[class*=theme-blue] {
+  &[class*="theme-blue"] {
     background: $blue;
     color     : $white;
 
@@ -230,12 +227,12 @@
       background: $blue-dark;
 
       &::before {
-        @include css-triangle($tooltip-pip-width, rgba($blue-dark, .97), up);
+        @include css-triangle($tooltip-pip-width, $blue-dark, up);
       }
     }
   }
 
-  &[class*=dark] {
+  &[class*="dark"] {
     background: $blue-dark;
 
     .js-dropdown-active {
@@ -246,7 +243,7 @@
       background: $blue-dark-darker;
 
       &::before {
-        @include css-triangle($tooltip-pip-width, rgba($blue-dark-darker, .97), up);
+        @include css-triangle($tooltip-pip-width, $blue-dark-darker, up);
       }
     }
   }
@@ -270,12 +267,13 @@
 //    ██    ██   ██ ██      ██  ██  ██ ██           ██
 //    ██    ██   ██ ███████ ██      ██ ███████ ███████
 // ======================================================================
-.theme-blue,
-.theme-blue-dark {
-  $anchor-color             : $blue-bright;
-  color                     : $white;
+[class*="theme-"]:not([class*="default"]) {
+  $anchor-color      : $blue-bright;
+  $anchor-color-hover: $blue-light;
+  color              : $white;
 
-  .hamburger.is-active .hamburger-inner, .hamburger-inner {
+  .hamburger-inner,
+  .hamburger.is-active .hamburger-inner {
     background-color: $anchor-color;
 
     &:after,
@@ -295,15 +293,22 @@
     }
   }
 
-  .stickyNav,
-  .stickyTitleBar {
-    .sticky {
-      background: none;
+  .submenu .is-submenu-item {
+    a,
+    a:link {
+      &:hover {
+        background-color: $anchor-color-hover;
+        color           : $white !important;
 
-      &.is-stuck {
-        background: none;
+        &:after {
+          color: $white !important;
+        }
       }
     }
+  }
+
+  .top-bar {
+    background: none;
   }
 
   .cog-logo {
@@ -320,42 +325,43 @@
 // ======================================================================
 .theme-blue {
   // ======================================================================
-  // BLUE STYLES FOR SUBMENU AND LANGUAGE MENU
+  // STYLES FOR SUBMENU AND LANGUAGE MENU
   // ======================================================================
   .secondary-nav {
-    background: $blue;
+    background-color: $blue;
 
     .js-dropdown-active {
-      background: $blue-dark !important;
+      background-color: $blue-dark !important;
     }
 
     .language-menu {
-      background: $blue-dark;
+      background-color: $blue-dark;
 
       &::before {
-        @include css-triangle($tooltip-pip-width, rgba($blue-dark, .97), up);
+        @include css-triangle($tooltip-pip-width, $blue-dark, up);
       }
     }
   }
 
   // ======================================================================
-  // BLUE STYLES FOR PRIMARY NAV
+  // STYLES FOR PRIMARY NAV
   // ======================================================================
-  .sticky,
-  .sticky.is-stuck {
-    background: $blue-85 !important;
+  .stickyNav, .stickyTitleBar {
+    background: $blue-85;
 
     .is-stuck {
       background: $blue-85;
+      
+      .top-bar {
+        @include breakpoint(medium-xxl down) {
+          background: $blue-85;
+        }
+      }
     }
 
     .js-dropdown-active,
     .menu > li.is-active {
-      background: $blue-dark !important;
-    }
-
-    .top-bar {
-      background: none;
+      background-color: $blue-dark !important;
     }
   }
 }
@@ -369,38 +375,131 @@
 // ======================================================================
 .theme-blue-dark {
   .secondary-nav {
-    background: $blue-dark;
+    background-color: $blue-dark;
 
     .js-dropdown-active {
-      background: $blue-dark-darker !important;
+      background-color: $blue-dark-darker !important;
     }
 
     .language-menu {
-      background: $blue-dark-darker;
+      background-color: $blue-dark-darker;
 
       &::before {
-        @include css-triangle($tooltip-pip-width, rgba($blue-dark-darker, .97), up);
+        @include css-triangle($tooltip-pip-width, $blue-dark-darker, up);
       }
     }
   }
   // ======================================================================
-  // DARK BLUE STYLES FOR PRIMARY NAV
+  // STYLES FOR PRIMARY NAV
   // ======================================================================
-  .sticky,
-  .sticky.is-stuck {
-    background: $blue-dark-85 !important;
+  .stickyNav, .stickyTitleBar {
+    background: $blue-dark-85;
 
     .is-stuck {
       background: $blue-dark-85;
+      
+      .top-bar {
+        @include breakpoint(medium-xxl down) {
+          background: $blue-dark-85;
+        }
+      }
     }
 
     .js-dropdown-active,
     .menu > li.is-active {
-      background: $blue-dark-darker !important;
+      background-color: $blue-dark-darker !important;
+    }
+  }
+}
+
+// ======================================================================
+// ██████  ██       █████   ██████ ██   ██
+// ██   ██ ██      ██   ██ ██      ██  ██
+// ██████  ██      ███████ ██      █████
+// ██   ██ ██      ██   ██ ██      ██  ██
+// ██████  ███████ ██   ██  ██████ ██   ██
+// ======================================================================
+.theme-black {
+  .secondary-nav {
+    background-color: $black-85;
+
+    .js-dropdown-active {
+      background-color: $black-85 !important;
     }
 
-    .top-bar {
-      background: none;
+    .language-menu {
+      background-color: $black-85;
+
+      &::before {
+        @include css-triangle($tooltip-pip-width, $black-85, up);
+      }
+    }
+  }
+  // ======================================================================
+  // STYLES FOR PRIMARY NAV
+  // ======================================================================
+  .stickyNav, .stickyTitleBar {
+    background: $black-85;
+
+    .is-stuck {
+      background: $black-85;
+      
+      .top-bar {
+        @include breakpoint(medium-xxl down) {
+          background: $black-85;
+        }
+      }
+    }
+
+    .js-dropdown-active,
+    .menu > li.is-active {
+      background-color: $black-85 !important;
+    }
+  }
+}
+
+// ======================================================================
+//  ██████ ██      ███████  █████  ██████
+// ██      ██      ██      ██   ██ ██   ██
+// ██      ██      █████   ███████ ██████
+// ██      ██      ██      ██   ██ ██   ██
+//  ██████ ███████ ███████ ██   ██ ██   ██
+// ======================================================================
+.theme-clear {
+  .secondary-nav {
+    background-color: transparent;
+
+    .js-dropdown-active {
+      background-color: $black-85 !important;
+    }
+
+    .language-menu {
+      background-color: $black-85;
+
+      &::before {
+        @include css-triangle($tooltip-pip-width, $black-85, up);
+      }
+    }
+  }
+  // ======================================================================
+  // STYLES FOR PRIMARY NAV
+  // ======================================================================
+  .stickyNav, .stickyTitleBar {
+    background: transparent;
+
+    .is-stuck {
+      background: $black-85;
+      
+      .top-bar {
+        @include breakpoint(medium-xxl down) {
+          background: $black-85;
+        }
+      }
+    }
+
+    .js-dropdown-active,
+    .menu > li.is-active {
+      background-color: $black-85 !important;
     }
   }
 }

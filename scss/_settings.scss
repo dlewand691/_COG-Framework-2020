@@ -363,34 +363,34 @@ $drilldown-arrow-size: 6px;
 // 17. Dropdown
 // ------------
 
-$dropdown-padding: 1rem;
-$dropdown-background: $body-background;
-$dropdown-border: 1px solid $light-gray;
-$dropdown-font-size: 1rem;
-$dropdown-width: 300px;
-$dropdown-radius: $global-radius;
+$dropdown-padding: 1rem !default;
+$dropdown-background: $body-background !default;
+$dropdown-border: 1px solid $light-gray !default;
+$dropdown-font-size: 1rem !default;
+$dropdown-width: 300px !default;
+$dropdown-radius: $global-radius !default;
 $dropdown-sizes: (
   tiny : 100px,
   small: 200px,
   large: 400px,
-);
+) !default;
 
 // 18. Dropdown Menu
 // -----------------
 
-$dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $success-color;
-$dropdownmenu-arrow-size: 0.35rem;
-$dropdownmenu-arrow-padding: 1.5rem;
-$dropdownmenu-min-width: 200px;
-$dropdownmenu-background: $white;
-$dropdownmenu-submenu-background: $dropdownmenu-background;
-$dropdownmenu-padding: $global-menu-padding;
-$dropdownmenu-nested-margin: 0;
-$dropdownmenu-submenu-padding: $dropdownmenu-padding;
-$dropdownmenu-border: 1px solid $light-gray;
-$dropdown-menu-item-color-active: get-color(primary);
-$dropdown-menu-item-background-active: transparent;
+$dropdownmenu-arrows: true !default;
+$dropdownmenu-arrow-color: $success-color !default;
+$dropdownmenu-arrow-size: 0.35rem !default;
+$dropdownmenu-arrow-padding: 1.5rem !default;
+$dropdownmenu-min-width: 200px !default;
+$dropdownmenu-background: $white !default;
+$dropdownmenu-submenu-background: $dropdownmenu-background !default;
+$dropdownmenu-padding: $global-menu-padding !default;
+$dropdownmenu-nested-margin: 0 !default;
+$dropdownmenu-submenu-padding: $dropdownmenu-padding !default;
+$dropdownmenu-border: 1px solid $light-gray !default;
+$dropdown-menu-item-color-active: get-color(primary) !default;
+$dropdown-menu-item-background-active: transparent !default;
 
 // 19. Flexbox Utilities
 // ---------------------
