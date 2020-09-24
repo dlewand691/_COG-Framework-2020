@@ -1,44 +1,64 @@
-// ======================================================================
-// ██       ██████   ██████   ██████
-// ██      ██    ██ ██       ██    ██
-// ██      ██    ██ ██   ███ ██    ██
-// ██      ██    ██ ██    ██ ██    ██
-// ███████  ██████   ██████   ██████
-// ======================================================================
-.cog-logo {
-  transition: $transition-default;
-  @include fluidSize(width, 320px, $cog-bp--desktop-xl, 100px, 200px);
-}
+@mixin nav-overrides(
+$topbar-background: transparent, 
+$topbar-submenu-background: transparent, 
+$dropdownmenu-background: none, 
+$dropdownmenu-submenu-background: $blue, 
+$dropdown-menu-item-color-active: $white, 
+$dropdown-menu-item-background-active: $blue, 
+$dropdown-hover-color: $blue-medium, 
+$dropdown-arrow-color: $green, 
+$sticky-background: $white, 
+$sticky-background-stuck: $white, 
+$titlebar-background: $white, 
+$anchor-color: $body-font-color, 
+$anchor-color-hover: $green, 
+$secondary-nav-background: $gray-light, 
+$language-menu-background: $white, 
+$hamburger-color: $anchor-color,
+) {
+  // ======================================================================
+  // ██       ██████   ██████   ██████
+  // ██      ██    ██ ██       ██    ██
+  // ██      ██    ██ ██   ███ ██    ██
+  // ██      ██    ██ ██    ██ ██    ██
+  // ███████  ██████   ██████   ██████
+  // ======================================================================
+  .cog-logo {
+    transition: $transition-default;
+    @include fluidSize(width, 320px, 
+    $cog-bp--desktop-xl, 100px, 200px);
+  }
 
-.secondary-nav .cog-logo {
-  transition: $transition-default;
-  width     : auto;
-  height    : 20px;
-}
+  .secondary-nav .cog-logo {
+    transition: $transition-default;
+    width     : auto;
+    height    : 20px;
+  }
 
-// ======================================================================
-// ███████ ████████ ██  ██████ ██   ██ ██    ██
-// ██         ██    ██ ██      ██  ██   ██  ██
-// ███████    ██    ██ ██      █████     ████
-//      ██    ██    ██ ██      ██  ██     ██
-// ███████    ██    ██  ██████ ██   ██    ██
-// ======================================================================
-.stickyNav, .stickyTitleBar {
-  background: $white;
+  // ======================================================================
+  // ███████ ████████ ██  ██████ ██   ██ ██    ██
+  // ██         ██    ██ ██      ██  ██   ██  ██
+  // ███████    ██    ██ ██      █████     ████
+  //      ██    ██    ██ ██      ██  ██     ██
+  // ███████    ██    ██  ██████ ██   ██    ██
+  // ======================================================================
+  .stickyNav,
+  .stickyTitleBar {
+    background: $sticky-background;
 
-  // ===================================================================================
-  // STUCK STYLES
-  // ===================================================================================
-  .is-stuck {
-    background: $white;
+    // ===================================================================================
+    // STUCK STYLES
+    // ===================================================================================
+    .is-stuck {
+      background: $sticky-background-stuck;
 
-    .top-bar {
-      // font-size: $small-font-size;
-      @include breakpoint(medium-xxl down) {
-        // top: 50px !important;
-        @include fluidSize(top, 320px, $cog-bp--desktop, 40px, 55px);
-        position: fixed;
-        width   : 100%;
+      .top-bar {
+        @include breakpoint(medium-xxl down) {
+          @include fluidSize(top, 320px, $cog-bp--desktop, 40px, 55px);
+          position  : fixed;
+          width     : 100%;
+          background: $sticky-background-stuck;
+        }
       }
     }
   }
@@ -56,265 +76,212 @@
   // ██   ████ ██   ██   ████
   // ======================================================================
   .primary-nav {
-    // background: transparent;
-    // @include fluidSize(padding, 320px, $cog-bp--desktop, 0.5rem, 1rem);
-    // ===================================================================================
-    // MENU
-    // ===================================================================================
-    .menu {
-      border    : none;
-      background: inherit;
+    &.top-bar {
+      background-color: $topbar-background;
 
+      & ul {
+        background-color: $topbar-background;
+      }
+
+      .menu {
+        // Top-level item
+        li a {
+          background : $dropdownmenu-background;
+          font-weight: normal;
+          color      : $anchor-color;
+          transition : $transition-default;
+        }
+
+        // Top-level item active state
+        .is-active a {
+          background: $dropdown-menu-item-background-active;
+          color     : $dropdown-menu-item-color-active;
+        }
+      }
+
+      .menu {
+        [class*="submenu-parent"][class*="submenu"],
+        [class*="submenu"],
+        li {
+          > a {
+            padding-right: 2.4rem;
+            line-height  : unset;
+
+            &:after {
+              width      : unset;
+              height     : unset;
+              border     : none;
+              content    : '\e903';
+              font-family: 'Cognizant-Icons';
+              font-weight: bold;
+              color      : $dropdown-arrow-color;
+              top        : calc(50% - .4rem);
+              right      : 1rem;
+            }
+          }
+        }
+      }
+
+      .submenu {
+        min-width : $dropdownmenu-min-width;
+        background: $dropdownmenu-submenu-background;
+        border    : none;
+      }
+
+      .is-dropdown-submenu {
+        border: none;
+      }
+    }
+
+    .js-dropdown-active,
+    .menu li.is-active {
       a {
         font-weight: normal;
-        color      : $body-font-color;
-      }
+        color      : $white;
+        transition : $transition-default;
 
-      [class*="submenu-parent"][class*="submenu"],
-      [class*="submenu"],
-      li {
-        > a {
-          background   : rgba($blue, 0);
-          padding-right: 2.4rem;
-          line-height  : unset;
-          // transition   : none;
-          &:after {
-            width      : unset;
-            height     : unset;
-            border     : none;
-            content    : '\e903';
-            font-family: 'Cognizant-Icons';
-            font-weight: bold;
-            color      : $anchor-color;
-            top        : calc(50% - .4rem);
-            right      : 1rem;
-          }
+        &:hover {
+          background-color: $dropdown-hover-color;
         }
 
-        &.is-active {
-          background: rgba($blue, 1);
-          transition: $transition-faster;
-
-          a {
-            color: $white;
-          }
-        }
-
-        &[aria-expanded="true"] {
-          > a {
-            background: $blue;
-            color     : $white;
-          }
-        }
-      }
-    }
-    // ===================================================================================
-    // SUBMENU
-    // ===================================================================================
-    .submenu {
-      min-width: 300px;
-
-      .is-submenu-item {
-        a,
-        a:link {
-          transition : $transition-default;
-          font-weight: normal;
-          color      : $white;
-
-          &:hover {
-            transition: $transition-default;
-            background: rgba($white, 0.15);
-          }
-
-          &:after {
-            color: $anchor-color;
-          }
+        &:after {
+          color: $dropdown-arrow-color;
         }
       }
     }
   }
-}
 
-// ======================================================================
-// ███████ ███████  ██████  ██████  ███    ██ ██████   █████  ██████  ██    ██
-// ██      ██      ██      ██    ██ ████   ██ ██   ██ ██   ██ ██   ██  ██  ██
-// ███████ █████   ██      ██    ██ ██ ██  ██ ██   ██ ███████ ██████    ████
-//      ██ ██      ██      ██    ██ ██  ██ ██ ██   ██ ██   ██ ██   ██    ██
-// ███████ ███████  ██████  ██████  ██   ████ ██████  ██   ██ ██   ██    ██
-// ███    ██  █████  ██    ██
-// ████   ██ ██   ██ ██    ██
-// ██ ██  ██ ███████ ██    ██
-// ██  ██ ██ ██   ██  ██  ██
-// ██   ████ ██   ██   ████
-// ======================================================================
-.secondary-nav {
-  background: $gray-light;
-
-  a,
-  a:link {
-    color      : $body-font-color;
-    font-weight: normal;
-    transition : $button-transition;
-
-    &:hover {
-      color: $anchor-color-hover;
-    }
+  // ======================================================================
+  // ████████ ██ ████████ ██      ███████     ██████   █████  ██████
+  //  ██    ██    ██    ██      ██          ██   ██ ██   ██ ██   ██
+  //  ██    ██    ██    ██      █████       ██████  ███████ ██████
+  //  ██    ██    ██    ██      ██          ██   ██ ██   ██ ██   ██
+  //  ██    ██    ██    ███████ ███████     ██████  ██   ██ ██   ██
+  // ======================================================================
+  .title-bar {
+    background: $titlebar-background;
   }
 
   // ======================================================================
-  // ██       ██████   ██████   ██████
-  // ██      ██    ██ ██       ██    ██
-  // ██      ██    ██ ██   ███ ██    ██
-  // ██      ██    ██ ██    ██ ██    ██
-  // ███████  ██████   ██████   ██████
+  // ███████ ███████  ██████  ██████  ███    ██ ██████   █████  ██████  ██    ██
+  // ██      ██      ██      ██    ██ ████   ██ ██   ██ ██   ██ ██   ██  ██  ██
+  // ███████ █████   ██      ██    ██ ██ ██  ██ ██   ██ ███████ ██████    ████
+  //      ██ ██      ██      ██    ██ ██  ██ ██ ██   ██ ██   ██ ██   ██    ██
+  // ███████ ███████  ██████  ██████  ██   ████ ██████  ██   ██ ██   ██    ██
+  // ███    ██  █████  ██    ██
+  // ████   ██ ██   ██ ██    ██
+  // ██ ██  ██ ███████ ██    ██
+  // ██  ██ ██ ██   ██  ██  ██
+  // ██   ████ ██   ██   ████
   // ======================================================================
-  .cog-logo {
-    transition: $transition-default;
-    max-height: 20px;
-  }
-
-  // ===================================================================================
-  // ██     ██  ██████  ██████  ██      ██████  ██     ██ ██ ██████  ███████
-  // ██     ██ ██    ██ ██   ██ ██      ██   ██ ██     ██ ██ ██   ██ ██
-  // ██  █  ██ ██    ██ ██████  ██      ██   ██ ██  █  ██ ██ ██   ██ █████
-  // ██ ███ ██ ██    ██ ██   ██ ██      ██   ██ ██ ███ ██ ██ ██   ██ ██
-  //  ███ ███   ██████  ██   ██ ███████ ██████   ███ ███  ██ ██████  ███████
-  // ===================================================================================
-  .language-menu {
-    background: $white;
-
-    &:before {
-      // $language-menu-triangle: $gray-light;
-      // @include css-triangle($tooltip-pip-width, $blue-dark-darker-85, up);
-      @include css-triangle($tooltip-pip-width, rgba($white, 1), up);
-      right   : 4rem;
-      left    : auto;
-      position: absolute;
-      top     : calc(0px - #{$tooltip-pip-width});
-    }
-
-    .flag-icon {
-      box-shadow     : 0 0 0 1px rgba($white,.4);
-      background-size: cover !important;
-    }
-  }
-
-  // ======================================================================
-  // STYLES FOR SUBMENU AND LANGUAGE MENU
-  // ======================================================================
-  &[class*="theme-blue"] {
-    background: $blue;
-    color     : $white;
+  .secondary-nav {
+    background: $secondary-nav-background;
 
     a,
     a:link {
-      color: $white;
+      color      : $anchor-color;
+      font-weight: normal;
+      transition : $button-transition;
 
       &:hover {
-        color: $anchor-color-hover-light;
+        color: $anchor-color-hover;
       }
     }
+
+    // ===================================================================================
+    // ██     ██  ██████  ██████  ██      ██████  ██     ██ ██ ██████  ███████
+    // ██     ██ ██    ██ ██   ██ ██      ██   ██ ██     ██ ██ ██   ██ ██
+    // ██  █  ██ ██    ██ ██████  ██      ██   ██ ██  █  ██ ██ ██   ██ █████
+    // ██ ███ ██ ██    ██ ██   ██ ██      ██   ██ ██ ███ ██ ██ ██   ██ ██
+    //  ███ ███   ██████  ██   ██ ███████ ██████   ███ ███  ██ ██████  ███████
+    // ===================================================================================
+    .language-menu {
+      background: $language-menu-background;
+      width     : unset;
+
+      &:before {
+        @include css-triangle($tooltip-pip-width, $language-menu-background, up);
+        right   : 4rem;
+        left    : auto;
+        position: absolute;
+        top     : calc(0px - #{$tooltip-pip-width});
+      }
+
+      .flag-icon {
+        box-shadow     : 0 0 0 1px rgba($white,.4);
+        background-size: cover !important;
+      }
+    }
+
+    // ======================================================================
+    // STYLES FOR SUBMENU AND LANGUAGE MENU
+    // ======================================================================
+    &[class*="theme-blue"] {
+      .cog-logo {
+        filter: grayscale(1) brightness(100);
+      }
+    }
+  }
+  // ======================================================================
+  // ███    ███ ███████  ██████   █████  ███    ███ ███████ ███    ██ ██    ██
+  // ████  ████ ██      ██       ██   ██ ████  ████ ██      ████   ██ ██    ██
+  // ██ ████ ██ █████   ██   ███ ███████ ██ ████ ██ █████   ██ ██  ██ ██    ██
+  // ██  ██  ██ ██      ██    ██ ██   ██ ██  ██  ██ ██      ██  ██ ██ ██    ██
+  // ██      ██ ███████  ██████  ██   ██ ██      ██ ███████ ██   ████  ██████
+  // ======================================================================
+  .megamenu {
+    top: calc(100% - 1rem) !important;
+  }
+
+  // ======================================================================
+  // ██   ██  █████  ███    ███ ██████  ██    ██ ██████   ██████  ███████ ██████
+  // ██   ██ ██   ██ ████  ████ ██   ██ ██    ██ ██   ██ ██       ██      ██   ██
+  // ███████ ███████ ██ ████ ██ ██████  ██    ██ ██████  ██   ███ █████   ██████
+  // ██   ██ ██   ██ ██  ██  ██ ██   ██ ██    ██ ██   ██ ██    ██ ██      ██   ██
+  // ██   ██ ██   ██ ██      ██ ██████   ██████  ██   ██  ██████  ███████ ██   ██
+  // ======================================================================
+  .hamburger-inner,
+  .hamburger.is-active .hamburger-inner {
+    background-color: $hamburger-color;
+
+    &:after,
+    &:before {
+      background-color: $hamburger-color;
+    }
+  }
+
+  [class*="theme-"]:not([class*="default"]) {
+    color: $white;
 
     .cog-logo {
       filter: grayscale(1) brightness(100);
     }
-
-    .js-dropdown-active {
-      background: $blue-dark !important;
-    }
-
-    .language-menu {
-      background: $blue-dark;
-
-      &::before {
-        @include css-triangle($tooltip-pip-width, $blue-dark, up);
-      }
-    }
   }
 
-  &[class*="dark"] {
-    background: $blue-dark;
+  // ======================================================================
+  //  █████  ██████  ██████   ██████  ██     ██
+  // ██   ██ ██   ██ ██   ██ ██    ██ ██     ██
+  // ███████ ██████  ██████  ██    ██ ██  █  ██
+  // ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██
+  // ██   ██ ██   ██ ██   ██  ██████   ███ ███
+  // ======================================================================
 
-    .js-dropdown-active {
-      background: $blue-dark-darker !important;
-    }
-
-    .language-menu {
-      background: $blue-dark-darker;
-
-      &::before {
-        @include css-triangle($tooltip-pip-width, $blue-dark-darker, up);
-      }
-    }
+  .arrow:after {
+    color: $dropdown-arrow-color;
   }
+
+  // -----  End of ARROW  ----------
 }
 
 // ======================================================================
-// ███    ███ ███████  ██████   █████  ███    ███ ███████ ███    ██ ██    ██
-// ████  ████ ██      ██       ██   ██ ████  ████ ██      ████   ██ ██    ██
-// ██ ████ ██ █████   ██   ███ ███████ ██ ████ ██ █████   ██ ██  ██ ██    ██
-// ██  ██  ██ ██      ██    ██ ██   ██ ██  ██  ██ ██      ██  ██ ██ ██    ██
-// ██      ██ ███████  ██████  ██   ██ ██      ██ ███████ ██   ████  ██████
+// ██████  ███████ ███████  █████  ██    ██ ██   ████████
+// ██   ██ ██      ██      ██   ██ ██    ██ ██      ██
+// ██   ██ █████   █████   ███████ ██    ██ ██      ██
+// ██   ██ ██      ██      ██   ██ ██    ██ ██      ██
+// ██████  ███████ ██      ██   ██  ██████  ███████ ██
 // ======================================================================
-.megamenu {
-  top: calc(100% - 1rem) !important;
-}
-
-// ======================================================================
-// ████████ ██   ██ ███████ ███    ███ ███████ ███████
-//    ██    ██   ██ ██      ████  ████ ██      ██
-//    ██    ███████ █████   ██ ████ ██ █████   ███████
-//    ██    ██   ██ ██      ██  ██  ██ ██           ██
-//    ██    ██   ██ ███████ ██      ██ ███████ ███████
-// ======================================================================
-[class*="theme-"]:not([class*="default"]) {
-  $anchor-color      : $blue-bright;
-  $anchor-color-hover: $blue-light;
-  color              : $white;
-
-  .hamburger-inner,
-  .hamburger.is-active .hamburger-inner {
-    background-color: $anchor-color;
-
-    &:after,
-    &:before {
-      background-color: $anchor-color;
-    }
-  }
-
-  a,
-  a:link {
-
-    color: $white !important;
-
-    &:after,
-    &:hover {
-      color: $anchor-color !important;
-    }
-  }
-
-  .submenu .is-submenu-item {
-    a,
-    a:link {
-      &:hover {
-        background-color: $anchor-color-hover;
-        color           : $white !important;
-
-        &:after {
-          color: $white !important;
-        }
-      }
-    }
-  }
-
-  .top-bar {
-    background: none;
-  }
-
-  .cog-logo {
-    filter: grayscale(1) brightness(100);
-  }
-}
+@include nav-overrides;
+// -----  End of DEFAULT  ----------
 
 // ======================================================================
 // ██████  ██      ██    ██ ███████
@@ -324,182 +291,78 @@
 // ██████  ███████  ██████  ███████
 // ======================================================================
 .theme-blue {
-  // ======================================================================
-  // STYLES FOR SUBMENU AND LANGUAGE MENU
-  // ======================================================================
-  .secondary-nav {
-    background-color: $blue;
-
-    .js-dropdown-active {
-      background-color: $blue-dark !important;
-    }
-
-    .language-menu {
-      background-color: $blue-dark;
-
-      &::before {
-        @include css-triangle($tooltip-pip-width, $blue-dark, up);
-      }
-    }
-  }
-
-  // ======================================================================
-  // STYLES FOR PRIMARY NAV
-  // ======================================================================
-  .stickyNav, .stickyTitleBar {
-    background: $blue-85;
-
-    .is-stuck {
-      background: $blue-85;
-      
-      .top-bar {
-        @include breakpoint(medium-xxl down) {
-          background: $blue-85;
-        }
-      }
-    }
-
-    .js-dropdown-active,
-    .menu > li.is-active {
-      background-color: $blue-dark !important;
-    }
-  }
+  @include nav-overrides(
+  $dropdownmenu-submenu-background: $blue-dark, 
+  $dropdown-menu-item-background-active: $blue-dark, 
+  $dropdown-arrow-color: $blue-bright, 
+  $sticky-background: $blue-85, 
+  $sticky-background-stuck: $blue-85, 
+  $titlebar-background: $blue-85, 
+  $anchor-color: $white, 
+  $anchor-color-hover: $blue-bright, 
+  $secondary-nav-background: $blue, 
+  $language-menu-background: $blue-dark, 
+  $hamburger-color: $blue-bright,
+  );
 }
+// -----  End of BLUE  ----------
 
 // ======================================================================
-// ██████   █████  ██████  ██   ██     ██████  ██      ██    ██ ███████
-// ██   ██ ██   ██ ██   ██ ██  ██      ██   ██ ██      ██    ██ ██
-// ██   ██ ███████ ██████  █████       ██████  ██      ██    ██ █████
-// ██   ██ ██   ██ ██   ██ ██  ██      ██   ██ ██      ██    ██ ██
-// ██████  ██   ██ ██   ██ ██   ██     ██████  ███████  ██████  ███████
+// ██████  ██      ██    ██ ███████     ██████   █████  ██████  ██   ██
+// ██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██ ██  ██
+// ██████  ██      ██    ██ █████       ██   ██ ███████ ██████  █████
+// ██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██ ██  ██
+// ██████  ███████  ██████  ███████     ██████  ██   ██ ██   ██ ██   ██
 // ======================================================================
 .theme-blue-dark {
-  .secondary-nav {
-    background-color: $blue-dark;
+  @include nav-overrides(
+  $dropdownmenu-submenu-background: $blue-dark-darker, 
+  $dropdown-menu-item-background-active: $blue-dark-darker, 
+  $dropdown-hover-color: $blue, 
+  $dropdown-arrow-color: $blue-bright, 
+  $sticky-background: $blue-dark-85, 
+  $sticky-background-stuck: $blue-dark-85, 
+  $titlebar-background: $blue-dark-85, 
+  $anchor-color: $white, 
+  $anchor-color-hover: $blue-bright, 
+  $secondary-nav-background: $blue-dark, 
+  $language-menu-background: $blue-dark-darker, 
+  $hamburger-color: $blue-bright,
+  );
+}
+// -----  End of BLUE DARK  ----------
 
-    .js-dropdown-active {
-      background-color: $blue-dark-darker !important;
-    }
+// ======================================================================
+//  ██████ ███████  ██████  ██     ██
+// ██      ██      ██    ██ ██     ██
+// ██      █████   ██    ██ ██  █  ██
+// ██      ██      ██    ██ ██ ███ ██
+//  ██████ ██       ██████   ███ ███
+// ======================================================================
+.theme-cfow {
+  @include nav-overrides(
+  $topbar-background: transparent, 
+  $topbar-submenu-background: transparent, 
+  $dropdownmenu-background: none, 
+  $dropdownmenu-submenu-background: darken($gray-dark, 5%), 
+  $dropdown-menu-item-color-active: $white, 
+  $dropdown-menu-item-background-active: darken($gray-dark, 5%), 
+  $dropdown-hover-color: darken($gray-dark, 10%), 
+  $dropdown-arrow-color: $green, 
+  $sticky-background: transparent, 
+  $sticky-background-stuck: rgba($gray-dark, .97), 
+  $titlebar-background: rgba($gray-dark, .97), 
+  $anchor-color: $white, 
+  $anchor-color-hover: $green, 
+  $secondary-nav-background: transparent, 
+  $language-menu-background: rgba($gray-dark, .97), 
+  $hamburger-color: $anchor-color,
+  );
 
-    .language-menu {
-      background-color: $blue-dark-darker;
-
-      &::before {
-        @include css-triangle($tooltip-pip-width, $blue-dark-darker, up);
-      }
-    }
-  }
-  // ======================================================================
-  // STYLES FOR PRIMARY NAV
-  // ======================================================================
-  .stickyNav, .stickyTitleBar {
-    background: $blue-dark-85;
-
-    .is-stuck {
-      background: $blue-dark-85;
-      
-      .top-bar {
-        @include breakpoint(medium-xxl down) {
-          background: $blue-dark-85;
-        }
-      }
-    }
-
-    .js-dropdown-active,
-    .menu > li.is-active {
-      background-color: $blue-dark-darker !important;
+  .stickyNav {
+    @include breakpoint(medium-xl down) {
+      background: rgba($gray-dark, .97);
     }
   }
 }
-
-// ======================================================================
-// ██████  ██       █████   ██████ ██   ██
-// ██   ██ ██      ██   ██ ██      ██  ██
-// ██████  ██      ███████ ██      █████
-// ██   ██ ██      ██   ██ ██      ██  ██
-// ██████  ███████ ██   ██  ██████ ██   ██
-// ======================================================================
-.theme-black {
-  .secondary-nav {
-    background-color: $black-85;
-
-    .js-dropdown-active {
-      background-color: $black-85 !important;
-    }
-
-    .language-menu {
-      background-color: $black-85;
-
-      &::before {
-        @include css-triangle($tooltip-pip-width, $black-85, up);
-      }
-    }
-  }
-  // ======================================================================
-  // STYLES FOR PRIMARY NAV
-  // ======================================================================
-  .stickyNav, .stickyTitleBar {
-    background: $black-85;
-
-    .is-stuck {
-      background: $black-85;
-      
-      .top-bar {
-        @include breakpoint(medium-xxl down) {
-          background: $black-85;
-        }
-      }
-    }
-
-    .js-dropdown-active,
-    .menu > li.is-active {
-      background-color: $black-85 !important;
-    }
-  }
-}
-
-// ======================================================================
-//  ██████ ██      ███████  █████  ██████
-// ██      ██      ██      ██   ██ ██   ██
-// ██      ██      █████   ███████ ██████
-// ██      ██      ██      ██   ██ ██   ██
-//  ██████ ███████ ███████ ██   ██ ██   ██
-// ======================================================================
-.theme-clear {
-  .secondary-nav {
-    background-color: transparent;
-
-    .js-dropdown-active {
-      background-color: $black-85 !important;
-    }
-
-    .language-menu {
-      background-color: $black-85;
-
-      &::before {
-        @include css-triangle($tooltip-pip-width, $black-85, up);
-      }
-    }
-  }
-  // ======================================================================
-  // STYLES FOR PRIMARY NAV
-  // ======================================================================
-  .stickyNav, .stickyTitleBar {
-    background: transparent;
-
-    .is-stuck {
-      background: $black-85;
-      
-      .top-bar {
-        @include breakpoint(medium-xxl down) {
-          background: $black-85;
-        }
-      }
-    }
-
-    .js-dropdown-active,
-    .menu > li.is-active {
-      background-color: $black-85 !important;
-    }
-  }
-}
+// -----  End of CFOW  ----------
