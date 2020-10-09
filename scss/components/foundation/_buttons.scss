@@ -58,9 +58,68 @@
     background: $black-15;
   }
 
-  .bg-blue {
+  &.blue {
+    $button-background      : $blue-light;
+    $button-background-hover: scale-color($button-background, $lightness: -20%);
+
+    background              : $button-background;
+
     &:hover {
-      background: scale-color($blue, $lightness: -20%) !important;
+      background: $button-background-hover;
+    }
+
+    &.hollow {
+      background  : none;
+      color       : $button-background;
+      border-color: $button-background;
+
+      &:hover {
+        background  : none;
+        color       : $button-background-hover;
+        border-color: $button-background-hover;
+      }
+    }
+  }
+
+  &.blue-bright {
+    $button-background      : $blue-bright;
+    $button-background-hover: scale-color($button-background, $lightness: -20%);
+
+    background              : $button-background;
+
+    &:hover {
+      background: $button-background-hover;
+    }
+
+    &.hollow {
+      background  : none;
+      color       : $button-background;
+      border-color: $button-background;
+
+      &:hover {
+        background  : none;
+        color       : $button-background-hover;
+        border-color: $button-background-hover;
+      }
+    }
+  }
+}
+
+a:not(.button) {
+  &.blue {
+    $anchor-color: $blue-light;
+    $anchor-color-hover: scale-color($anchor-color, $lightness: -20%);
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+  &.blue-bright {
+    $anchor-color: $blue-bright;
+    $anchor-color-hover: scale-color($anchor-color, $lightness: -20%);
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
     }
   }
 }
@@ -85,12 +144,13 @@
     background : unset !important;
     font-family: "Cognizant-Icons";
     font-weight: bold;
+    color      : inherit;
   }
 
   &.arrow-solid-green {
     &::after {
       content    : "\e908" !important;
-      color      : $green;
+      // color      : $green;
       font-family: "Cognizant-Icons";
     }
   }
@@ -112,5 +172,23 @@
     font-family: "Cognizant-Icons";
     font-weight: bold;
     margin-left: 0.2rem;
+  }
+}
+
+.hollow {
+  transition: $transition-fast;
+
+  &.white {
+    border-color: $white;
+    color       : $white;
+    background  : none;
+
+    &:hover {
+      background: none;
+    }
+
+    &:after {
+      color: inherit;
+    }
   }
 }

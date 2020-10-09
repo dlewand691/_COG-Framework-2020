@@ -5,6 +5,8 @@
 @import 'foundation-sites/scss/foundation';
 @import 'motion-ui/src/motion-ui';
 
+$contrast-warnings: false;
+
 // GLOBAL STYLES
 @include foundation-global-styles;
 @include foundation-forms;
@@ -120,6 +122,18 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 
 // -----  End of COLUMN FIX  -----------------------------------
 
+// ======================================================================
+// ████████ ██   ██ ███████ ███    ███ ███████ ███████
+//    ██    ██   ██ ██      ████  ████ ██      ██
+//    ██    ███████ █████   ██ ████ ██ █████   ███████
+//    ██    ██   ██ ██      ██  ██  ██ ██           ██
+//    ██    ██   ██ ███████ ██      ██ ███████ ███████
+// ======================================================================
+
+@import "base/themes";
+
+// -----  End of THEMES  ----------
+
 // ===================================================================================
 // ██████   █████  ███████ ███████
 // ██   ██ ██   ██ ██      ██
@@ -127,6 +141,7 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 // ██   ██ ██   ██      ██ ██
 // ██████  ██   ██ ███████ ███████
 // ===================================================================================
+@import "base/animations";
 @import "base/mixins";
 @import "base/typography";
 @import "base/sizes";
@@ -138,7 +153,6 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 @import "base/positions";
 @import "base/spacings";
 @import "base/easing";
-@import "base/animations";
 @import "base/borders";
 @import "base/forms";
 @import "base/icons";
@@ -189,9 +203,9 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 // ██      ██    ██ ██  ██  ██ ██      ██    ██ ██  ██ ██ ██      ██  ██ ██    ██         ██
 //  ██████  ██████  ██      ██ ██       ██████  ██   ████ ███████ ██   ████    ██    ███████
 // ===================================================================================
-// @import "components/custom/banners";
-// @import "components/custom/partners";
-// @import "components/custom/read-more";
+@import "components/custom/banners";
+@import "components/custom/partners";
+@import "components/custom/read-more";
 
 // ====================================================================================
 // ██████  ██      ██    ██  ██████  ██ ███    ██ ███████
@@ -206,7 +220,7 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 @import "plugins/scrollup";
 @import "plugins/swiper";
 @import "plugins/flag-icons";
-@import "plugins/plyr";
+// @import "plugins/plyr";
 
 // ===================================================================================
 // ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████
@@ -216,3 +230,5 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 // ██████  ██   ██ ██   ██ ██   ██     ██      ██  ██████  ██████  ███████
 // ===================================================================================
 //- @import "base/dark-mode";
+
+

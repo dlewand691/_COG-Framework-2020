@@ -701,28 +701,6 @@
 		"sC": 3,
 		"tS": 1
 		},
-	"/node_modules/plyr/dist/plyr.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/node_modules/plyr/dist/min/plyr-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
-	"/node_modules/plyr/dist/plyr.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 1,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/node_modules/plyr/dist/min/plyr.min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 1
-		},
 	"/node_modules/swiper/js/swiper.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1426,6 +1404,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/scss/css/_spacings.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 0
+		},
+	"/scss/base/_themes.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/scss/css/_themes.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 0

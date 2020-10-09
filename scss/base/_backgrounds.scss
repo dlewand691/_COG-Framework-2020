@@ -53,20 +53,8 @@
 // ======================================================================
 // LIGHT GREEN LINKS ON SPECIFIC BACKGROUNDS
 // ======================================================================
-.bg-black,
-.bg-black-60,
-.bg-black-85,
-.bg-blue,
-.bg-blue-60,
-.bg-blue-85,
-.bg-blue-dark,
-.bg-blue-dark-60,
-.bg-blue-dark-85,
-.bg-blue-dark-darker,
-.bg-blue-dark-darker-85,
-.bg-blue-light,
-.bg-blue-light-85,
-.bg-blue-medium,
+[class*="bg-black"],
+[class*="bg-blue"],
 .bg-gray,
 .bg-gray-dark,
 .bg-green-dark,
@@ -76,7 +64,19 @@
     color: $anchor-color-light;
     
     &:hover {
-      color: scale-color($anchor-color, $lightness: 15%);
+      color: scale-color($anchor-color, $lightness: 50%);
+    }
+  }
+  
+  .hollow {
+    border-color: $anchor-color-light;
+    color: $anchor-color-light;
+    background: none;
+    
+    &:hover {
+      border-color: scale-color($anchor-color-light, $lightness: 50%);
+      color: scale-color($anchor-color-light, $lightness: 50%);
+      background: none;
     }
   }
 }

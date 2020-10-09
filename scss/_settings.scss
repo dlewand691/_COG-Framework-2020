@@ -158,7 +158,7 @@ $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $green !default;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -15%) !default;
+$anchor-color-hover: scale-color($anchor-color, $lightness: -20%) !default;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -268,30 +268,30 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 
-$button-font-family: inherit;
-$button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
-$button-fill: solid;
-$button-background: $success-color;
-$button-background-hover: scale-color($button-background, $lightness: -20%);
-$button-color: $white;
-$button-color-alt: $white;
-$button-radius: $global-radius;
-$button-hollow-border-width: 1px;
+$button-font-family: inherit !default;
+$button-padding: 0.85em 1em !default;
+$button-margin: 0 0 $global-margin 0 !default;
+$button-fill: solid !default;
+$button-background: $success-color !default;
+$button-background-hover: scale-color($button-background, $lightness: -20%) !default;
+$button-color: $white !default;
+$button-color-alt: $white !default;
+$button-radius: $global-radius !default;
+$button-hollow-border-width: 2px !default;
 $button-sizes: (
   tiny   : 0.6rem,
   small  : 0.8rem,
   default: 1rem,
   large  : 1.25rem,
   xlarge : 1.5rem
-);
-$button-palette: $foundation-palette;
-$button-palette: $button-palette;
-$button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
-$button-hollow-hover-lightness: -20%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
-$button-responsive-expanded: false;
+) !default;
+$button-palette: $foundation-palette !default;
+$button-palette: $button-palette !default;
+$button-opacity-disabled: 0.25 !default;
+$button-background-hover-lightness: -20% !default;
+$button-hollow-hover-lightness: -20% !default;
+$button-transition: background-color 0.25s ease-out, color 0.25s ease-out !default;
+$button-responsive-expanded: false !default;
 
 // 12. Button Group
 // ----------------

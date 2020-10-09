@@ -10,15 +10,14 @@
     background-size    : cover;
 
     @include breakpoint(small only) {
-        .row {
-            display   : block;
-
-            min-height: 350px;
+        .cell {
+            // display   : block;
+            // min-height: 350px;
         }
     };
     @include breakpoint(medium) {
-        .row {
-            min-height: 500px;
+        .cell {
+            // min-height: 500px;
         }
     };
 }

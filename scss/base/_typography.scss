@@ -210,6 +210,12 @@ p {
 //   margin-bottom: 0;
 // }
 
+.extra-large {
+  // @include font-size(140px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 48px, 90px);
+  @include fluidSize(line-height, 320px, $cog-bp--desktop-xl, 1, 1.1);
+}
+
 .super-size {
   // @include font-size(140px);
   @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 48px, 140px);
@@ -329,12 +335,20 @@ $text-alignments: (
 ███████ ██ ██   ████ ██   ██ ███████
 
 =========================================================================================== */
-a,
-a:hover,
-a:link {
+a {
   // @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
   // @include text-crop($top-adjustment: 0.4px, $bottom-adjustment: -0.25px);
   font-weight: $global-weight-bold;
+  transition: $transition-fast;
+  
+  &:hover {
+    transition: $transition-fast;
+    color: scale-color($anchor-color, $lightness: -20%);
+  }
+  
+  &.large {
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 20px, 25px);
+  }
 }
 
 a.link-coverAll:before {
@@ -493,8 +507,24 @@ blockquote {
 ███████ ██ ███████    ██    ███████
 ========================================================================================= */
 ul {
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
+  
+  &.inside {
+    list-style-position: inside;
+  }
+
+  &.circle {
+    list-style-type: circle;
+  }
+
+  &.square {
+    list-style-type: square;
+  }
+  
+  &.collapse li {
+    margin-bottom: 0;
+  }
 }
 
 li {
@@ -514,18 +544,6 @@ li ul {
     display: inline-block;
     margin : 0 1rem 0 0;
   }
-}
-
-ul.inside {
-  list-style-position: inside;
-}
-
-ul.circle {
-  list-style-type: circle;
-}
-
-ul.square {
-  list-style-type: square;
 }
 
 dl dt {
