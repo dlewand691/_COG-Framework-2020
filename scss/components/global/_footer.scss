@@ -11,8 +11,12 @@ footer {
   .footer-primary {
     background-color: $gray-light;
 
-    li a:hover {
-      background: $button-background-hover;
+    li a {
+      color: $body-font-color;
+
+      &:hover {
+        color: $anchor-color-hover;
+      }
     }
   }
 
@@ -24,7 +28,7 @@ footer {
   a {
     font-weight: normal;
     color      : $body-font-color;
-    transition: $transition-default;
+    transition : $transition-default;
 
     &:hover {
       color: $anchor-color;
@@ -39,14 +43,23 @@ footer {
   //    ██    ██   ██ ███████ ██      ██ ███████ ███████
   // ======================================================================
   &[class*=theme-blue] {
-    color: $white;
-    background-color: $blue;
+    $anchor-color      : $white;
+    $anchor-color-hover: $blue-bright;
+    color              : $white;
+    background-color   : $blue;
 
     .button,
-    a,
     h5,
     h6 {
       color: $white;
+    }
+    
+    li a {
+      color: $anchor-color;
+      
+      &:hover {
+        color: $anchor-color-hover;
+      }
     }
 
     .footer-primary {
@@ -57,23 +70,23 @@ footer {
       background-color: $blue;
     }
   }
-  
+
   &.theme-blue-dark {
-    background-color: $blue-dark-darker;
-    
+    background-color: $blue-dark;
+
     .footer-primary {
-      // background-color: $blue-dark-darker;
+      background-color: $black-30;
     }
 
     .footer-site-map {
       background-color: $blue-dark;
     }
   }
-  
+
   &.theme-blue-dark-gradient {
     // background-color: .bg-grd-blue-radial-top;
     @extend .bg-grd-blue-radial-top;
-    
+
     .footer-primary {
       background-color: $black-30;
     }
