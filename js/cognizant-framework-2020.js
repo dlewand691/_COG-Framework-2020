@@ -67,7 +67,6 @@
 // @codekit-prepend 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js'
 // @codekit-prepend 'swiper/swiper-bundle.min.js'
 // @codekit-prepend 'aos/dist/aos.js'
-// @codekit-prepend "plyr/dist/plyr.min.js"
 
 
 $(document).foundation();
@@ -187,9 +186,9 @@ $(document).ready(function() {
 // ███████  ███ ███  ██ ██      ███████ ██   ██
 // ======================================================================
 var mySwiper = new Swiper(".swiper-container", {
-  // loop: true,
-  // autoHeight: true,
-  // centeredSlides: true,
+  loop: true,
+  autoHeight: true,
+  centeredSlides: true,
   grabCursor: true,
   preloadImages: false,
   lazy: {
@@ -213,21 +212,3 @@ var mySwiper = new Swiper(".swiper-container", {
   // observeParents: true
 });
 // -----  End of SWIPER  -----------------------------------
-
-
-// ======================================================================
-// ██████  ██   ██    ██ ██████
-// ██   ██ ██    ██  ██  ██   ██
-// ██████  ██     ████   ██████
-// ██      ██      ██    ██   ██
-// ██      ███████ ██    ██   ██
-// ======================================================================
-
-const plyrVideo = Plyr.setup('.plyr-video');
-$(".reveal").on("closed.zf.reveal", function() {
-for (var i = 0; i < plyrVideo.length; i++) {
-  plyrVideo[i].pause(); 
-  }
-});
-
-// -----  End of PLYR  ----------
