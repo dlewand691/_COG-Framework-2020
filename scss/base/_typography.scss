@@ -281,6 +281,7 @@ $font-weights-only: (
 }
 
 $font-two-styles: (
+  "thin-italic" 100 "italic",
   "light-italic" 300 "italic",
   "bold-italic" "bold" "italic",
   "heavy-italic" 900 "italic"
