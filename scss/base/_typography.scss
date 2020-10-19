@@ -267,10 +267,12 @@ strong {
 
 $font-weights-only: (
   "normal" "normal",
-  "light" 100,
+  "thin" 100,
+  "light" 300,
   "bold" "bold",
   "heavy" 900
 );
+
 @each $font-style, $font-weight in $font-weights-only {
   %text-#{$font-style},
   .text-#{$font-style} {
@@ -279,7 +281,7 @@ $font-weights-only: (
 }
 
 $font-two-styles: (
-  "light-italic" 100 "italic",
+  "light-italic" 300 "italic",
   "bold-italic" "bold" "italic",
   "heavy-italic" 900 "italic"
 );
