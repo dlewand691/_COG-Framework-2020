@@ -24,7 +24,7 @@
     "lazysizes": "^5.2.2",
     "mediaelement": "^4.2.16",
     "motion-ui": "^2.0.3",
-    "swiper": "^6.3.2",
+    "swiper": "^6.3.4",
     "what-input": "^5.2.10"
   }
 }

@@ -17,11 +17,11 @@ $themeColor: $green;
 
 // ====================  ARROWS OUTSIDE  ====================
 .arrows-outside {
-  .swiper-button-next {
+  ~ .swiper-button-next {
     right: -1.5rem;
   }
 
-  .swiper-button-prev {
+  ~ .swiper-button-prev {
     left: -1.5rem;
   }
 }
