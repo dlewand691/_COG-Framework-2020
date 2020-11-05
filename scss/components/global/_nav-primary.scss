@@ -62,106 +62,7 @@ $hamburger-color: $anchor-color,
       }
     }
   }
-
-  // ======================================================================
-  // ██████  ██████  ██ ███    ███  █████  ██████  ██    ██
-  // ██   ██ ██   ██ ██ ████  ████ ██   ██ ██   ██  ██  ██
-  // ██████  ██████  ██ ██ ████ ██ ███████ ██████    ████
-  // ██      ██   ██ ██ ██  ██  ██ ██   ██ ██   ██    ██
-  // ██      ██   ██ ██ ██      ██ ██   ██ ██   ██    ██
-  // ███    ██  █████  ██    ██
-  // ████   ██ ██   ██ ██    ██
-  // ██ ██  ██ ███████ ██    ██
-  // ██  ██ ██ ██   ██  ██  ██
-  // ██   ████ ██   ██   ████
-  // ======================================================================
-  .primary-nav {
-    &.top-bar {
-      background-color: $topbar-background;
-
-      & ul {
-        background-color: $topbar-background;
-      }
-
-      .menu {
-        // Top-level item
-        li a {
-          background : $dropdownmenu-background;
-          font-weight: normal;
-          color      : $anchor-color;
-          transition : $transition-default;
-        }
-
-        // Top-level item active state
-        .is-active a {
-          background: $dropdown-menu-item-background-active;
-          color     : $dropdown-menu-item-color-active;
-        }
-      }
-
-      .menu {
-        [class*="submenu-parent"][class*="submenu"],
-        [class*="submenu"],
-        li {
-          > a {
-            padding-right: 2.4rem;
-            line-height  : unset;
-
-            &:after {
-              width      : unset;
-              height     : unset;
-              border     : none;
-              content    : '\e903';
-              font-family: 'Cognizant-Icons';
-              font-weight: bold;
-              color      : $dropdown-arrow-color;
-              top        : calc(50% - .4rem);
-              right      : 1rem;
-            }
-          }
-        }
-      }
-
-      .submenu {
-        min-width : $dropdownmenu-min-width;
-        background: $dropdownmenu-submenu-background;
-        border    : none;
-      }
-
-      .is-dropdown-submenu {
-        border: none;
-      }
-    }
-
-    .js-dropdown-active,
-    .menu li.is-active {
-      a {
-        font-weight: normal;
-        color      : $white;
-        transition : $transition-default;
-
-        &:hover {
-          background-color: $dropdown-hover-color;
-        }
-
-        &:after {
-          color: $dropdown-arrow-color;
-        }
-      }
-    }
-  }
-
-  // ======================================================================
-  // ████████ ██ ████████ ██      ███████     ██████   █████  ██████
-  //  ██    ██    ██    ██      ██          ██   ██ ██   ██ ██   ██
-  //  ██    ██    ██    ██      █████       ██████  ███████ ██████
-  //  ██    ██    ██    ██      ██          ██   ██ ██   ██ ██   ██
-  //  ██    ██    ██    ███████ ███████     ██████  ██   ██ ██   ██
-  // ======================================================================
-  .title-bar {
-    background: $titlebar-background;
-  }
-
+  
   // ======================================================================
   // ███████ ███████  ██████  ██████  ███    ██ ██████   █████  ██████  ██    ██
   // ██      ██      ██      ██    ██ ████   ██ ██   ██ ██   ██ ██   ██  ██  ██
@@ -199,7 +100,7 @@ $hamburger-color: $anchor-color,
       background: $language-menu-background;
       width     : unset;
 
-      &:before {
+      &::before {
         @include css-triangle($tooltip-pip-width, $language-menu-background, up);
         right   : 4rem;
         left    : auto;
@@ -222,6 +123,77 @@ $hamburger-color: $anchor-color,
       }
     }
   }
+
+  // ======================================================================
+  // ██████  ██████  ██ ███    ███  █████  ██████  ██    ██
+  // ██   ██ ██   ██ ██ ████  ████ ██   ██ ██   ██  ██  ██
+  // ██████  ██████  ██ ██ ████ ██ ███████ ██████    ████
+  // ██      ██   ██ ██ ██  ██  ██ ██   ██ ██   ██    ██
+  // ██      ██   ██ ██ ██      ██ ██   ██ ██   ██    ██
+  // ███    ██  █████  ██    ██
+  // ████   ██ ██   ██ ██    ██
+  // ██ ██  ██ ███████ ██    ██
+  // ██  ██ ██ ██   ██  ██  ██
+  // ██   ████ ██   ██   ████
+  // ======================================================================
+  .primary-nav {
+    &.top-bar {
+      background-color: $topbar-background;
+
+      & ul {
+        background-color: $topbar-background;
+      }
+
+      .menu {
+        // Top-level item
+        li a {
+          background : $dropdownmenu-background;
+          font-weight: normal;
+          color      : $anchor-color;
+          transition : $transition-default;
+        }
+
+        // Top-level item active state
+        li.is-active a {
+          font-weight: normal;
+          color      : $white;
+          transition : $transition-default;
+          background: $dropdown-menu-item-background-active;
+          color     : $dropdown-menu-item-color-active;
+          
+          &:hover {
+            background-color: $dropdown-hover-color;
+          }
+
+          &::after {
+            color: $dropdown-arrow-color;
+          }
+        }
+      }
+
+      .submenu {
+        min-width : $dropdownmenu-min-width;
+        background: $dropdownmenu-submenu-background;
+        border    : none;
+      }
+
+      .is-dropdown-submenu {
+        border: none;
+      }
+    }
+  }
+
+  // ======================================================================
+  // ████████ ██ ████████ ██      ███████     ██████   █████  ██████
+  //  ██    ██    ██    ██      ██          ██   ██ ██   ██ ██   ██
+  //  ██    ██    ██    ██      █████       ██████  ███████ ██████
+  //  ██    ██    ██    ██      ██          ██   ██ ██   ██ ██   ██
+  //  ██    ██    ██    ███████ ███████     ██████  ██   ██ ██   ██
+  // ======================================================================
+  .title-bar {
+    background: $titlebar-background;
+  }
+
   // ======================================================================
   // ███    ███ ███████  ██████   █████  ███    ███ ███████ ███    ██ ██    ██
   // ████  ████ ██      ██       ██   ██ ████  ████ ██      ████   ██ ██    ██
@@ -244,8 +216,8 @@ $hamburger-color: $anchor-color,
   .hamburger.is-active .hamburger-inner {
     background-color: $hamburger-color;
 
-    &:after,
-    &:before {
+    &::after,
+    &::before {
       background-color: $hamburger-color;
     }
   }
@@ -266,7 +238,7 @@ $hamburger-color: $anchor-color,
   // ██   ██ ██   ██ ██   ██  ██████   ███ ███
   // ======================================================================
 
-  .arrow:after {
+  .arrow::after {
     color: $dropdown-arrow-color;
   }
 

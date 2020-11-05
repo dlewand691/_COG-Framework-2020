@@ -7,11 +7,12 @@
 ==================================================================================== */
 
 footer,
-[class*=footer] {
+.footer {
   a {
     font-weight: normal;
     color      : $body-font-color;
     transition : $transition-default;
+
     &:hover {
       color: $anchor-color;
     }
@@ -25,66 +26,66 @@ footer,
   .footer-primary {
     background-color: $gray-light;
   }
+}
 
-  // ======================================================================
-  // ████████ ██   ██ ███████ ███    ███ ███████ ███████
-  //    ██    ██   ██ ██      ████  ████ ██      ██
-  //    ██    ███████ █████   ██ ████ ██ █████   ███████
-  //    ██    ██   ██ ██      ██  ██  ██ ██           ██
-  //    ██    ██   ██ ███████ ██      ██ ███████ ███████
-  // ======================================================================
-  &[class*=theme-blue] {
-    $anchor-color      : $white;
-    $anchor-color-hover: $blue-bright;
-    color              : $white;
-    background-color   : $blue;
-
-    .button,
-    h5,
-    h6 {
-      color: $white;
-    }
+// ======================================================================
+// ████████ ██   ██ ███████ ███    ███ ███████ ███████
+//    ██    ██   ██ ██      ████  ████ ██      ██
+//    ██    ███████ █████   ██ ████ ██ █████   ███████
+//    ██    ██   ██ ██      ██  ██  ██ ██           ██
+//    ██    ██   ██ ███████ ██      ██ ███████ ███████
+// ======================================================================
+footer.theme-blue {
+  $anchor-color      : $white;
+  $anchor-color-hover: $blue-bright;
+  color              : $white;
+  background-color   : $blue;
+  
+  .button,
+  h5,
+  h6 {
+    color: $white;
+  }
+  
+  li a:link {
+    color: $anchor-color;
     
-    li a {
-      color: $anchor-color;
-      
-      &:hover {
-        color: $anchor-color-hover;
-      }
-    }
-
-    .footer-primary {
-      background-color: $black-30;
-    }
-
-    .footer-site-map {
-      background-color: $blue;
+    &:hover {
+      color: $anchor-color-hover;
     }
   }
+  
+  .footer-primary {
+    background-color: $black-30;
+  }
+  
+  .footer-site-map {
+    background-color: $blue;
+  }
+}
 
-  &.theme-blue-dark {
+footer.theme-blue-dark {
+  background-color: $blue-dark;
+  
+  .footer-primary {
+    background-color: $black-30;
+  }
+  
+  .footer-site-map {
     background-color: $blue-dark;
-
-    .footer-primary {
-      background-color: $black-30;
-    }
-
-    .footer-site-map {
-      background-color: $blue-dark;
-    }
   }
+}
 
-  &.theme-blue-dark-gradient {
-    // background-color: .bg-grd-blue-radial-top;
-    @extend .bg-grd-blue-radial-top;
-
-    .footer-primary {
-      background-color: $black-30;
-    }
-
-    .footer-site-map {
-      background-color: transparent;
-    }
+footer.theme-blue-dark-gradient {
+  // background-color: .bg-grd-blue-radial-top;
+  @extend .bg-grd-blue-radial-top;
+  
+  .footer-primary {
+    background-color: $black-30;
+  }
+  
+  .footer-site-map {
+    background-color: transparent;
   }
 }
 
