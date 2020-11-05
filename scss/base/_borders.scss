@@ -14,6 +14,8 @@ $border-side: (
 );
 $radius-sizes: 10;
 
+$breakpoint-classes: (small);
+
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @if $size != $-zf-zero-breakpoint {

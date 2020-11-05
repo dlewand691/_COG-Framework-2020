@@ -7,7 +7,7 @@
 		"uuidString": "DBCD366E-3830-4B03-9CF1-F1CBC15915D6"
 		}
 	],
-"creatorBuild": "33070",
+"creatorBuild": "33081",
 "files": {
 	"/fonts/Cognizant-Icons-FONT/demo-files/demo.css": {
 		"aP": 1,
@@ -112,6 +112,17 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/js/cognizant-framework-2020-copy.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/js/min/cognizant-framework-2020-copy-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/js/cognizant-framework-2020.js": {
 		"bF": 0,
 		"ft": 64,
@@ -180,6 +191,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/_BUILD/node_modules/aos/dist/min/aos-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/foundation.esm.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/foundation-sites/dist/js/min/foundation.esm-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -656,6 +678,17 @@
 		"oF": 0,
 		"oS": 3,
 		"sct": 0
+		},
+	"/node_modules/jquery/dist/jquery.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/_BUILD/node_modules/jquery/dist/min/jquery-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
 		},
 	"/node_modules/jquery/dist/jquery.min.js": {
 		"bF": 0,

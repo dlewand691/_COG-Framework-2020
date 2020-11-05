@@ -6,17 +6,14 @@
 ██       ██████   ██████     ██    ███████ ██   ██
 ==================================================================================== */
 
-[class*=footer],
-footer {
-  .footer-primary {
-    background-color: $gray-light;
-
-    li a {
-      color: $body-font-color;
-
-      &:hover {
-        color: $anchor-color-hover;
-      }
+footer,
+[class*=footer] {
+  a {
+    font-weight: normal;
+    color      : $body-font-color;
+    transition : $transition-default;
+    &:hover {
+      color: $anchor-color;
     }
   }
 
@@ -25,14 +22,8 @@ footer {
     // line-height: 1.3rem;
   }
 
-  a {
-    font-weight: normal;
-    color      : $body-font-color;
-    transition : $transition-default;
-
-    &:hover {
-      color: $anchor-color;
-    }
+  .footer-primary {
+    background-color: $gray-light;
   }
 
   // ======================================================================
@@ -96,4 +87,5 @@ footer {
     }
   }
 }
+
 /* -----  End of FOOTER  ---------- */
