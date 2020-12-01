@@ -7,7 +7,7 @@ $dropdown-menu-item-color-active: $white,
 $dropdown-menu-item-background-active: $blue, 
 $dropdown-hover-color: $blue-medium, 
 $dropdown-arrow-color: $green, 
-$sticky-background: $white, 
+$sticky-background: transparent, 
 $sticky-background-stuck: $white, 
 $titlebar-background: $white, 
 $anchor-color: $body-font-color, 
@@ -49,8 +49,8 @@ $hamburger-color: $anchor-color,
     // ===================================================================================
     // STUCK STYLES
     // ===================================================================================
-    .is-stuck {
-      background: $sticky-background-stuck;
+    .is-at-top.is-stuck {
+      background: $sticky-background-stuck !important;
 
       .top-bar {
         @include breakpoint(medium-xxl down) {

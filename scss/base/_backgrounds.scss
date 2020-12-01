@@ -63,7 +63,7 @@
     // color: $green-light;
     color: $anchor-color-light;
     
-    &:hover {
+    &:hover:not(.button) {
       color: scale-color($anchor-color, $lightness: 50%);
     }
   }

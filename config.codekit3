@@ -1564,19 +1564,6 @@
 		"oS": 3,
 		"sct": 0
 		},
-	"/scss/rte.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"ec": 1,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/_BUILD/css/rte.css",
-		"oF": 0,
-		"oS": 3,
-		"sct": 0
-		},
 	"/scss/utilities/_line-clamp.scss": {
 		"aP": 1,
 		"bl": 0,

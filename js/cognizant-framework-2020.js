@@ -168,10 +168,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   AOS.init({
-    duration: 750,
+    // duration: 750,
     // mirror: false,
     startEvent: "load",
-    offset: "150"
+    // offset: "150"
   });
 });
 

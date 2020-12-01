@@ -8,7 +8,7 @@
 
 footer,
 .footer {
-  a {
+  a, a:link {
     font-weight: normal;
     color      : $body-font-color;
     transition : $transition-default;

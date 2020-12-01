@@ -55,9 +55,9 @@
         font-size: 16px;
     }
 
-    // Sometimes depending on the font-size, the rendering, the browser, etc. you may need to tweak the output. 
-    // You can adjust the top and bottom cropping when invoking the component using the $top-adjustment and $bottom-adjustment settings 
-    
+    // Sometimes depending on the font-size, the rendering, the browser, etc. you may need to tweak the output.
+    // You can adjust the top and bottom cropping when invoking the component using the $top-adjustment and $bottom-adjustment settings
+
     .slight-adjustment-needed {
         @include text-crop($top-adjustment: -0.5px, $bottom-adjustment: 2px);
         font-size: 17px;
@@ -329,6 +329,19 @@ $text-alignments: (
   }
 }
 
+.text-spacing-1 {
+  letter-spacing: 1px;
+}
+.text-spacing-2 {
+  letter-spacing: 2px;
+}
+.text-spacing-3 {
+  letter-spacing: 3px;
+}
+.text-spacing-4 {
+  letter-spacing: 4px;
+}
+
 /* ===========================================================================================
 
 ██      ██ ███    ██ ██   ██ ███████
@@ -338,13 +351,18 @@ $text-alignments: (
 ███████ ██ ██   ████ ██   ██ ███████
 
 =========================================================================================== */
-a {
+a:link {
   // @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
   // @include text-crop($top-adjustment: 0.4px, $bottom-adjustment: -0.25px);
   font-weight: $global-weight-bold;
   transition: $transition-fast;
   
   &:hover {
+    transition: $transition-fast;
+    // color: scale-color($anchor-color, $lightness: -20%);
+  }
+  
+  &:hover:not(.button) {
     transition: $transition-fast;
     color: scale-color($anchor-color, $lightness: -20%);
   }
@@ -354,7 +372,7 @@ a {
   }
 }
 
-a.link-coverAll:before {
+a.link-coverAll::before {
   content : "";
   position: absolute;
   left    : 0;
@@ -411,7 +429,10 @@ a.link-coverAll:before {
   }
 }
 
-.text-white, .bg-blue, .bg-blue-dark, .gray-dark {
+.text-white,
+.bg-blue,
+.bg-blue-dark,
+.gray-dark {
   h1,
   h2,
   h3,
@@ -449,8 +470,8 @@ a.link-coverAll:before {
   text-align: center;
 }
 
-.heading-lines:after,
-.heading-lines:before {
+.heading-lines::after,
+.heading-lines::before {
   position        : relative;
   display         : inline-block;
   width           : 50%;
@@ -460,12 +481,12 @@ a.link-coverAll:before {
   background-color: $black-30;
 }
 
-.heading-lines:before {
+.heading-lines::before {
   right      : 0.5em;
   margin-left: -50%;
 }
 
-.heading-lines:after {
+.heading-lines::after {
   left        : 0.5em;
   margin-right: -50%;
 }
