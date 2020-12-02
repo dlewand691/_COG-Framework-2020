@@ -212,7 +212,7 @@ p {
 
 .extra-large {
   // @include font-size(140px);
-  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 48px, 90px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 40px, 112px);
   @include fluidSize(line-height, 320px, $cog-bp--desktop-xl, 1, 1.1);
 }
 
