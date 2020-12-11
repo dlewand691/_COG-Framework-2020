@@ -54,7 +54,7 @@
     position: relative;
 
     &::after {
-      background-image: linear-gradient(to bottom, rgba($color,0) 0%,rgba($color,0) 50%,rgba($color,1) 100%);
+      background-image: linear-gradient(to bottom, rgba($color,0) 0%, rgba($color,0.15) 30%, rgba($color,1) 100%);
       @include gradient-overlay-image;
     }
   }
@@ -64,7 +64,7 @@
     position: relative;
 
     &::after {
-      background-image: linear-gradient(to bottom, rgba($color,0) 20%,rgba($color,0.7) 65%);
+      background-image: linear-gradient(to bottom, rgba($color,0) 0%, rgba($color,0.15) 20%, rgba($color,0.7) 65%);
       @include gradient-overlay-image-full;
     }
   }
