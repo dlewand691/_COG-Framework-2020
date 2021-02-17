@@ -147,17 +147,30 @@ a:not(.button) {
     color      : inherit;
   }
 
-  &.arrow-solid-green {
+  &.arrow-solid {
     &::after {
       content    : "\e908" !important;
-      // color      : $green;
       font-family: "Cognizant-Icons";
     }
   }
 
-  &.down {
+  &.arrow-solid-green {
+    &::after {
+      content    : "\e908" !important;
+      color      : $green;
+      font-family: "Cognizant-Icons";
+    }
+  }
+
+  &.arrow-down {
     &::after {
       content: "\e903" !important;
+    }
+  }
+
+  &.arrow-small {
+    &::after {
+      @extend small;
     }
   }
 }

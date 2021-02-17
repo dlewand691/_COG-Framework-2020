@@ -351,7 +351,7 @@ $text-alignments: (
 ███████ ██ ██   ████ ██   ██ ███████
 
 =========================================================================================== */
-a:link {
+a, a:link {
   // @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
   // @include text-crop($top-adjustment: 0.4px, $bottom-adjustment: -0.25px);
   font-weight: $global-weight-bold;

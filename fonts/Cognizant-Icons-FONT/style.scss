@@ -3,12 +3,12 @@
 @font-face {
   font-family: '#{$icomoon-font-family}';
   src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?yauy4k') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?yauy4k') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?yauy4k##{$icomoon-font-family}') format('svg');
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg#{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 i, .icomoon-liga {

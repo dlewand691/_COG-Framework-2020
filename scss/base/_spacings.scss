@@ -280,6 +280,19 @@ $padding-y: (py);
         }
       }
     }
+    @each $side, $sideHalf in $margin-sides-negative {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-#{$side}-half {
+          margin-#{$sideHalf}: -0.5rem !important;
+          // @include fluidSize(margin-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 5px, 10px, !important);
+        }
+      } @else {
+        .#{$side}-half {
+          margin-#{$sideHalf}: -0.5rem !important;
+          // @include fluidSize(margin-#{$sideHalf}, 320px, $cog-bp--desktop-xl, 5px, 10px, !important);
+        }
+      }
+    }
     @each $side, $sideHalf in $margin-x-positive {
       @if $size != $-zf-zero-breakpoint {
         .#{$size}-#{$side}-half {

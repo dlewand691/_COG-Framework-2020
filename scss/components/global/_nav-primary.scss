@@ -1,11 +1,11 @@
 @mixin nav-overrides(
 $topbar-background: transparent, 
 $topbar-submenu-background: transparent, 
-$dropdownmenu-background: none, 
+$dropdownmenu-background: transparent, 
 $dropdownmenu-submenu-background: $blue, 
 $dropdown-menu-item-color-active: $white, 
 $dropdown-menu-item-background-active: $blue, 
-$dropdown-hover-color: $blue-medium, 
+$dropdown-hover-color: $blue, 
 $dropdown-arrow-color: $green, 
 $sticky-background: transparent, 
 $sticky-background-stuck: $white, 
@@ -98,7 +98,7 @@ $hamburger-color: $anchor-color,
     // ===================================================================================
     .language-menu {
       background: $language-menu-background;
-      width     : unset;
+      // width     : unset;
 
       &::before {
         @include css-triangle($tooltip-pip-width, $language-menu-background, up);
@@ -146,11 +146,13 @@ $hamburger-color: $anchor-color,
 
       .menu {
         // Top-level item
-        li a {
+        li {
+          a {
           background : $dropdownmenu-background;
           font-weight: normal;
           color      : $anchor-color;
           transition : $transition-default;
+          }
         }
 
         // Top-level item active state
@@ -162,11 +164,27 @@ $hamburger-color: $anchor-color,
           color     : $dropdown-menu-item-color-active;
           
           &:hover {
-            background-color: $dropdown-hover-color;
+            // background-color: $dropdown-hover-color;
           }
 
           &::after {
             color: $dropdown-arrow-color;
+          }
+        }
+        
+        li.is-dropdown-submenu-parent {
+          > a {
+            padding: 1rem 2.2rem 1rem 1rem;
+              
+              &:after {
+                font-family: 'Cognizant-Icons';
+                content: "\e903";
+                color: $dropdown-arrow-color;
+                font-weight: 900;
+                border-color: transparent;
+                top: 23%;
+                right: 1.35rem;
+              }
           }
         }
       }
@@ -179,6 +197,14 @@ $hamburger-color: $anchor-color,
 
       .is-dropdown-submenu {
         border: none;
+        
+        a {
+          padding: 0.5rem;
+          
+          &:hover {
+            background: darken($dropdown-hover-color, 7%) !important;
+          }
+        }
       }
     }
   }
