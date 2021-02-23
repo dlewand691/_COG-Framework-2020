@@ -5,7 +5,7 @@
 // ██      ██    ██      ██ ██    ██    ██ ██    ██ ██  ██ ██      ██
 // ██       ██████  ███████ ██    ██    ██  ██████  ██   ████ ███████
 // ===================================================================================
-
+$breakpoint-classes: (small medium large);
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @each $position in (inherit, relative, absolute, fixed) {

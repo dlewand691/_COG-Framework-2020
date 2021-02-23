@@ -5,6 +5,8 @@
 // ██   ██ ██      ██ ██      ██      ██   ██    ██         ██
 // ██████  ██ ███████ ██      ███████ ██   ██    ██    ███████
 // ===================================================================================
+$breakpoint-classes: (small medium large);
+
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @each $display in (block, inline, inline-block, flex) {

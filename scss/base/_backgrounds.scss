@@ -10,6 +10,8 @@
 // ██      ██    ██ ██      ██    ██ ██   ██      ██
 //  ██████  ██████  ███████  ██████  ██   ██ ███████
 // ===================================================================================
+$breakpoint-classes: (small medium large);
+
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {
     @each $color-name, $color in $background-palette {

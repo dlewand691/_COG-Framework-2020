@@ -1,3 +1,5 @@
+$breakpoint-classes: (small);
+
 // ===================================================================================
 // ██     ██ ██ ██████  ████████ ██   ██ ███████
 // ██     ██ ██ ██   ██    ██    ██   ██ ██
@@ -14,22 +16,6 @@ $widths: 20;
         .#{$size}-w#{$i*5} {
           width: $i*5%;
         }
-        
-        .#{$size}-w-auto {
-          width: auto;
-        }
-        
-        .#{$size}-w-inherit {
-          width: inherit;
-        }
-        
-        .#{$size}-w-initial {
-          width: initial;
-        }
-        
-        .#{$size}-w-unset {
-          width: unset;
-        }
 
         .#{$size}-max-w#{$i*5} {
           max-width: $i*5%;
@@ -43,10 +29,6 @@ $widths: 20;
           width: $i*5%;
         }
         
-        .w-auto {
-          width: auto;
-        }
-
         .max-w#{$i*5} {
           max-width: $i*5%;
         }
@@ -66,6 +48,26 @@ $widths: 20;
     }
   }
 }
+
+// .w-auto {
+//   width: auto;
+// }
+// 
+// .#{$size}-w-auto {
+//   width: auto;
+// }
+// 
+// .#{$size}-w-inherit {
+//   width: inherit;
+// }
+// 
+// .#{$size}-w-initial {
+//   width: initial;
+// }
+// 
+// .#{$size}-w-unset {
+//   width: unset;
+// }
 
 @include breakpoint(small only) {
   .small-w100 {
