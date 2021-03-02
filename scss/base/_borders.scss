@@ -5,6 +5,7 @@
 // ██   ██ ██    ██ ██   ██ ██   ██ ██      ██   ██      ██
 // ██████   ██████  ██   ██ ██████  ███████ ██   ██ ███████
 // ===================================================================================
+$breakpoint-classes: (small);
 $border-width: 4;
 $border-side: (
   "t": top,
@@ -14,7 +15,6 @@ $border-side: (
 );
 $radius-sizes: 10;
 
-$breakpoint-classes: (small);
 
 @each $size in $breakpoint-classes {
   @include breakpoint($size) {

@@ -119,17 +119,6 @@
       "sC" : 3,
       "tS" : 1
     },
-    "\/js\/cognizant-framework-2020-copy.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 1,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/_BUILD\/js\/min\/cognizant-framework-2020-copy-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 1
-    },
     "\/js\/cognizant-framework-2020.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -184,12 +173,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 1
-    },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/node_modules",
-      "oF" : 0
     },
     "\/node_modules\/aos\/dist\/aos.js" : {
       "bF" : 0,
@@ -755,6 +738,20 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/scss\/_css-grid.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/_BUILD\/css\/_css-grid.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/scss\/_settings.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1142,20 +1139,6 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/_BUILD\/scss\/css\/_z-indexes.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/scss\/cognizant-framework-2020-copy.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 1,
-      "oA" : 1,
-      "oAP" : "\/_BUILD\/css\/cognizant-framework-2020-copy.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -1581,20 +1564,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/scss\/plugins\/_slick.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 1,
-      "oA" : 1,
-      "oAP" : "\/_BUILD\/scss\/css\/_slick.css",
-      "oF" : 0,
-      "oS" : 3,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/scss\/plugins\/_swiper.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -1647,7 +1616,7 @@
   "projectAttributes" : {
     "creationDate" : 613665909.74829996,
     "displayValue" : "_COG-Framework-2020",
-    "displayValueWasSetByUser" : 0,
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets-slime",
     "iconImageWasSetByUser" : 0
   },

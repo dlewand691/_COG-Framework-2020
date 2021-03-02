@@ -14,6 +14,7 @@ $contrast-warnings: false;
 
 // GRIDS (choose one)
 @include foundation-xy-grid-classes;
+// @include foundation-css-grid;
 // @include foundation-grid;
 // @include foundation-flex-grid;
 
@@ -28,7 +29,7 @@ $contrast-warnings: false;
 @include foundation-table;
 
 // BASIC COMPONENTS
-@include foundation-badge;
+// @include foundation-badge;
 @include foundation-breadcrumbs;
 @include foundation-callout;
 @include foundation-card;
@@ -65,8 +66,9 @@ $contrast-warnings: false;
 // @include foundation-prototype-classes;
 
 // MOTION UI
-@include motion-ui-transitions;
-@include motion-ui-animations;
+// @include motion-ui-transitions;
+// @include motion-ui-animations;
+
 
 // FOUNDATION PROTOTYPING CLASSES
 // @import "foundation-sites/scss/prototype/_rounded.scss";

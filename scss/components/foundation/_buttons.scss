@@ -205,3 +205,7 @@ a:not(.button) {
     }
   }
 }
+
+[class*=button-group] {
+  background: unset !important;
+}

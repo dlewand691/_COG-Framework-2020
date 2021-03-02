@@ -17,6 +17,7 @@
  ██████    ████   ███████ ██   ██ ███████ ██   ██    ██
 
 ==================================================================================== */
+$breakpoint-classes: (small medium large);
 @mixin gradient-overlay-image {
   position       : absolute;
   left           : 0;
