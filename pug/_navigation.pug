@@ -1,8 +1,7 @@
 mixin bannerConsulting
   img.mb1(src="https://www.cognizant.com/content/dam/cognizant_foundation/images/CBC_360x100_navIMAGE.jpg", title alt="Megamenu")
-  h6 COGNIZANT CONSULTING
-  p
-    | Helping organizations engage people and uncover insight from data to shape the products, services and experiences they offer
+  h6.mb1 COGNIZANT CONSULTING
+  p Helping organizations engage people and uncover insight from data to shape the products, services and experiences they offer
   a.text-bold.mln-half(href="/consulting", title="Learn More")
     | Learn More  
     i.arrow-solid-right.text-green.small
@@ -246,7 +245,7 @@ mixin primaryNav
     // ██      ██   ██ ██ ██  ██  ██ ██   ██ ██   ██    ██
     // ██      ██   ██ ██ ██      ██ ██   ██ ██   ██    ██
     // ======================================================================
-    #stickyNav.stickyNav.w100.h100(data-sticky-container)
+    #stickyNav.stickyNav.w100.h100.z1(data-sticky-container)
       .sticky(data-sticky data-margin-top="0" data-top-anchor="stickyNav:bottom" data-sticky-on="small")
         #primary-nav.primary-nav.top-bar.grid-container.px0.large-px-half.py0.large-py1.stacked-for-large(data-animate="hinge-in-from-top hinge-out-from-top")
           .top-bar-left.show-for-large
@@ -263,8 +262,84 @@ mixin primaryNav
               // ===========================================================
               li
                 a Industries
-                ul.menu.vertical.megamenu.large-fixed.large-pos-left.w100.pt1
+                ul.menu.vertical.megamenu.large-fixed.large-pos-left.w100.pt1g
+                
                   li
+                    .grid-container
+                      .grid-x.grid-margin-x.large-h100vh
+                        .cell.auto
+                          ul.no-bullet.menu.vertical
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/automotive-technology-solutions", title="Automotive", rel="noopener noreferrer")
+                                | Automotive
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/banking-technology-solutions", title="Banking", rel="noopener noreferrer")
+                                | Banking
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/capital-markets-technology-solutions", title="Capital Markets", rel="noopener noreferrer")
+                                | Capital Markets
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/cmt-solutions", title="Communications, Media & Technology", rel="noopener noreferrer")
+                                | Communications, Media &amp; Technology
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/consumer-goods-technology-solutions", title="Consumer Goods", rel="noopener noreferrer")
+                                | Consumer Goods
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/education-technology-solutions", title="Education", rel="noopener noreferrer")
+                                | Education
+                                i.small.arrow-solid-right.text-green.m0
+                        .cell.auto
+                          ul.no-bullet.menu.vertical
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/healthcare-technology-solutions", title="Healthcare", rel="noopener noreferrer")
+                                | Healthcare
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/information-services-digital-solutions", title="Information Services", rel="noopener noreferrer")
+                                | Information Services
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/insurance-digital-transformation", title="Insurance", rel="noopener noreferrer")
+                                | Insurance
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/life-sciences-technology-solutions", title="Life Sciences", rel="noopener noreferrer")
+                                | Life Sciences
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/manufacturing-technology-solutions", title="Manufacturing", rel="noopener noreferrer")
+                                | Manufacturing
+                                i.small.arrow-solid-right.text-green.m0
+                        .cell.auto
+                          ul.no-bullet.menu.vertical
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/oil-gas-digital-solutions", title="Oil & Gas", rel="noopener noreferrer")
+                                | Oil &amp; Gas
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/retail-technology-solutions", title="Retail", rel="noopener noreferrer")
+                                | Retail
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/transportation-logistics-technology-solutions", title="Transportation & Logistics", rel="noopener noreferrer")
+                                | Transportation &amp; Logistics
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/travel-hospitality-technology-solutions", title="Travel & Hospitality", rel="noopener noreferrer")
+                                | Travel &amp; Hospitality
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/utilities-digital-solutions", title="Utilities", rel="noopener noreferrer")
+                                | Utilities
+                                i.small.arrow-solid-right.text-green.m0
+                        .cell.auto.text-white
+                          +bannerConsulting
+
               // ===========================================================
               // ███    ███ ███████ ███    ██ ██    ██
               // ████  ████ ██      ████   ██ ██    ██
@@ -280,7 +355,7 @@ mixin primaryNav
                       .grid-x.grid-margin-x.large-h100vh
                         .cell.large-6.pr1 
                           h6.text-white.small DIGITAL BUSINESS & TECHNOLOGY
-                          hr.m0.lighter
+                          hr.my1.lighter
                           .grid-container.full
                             .grid-x
                               .cell.auto
@@ -303,7 +378,7 @@ mixin primaryNav
                                     a.arrow.arrow-solid.arrow-small(href="") Quality Engineering & Assurance
                         .cell.auto
                           h6.text-white.small DIGITAL BUSINESS OPERATIONS
-                          hr.m0.lighter
+                          hr.my1.lighter
                           a.arrow.arrow-solid.arrow-small(href="") Enterprise Services
                           a.arrow.arrow-solid.arrow-small(href="") Industry & Platform Solutions
                           a.arrow.arrow-solid.arrow-small(href="") Intelligent Process Automation

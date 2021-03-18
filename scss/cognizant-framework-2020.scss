@@ -66,8 +66,8 @@ $contrast-warnings: false;
 // @include foundation-prototype-classes;
 
 // MOTION UI
-// @include motion-ui-transitions;
-// @include motion-ui-animations;
+@include motion-ui-transitions;
+@include motion-ui-animations;
 
 
 // FOUNDATION PROTOTYPING CLASSES
@@ -165,6 +165,7 @@ $icomoon-font-path: "../fonts/Cognizant-Icons-FONT/fonts";
 @import "base/video";
 @import "base/z-indexes";
 @import "base/gradients";
+@import "base/filters";
 
 // ======================================================================
 //  ██████  ██       ██████  ██████   █████  ██

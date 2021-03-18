@@ -44,15 +44,22 @@
   &.white {
     color     : $green-dark;
     background: $white;
+    
+    &:after {
+      color: $green-dark;
+    }
+    
+    &:hover {
+      background: darken($white, 5%);
+    }
+    
+    &.blue-bright-hover {
+      &:hover {
+        color: $blue-bright;
+      }
+    }
   }
 
-  &.white:after {
-    color: $green-dark;
-  }
-
-  &.white:hover {
-    background: darken($white, 5%);
-  }
 
   &.disabled {
     background: $black-15;
@@ -120,6 +127,12 @@ a:not(.button) {
     color: $anchor-color;
     &:hover {
       color: $anchor-color-hover;
+    }
+  }
+  
+  &.blue-bright-hover {
+    &:hover {
+      color: $blue-bright;
     }
   }
 }
