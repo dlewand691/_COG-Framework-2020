@@ -242,8 +242,13 @@ sup {
 }
 
 b,
-strong {
+strong,
+.text-bold {
   font-weight: bold !important;
+}
+
+.text-italic {
+  font-style: italic;
 }
 
 // ===================================================================================
