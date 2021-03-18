@@ -59,19 +59,51 @@ $sidelines-double-line-spacing: 0.5em !default;
   }
 }
 
-.type-sidelines {
-  @include sidelines();
-}
+// .sidelines {
+//   @include sidelines();
+// }
+// 
+// .sidelines-double {
+//   @include sidelines($double-line: true);
+// }
+// 
+// .sidelines-custom {
+//   @include sidelines($text-padding: 20px, $line-length: 100%, $line-color: $blue, $line-thickness: 4px, $line-style: dotted);
+// }
+// 
+// .sidelines-custom-2 {
+//   @include sidelines($line-color: $blue, $line-thickness: 4px);
+// }
 
-.double {
-  @include sidelines($double-line: true);
-}
+.sidelines {
+  overflow  : hidden;
+  text-align: center;
 
-.custom {
-  @include sidelines($text-padding: 20px, $line-length: 100%, $line-color: $blue, $line-thickness: 4px, $line-style: dotted);
-}
+  &::after,
+  &::before {
+    position        : relative;
+    top             : -1px;
+    display         : inline-block;
+    width           : 50%;
+    height          : 1px;
+    content         : "";
+    vertical-align  : middle;
+    background-color: $black-30;
+  }
 
-.custom-2 {
-  @include sidelines($line-color: $blue, $line-thickness: 4px);
+  &::before {
+    right      : 0.5em;
+    margin-left: -50%;
+  }
+
+  &::after {
+    left        : 0.5em;
+    margin-right: -50%;
+  }
+
+  &.white::after,
+  &.white::before {
+    background-color: $white;
+  }
 }
 // -----  End of SIDE LINES  ----------

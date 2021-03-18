@@ -1,0 +1,124 @@
+/* ===========================================================================================
+
+██      ██ ███    ██ ██   ██ ███████
+██      ██ ████   ██ ██  ██  ██
+██      ██ ██ ██  ██ █████   ███████
+██      ██ ██  ██ ██ ██  ██       ██
+███████ ██ ██   ████ ██   ██ ███████
+
+=========================================================================================== */
+a, a:link {
+  // @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
+  // @include text-crop($top-adjustment: 0.4px, $bottom-adjustment: -0.25px);
+  font-weight: $global-weight-bold;
+  transition: $transition-fast;
+  
+  &:hover {
+    transition: $transition-fast;
+    // color: scale-color($anchor-color, $lightness: -20%);
+  }
+  
+  &:hover:not(.button) {
+    transition: $transition-fast;
+    color: scale-color($anchor-color, $lightness: -20%);
+  }
+  
+  &.large {
+    @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 20px, 25px);
+  }
+}
+
+a.link-coverAll::before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  top     : 0;
+  right   : 0;
+  bottom  : 0;
+  width   : 100%;
+  height  : 100%;
+}
+
+.link-white {
+  a,
+  a:link {
+    color: $white;
+  }
+}
+
+.link-black {
+  a,
+  a:link {
+    color: $black;
+  }
+}
+
+.link-normal {
+  a,
+  a:link {
+    font-weight: normal;
+  }
+}
+
+// ======================================================================
+// LIGHT GREEN LINKS ON SPECIFIC BACKGROUNDS
+// ======================================================================
+[class*="bg-black"],
+[class*="bg-blue"],
+.bg-gray,
+.bg-gray-dark,
+.bg-green-dark,
+.bg-red {
+  a:not(.button), a:link:not(.button) {
+    // color: $green-light;
+    color: $anchor-color-light;
+    
+    &:hover:not(.button) {
+      color: scale-color($anchor-color, $lightness: 50%);
+    }
+  }
+  
+  .hollow {
+    border-color: $anchor-color-light;
+    color: $anchor-color-light;
+    background: none;
+    
+    &:hover {
+      border-color: scale-color($anchor-color-light, $lightness: 50%);
+      color: scale-color($anchor-color-light, $lightness: 50%);
+      background: none;
+    }
+  }
+}
+
+// ======================================================================
+// DARK GREEN LINKS ON SPECIFIC BACKGROUNDS
+// ======================================================================
+.bg-blue-bright,
+.bg-blue-light-60,
+.bg-gray-medium,
+.bg-green-light {
+  a:not(.button), a:link:not(.button) {
+    // color: $green-dark;
+    color: $anchor-color-dark;
+  }
+}
+
+// ======================================================================
+// GREEN LINKS ON WHITE BACKGROUNDS
+// ======================================================================
+.bg-green {
+  a:not(.button) {
+    color: $white;
+  }
+}
+
+.bg-transparent {
+  background: transparent !important;
+}
+
+.bg-none {
+  background: none !important;
+} 
+
+/* ----  End of LINKS  ---------------------------- */
