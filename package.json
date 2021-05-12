@@ -13,7 +13,7 @@
     "jquery": "^3.6.0",
     "lazysizes": "^5.3.0",
     "motion-ui": "^2.0.3",
-    "swiper": "^6.5.0",
+    "swiper": "^6.5.1",
     "what-input": "^5.2.10"
   }
 }
