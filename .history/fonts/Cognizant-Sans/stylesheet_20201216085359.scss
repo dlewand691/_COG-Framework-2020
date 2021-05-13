@@ -1,0 +1,139 @@
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Thin Italic"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-ThinItalic.eot") format("embedded-opentype");
+  font-weight : 100;
+  font-style  : italic;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Regular"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Regular.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Regular.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Regular.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-Regular.eot") format("embedded-opentype");
+  font-weight : normal;
+  font-style  : normal;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Bold"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Bold.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Bold.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Bold.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-Bold.eot") format("embedded-opentype");
+  font-weight : bold;
+  font-style  : normal;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Heavy"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Heavy.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Heavy.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Heavy.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-Heavy.eot") format("embedded-opentype");
+  font-weight : 900;
+  font-style  : normal;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Bold Italic"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-BoldItalic.eot") format("embedded-opentype");
+  font-weight : bold;
+  font-style  : italic;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Light Italic"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-LightItalic.eot") format("embedded-opentype");
+  font-weight : 300;
+  font-style  : italic;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Thin"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Thin.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Thin.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Thin.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-Thin.eot") format("embedded-opentype");
+  font-weight : 100;
+  font-style  : normal;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Heavy Italic"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-HeavyItalic.eot") format("embedded-opentype");
+  font-weight : 900;
+  font-style  : italic;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Light"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Light.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Light.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Light.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-Light.eot") format("embedded-opentype");
+  font-weight : 300;
+  font-style  : normal;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}
+
+@font-face {
+  font-family : "Cognizant Sans";
+  src         : 
+  local("Cognizant Sans Italic"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Italic.woff2") format("woff2"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Italic.woff") format("woff"), 
+  url("../fonts/Cognizant-Sans/CognizantSans-Italic.ttf") format("truetype"),
+  url("../fonts/Cognizant-Sans/CognizantSans-Italic.eot") format("embedded-opentype");
+  font-weight : normal;
+  font-style  : italic;
+  font-display: swap;
+  // unicode-range: U+000-5FF;
+}

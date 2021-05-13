@@ -73,7 +73,11 @@ var History = {
     var slide = swiper.slides.eq(index);
     var value = History.slugify(slide.attr('data-history'));
 
-    if (!location.pathname.includes(key)) {
+    if (swiper.params.history.root.length > 0) {
+      var root = swiper.params.history.root;
+      if (root[root.length - 1] === '/') root = root.slice(0, root.length - 1);
+      value = root + "/" + key + "/" + value;
+    } else if (!location.pathname.includes(key)) {
       value = key + "/" + value;
     }
 
@@ -119,6 +123,7 @@ export default {
   params: {
     history: {
       enabled: false,
+      root: '',
       replaceState: false,
       key: 'slides'
     }
@@ -140,7 +145,7 @@ export default {
         swiper.history.destroy();
       }
     },
-    transitionEnd: function transitionEnd(swiper) {
+    'transitionEnd _freeModeNoMomentumRelease': function transitionEnd_freeModeNoMomentumRelease(swiper) {
       if (swiper.history.initialized) {
         swiper.history.setHistory(swiper.params.history.key, swiper.activeIndex);
       }

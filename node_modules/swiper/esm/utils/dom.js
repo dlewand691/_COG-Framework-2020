@@ -38,6 +38,9 @@ var Methods = {
   remove: remove
 };
 Object.keys(Methods).forEach(function (methodName) {
-  $.fn[methodName] = Methods[methodName];
+  Object.defineProperty($.fn, methodName, {
+    value: Methods[methodName],
+    writable: true
+  });
 });
 export default $;

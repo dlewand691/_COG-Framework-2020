@@ -1,0 +1,471 @@
+mixin bannerConsulting
+  img.mb1(src="https://www.cognizant.com/content/dam/cognizant_foundation/images/CBC_360x100_navIMAGE.jpg", title alt="Megamenu")
+  h6.mb1 COGNIZANT CONSULTING
+  p Helping organizations engage people and uncover insight from data to shape the products, services and experiences they offer
+  a.text-bold.mln-half(href="/consulting", title="Learn More")
+    | Learn More  
+    i.arrow-solid-right.text-green.small
+
+mixin bannerAppStore
+  .grid-x.grid-padding-x(style="background:url(images/LTmenu-mobile.jpg) no-repeat; background-size: 100% auto; height: 250px;", alt="Megamenu")
+    .cell.large-6.medium-6.small-12.align-self-bottom
+      a.-p0(href="https://itunes.apple.com/us/app/cognizant-perspectives/id439247923?mt=8", title="Download the iPad app", target="_blank")
+        img(src="https://www.cognizant.com/content/dam/cognizant_foundation/images/app-store-logo.png")
+      a.px0.pt1(href="https://play.google.com/store/apps/details?id=com.cognizanttechnologysolutions.perspectivesapp&hl=en", title="Download the Android app", target="_blank")
+        img(src="https://www.cognizant.com/content/dam/cognizant_foundation/images/9DB3D190FD6DC8155EEDBCDEB4942128BE6B.png")
+
+mixin subnav
+  nav&attributes(attributes)
+    // ======================================================================
+    // ███████ ██    ██ ██████  ███    ██  █████  ██    ██
+    // ██      ██    ██ ██   ██ ████   ██ ██   ██ ██    ██
+    // ███████ ██    ██ ██████  ██ ██  ██ ███████ ██    ██
+    //      ██ ██    ██ ██   ██ ██  ██ ██ ██   ██  ██  ██
+    // ███████  ██████  ██████  ██   ████ ██   ██   ████
+    // ======================================================================
+    .secondary-nav.py-half.show-for-large
+      .grid-container.small
+        .grid-x.align-middle.align-justify
+          .cell.shrink
+            //- img.lazyload.cog-logo(title="Cognizant Technology Solutions", alt="Cognizant Technology Solutions", data-sizes="auto" data-src="images/COG-Logo.svg" style="max-height: 20px;")
+            //- span.mx-qtr •
+            a(href="https://www.cognizant.com") Cognizant.com
+            span.mx-qtr •
+            a(href="/industries") Industries
+            span.mx-qtr •
+            a(href="/services#") Services
+            span.mx-qtr •
+            a(href="/latest-thinking") Latest Thinking
+          .cell.shrink
+            a(href="/careers") Careers
+            span.mx-qtr •
+            a(href="http://news.cognizant.com/") News
+            span.mx-qtr •
+            a(href="/events") Events
+            span.mx-qtr •
+            a(href="http://investors.cognizant.com/") Investors
+            span.mx-half |
+            a(data-toggle="language-menu") 
+              i.globe.mr-qtr
+              | Worldwide
+            // =============================================================================================
+            // ██     ██  ██████  ██████  ██      ██████  ██     ██ ██ ██████  ███████
+            // ██     ██ ██    ██ ██   ██ ██      ██   ██ ██     ██ ██ ██   ██ ██
+            // ██  █  ██ ██    ██ ██████  ██      ██   ██ ██  █  ██ ██ ██   ██ █████
+            // ██ ███ ██ ██    ██ ██   ██ ██      ██   ██ ██ ███ ██ ██ ██   ██ ██
+            //  ███ ███   ██████  ██   ██ ███████ ██████   ███ ███  ██ ██████  ███████
+            // ==========================``===================================================================
+            #language-menu.language-menu.dropdown-pane.bd0.w100.medium-w80.large-w80.xxlarge-w50.box-shadow.text-left(data-dropdown data-position="bottom" data-alignment="right" data-close-on-click="true" data-v-offset="10")
+              .grid-x.grid-padding-x.small.small-up-3
+                .cell
+                  strong.block.mb-half AMERICAS
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-ar
+                    a(href="/argentina", title="Argentina") Argentina
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-br
+                    a(href="/brazil", title="Brazil") Brazil
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-ca
+                    a(href="/canada-english", title="Canada") Canada 
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-cr
+                    a(href="/costa-rica", title="Costa Rica") Costa Rica
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-sv
+                    a(href="/elsalvador", title="El Salvador") El Salvador
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-mx
+                    a(href="/mexico", title="Mexico") Mexico
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-us
+                    a(href="/", title="United States") United States
+                  .my1
+                    strong.block.mb-half MIDDLE EAST
+                    .mb-half
+                      a(href="/ar-ae", title="Visit our Regional Website") 
+                        i.globe.text-bold.mr-half
+                        | Visit our Regional Website 
+                        span (
+                        a(href="/en-ae", title="En") En 
+                        span | 
+                        a(href="/ar-ae", title="Fr") Ar
+                        span )
+                  strong.block.my-half AFRICA
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-ma
+                    a(href="/en-ma", title="Morocco") Morocco 
+                    span (
+                    a(href="/en-ma", title="En") En 
+                    span | 
+                    a(href="/fr-ma", title="Fr") Fr
+                    span )
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-za
+                    a(href="/south-africa", title="South Africa") South Africa
+                .cell
+                  strong.block.mb-half EUROPE
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-be
+                    a(href="/nl-be", title="Belgium") Belgium 
+                    span (
+                    a(href="/fr-be", title="Fr") Fr 
+                    span.v-middle | 
+                    a(href="/nl-be", title="Nl") Nl 
+                    span.v-middle | 
+                    a(href="/en-be", title="En") En
+                    span )
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-dk
+                    a(href="/en-dk", title="Denmark") Denmark 
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-fi
+                    a(href="/en-fi", title="Finland") Finland 
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-fr
+                    a(href="/fr-fr", title="France") France
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-de
+                    a(href="/de-de", title="Germany") Germany
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-hu
+                    a(href="/hungary", title="Hungary") Hungary
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-it
+                    a(href="/it-it", title="Italy") Italy
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-lv
+                    a(href="/en-lv", title="Latvia") Latvia
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-lt
+                    a(href="/lithuania", title="Lithuania") Lithuania
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-no
+                    a(href="/en-no", title="Norway") Norway 
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-pl
+                    a(href="/poland", title="Poland") Poland
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-pt
+                    a(href="/en-pt", title="Portugal") Portugal
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-es
+                    a(href="/spain", title="Spain") Spain
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-se
+                    a(href="/sweden", title="Sweden") Sweden 
+                    span (
+                    a(href="/sv-se", title="Sv") Sv 
+                    span.v-middle | 
+                    a(href="/en-se", title="En") En
+                    span )
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-ch
+                    a(href="/de-ch", title="Switzerland") Switzerland 
+                    span (
+                    a(href="/fr-ch", title="Fr") Fr 
+                    span.v-middle | 
+                    a(href="/en-ch", title="En") En 
+                    span.v-middle | 
+                    a(href="/de-ch", title="De") De
+                    span )
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-nl
+                    a(href="/netherlands", title="The Netherlands") The Netherlands
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-gb
+                    a(href="/united-kingdom", title="United Kingdom") United Kingdom
+                .cell
+                  strong.block.mb-half ASIA PACIFIC
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-au
+                    a(href="/australia", title="Australia") Australia
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-cn
+                    a(href="/china", title="China") China
+                    span (
+                    a(href="/en-cn", title="En") En 
+                    span | 
+                    a(href="/zh-cn", title="中文") 中文
+                    span )
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-hk
+                    a(href="/hong-kong-sar", title="Hong Kong") Hong Kong SAR
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-in
+                    a(href="/india", title="India") India
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-jp
+                    a(href="/ja-jp", title="Japan ( 日本語 )") Japan ( 日本語 )
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-my
+                    a(href="/malaysia", title="Malaysia") Malaysia
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-nz
+                    a(href="/new-zealand", title="New Zealand") New Zealand
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-ph
+                    a(href="/philippines", title="Philippines") Philippines
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-sg
+                    a(href="/singapore", title="Singapore") Singapore
+                  .mb-half
+                    span.lazyload.mr-half.flag-icon.flag-icon-th
+                    a(href="/thailand", title="Thailand") Thailand
+            a(href="#") 
+              i.search.text-bold.ml-half
+              .show-for-sr Search
+
+mixin primaryNav
+  nav&attributes(attributes)
+    // ======================================================================
+    // ███    ███  ██████  ██████  ██ ██      ███████
+    // ████  ████ ██    ██ ██   ██ ██ ██      ██
+    // ██ ████ ██ ██    ██ ██████  ██ ██      █████
+    // ██  ██  ██ ██    ██ ██   ██ ██ ██      ██
+    // ██      ██  ██████  ██████  ██ ███████ ███████
+    // ======================================================================
+    #stickyTitleBar.stickyTitleBar(data-sticky-container)
+      .sticky(data-sticky data-margin-top="0" data-top-anchor="stickyTitleBar:bottom" data-sticky-on="small")
+        .title-bar.px-half(data-responsive-toggle="primary-nav", data-hide-for="large")
+          button.w100.hamburger.hamburger--spin(type="button", data-toggle)
+            .title-bar-title.flex-container.align-justify.align-middle
+              a(href="index.html")
+                img.cog-logo.lazyload(title="Cognizant Technology Solutions", alt="Cognizant Technology Solutions", data-sizes="auto" data-src="images/COG-Logo.svg")
+
+              h5.m0.text-right.flex-container.align-middle
+                span.hamburger-box
+                  span.hamburger-inner
+                .show-for-sr Menu
+
+    // ======================================================================
+    // ██████  ██████  ██ ███    ███  █████  ██████  ██    ██
+    // ██   ██ ██   ██ ██ ████  ████ ██   ██ ██   ██  ██  ██
+    // ██████  ██████  ██ ██ ████ ██ ███████ ██████    ████
+    // ██      ██   ██ ██ ██  ██  ██ ██   ██ ██   ██    ██
+    // ██      ██   ██ ██ ██      ██ ██   ██ ██   ██    ██
+    // ======================================================================
+    #stickyNav.stickyNav.w100.h100.z1(data-sticky-container)
+      .sticky(data-sticky data-margin-top="0" data-top-anchor="stickyNav:bottom" data-sticky-on="small")
+        #primary-nav.primary-nav.top-bar.grid-container.px0.large-px-half.py0.large-py1.stacked-for-large(data-animate="hinge-in-from-top hinge-out-from-top")
+          .top-bar-left.show-for-large
+            a(href="index.html")
+              img.cog-logo.lazyload(title="Cognizant Technology Solutions", alt="Cognizant Technology Solutions", data-sizes="auto" data-src="images/COG-Logo.svg")
+          .top-bar-right
+            ul.vertical.large-horizontal.menu(data-responsive-menu="accordion large-dropdown" data-multi-expand="false" data-alignment="left")
+              // ===========================================================
+              // ███    ███ ███████ ███    ██ ██    ██
+              // ████  ████ ██      ████   ██ ██    ██
+              // ██ ████ ██ █████   ██ ██  ██ ██    ██
+              // ██  ██  ██ ██      ██  ██ ██ ██    ██
+              // ██      ██ ███████ ██   ████  ██████
+              // ===========================================================
+              li
+                a Industries
+                ul.menu.vertical.megamenu.large-fixed.large-pos-left.w100.pt1g
+                
+                  li
+                    .grid-container
+                      .grid-x.grid-margin-x.large-h100vh
+                        .cell.auto
+                          ul.no-bullet.menu.vertical
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/automotive-technology-solutions", title="Automotive", rel="noopener noreferrer")
+                                | Automotive
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/banking-technology-solutions", title="Banking", rel="noopener noreferrer")
+                                | Banking
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/capital-markets-technology-solutions", title="Capital Markets", rel="noopener noreferrer")
+                                | Capital Markets
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/cmt-solutions", title="Communications, Media & Technology", rel="noopener noreferrer")
+                                | Communications, Media &amp; Technology
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/consumer-goods-technology-solutions", title="Consumer Goods", rel="noopener noreferrer")
+                                | Consumer Goods
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/education-technology-solutions", title="Education", rel="noopener noreferrer")
+                                | Education
+                                i.small.arrow-solid-right.text-green.m0
+                        .cell.auto
+                          ul.no-bullet.menu.vertical
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/healthcare-technology-solutions", title="Healthcare", rel="noopener noreferrer")
+                                | Healthcare
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/information-services-digital-solutions", title="Information Services", rel="noopener noreferrer")
+                                | Information Services
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/insurance-digital-transformation", title="Insurance", rel="noopener noreferrer")
+                                | Insurance
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/life-sciences-technology-solutions", title="Life Sciences", rel="noopener noreferrer")
+                                | Life Sciences
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/manufacturing-technology-solutions", title="Manufacturing", rel="noopener noreferrer")
+                                | Manufacturing
+                                i.small.arrow-solid-right.text-green.m0
+                        .cell.auto
+                          ul.no-bullet.menu.vertical
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/oil-gas-digital-solutions", title="Oil & Gas", rel="noopener noreferrer")
+                                | Oil &amp; Gas
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/retail-technology-solutions", title="Retail", rel="noopener noreferrer")
+                                | Retail
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/transportation-logistics-technology-solutions", title="Transportation & Logistics", rel="noopener noreferrer")
+                                | Transportation &amp; Logistics
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/travel-hospitality-technology-solutions", title="Travel & Hospitality", rel="noopener noreferrer")
+                                | Travel &amp; Hospitality
+                                i.small.arrow-solid-right.text-green.m0
+                            li(role="menuitem")
+                              a.flex-container.align-middle(href="/utilities-digital-solutions", title="Utilities", rel="noopener noreferrer")
+                                | Utilities
+                                i.small.arrow-solid-right.text-green.m0
+                        .cell.auto.text-white
+                          +bannerConsulting
+
+              // ===========================================================
+              // ███    ███ ███████ ███    ██ ██    ██
+              // ████  ████ ██      ████   ██ ██    ██
+              // ██ ████ ██ █████   ██ ██  ██ ██    ██
+              // ██  ██  ██ ██      ██  ██ ██ ██    ██
+              // ██      ██ ███████ ██   ████  ██████
+              // ===========================================================
+              li
+                a Services
+                ul.menu.vertical.megamenu.large-fixed.large-pos-left.w100.pt1
+                  li
+                    .grid-container
+                      .grid-x.grid-margin-x.large-h100vh
+                        .cell.large-6.pr1 
+                          h6.text-white.small DIGITAL BUSINESS & TECHNOLOGY
+                          hr.my1.lighter
+                          .grid-container.full
+                            .grid-x
+                              .cell.auto
+                                ul.menu.shrink
+                                  li
+                                    a.arrow.arrow-solid.arrow-small(href="") Application Services
+                                    a.arrow.arrow-solid.arrow-small(href="") Artificial Intelligence
+                                    a.arrow.arrow-solid.arrow-small(href="") Cloud Enablement
+                                    a.arrow.arrow-solid.arrow-small(href="") Cognizant Infrastructure Services
+                                    a.arrow.arrow-solid.arrow-small(href="") Cognizant Security
+                                    a.arrow.arrow-solid.arrow-small(href="") Core Modernization
+                              .cell.auto
+                                ul.menu.shrink
+                                  li
+                                    a.arrow.arrow-solid.arrow-small(href="") Digital Engineering
+                                    a.arrow.arrow-solid.arrow-small(href="") Digital Experience
+                                    a.arrow.arrow-solid.arrow-small(href="") Digital Strategy
+                                    a.arrow.arrow-solid.arrow-small(href="") Enterprise Application Services
+                                    a.arrow.arrow-solid.arrow-small(href="") Internet of Things
+                                    a.arrow.arrow-solid.arrow-small(href="") Quality Engineering & Assurance
+                        .cell.auto
+                          h6.text-white.small DIGITAL BUSINESS OPERATIONS
+                          hr.my1.lighter
+                          a.arrow.arrow-solid.arrow-small(href="") Enterprise Services
+                          a.arrow.arrow-solid.arrow-small(href="") Industry & Platform Solutions
+                          a.arrow.arrow-solid.arrow-small(href="") Intelligent Process Automation
+                        .cell.auto.text-white
+                          +bannerConsulting
+              // ===========================================================
+              // ███    ███ ███████ ███    ██ ██    ██
+              // ████  ████ ██      ████   ██ ██    ██
+              // ██ ████ ██ █████   ██ ██  ██ ██    ██
+              // ██  ██  ██ ██      ██  ██ ██ ██    ██
+              // ██      ██ ███████ ██   ████  ██████
+              // ===========================================================
+              li
+                a Latest Thinking
+                ul.menu.vertical
+                  li
+                    .grid-container.p0
+                      .grid-x
+                        .cell.large-auto
+                          a.arrow.arrow-solid.arrow-small(href="") Evolutionary AI
+                          a.arrow.arrow-solid.arrow-small(href="") Conversational AI
+                          a.arrow.arrow-solid.arrow-small(href="") Causality
+                          a.arrow.arrow-solid.arrow-small(href="") Deep Learning
+              // ===========================================================
+              // ███    ███ ███████ ███    ██ ██    ██
+              // ████  ████ ██      ████   ██ ██    ██
+              // ██ ████ ██ █████   ██ ██  ██ ██    ██
+              // ██  ██  ██ ██      ██  ██ ██ ██    ██
+              // ██      ██ ███████ ██   ████  ██████
+              // ===========================================================
+              li
+                a About Us
+                ul.menu.vertical.megamenu.large-w40.large-fixed.large-pos-left-auto
+                  li
+                    .grid-container.p0
+                      .grid-x
+                        .cell.medium-auto
+                          a.arrow.arrow-solid.arrow-small(href="") eBook
+                            i.file-acrobat.text-bold.mx-qtr
+                            span.tiny (PDF, 2.6mb)
+                          a.arrow.arrow-solid.arrow-small(href="") Thought Leadership
+                          a.arrow.arrow-solid.arrow-small(href="" target="_blank" rel="noopener") Blog
+                            i.launch.text-bold.ml-qtr
+                        .cell.medium-auto
+                          a.arrow.arrow-solid.arrow-small(href="") eBook
+                            i.file-acrobat.text-bold.mx-qtr
+                            span.tiny (PDF, 2.6mb)
+                          a.arrow.arrow-solid.arrow-small(href="") Thought Leadership
+                          a.arrow.arrow-solid.arrow-small(href="" target="_blank" rel="noopener") Blog
+                            i.launch.text-bold.ml-qtr
+              // ===========================================================
+              // ███    ███ ███████ ███    ██ ██    ██
+              // ████  ████ ██      ████   ██ ██    ██
+              // ██ ████ ██ █████   ██ ██  ██ ██    ██
+              // ██  ██  ██ ██      ██  ██ ██ ██    ██
+              // ██      ██ ███████ ██   ████  ██████
+              // ===========================================================
+              //- li
+                a 1-Column
+                ul.menu.vertical
+                  li
+                    .grid-container.p0
+                      .grid-x
+                        .cell.large-auto
+                          a.arrow.arrow-solid.arrow-small(href="") Banking & Capital Markets
+                          a.arrow.arrow-solid.arrow-small(href="") Insurance
+                          a.arrow.arrow-solid.arrow-small(href="") Healthcare
+                          a.arrow.arrow-solid.arrow-small(href="") Life Sciences
+                          a.arrow.arrow-solid.arrow-small(href="") Communications, Media & Technology
+                          a.arrow.arrow-solid.arrow-small(href="") Consumer Goods & Retail
+                          a.arrow.arrow-solid.arrow-small(href="") Travel & Hospitality
+                          a.arrow.arrow-solid.arrow-small(href="") Energy & Utilities
+                          a.arrow.arrow-solid.arrow-small(href="") Transportation & Logistics
+              li.hide-for-medium-xxl
+                hr.my1.lighter
+                .grid-x.grid-padding-x
+                  .cell.auto
+                    a.m0.p-half(href="") Cognizant.com
+                    a.m0.p-half(href="") Industries
+                    a.m0.p-half(href="") Services
+                    a.m0.p-half(href="") Latest Thinking
+                  .cell.auto
+                    a.m0.p-half(href="") Careers
+                    a.m0.p-half(href="") News
+                    a.m0.p-half(href="") Events
+                    a.m0.p-half(href="") Investors
+                  .cell
+                    a.m0.px-half(href="") 
+                      | Search  
+                      i.search.text-bold.ml-half

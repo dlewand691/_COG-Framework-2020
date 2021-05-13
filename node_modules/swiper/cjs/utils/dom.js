@@ -44,7 +44,10 @@ var Methods = {
   remove: _dom.remove
 };
 Object.keys(Methods).forEach(function (methodName) {
-  _dom.$.fn[methodName] = Methods[methodName];
+  Object.defineProperty(_dom.$.fn, methodName, {
+    value: Methods[methodName],
+    writable: true
+  });
 });
 var _default = _dom.$;
 exports.default = _default;

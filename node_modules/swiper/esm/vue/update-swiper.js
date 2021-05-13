@@ -24,15 +24,15 @@ function updateSwiper(swiper, slides, passedParams, changedParams) {
     needControllerInit = true;
   }
 
-  if (changedParams.includes('pagination') && passedParams.pagination && passedParams.pagination.el && currentParams.pagination && pagination && !pagination.el) {
+  if (changedParams.includes('pagination') && passedParams.pagination && passedParams.pagination.el && (currentParams.pagination || currentParams.pagination === false) && pagination && !pagination.el) {
     needPaginationInit = true;
   }
 
-  if (changedParams.includes('scrollbar') && passedParams.scrollbar && passedParams.scrollbar.el && currentParams.scrollbar && scrollbar && !scrollbar.el) {
+  if (changedParams.includes('scrollbar') && passedParams.scrollbar && passedParams.scrollbar.el && (currentParams.scrollbar || currentParams.scrollbar === false) && scrollbar && !scrollbar.el) {
     needScrollbarInit = true;
   }
 
-  if (changedParams.includes('navigation') && passedParams.navigation && passedParams.navigation.prevEl && passedParams.navigation.nextEl && currentParams.navigation && navigation && !navigation.prevEl && !navigation.nextEl) {
+  if (changedParams.includes('navigation') && passedParams.navigation && passedParams.navigation.prevEl && passedParams.navigation.nextEl && (currentParams.navigation || currentParams.navigation === false) && navigation && !navigation.prevEl && !navigation.nextEl) {
     needNavigationInit = true;
   }
 
@@ -47,6 +47,8 @@ function updateSwiper(swiper, slides, passedParams, changedParams) {
   if (changedParams.includes('children') && virtual && currentParams.virtual.enabled) {
     virtual.slides = slides;
     virtual.update(true);
+  } else if (changedParams.includes('children') && swiper.lazy && swiper.params.lazy.enabled) {
+    swiper.lazy.load();
   }
 
   if (needThumbsInit) {

@@ -1,0 +1,539 @@
+// ===================================================================================
+// ████████ ███████ ██   ██ ████████      ██████ ██████   ██████  ██████
+//    ██    ██       ██ ██     ██        ██      ██   ██ ██    ██ ██   ██
+//    ██    █████     ███      ██        ██      ██████  ██    ██ ██████
+//    ██    ██       ██ ██     ██        ██      ██   ██ ██    ██ ██
+//    ██    ███████ ██   ██    ██         ██████ ██   ██  ██████  ██
+// ===================================================================================
+@mixin text-crop($line-height: 1.3, $top-adjustment: 0px, $bottom-adjustment: 0) {
+  // Configured in Step 1
+  $top-crop           : 11;
+  $bottom-crop        : 7;
+  $crop-font-size     : 36;
+  $crop-line-height   : 1.2;
+
+  // Apply values to calculate em-based margins that work with any font size
+  $dynamic-top-crop   : max(($top-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+  $dynamic-bottom-crop: max(($bottom-crop + ($line-height - $crop-line-height) * ($crop-font-size / 2)), 0) / $crop-font-size;
+
+  // Mixin output
+  line-height         : $line-height;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    height : 0;
+    width  : 0;
+  }
+
+  &::before {
+    margin-bottom: calc(-#{$dynamic-top-crop}em + #{$top-adjustment});
+  }
+
+  &::after {
+    margin-top: calc(-#{$dynamic-bottom-crop}em + #{$bottom-adjustment});
+  }
+}
+// Mixin generated at: http://text-crop.eightshapes.com/?typeface-selection=custom-font&typeface=Lato&custom-typeface-name=Cognizant%20Sans&custom-typeface-url=&custom-typeface-weight=400&custom-typeface-style=normal&weight-and-style=100&size=36&line-height=1.2&top-crop=11&bottom-crop=7
+
+/* Usage Examples
+    .my-level-1-heading-class {
+        @include text-crop; // Will use default line height of 1.3
+        font-size: 48px;
+        margin: 0 0 0 16px;
+    }
+
+    .my-level-2-heading-class {
+        @include text-crop; // Will use default line height of 1.3
+        font-size: 32px; // Don't need to change any settings, will work with any font size automatically
+        margin: 0 0 0 16px;
+    }
+
+    .my-body-copy-class {
+        @include text-crop($line-height: 2); // Larger line height desired, set the line height via the mixin
+        font-size: 16px;
+    }
+
+    // Sometimes depending on the font-size, the rendering, the browser, etc. you may need to tweak the output.
+    // You can adjust the top and bottom cropping when invoking the component using the $top-adjustment and $bottom-adjustment settings
+
+    .slight-adjustment-needed {
+        @include text-crop($top-adjustment: -0.5px, $bottom-adjustment: 2px);
+        font-size: 17px;
+    }
+
+    .dont-do-this {
+        @include text-crop;
+        font-size: 16px;
+        line-height: 3; // DO NOT set line height outside of the mixin, the mixin needs the line height value to calculate the crop correctly
+    }
+*/
+// -----  End of TEXT CROP  -----------------------------------
+
+// ===================================================================================
+// ████████ ██    ██ ██████   ██████   ██████  ██████   █████  ██████  ██   ██ ██    ██
+//    ██     ██  ██  ██   ██ ██    ██ ██       ██   ██ ██   ██ ██   ██ ██   ██  ██  ██
+//    ██      ████   ██████  ██    ██ ██   ███ ██████  ███████ ██████  ███████   ████
+//    ██       ██    ██      ██    ██ ██    ██ ██   ██ ██   ██ ██      ██   ██    ██
+//    ██       ██    ██       ██████   ██████  ██   ██ ██   ██ ██      ██   ██    ██
+// ===================================================================================
+
+// // https://gist.github.com/fsimmons/e9e64dc2f6f375dbe446c9994022299b
+// // https://utopia.fyi/calculator?c=320,16,1.2,1200,20,1.333,5,2,
+
+// ===================================================================================
+// ██████  ███████ ███████
+// ██   ██ ██      ██
+// ██████  █████   ███████
+// ██   ██ ██           ██
+// ██   ██ ██      ███████
+// ===================================================================================
+// @import "../plugins/rfs";
+// -----  End of RFS  -----------------------------------
+
+.text-crop {
+  // @include lhCrop(1.2, 0.75); //using Roboto font family
+  @include text-crop;
+}
+
+// ===================================================================================
+// ██████  ███████ ███████  █████  ██    ██ ██   ████████
+// ██   ██ ██      ██      ██   ██ ██    ██ ██      ██
+// ██   ██ █████   █████   ███████ ██    ██ ██      ██
+// ██   ██ ██      ██      ██   ██ ██    ██ ██      ██
+// ██████  ███████ ██      ██   ██  ██████  ███████ ██
+// ===================================================================================
+$tiny-font-size: 60%;
+
+body {
+  // font-size: var(--step-0);
+  // @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 20px, 20px);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  // @include text-crop($line-height: 1.1);
+}
+
+h5,
+h6 {
+  // @include text-crop($line-height: 1.3);
+}
+
+%h1,
+.h1,
+h1 {
+  // @include font-size(84px);
+  // font-size     : var(--step-5);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 36px, 84px);
+  @include fluidSize(line-height, 320px, $cog-bp--desktop-xl, 36px, 92.4px);
+  // line-height   : 1.1;
+  letter-spacing: -1px;
+}
+
+%h2,
+.h2,
+h2 {
+  // @include font-size(63px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 32px, 63px);
+  @include fluidSize(line-height, 320px, $cog-bp--desktop-xl, 32px, 69.3px);
+  // font-size  : var(--step-4);
+  // line-height: 1.1;
+}
+
+%h3,
+.h3,
+h3 {
+  // @include font-size(47px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 28px, 47px);
+  // font-size: var(--step-3);
+}
+
+%h4,
+.h4,
+h4 {
+  // @include font-size(36px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 25px, 36px);
+  // font-size: var(--step-2);
+}
+
+%h5,
+.h5,
+h5 {
+  // @include font-size(27px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 22px, 27px);
+  // font-size: var(--step-1);
+}
+
+%h6,
+.h6,
+h6 {
+  // @include font-size(20px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 20px, 20px);
+  // font-size: var(--step-0);
+}
+
+%p,
+.p,
+p {
+  // @include font-size(20px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
+  font-weight: $global-weight-normal;
+  // @include text-crop($top-adjustment: 0.4px, $bottom-adjustment: -0.25px);
+  // font-size: var(--step-0);
+  // line-height: calc(1ex / 0.32) !important;
+  // width: 60ch;
+  // max-width: 100%;
+
+  + p {
+    // margin-bottom: 0;
+  }
+
+  a {
+    // margin-bottom: $paragraph-margin-bottom;
+  }
+}
+
+// p:last-of-type {
+//   margin-bottom: 0;
+// }
+
+.extra-large {
+  // @include font-size(140px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 40px, 112px);
+  @include fluidSize(line-height, 320px, $cog-bp--desktop-xl, 1, 1.1);
+}
+
+.super-size {
+  // @include font-size(140px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 48px, 140px);
+  @include fluidSize(line-height, 320px, $cog-bp--desktop-xl, 1, 1.1);
+}
+
+%small,
+.small {
+  // font-size: $small-font-size;
+  // @include font-size(16px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop, 12px, 15px);
+}
+
+%tiny,
+.tiny {
+  // font-size: 60%;
+  // @include font-size(12px);
+  @include fluidSize(font-size, 320px, $cog-bp--desktop, 9px, 12px);
+}
+
+sup {
+  // top      : -0.4em;
+  // font-size: $tiny-font-size;
+}
+
+b,
+strong,
+.text-bold {
+  font-weight: bold !important;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+// ===================================================================================
+// ██    ██ ████████ ██ ██      ██ ████████ ██ ███████ ███████
+// ██    ██    ██    ██ ██      ██    ██    ██ ██      ██
+// ██    ██    ██    ██ ██      ██    ██    ██ █████   ███████
+// ██    ██    ██    ██ ██      ██    ██    ██ ██           ██
+//  ██████     ██    ██ ███████ ██    ██    ██ ███████ ███████
+// ===================================================================================
+.lh0 {
+  line-height: 0;
+}
+
+.lh1 {
+  line-height: 1;
+}
+
+.lh2 {
+  line-height: 2;
+}
+
+$font-weights-only: (
+  "normal" "normal",
+  "thin" 100,
+  "light" 300,
+  "bold" "bold",
+  "heavy" 900
+);
+
+@each $font-style, $font-weight in $font-weights-only {
+  %text-#{$font-style},
+  .text-#{$font-style} {
+    font-weight: #{$font-weight} !important;
+  }
+}
+
+$font-two-styles: (
+  "thin-italic" 100 "italic",
+  "light-italic" 300 "italic",
+  "bold-italic" "bold" "italic",
+  "heavy-italic" 900 "italic"
+);
+@each $font-style, $font-weight, $font-variation in $font-two-styles {
+  %text-#{$font-style},
+  .text-#{$font-style} {
+    font-weight: #{$font-weight};
+    font-style : #{$font-variation} !important;
+  }
+}
+
+$font-transforms: (
+  "caps" "uppercase",
+  "title" "capitalize",
+  "sentence" "sentence"
+);
+@each $font-style, $font-transform in $font-transforms {
+  %text-#{$font-style},
+  .text-#{$font-style} {
+    text-transform: #{$font-transform};
+  }
+}
+
+$text-alignments: (
+  "left",
+  "right",
+  "center"
+);
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @each $alignment in $text-alignments {
+      @if $size != $-zf-zero-breakpoint {
+        %#{$size}-text-#{$alignment},
+        .#{$size}-text-#{$alignment} {
+          text-align: #{$alignment};
+        }
+      } @else {
+        %text-#{$alignment},
+        .text-#{$alignment} {
+          text-align: #{$alignment};
+        }
+      }
+    }
+  }
+}
+
+.text-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.text-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.text-spacing-3 {
+  letter-spacing: 3px;
+}
+
+.text-spacing-4 {
+  letter-spacing: 4px;
+}
+
+// ======================================================================
+// ████████ ███████ ██   ██ ████████      ██████  ██████  ██       ██████  ██████  ███████
+//    ██    ██       ██ ██     ██        ██      ██    ██ ██      ██    ██ ██   ██ ██
+//    ██    █████     ███      ██        ██      ██    ██ ██      ██    ██ ██████  ███████
+//    ██    ██       ██ ██     ██        ██      ██    ██ ██      ██    ██ ██   ██      ██
+//    ██    ███████ ██   ██    ██         ██████  ██████  ███████  ██████  ██   ██ ███████
+// ======================================================================
+@each $size in $breakpoint-classes {
+  @include breakpoint($size) {
+    @each $color-name, $color in $text-color-palette {
+      @if $size != $-zf-zero-breakpoint {
+        .#{$size}-text-#{$color-name} {
+          color: $color !important;
+        }
+      } @else {
+        .text-#{$color-name} {
+          color: $color !important;
+        }
+      }
+    }
+  }
+}
+
+.bg-blue,
+.bg-blue-dark,
+.gray-dark,
+.text-white {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  p {
+    color: $white;
+  }
+}
+
+// ======================================================================
+// WHITE TEXT ON SPECIFIC BACKGROUNDS
+// ======================================================================
+[class*="bg-black"],
+.bg-blue,
+.bg-blue-85,
+[class*="bg"][class*="dark"],
+.bg-blue-medium,
+.bg-blue-light,
+.bg-gray,
+.bg-red,
+[class*="bgOverlay"][class*="dark"],
+.bgOverlay-blue,
+.bgOverlay-black,
+ {
+  color: $white;
+
+  span {
+    color: $white;
+  }
+}
+
+.text-wrap {
+  white-space: normal;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.hanging-punctuation {
+  text-indent: -0.5em;
+}
+
+.gradient-transparent-white-25 {
+  background: linear-gradient(to right, rgba($white, 0), rgba($white, 1) 25%);
+}
+
+.gradient-transparent-black-25 {
+  background: linear-gradient(to right, rgba($black, 0), rgba($black, 1) 25%);
+}
+/* ----  End of TYPOGRAPHY;  ---------------------------- */
+
+/* ====================================================================================
+
+██████  ██       ██████   ██████ ██   ██  ██████  ██    ██  ██████  ████████ ███████ ███████
+██   ██ ██      ██    ██ ██      ██  ██  ██    ██ ██    ██ ██    ██    ██    ██      ██
+██████  ██      ██    ██ ██      █████   ██    ██ ██    ██ ██    ██    ██    █████   ███████
+██   ██ ██      ██    ██ ██      ██  ██  ██ ▄▄ ██ ██    ██ ██    ██    ██    ██           ██
+██████  ███████  ██████   ██████ ██   ██  ██████   ██████   ██████     ██    ███████ ███████
+                                             ▀▀
+==================================================================================== */
+blockquote {
+  padding     : 3.75rem 0;
+  text-align  : center;
+  color       : $blue-medium;
+  border      : 1px solid $blue-light;
+  border-right: 0;
+  border-left : 0;
+  font-weight : bold;
+  font-style  : italic;
+
+  @extend %h5;
+
+  %cite,
+  cite {
+    margin-top : 1.875rem;
+    font-weight: normal;
+    color      : $gray-dark;
+  }
+}
+
+/* -----  End of BLOCKQUOTES  ---------- */
+
+/* ==================================================================================================
+██      ██ ███████ ████████ ███████
+██      ██ ██         ██    ██
+██      ██ ███████    ██    ███████
+██      ██      ██    ██         ██
+███████ ██ ███████    ██    ███████
+========================================================================================= */
+ul {
+  // margin-bottom: 2rem;
+  @include fluidSize(font-size, 320px, $cog-bp--desktop-xl, 16px, 20px);
+
+  &.inside {
+    list-style-position: inside;
+  }
+
+  &.circle {
+    list-style-type: circle;
+  }
+
+  &.square {
+    list-style-type: square;
+  }
+
+  &.collapse li {
+    margin-bottom: 0;
+  }
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li:last-child {
+  // margin-bottom: 0;
+}
+
+li ol,
+li ul {
+  margin-top: 1rem;
+}
+@include breakpoint(medium up) {
+  ul.inline-list li {
+    display: inline-block;
+    margin : 0 1rem 0 0;
+  }
+}
+
+dl dt {
+  margin-top : 1rem;
+  font-weight: bold;
+}
+/* ----  End of LISTS  ---------------------------------- */
+
+/* ====================================================================================
+
+████████ ███████ ██   ██ ████████     ███████ ██   ██  █████  ██████   ██████  ██     ██
+   ██    ██       ██ ██     ██        ██      ██   ██ ██   ██ ██   ██ ██    ██ ██     ██
+   ██    █████     ███      ██        ███████ ███████ ███████ ██   ██ ██    ██ ██  █  ██
+   ██    ██       ██ ██     ██             ██ ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██
+   ██    ███████ ██   ██    ██        ███████ ██   ██ ██   ██ ██████   ██████   ███ ███
+
+==================================================================================== */
+.text-shadow {
+  text-shadow: 0 0 3rem rgba($black, 0.65);
+}
+
+.text-shadow1 {
+  text-shadow: 0 0 1rem rgba($black, 0.85);
+}
+
+.text-shadow4 {
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 1), 0 0 0.3rem rgba(0, 0, 0, 0.6), 0 0 0.2rem rgba(0, 0, 0, 0.3);
+}
+// -----  End of TEXT SHADOW  ----------

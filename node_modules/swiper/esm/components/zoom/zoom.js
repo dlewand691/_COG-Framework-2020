@@ -308,7 +308,7 @@ var Zoom = {
       gesture.$imageWrapEl = gesture.$imageEl.parent("." + params.containerClass);
     }
 
-    if (!gesture.$imageEl || gesture.$imageEl.length === 0) return;
+    if (!gesture.$imageEl || gesture.$imageEl.length === 0 || !gesture.$imageWrapEl || gesture.$imageWrapEl.length === 0) return;
     gesture.$slideEl.addClass("" + params.zoomedSlideClass);
     var touchX;
     var touchY;
@@ -398,7 +398,7 @@ var Zoom = {
       gesture.$imageWrapEl = gesture.$imageEl.parent("." + params.containerClass);
     }
 
-    if (!gesture.$imageEl || gesture.$imageEl.length === 0) return;
+    if (!gesture.$imageEl || gesture.$imageEl.length === 0 || !gesture.$imageWrapEl || gesture.$imageWrapEl.length === 0) return;
     zoom.scale = 1;
     zoom.currentScale = 1;
     gesture.$imageWrapEl.transition(300).transform('translate3d(0,0,0)');

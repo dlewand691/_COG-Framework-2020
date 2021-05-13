@@ -2,11 +2,8 @@ function prepareClasses(entries, prefix) {
   var resultClasses = [];
   entries.forEach(function (item) {
     if (typeof item === 'object') {
-      Object.entries(item).forEach(function (_ref) {
-        var classNames = _ref[0],
-            condition = _ref[1];
-
-        if (condition) {
+      Object.keys(item).forEach(function (classNames) {
+        if (item[classNames]) {
           resultClasses.push(prefix + classNames);
         }
       });

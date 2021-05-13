@@ -1,0 +1,224 @@
+$blue: #0033A0 !default;
+$blue-bright: lighten(adjust-hue($blue, -20), 40) !default;
+$blue-light: #328DFF !default;
+$blue-medium: #2D67FF !default;
+$blue-dark: #000063 !default;
+$green: #00B140 !default;
+$green-light: lighten($green, 10.00) !default;
+$green-dark: darken($green, 10.00) !default;
+$white: #FFFFFF !default;
+$black: #000000 !default;
+$blue-05: rgba($blue, 0.05) !default;
+$blue-10: rgba($blue, 0.1) !default;
+$blue-15: rgba($blue, 0.15) !default;
+$blue-30: rgba($blue, 0.3) !default;
+$blue-50: rgba($blue, 0.5) !default;
+$blue-60: rgba($blue, 0.6) !default;
+$blue-85: rgba($blue, 0.85) !default;
+$blue-dark-05: rgba($blue-dark, 0.05) !default;
+$blue-dark-10: rgba($blue-dark, 0.1) !default;
+$blue-dark-15: rgba($blue-dark, 0.15) !default;
+$blue-dark-30: rgba($blue-dark, 0.3) !default;
+$blue-dark-50: rgba($blue-dark, 0.5) !default;
+$blue-dark-60: rgba($blue-dark, 0.6) !default;
+$blue-dark-85: rgba($blue-dark, 0.85) !default;
+$blue-dark-darker: darken($blue-dark, 10%);
+$blue-dark-darker-85: darken($blue-dark-85, 10%);
+$blue-light-05: rgba($blue-light, 0.05) !default;
+$blue-light-10: rgba($blue-light, 0.1) !default;
+$blue-light-15: rgba($blue-light, 0.15) !default;
+$blue-light-30: rgba($blue-light, 0.3) !default;
+$blue-light-50: rgba($blue-light, 0.5) !default;
+$blue-light-60: rgba($blue-light, 0.6) !default;
+$blue-light-85: rgba($blue-light, 0.85) !default;
+$white-05: rgba($white, 0.05) !default;
+$white-10: rgba($white, 0.1) !default;
+$white-15: rgba($white, 0.15) !default;
+$white-30: rgba($white, 0.3) !default;
+$white-50: rgba($white, 0.5) !default;
+$white-60: rgba($white, 0.6) !default;
+$white-85: rgba($white, 0.85) !default;
+$black-05: rgba($black, 0.05) !default;
+$black-10: rgba($black, 0.10) !default;
+$black-15: rgba($black, 0.15) !default;
+$black-30: rgba($black, 0.3) !default;
+$black-50: rgba($black, 0.5) !default;
+$black-60: rgba($black, 0.6) !default;
+$black-85: rgba($black, 0.85) !default;
+$gray-lightest: scale-color($white, $lightness: -5%) !default;
+$gray-lighter: scale-color($white, $lightness: -10%) !default;
+$gray-light: scale-color($white, $lightness: -15%) !default;
+$gray-medium: scale-color($white, $lightness: -30%) !default;
+$gray: scale-color($white, $lightness: -60%) !default;
+$gray-dark: scale-color($white, $lightness: -80%) !default;
+$dark-mode-black: rgba(25,25,25,1) !default;
+$red: #F4633A !default;
+
+// ======================================================================
+// FOUNDATION PALETTE OVERRIDES
+// ======================================================================
+$cog-color-palette: (
+  primary  : $blue,
+  secondary: $gray-medium,
+  success  : $green,
+  warning  : $red,
+  alert    : $red,
+);
+
+// ======================================================================
+// TEXT COLORS
+// ======================================================================
+$text-color-palette: (
+  blue-bright: $blue-bright,
+  blue-light : $blue-light,
+  blue-medium: $blue-medium,
+  "blue"     : $blue,
+  blue-dark  : $blue-dark,
+  "white"    : $white,
+  "black"    : $black,
+  gray-dark  : $gray-dark,
+  "gray"     : $gray,
+  gray-medium: $gray-medium,
+  "green"    : $green,
+);
+
+// ======================================================================
+// BACKGROUND COLORS
+// ======================================================================
+$background-palette: (
+  "blue"          : $blue,
+  blue-85         : $blue-85,
+  blue-dark       : $blue-dark,
+  blue-dark-darker: $blue-dark-darker,
+  blue-dark-85    : $blue-dark-85,
+  blue-light      : $blue-light,
+  "white"         : $white,
+  white-60        : $white-60,
+  "black"         : $black,
+  black-30        : $black-30,
+  black-60        : $black-60,
+  "gray"          : $gray,
+  gray-dark       : $gray-dark,
+  gray-medium     : $gray-medium,
+  gray-light      : $gray-light,
+  gray-lighter    : $gray-lighter,
+  gray-lightest   : $gray-lightest,
+);
+
+// ======================================================================
+// BORDER COLORS
+// ======================================================================
+$border-palette: (
+  "blue"     : $blue,
+  blue-light : $blue-light,
+  blue-dark  : $blue-dark,
+  gray-medium: $gray-medium,
+  "white"    : $white,
+);
+
+// ======================================================================
+// OVERLAY COLORS
+// ======================================================================
+$image-color-overlay-palette: (
+  "blue"    : $blue,
+  blue-light: $blue-light,
+  blue-dark : $blue-dark,
+  "white"   : $white,
+  "black"   : $black,
+);
+
+// ======================================================================
+// GRADIENT OVERLAY COLORS
+// ======================================================================
+$gradient-overlay-palette: (
+  "blue"   : $blue,
+  blue-dark: $blue-dark,
+  "white"  : $white,
+  "black"  : $black,
+);
+
+// ======================================================================
+// ANCHOR COLORS
+// ======================================================================
+$anchor-color: $green !default;
+$anchor-color-light: $green-light !default;
+$anchor-color-medium: $green !default;
+$anchor-color-dark: $green-dark !default;
+$anchor-color-hover: $green !default;
+$anchor-color-hover-light: $green-light !default;
+$anchor-color-hover-medium: $green !default;
+$anchor-color-hover-dark: $green-dark !default;
+
+// ======================================================================
+// CSS VARIABLE COLORS
+// ======================================================================
+// :root {
+//   @each $name, $color in $cog-color-palette {
+//     --#{$name}: #{$color};
+//   }
+// }
+
+// ===================================================================================
+// ██████   █████  ██████  ██   ██     ███    ███  ██████  ██████  ███████
+// ██   ██ ██   ██ ██   ██ ██  ██      ████  ████ ██    ██ ██   ██ ██
+// ██   ██ ███████ ██████  █████       ██ ████ ██ ██    ██ ██   ██ █████
+// ██   ██ ██   ██ ██   ██ ██  ██      ██  ██  ██ ██    ██ ██   ██ ██
+// ██████  ██   ██ ██   ██ ██   ██     ██      ██  ██████  ██████  ███████
+// =================================================================================== 
+
+// @media (prefers-color-scheme: dark) {
+
+//   $cog-color-palette: (
+//     // "blue"     : $blue-medium,
+//     // "white"    : invert($white),
+//     // gray-light : invert($black-15),
+//     // gray-medium: invert($black-30),
+//     // gray-dark  : invert($black-60),
+//     // "black"    : invert($black)
+//   );
+
+//   :root {
+//     @each $name, $color in $cog-color-palette {
+//       --#{$name}: #{$color};
+//     }
+//   }
+// }
+
+// @function hexToRGB($hex) {
+//   @return red($hex), green($hex), blue($hex);
+// }
+
+// :root {
+//   --blue            : #{$blue};
+//   --blue-rgb        : #{hexToRGB($blue)};
+//   --blue-light      : #{$blue-light};
+//   --blue-light-rgb  : #{hexToRGB($blue-light)};
+//   --blue-medium     : #{$blue-medium};
+//   --blue-medium-rgb : #{hexToRGB($blue-medium)};
+//   --blue-dark       : #{$blue-dark};
+//   --blue-dark-rgb   : #{hexToRGB($blue-dark)};
+//   --green           : #{$green};
+//   --green-rgb       : #{hexToRGB($green)};
+//   --green-light     : #{$green-light};
+//   --green-light-rgb : #{hexToRGB($green-light)};
+//   --green-dark      : #{$green-dark};
+//   --green-dark-rgb  : #{hexToRGB($green-dark)};
+//   --white           : #{$white};
+//   --white-rgb       : #{hexToRGB($white)};
+//   --white-light     : #{$white-15};
+//   --white-light-rgb : #{hexToRGB($white-15)};
+//   --white-medium    : #{$white-30};
+//   --white-medium-rgb: #{hexToRGB($white-30)};
+//   --white-dark      : #{$white-60};
+//   --white-dark-rgb  : #{hexToRGB($white-60)};
+//   --gray-light      : #{$black-15};
+//   --gray-light-rgb  : #{hexToRGB($black-15)};
+//   --gray-medium     : #{$black-30};
+//   --gray-medium-rgb : #{hexToRGB($black-30)};
+//   --gray-dark       : #{$black-60};
+//   --gray-dark-rgb   : #{hexToRGB($black-60)};
+//   --black           : #{$black};
+//   --black-rgb       : #{hexToRGB($black)};
+//   --red             : #{$red};
+//   --red-rgb         : #{hexToRGB($red)};
+// }

@@ -17,7 +17,9 @@ function onTouchStart(event) {
   var window = (0, _ssrWindow.getWindow)();
   var data = swiper.touchEventsData;
   var params = swiper.params,
-      touches = swiper.touches;
+      touches = swiper.touches,
+      enabled = swiper.enabled;
+  if (!enabled) return;
 
   if (swiper.animating && params.preventInteractionOnTransition) {
     return;

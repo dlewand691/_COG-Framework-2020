@@ -1,0 +1,97 @@
+// ===================================================================================
+// ███████  ██████  ███    ██ ████████ ███████
+// ██      ██    ██ ████   ██    ██    ██
+// █████   ██    ██ ██ ██  ██    ██    ███████
+// ██      ██    ██ ██  ██ ██    ██         ██
+// ██       ██████  ██   ████    ██    ███████
+// ===================================================================================
+@mixin font-face(
+  $family-name,
+  $file-name,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    $font-path: "../fonts/Cognizant-Sans/#{$file-name}";
+    font-family: "#{$family-name}";
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-display: swap;
+    src: url($font-path + ".woff2") format("woff2"),
+      url($font-path + ".woff") format("woff"),
+      url($font-path + ".eot?") format("embedded-opentype"),
+      url($font-path + ".ttf") format("truetype");
+  }
+}
+
+@mixin font-face-otf(
+  $family-name,
+  $file-name,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    $font-path: "../fonts/Cognizant-Sans/#{$file-name}";
+    font-family: "#{$family-name}";
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-display: swap;
+    src: url($font-path + ".otf") format("opentype");
+  }
+}
+
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Thin,
+  $font-weight: 200
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Thin-Italic,
+  $font-style: italic,
+  $font-weight: 200
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Light,
+  $font-weight: 300
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Light-Italic,
+  $font-style: italic,
+  $font-weight: 300
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Regular,
+  $font-weight: 400
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Italic,
+  $font-style: italic,
+  $font-weight: 400
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Bold,
+  $font-weight: 600
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Bold-Italic,
+  $font-style: italic,
+  $font-weight: 600
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Heavy,
+  $font-weight: 700
+);
+@include font-face(
+  $family-name: Cognizant,
+  $file-name: Cognizant-Sans-Heavy-Italic,
+  $font-style: italic,
+  $font-weight: 700
+);
